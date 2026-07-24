@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#171918" />
+  <meta name="description" content="A month-by-month review of Jason Sundram's public GitHub work, one narrative per week." />
+  <title>GitHub month in review — Jason Sundram</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#story">Skip to the weeks</a>
+
+  <header class="hero" id="top">
+    <nav class="topbar" aria-label="Primary navigation">
+      <a class="wordmark" href="#top" aria-label="Back to top">JS / GITHUB REVIEW</a>
+
+      <div class="month-switch" id="monthSwitch">
+        <button class="month-step" id="monthPrev" type="button" aria-label="Previous month">‹</button>
+        <div class="month-picker">
+          <button class="month-current" id="monthCurrent" type="button" aria-haspopup="listbox" aria-expanded="false" aria-controls="monthMenu">
+            <span id="monthCurrentLabel">—</span><i aria-hidden="true">▾</i>
+          </button>
+          <ul class="month-menu" id="monthMenu" role="listbox" aria-label="All months" hidden></ul>
+        </div>
+        <button class="month-step" id="monthNext" type="button" aria-label="Next month">›</button>
+      </div>
+
+      <div class="topbar-actions">
+        <button class="text-button" id="evidenceToggle" type="button" aria-pressed="false">Show evidence</button>
+        <a class="button button-ghost" id="profileLink" href="https://github.com/jsundram" target="_blank" rel="noreferrer">GitHub ↗</a>
+      </div>
+    </nav>
+
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-orbit orbit-a" aria-hidden="true"></div>
+    <div class="hero-orbit orbit-b" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+      <p class="eyebrow" id="heroEyebrow">Loading…</p>
+      <h1 id="heroTitle"></h1>
+      <p class="dek" id="heroLede"></p>
+      <div class="hero-route" id="heroThemes" aria-label="Recurring themes this month"></div>
+      <a class="scroll-cue" id="scrollCue" href="#overview"><span>Read the month</span><b aria-hidden="true">↓</b></a>
+    </div>
+  </header>
+
+  <main>
+    <noscript>
+      <section class="section"><p class="quiet-note">This page renders its months with JavaScript. The underlying data is plain
+      JavaScript objects under <code>data/months/</code> and is readable directly.</p></section>
+    </noscript>
+
+    <section class="overview section" id="overview" aria-labelledby="overview-title">
+      <div class="section-heading">
+        <p class="kicker">The month at a glance</p>
+        <h2 id="overview-title">What the record<br />actually shows.</h2>
+        <p id="overviewNote">Counts come from commits in the snapshot window. Where a number comes from a project's own build log rather than from GitHub, the note under it says so.</p>
+      </div>
+      <div class="metric-grid" id="metricGrid" aria-label="Summary metrics"></div>
+    </section>
+
+    <section class="story-shell" id="story" aria-labelledby="story-title">
+      <div class="story-nav-wrap">
+        <nav class="story-nav" aria-label="Weekly chapters">
+          <span class="story-nav-label">Week</span>
+          <div id="weekNav"></div>
+        </nav>
+      </div>
+
+      <div class="section story-intro">
+        <div class="section-heading compact">
+          <p class="kicker">Week by week</p>
+          <h2 id="story-title">The weeks<br />in order.</h2>
+        </div>
+        <div class="activity-key">
+          <span>Activity intensity</span>
+          <div class="intensity-demo" aria-label="Low to high"><i></i><i></i><i></i><i></i><i></i></div>
+          <small>A hand-set signal, not a count of lines or commits. Weeks with nothing recorded say so.</small>
+        </div>
+      </div>
+
+      <div id="weekList" class="week-list"></div>
+    </section>
+
+    <section class="section threads-section" id="threads" aria-labelledby="threads-title" hidden>
+      <div class="section-heading">
+        <p class="kicker">Unfinished</p>
+        <h2 id="threads-title">Loose threads.</h2>
+        <p>Work that was started and parked. Listed so it stays visible rather than quietly
+        disappearing from the record.</p>
+      </div>
+      <ul class="thread-list" id="threadList"></ul>
+    </section>
+
+    <section class="section method-section" id="method" aria-labelledby="method-title">
+      <div class="method-card">
+        <div>
+          <p class="kicker">Method &amp; caveats</p>
+          <h2 id="method-title">What this page knows—and what it doesn't.</h2>
+        </div>
+        <div class="method-copy">
+          <p>Weeks are Monday-based and clipped to the month, so the first and last week of a month are often short. A week that straddles a month boundary appears in both, split.</p>
+          <p>The source is public repository activity. Private repos and non-GitHub work are absent, and a quiet week here does not mean a quiet week in general.</p>
+          <p>AI-assisted and coauthored commits are counted as work directed, reviewed, and shipped by the repo owner — not as a claim about who typed each line. Travel and personal context is supplied by hand; none of it is inferred from commit metadata.</p>
+          <a id="reposLink" href="https://github.com/jsundram?tab=repositories" target="_blank" rel="noreferrer">Review the public repositories ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p id="footerLine">Jason Sundram · public GitHub review</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="data/index.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

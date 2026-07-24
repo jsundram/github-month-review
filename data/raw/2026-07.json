@@ -1,0 +1,1282 @@
+{
+  "generated_at": "2026-07-24T20:54:48.407185+00:00",
+  "user": "jsundram",
+  "month": "2026-07",
+  "coverage": {
+    "start": "2026-07-01",
+    "end": "2026-07-24"
+  },
+  "repositories": [
+    {
+      "name": "AKM",
+      "html_url": "https://github.com/jsundram/AKM",
+      "description": "take akm data and make it more useful",
+      "language": "HTML",
+      "pushed_at": "2026-07-17T22:07:25Z",
+      "commit_count": 111,
+      "commits": [
+        {
+          "sha": "c3de6b4380e525a2f87c053930ef7f9bd1ab2e08",
+          "date": "2026-07-17T20:10:37Z",
+          "message": "concerts: make the recording link a solid ink pill, distinct from names",
+          "url": "https://github.com/jsundram/AKM/commit/c3de6b4380e525a2f87c053930ef7f9bd1ab2e08"
+        },
+        {
+          "sha": "9f0ae96729f4bdf23aca71f305fbc59b8f6e3445",
+          "date": "2026-07-17T18:32:42Z",
+          "message": "recordings: add build:rec alias + warn-only staleness lint",
+          "url": "https://github.com/jsundram/AKM/commit/9f0ae96729f4bdf23aca71f305fbc59b8f6e3445"
+        },
+        {
+          "sha": "2ba854428468b31d71a4b730b6f791459259e440",
+          "date": "2026-07-17T18:29:39Z",
+          "message": "recordings: ship real per-piece links (57) + bump SW to v105",
+          "url": "https://github.com/jsundram/AKM/commit/2ba854428468b31d71a4b730b6f791459259e440"
+        },
+        {
+          "sha": "42f715c93aed12a9ec6bf6dcaf4141708b8060ef",
+          "date": "2026-07-17T17:17:43Z",
+          "message": "Merge pull request #2 from jsundram/claude/concert-recordings-access-zqwlbv",
+          "url": "https://github.com/jsundram/AKM/commit/42f715c93aed12a9ec6bf6dcaf4141708b8060ef"
+        },
+        {
+          "sha": "cc7e677e1120150be69cf67982cc83a170f2697f",
+          "date": "2026-07-17T17:17:20Z",
+          "message": "Merge branch 'main' into claude/concert-recordings-access-zqwlbv",
+          "url": "https://github.com/jsundram/AKM/commit/cc7e677e1120150be69cf67982cc83a170f2697f"
+        },
+        {
+          "sha": "086fe586eddd7631d487a038c06ef6609f3a73d9",
+          "date": "2026-07-17T17:13:42Z",
+          "message": "Merge pull request #3 from jsundram/claude/faculty-concert-program-j8tb0o",
+          "url": "https://github.com/jsundram/AKM/commit/086fe586eddd7631d487a038c06ef6609f3a73d9"
+        },
+        {
+          "sha": "bd99115f90a4d586c1ba174c92d1105279daf209",
+          "date": "2026-07-17T17:13:16Z",
+          "message": "concert-data: order 7/3 Faculty Concert pieces to match printed program",
+          "url": "https://github.com/jsundram/AKM/commit/bd99115f90a4d586c1ba174c92d1105279daf209"
+        },
+        {
+          "sha": "1319d856a066d92c33517fd716fa5e120c628097",
+          "date": "2026-07-14T05:14:53Z",
+          "message": "archive: restyle wrapped-festival banner + friendlier send-off copy",
+          "url": "https://github.com/jsundram/AKM/commit/1319d856a066d92c33517fd716fa5e120c628097"
+        },
+        {
+          "sha": "a42f94799a4e8f63d0f97db9ed86588f1545fae3",
+          "date": "2026-07-14T05:01:33Z",
+          "message": "archive: bake observed ERA5 weather into the frozen snapshot",
+          "url": "https://github.com/jsundram/AKM/commit/a42f94799a4e8f63d0f97db9ed86588f1545fae3"
+        },
+        {
+          "sha": "fcf601a539b682689f6d3f8a61e87d4d5d4f25e7",
+          "date": "2026-07-14T05:01:15Z",
+          "message": "Merge post-festival archive freeze",
+          "url": "https://github.com/jsundram/AKM/commit/fcf601a539b682689f6d3f8a61e87d4d5d4f25e7"
+        },
+        {
+          "sha": "248e85840de6dc1a66cac86b695805d4a05cce4f",
+          "date": "2026-07-14T03:51:05Z",
+          "message": "buildlog: refresh through 2026-07-13 (205 commits, 46h in session)",
+          "url": "https://github.com/jsundram/AKM/commit/248e85840de6dc1a66cac86b695805d4a05cce4f"
+        },
+        {
+          "sha": "5262a4eb8856f6138d3eddc6e31e261db57e7ffd",
+          "date": "2026-07-13T03:55:47Z",
+          "message": "buildlog: refresh through 2026-07-12 (204 commits, 46h in session)",
+          "url": "https://github.com/jsundram/AKM/commit/5262a4eb8856f6138d3eddc6e31e261db57e7ffd"
+        },
+        {
+          "sha": "c762eb6c21f13bd4c0caeabdb097983481bfdc99",
+          "date": "2026-07-12T03:59:32Z",
+          "message": "buildlog: refresh through 2026-07-12 (198 commits, 46h in session)",
+          "url": "https://github.com/jsundram/AKM/commit/c762eb6c21f13bd4c0caeabdb097983481bfdc99"
+        },
+        {
+          "sha": "7780994a0458d49407ca1dd961491e38fa85bb17",
+          "date": "2026-07-11T18:42:03Z",
+          "message": "usage: surface kudos applause in the field report",
+          "url": "https://github.com/jsundram/AKM/commit/7780994a0458d49407ca1dd961491e38fa85bb17"
+        },
+        {
+          "sha": "0d1daee402586b846f63ae7a45653ffa4943efde",
+          "date": "2026-07-11T03:45:04Z",
+          "message": "buildlog: refresh through 2026-07-11 (192 commits, 45h in session)",
+          "url": "https://github.com/jsundram/AKM/commit/0d1daee402586b846f63ae7a45653ffa4943efde"
+        },
+        {
+          "sha": "271e80b7ee67c867eb8513f8bbf343ef410858b2",
+          "date": "2026-07-10T10:04:10Z",
+          "message": "dress: resolve slots against the concert program, not the whole repertoire",
+          "url": "https://github.com/jsundram/AKM/commit/271e80b7ee67c867eb8513f8bbf343ef410858b2"
+        },
+        {
+          "sha": "6856c8ca79eb44ebd4e44a700a2245ba3a466ba2",
+          "date": "2026-07-10T03:45:02Z",
+          "message": "buildlog: refresh through 2026-07-10 (186 commits, 44h in session)",
+          "url": "https://github.com/jsundram/AKM/commit/6856c8ca79eb44ebd4e44a700a2245ba3a466ba2"
+        },
+        {
+          "sha": "222b6f4ce841f3de213dbd485b9681fa6899ff51",
+          "date": "2026-07-09T13:31:22Z",
+          "message": "concerts: kudos chips \u2014 name + \ud83d\udc4f clap button, composer in the message",
+          "url": "https://github.com/jsundram/AKM/commit/222b6f4ce841f3de213dbd485b9681fa6899ff51"
+        },
+        {
+          "sha": "78b75b1519c995bed548285b9a63efacfdb178b3",
+          "date": "2026-07-09T08:03:10Z",
+          "message": "schedule: shrink the info-event \"i\" mark, fix its iOS blow-up",
+          "url": "https://github.com/jsundram/AKM/commit/78b75b1519c995bed548285b9a63efacfdb178b3"
+        },
+        {
+          "sha": "e592d4e95311af9978d1356ba5689a0fb8caf269",
+          "date": "2026-07-09T07:28:18Z",
+          "message": "schedule: link a faculty presenter's name in an info event to their bio",
+          "url": "https://github.com/jsundram/AKM/commit/e592d4e95311af9978d1356ba5689a0fb8caf269"
+        },
+        {
+          "sha": "6a580dc6665626019036cab11bb20a171d797008",
+          "date": "2026-07-09T06:55:29Z",
+          "message": "schedule: surface informational events (talks, discussions) for everyone",
+          "url": "https://github.com/jsundram/AKM/commit/6a580dc6665626019036cab11bb20a171d797008"
+        },
+        {
+          "sha": "543b58c4e5d6a8c4c406a94a587a88d265d2b03c",
+          "date": "2026-07-09T03:45:05Z",
+          "message": "buildlog: refresh through 2026-07-09 (180 commits, 43h in session)",
+          "url": "https://github.com/jsundram/AKM/commit/543b58c4e5d6a8c4c406a94a587a88d265d2b03c"
+        },
+        {
+          "sha": "1360952fec3dbfb03ce45bf6ef343edae63e3cc2",
+          "date": "2026-07-09T02:05:15Z",
+          "message": "schedule: add (KS) Dress Rehearsals to everyone's day",
+          "url": "https://github.com/jsundram/AKM/commit/1360952fec3dbfb03ce45bf6ef343edae63e3cc2"
+        },
+        {
+          "sha": "b27c4e083672e6937aea2c855f637ad1c0cd4322",
+          "date": "2026-07-09T02:01:26Z",
+          "message": "usage: refresh client-side in the browser, retire the nightly job",
+          "url": "https://github.com/jsundram/AKM/commit/b27c4e083672e6937aea2c855f637ad1c0cd4322"
+        },
+        {
+          "sha": "5832c34ede398b991b70ec45eda139d478d7676c",
+          "date": "2026-07-09T01:30:44Z",
+          "message": "buildlog: per-commit +/- diff size column in the log",
+          "url": "https://github.com/jsundram/AKM/commit/5832c34ede398b991b70ec45eda139d478d7676c"
+        },
+        {
+          "sha": "b9091197ee40e30cf18a66a41e360556e8698797",
+          "date": "2026-07-09T01:18:29Z",
+          "message": "buildlog: refresh through 2026-07-09 (176 commits, 41h in session)",
+          "url": "https://github.com/jsundram/AKM/commit/b9091197ee40e30cf18a66a41e360556e8698797"
+        },
+        {
+          "sha": "81e76da6f57475604307fc412883110592aa833f",
+          "date": "2026-07-09T01:18:26Z",
+          "message": "usage: refresh through 2026-07-09 (2108 opens, 51 people)",
+          "url": "https://github.com/jsundram/AKM/commit/81e76da6f57475604307fc412883110592aa833f"
+        },
+        {
+          "sha": "c493032510cc405fed84c96f9c074bdc083cefee",
+          "date": "2026-07-09T01:08:27Z",
+          "message": "footer: version tag that goes red + tappable when the device is behind",
+          "url": "https://github.com/jsundram/AKM/commit/c493032510cc405fed84c96f9c074bdc083cefee"
+        },
+        {
+          "sha": "4dac62874433f9c2f6cb5d16c89be651da899505",
+          "date": "2026-07-09T00:49:54Z",
+          "message": "schedule: show picked user next to \"Schedule\" label, tap to switch",
+          "url": "https://github.com/jsundram/AKM/commit/4dac62874433f9c2f6cb5d16c89be651da899505"
+        },
+        {
+          "sha": "202bc10ff6bb0079e6b8a9c67d85f42b398cb566",
+          "date": "2026-07-09T00:35:27Z",
+          "message": "concerts: star corner mark mirroring the group letter",
+          "url": "https://github.com/jsundram/AKM/commit/202bc10ff6bb0079e6b8a9c67d85f42b398cb566"
+        },
+        {
+          "sha": "521d5e0c4fff22800c7f8f48fb8197f2c13655d2",
+          "date": "2026-07-09T00:17:28Z",
+          "message": "concerts: short rehearsal-style titles on the brass card",
+          "url": "https://github.com/jsundram/AKM/commit/521d5e0c4fff22800c7f8f48fb8197f2c13655d2"
+        },
+        {
+          "sha": "3e0536fb5d60214abee7474353742a90244827fb",
+          "date": "2026-07-08T23:57:06Z",
+          "message": "usage: tag each non-user with their roster type code",
+          "url": "https://github.com/jsundram/AKM/commit/3e0536fb5d60214abee7474353742a90244827fb"
+        },
+        {
+          "sha": "548110105135c38b3e01868e7d5c2576f9296dad",
+          "date": "2026-07-08T23:53:44Z",
+          "message": "usage: first-name display, non-user list, de-launch the rhythm",
+          "url": "https://github.com/jsundram/AKM/commit/548110105135c38b3e01868e7d5c2576f9296dad"
+        },
+        {
+          "sha": "a1be4850d9eb55b6ef5704427724ae81af0a43fa",
+          "date": "2026-07-08T23:51:17Z",
+          "message": "roster: sortable WhatsApp column (by phone digits \u2192 region groups; numberless last)",
+          "url": "https://github.com/jsundram/AKM/commit/a1be4850d9eb55b6ef5704427724ae81af0a43fa"
+        },
+        {
+          "sha": "989c78ce5a0a55d3ecaabfbf63f18d3987f7a697",
+          "date": "2026-07-08T23:37:52Z",
+          "message": "concerts: auto-scroll to today's concert (two/day \u2192 switch at +3h)",
+          "url": "https://github.com/jsundram/AKM/commit/989c78ce5a0a55d3ecaabfbf63f18d3987f7a697"
+        },
+        {
+          "sha": "e82a9b4182eafa4cb7d6bf81ab0b81051e47b60d",
+          "date": "2026-07-08T23:18:21Z",
+          "message": "One shared concert-name matcher: namesakes, Steve/Stephen, Preet, guests",
+          "url": "https://github.com/jsundram/AKM/commit/e82a9b4182eafa4cb7d6bf81ab0b81051e47b60d"
+        },
+        {
+          "sha": "a02cf1cd167fb6cb1e40b7834ca4103ed18dd775",
+          "date": "2026-07-08T23:09:28Z",
+          "message": "buildlog: refresh through 2026-07-09 (165 commits, 39h in session)",
+          "url": "https://github.com/jsundram/AKM/commit/a02cf1cd167fb6cb1e40b7834ca4103ed18dd775"
+        },
+        {
+          "sha": "86ebbf02d872f6de3aaac87c9fc0677d094985f7",
+          "date": "2026-07-08T23:09:24Z",
+          "message": "usage: refresh through 2026-07-09 (2020 opens, 51 people)",
+          "url": "https://github.com/jsundram/AKM/commit/86ebbf02d872f6de3aaac87c9fc0677d094985f7"
+        },
+        {
+          "sha": "b8314ac18d0fbf1fc2d330f4e1c0a34b4b000acd",
+          "date": "2026-07-08T23:05:20Z",
+          "message": "usage: refresh through 2026-07-09 (2017 opens, 51 people)",
+          "url": "https://github.com/jsundram/AKM/commit/b8314ac18d0fbf1fc2d330f4e1c0a34b4b000acd"
+        },
+        {
+          "sha": "a81ba86559fde03a112fbe48147b9e2617ded3d5",
+          "date": "2026-07-08T23:05:04Z",
+          "message": "Usage dashboard at /usage/: nightly field report with OG share card",
+          "url": "https://github.com/jsundram/AKM/commit/a81ba86559fde03a112fbe48147b9e2617ded3d5"
+        },
+        {
+          "sha": "15b8aca19c653dd9463da3a19ea1954d4d092124",
+          "date": "2026-07-08T03:45:04Z",
+          "message": "buildlog: refresh through 2026-07-08 (149 commits, 38h in session)",
+          "url": "https://github.com/jsundram/AKM/commit/15b8aca19c653dd9463da3a19ea1954d4d092124"
+        },
+        {
+          "sha": "1e52c8247b4d60ef415fd48f73b1990383e07ed1",
+          "date": "2026-07-07T20:07:05Z",
+          "message": "schedule: require a picked identity before adding a personal event",
+          "url": "https://github.com/jsundram/AKM/commit/1e52c8247b4d60ef415fd48f73b1990383e07ed1"
+        },
+        {
+          "sha": "5d5a9e37b1ed731c80ebc7c163ece122d9d1f1e3",
+          "date": "2026-07-07T09:48:16Z",
+          "message": "schedule: show each block's Group letter (A\u2026E) on the cards",
+          "url": "https://github.com/jsundram/AKM/commit/5d5a9e37b1ed731c80ebc7c163ece122d9d1f1e3"
+        },
+        {
+          "sha": "6e2d3df6c713ab2867594cdc08198a0ca5f42926",
+          "date": "2026-07-07T03:45:03Z",
+          "message": "buildlog: refresh through 2026-07-07 (146 commits, 37h in session)",
+          "url": "https://github.com/jsundram/AKM/commit/6e2d3df6c713ab2867594cdc08198a0ca5f42926"
+        },
+        {
+          "sha": "e7521cef20d129691a4f74c7f164439b011a4248",
+          "date": "2026-07-07T00:46:02Z",
+          "message": "docs: add the same-commit rule to CLAUDE.md's header",
+          "url": "https://github.com/jsundram/AKM/commit/e7521cef20d129691a4f74c7f164439b011a4248"
+        },
+        {
+          "sha": "52b379ab3a47cd6a70dd7d5bfea6651249fec553",
+          "date": "2026-07-07T00:37:48Z",
+          "message": "tooling: doc-lint to catch CLAUDE.md drift in the pre-commit hook",
+          "url": "https://github.com/jsundram/AKM/commit/52b379ab3a47cd6a70dd7d5bfea6651249fec553"
+        },
+        {
+          "sha": "26881f52053113f8dc5bb142a4dbf076a1617602",
+          "date": "2026-07-07T00:31:37Z",
+          "message": "docs: resync CLAUDE.md/TESTING.md with the shared top-nav + notes page",
+          "url": "https://github.com/jsundram/AKM/commit/26881f52053113f8dc5bb142a4dbf076a1617602"
+        },
+        {
+          "sha": "896ca3c499655867912b74757c4ff9bed3b5def9",
+          "date": "2026-07-07T00:19:35Z",
+          "message": "buildlog: refresh through 2026-07-07 (142 commits, 36h in session)",
+          "url": "https://github.com/jsundram/AKM/commit/896ca3c499655867912b74757c4ff9bed3b5def9"
+        },
+        {
+          "sha": "e0f194897ac0e39c554116ac9ec20a196e6fb0d7",
+          "date": "2026-07-07T00:19:33Z",
+          "message": "buildlog: count each assistant message's output tokens once",
+          "url": "https://github.com/jsundram/AKM/commit/e0f194897ac0e39c554116ac9ec20a196e6fb0d7"
+        },
+        {
+          "sha": "2d0c9acd976cb3f2078e1e0b43357d2f43f28cfb",
+          "date": "2026-07-07T00:09:30Z",
+          "message": "docs: log the positional-tuple hardening for AKM 2027",
+          "url": "https://github.com/jsundram/AKM/commit/2d0c9acd976cb3f2078e1e0b43357d2f43f28cfb"
+        },
+        {
+          "sha": "b76d2c342e88a39237eca90c119fe027b33a3b02",
+          "date": "2026-07-07T00:01:02Z",
+          "message": "buildlog: refresh through 2026-07-07 (139 commits, 36h in session)",
+          "url": "https://github.com/jsundram/AKM/commit/b76d2c342e88a39237eca90c119fe027b33a3b02"
+        },
+        {
+          "sha": "dce1c61be3227a19b61788d8d7a912757b0a848e",
+          "date": "2026-07-07T00:00:53Z",
+          "message": "buildlog: ship-log commits link to GitHub",
+          "url": "https://github.com/jsundram/AKM/commit/dce1c61be3227a19b61788d8d7a912757b0a848e"
+        },
+        {
+          "sha": "914e8352e42fe091fb8e0fdc880cc379392a3bc8",
+          "date": "2026-07-06T23:58:14Z",
+          "message": "Faculty view: show coaches the private lessons they give",
+          "url": "https://github.com/jsundram/AKM/commit/914e8352e42fe091fb8e0fdc880cc379392a3bc8"
+        },
+        {
+          "sha": "21bef4ec4fe4e84a9bebf184db3e7334adb781d7",
+          "date": "2026-07-06T23:55:20Z",
+          "message": "Parse: don't let a split time-cell hide the lunch banner",
+          "url": "https://github.com/jsundram/AKM/commit/21bef4ec4fe4e84a9bebf184db3e7334adb781d7"
+        },
+        {
+          "sha": "6b67d55de9fb38ebbeb39cbbe1bf49430ad3de7f",
+          "date": "2026-07-06T23:41:27Z",
+          "message": "map-data.json: one feature per line (greppable + diffable)",
+          "url": "https://github.com/jsundram/AKM/commit/6b67d55de9fb38ebbeb39cbbe1bf49430ad3de7f"
+        },
+        {
+          "sha": "0819d30ad188d62c0f33d63f8e8c837d555ae97e",
+          "date": "2026-07-06T23:36:31Z",
+          "message": "Map links: resolve meal venues the schedule names differently",
+          "url": "https://github.com/jsundram/AKM/commit/0819d30ad188d62c0f33d63f8e8c837d555ae97e"
+        },
+        {
+          "sha": "1d9c3aa852e53605107ab54f94b501e977a1cb70",
+          "date": "2026-07-06T23:24:26Z",
+          "message": "Coaching: surface a lone \"(half)\" on both coach and player cards",
+          "url": "https://github.com/jsundram/AKM/commit/1d9c3aa852e53605107ab54f94b501e977a1cb70"
+        },
+        {
+          "sha": "77f36fa804ea584320aff40b8e42fa1963340462",
+          "date": "2026-07-06T23:15:01Z",
+          "message": "Coaching cards: split-block halves + a bluer accent",
+          "url": "https://github.com/jsundram/AKM/commit/77f36fa804ea584320aff40b8e42fa1963340462"
+        },
+        {
+          "sha": "bfaa62776e7b9fe8105062537478b282d1445eee",
+          "date": "2026-07-06T22:59:13Z",
+          "message": "schedule-test: guard the faculty view \u2014 coaching stays student-free, feature live",
+          "url": "https://github.com/jsundram/AKM/commit/bfaa62776e7b9fe8105062537478b282d1445eee"
+        },
+        {
+          "sha": "e005184c0362608ae6247f4c695bfd844c7cf0d6",
+          "date": "2026-07-06T22:49:50Z",
+          "message": "docs: mark faculty coaching view as shipped in CLAUDE.md open items",
+          "url": "https://github.com/jsundram/AKM/commit/e005184c0362608ae6247f4c695bfd844c7cf0d6"
+        },
+        {
+          "sha": "d0487f534ff1f23d991e516a042b807ac5767098",
+          "date": "2026-07-06T22:49:26Z",
+          "message": "Schedule: faculty view \u2014 show pieces you coach but don't play",
+          "url": "https://github.com/jsundram/AKM/commit/d0487f534ff1f23d991e516a042b807ac5767098"
+        },
+        {
+          "sha": "44163b47026ab984077dfa5f5795325e204aab21",
+          "date": "2026-07-06T22:13:48Z",
+          "message": "Schedule: fix same-composer quintets colliding in one group",
+          "url": "https://github.com/jsundram/AKM/commit/44163b47026ab984077dfa5f5795325e204aab21"
+        },
+        {
+          "sha": "eb542c58020866331223706b1986fc71e787ec0e",
+          "date": "2026-07-06T21:51:29Z",
+          "message": "Instruments: one shared classifier (Roster.instKind), no more three prefix-ladders",
+          "url": "https://github.com/jsundram/AKM/commit/eb542c58020866331223706b1986fc71e787ec0e"
+        },
+        {
+          "sha": "0122ec7557efbb4d9e268270aaddde5b0ac5a4cb",
+          "date": "2026-07-06T21:39:43Z",
+          "message": "Roster: map spelled-out \"Cello\" to VC, not Clarinet",
+          "url": "https://github.com/jsundram/AKM/commit/0122ec7557efbb4d9e268270aaddde5b0ac5a4cb"
+        },
+        {
+          "sha": "2b9dc4105d24a87fc844a956fe958e2dadb4c9db",
+          "date": "2026-07-06T21:33:51Z",
+          "message": "Weather: guard localStorage so the \u00b0C toggle doesn't break the Node test harness",
+          "url": "https://github.com/jsundram/AKM/commit/2b9dc4105d24a87fc844a956fe958e2dadb4c9db"
+        },
+        {
+          "sha": "858832d3584e94ec1dec2eb9d08f1da60badea37",
+          "date": "2026-07-06T17:04:41Z",
+          "message": "Schedule: namespace self-added events per identity (don't bleed across users)",
+          "url": "https://github.com/jsundram/AKM/commit/858832d3584e94ec1dec2eb9d08f1da60badea37"
+        },
+        {
+          "sha": "02b8c4997627bb93dc9e176c20eff08a908c4281",
+          "date": "2026-07-06T16:29:20Z",
+          "message": "Android: keep the add-sheet above the soft keyboard; harden pull-to-refresh",
+          "url": "https://github.com/jsundram/AKM/commit/02b8c4997627bb93dc9e176c20eff08a908c4281"
+        },
+        {
+          "sha": "b32be5998afc2fe938fe14c8c4873c3a81aa45de",
+          "date": "2026-07-06T12:22:49Z",
+          "message": "buildlog: nightly auto-refresh via update.py + launchd",
+          "url": "https://github.com/jsundram/AKM/commit/b32be5998afc2fe938fe14c8c4873c3a81aa45de"
+        },
+        {
+          "sha": "548e2e5401ae70b4d096af12f2e4c98b09ef25dc",
+          "date": "2026-07-06T12:20:33Z",
+          "message": "buildlog: refresh through 2026-07-06 (120 commits, 32h in session)",
+          "url": "https://github.com/jsundram/AKM/commit/548e2e5401ae70b4d096af12f2e4c98b09ef25dc"
+        },
+        {
+          "sha": "8bfe6705a9bd458765521f75d9ab750121f404d6",
+          "date": "2026-07-06T12:19:46Z",
+          "message": "buildlog: refresh through 2026-07-06 (119 commits, 32h in session)",
+          "url": "https://github.com/jsundram/AKM/commit/8bfe6705a9bd458765521f75d9ab750121f404d6"
+        },
+        {
+          "sha": "3246ee14e381d9bb633f732f9ed17a1fa863971d",
+          "date": "2026-07-06T12:15:51Z",
+          "message": "Testing: note the ngrok on-device preview for uncommitted / touch-specific code",
+          "url": "https://github.com/jsundram/AKM/commit/3246ee14e381d9bb633f732f9ed17a1fa863971d"
+        },
+        {
+          "sha": "a8a8bd0a1dff713e27c30e36506e6dd8a97846ed",
+          "date": "2026-07-06T12:13:43Z",
+          "message": "Add sheet: commit WITH suggestion on touchstart/mousedown (pointerdown wasn't enough on iOS)",
+          "url": "https://github.com/jsundram/AKM/commit/a8a8bd0a1dff713e27c30e36506e6dd8a97846ed"
+        },
+        {
+          "sha": "f3ba286156ecf1f8210afdd4781e2975c0fa7e07",
+          "date": "2026-07-06T11:41:10Z",
+          "message": "Add sheet: commit WITH suggestion on pointerdown so mobile taps land",
+          "url": "https://github.com/jsundram/AKM/commit/f3ba286156ecf1f8210afdd4781e2975c0fa7e07"
+        },
+        {
+          "sha": "d73059f64bd8dd58892ecfe2b7c6e551b3fb41b5",
+          "date": "2026-07-06T09:48:53Z",
+          "message": "Map: the swimming pond is \"Pool\" with a pond-sized label, not river-sized",
+          "url": "https://github.com/jsundram/AKM/commit/d73059f64bd8dd58892ecfe2b7c6e551b3fb41b5"
+        },
+        {
+          "sha": "95367af826dc631235b8ac610466c107a8fa8443",
+          "date": "2026-07-06T09:41:40Z",
+          "message": "Map: separate lodging vs venue pin colours (blue vs green, not two teals)",
+          "url": "https://github.com/jsundram/AKM/commit/95367af826dc631235b8ac610466c107a8fa8443"
+        },
+        {
+          "sha": "d262d4cc2336a18c9f3dd3fc662f4f7b80d05894",
+          "date": "2026-07-06T09:34:55Z",
+          "message": "Map: KS is venue + lodging (Kultursaal apartment), not venue + food",
+          "url": "https://github.com/jsundram/AKM/commit/d262d4cc2336a18c9f3dd3fc662f4f7b80d05894"
+        },
+        {
+          "sha": "b96d3076339c024ccc0e2e306759cb571506db48",
+          "date": "2026-07-06T09:17:51Z",
+          "message": "Map: initial view fills the pane (cover) instead of letterboxing the square bbox",
+          "url": "https://github.com/jsundram/AKM/commit/b96d3076339c024ccc0e2e306759cb571506db48"
+        },
+        {
+          "sha": "becad819f100ea7fa8cef0ff5bd7c7058be298e7",
+          "date": "2026-07-06T09:06:22Z",
+          "message": "Schedule: adding an event over an official practice block replaces it, not duplicates",
+          "url": "https://github.com/jsundram/AKM/commit/becad819f100ea7fa8cef0ff5bd7c7058be298e7"
+        },
+        {
+          "sha": "ac3c6d7dca81d94c4e58e9e1a164c5c42a2ee1aa",
+          "date": "2026-07-06T08:55:41Z",
+          "message": "Add sheet: WITH field is roster autocomplete as chips (multiple players)",
+          "url": "https://github.com/jsundram/AKM/commit/ac3c6d7dca81d94c4e58e9e1a164c5c42a2ee1aa"
+        },
+        {
+          "sha": "d497f8bf6698be810ecbf17a67fc11e40736c171",
+          "date": "2026-07-06T08:48:31Z",
+          "message": "Schedule: official Practice/Reading blocks are tap-to-add like personal free slots",
+          "url": "https://github.com/jsundram/AKM/commit/d497f8bf6698be810ecbf17a67fc11e40736c171"
+        },
+        {
+          "sha": "78640f6c066dc323bb994ccf1a3ba06cc2408a51",
+          "date": "2026-07-06T06:50:50Z",
+          "message": "Test: schedule-test sweeps every festival day (15/15); ignore local _*.html scratch",
+          "url": "https://github.com/jsundram/AKM/commit/78640f6c066dc323bb994ccf1a3ba06cc2408a51"
+        },
+        {
+          "sha": "40764e0c9d6c9a072e54d25a9b4e271ac3deb6ad",
+          "date": "2026-07-06T06:48:27Z",
+          "message": "generate rep per player online, don't need to regen roster column offline; remove rep column in roster sheet",
+          "url": "https://github.com/jsundram/AKM/commit/40764e0c9d6c9a072e54d25a9b4e271ac3deb6ad"
+        },
+        {
+          "sha": "e497d5b046d6c4406c3f6e0fd9491f6f6e75dd82",
+          "date": "2026-07-06T06:26:40Z",
+          "message": "Schedule: centre the selected day chip (today drifts off the right edge mid-festival)",
+          "url": "https://github.com/jsundram/AKM/commit/e497d5b046d6c4406c3f6e0fd9491f6f6e75dd82"
+        },
+        {
+          "sha": "bfa03fc4995b2cd5144285b5a7c28cf73628364c",
+          "date": "2026-07-06T01:10:56Z",
+          "message": "About: remove the duplicate Install section left from the move",
+          "url": "https://github.com/jsundram/AKM/commit/bfa03fc4995b2cd5144285b5a7c28cf73628364c"
+        },
+        {
+          "sha": "f691ebba402875262059586a44f0adc462d60ca1",
+          "date": "2026-07-06T01:10:26Z",
+          "message": "About: lead with Install; fix the privacy claims",
+          "url": "https://github.com/jsundram/AKM/commit/f691ebba402875262059586a44f0adc462d60ca1"
+        },
+        {
+          "sha": "79f8775aed871ee6a840f3aa4e9184f4d1c4313e",
+          "date": "2026-07-06T00:58:40Z",
+          "message": "Test: add a live schedule smoke test; make live tests skip-on-offline",
+          "url": "https://github.com/jsundram/AKM/commit/79f8775aed871ee6a840f3aa4e9184f4d1c4313e"
+        },
+        {
+          "sha": "6f8c74cbc23b95e004c87b995f5d895ba84fefac",
+          "date": "2026-07-06T00:49:47Z",
+          "message": "Schedule: build byGroup from the legacy prefix too, restoring the test suite",
+          "url": "https://github.com/jsundram/AKM/commit/6f8c74cbc23b95e004c87b995f5d895ba84fefac"
+        },
+        {
+          "sha": "e6ac5d33b377da693c4e1cae4745cc9443eaf16f",
+          "date": "2026-07-06T00:44:29Z",
+          "message": "Schedule: source each user's group\u2192piece from the Repertoire, not the roster prefix",
+          "url": "https://github.com/jsundram/AKM/commit/e6ac5d33b377da693c4e1cae4745cc9443eaf16f"
+        },
+        {
+          "sha": "515e4abf1795662c5e0d7d439f588d44712bfceb",
+          "date": "2026-07-06T00:22:45Z",
+          "message": "About: tighten the copy",
+          "url": "https://github.com/jsundram/AKM/commit/515e4abf1795662c5e0d7d439f588d44712bfceb"
+        },
+        {
+          "sha": "3e8657555bf92f84dbe3fdf4f02df38a766e9f99",
+          "date": "2026-07-06T00:21:52Z",
+          "message": "Roster: instrument/sort/type polish; split the two Obernosterer lodgings on the map",
+          "url": "https://github.com/jsundram/AKM/commit/3e8657555bf92f84dbe3fdf4f02df38a766e9f99"
+        },
+        {
+          "sha": "8d56c832800e4f9ba1cf4268d17954bd900767b0",
+          "date": "2026-07-05T23:40:57Z",
+          "message": "Roster: pieces as a bulleted list with co-player reveal; drop Notes + source link",
+          "url": "https://github.com/jsundram/AKM/commit/8d56c832800e4f9ba1cf4268d17954bd900767b0"
+        },
+        {
+          "sha": "cfe3d56c181fe290f940621fd6520c9242dba09d",
+          "date": "2026-07-05T23:38:51Z",
+          "message": "Network: drop the ALIAS table, tighten the resolver, surface unmatched",
+          "url": "https://github.com/jsundram/AKM/commit/cfe3d56c181fe290f940621fd6520c9242dba09d"
+        },
+        {
+          "sha": "3548fb83a56e20784991d5392d727d98aac0675f",
+          "date": "2026-07-05T23:29:45Z",
+          "message": "Network: drop the stale \"Steve\" alias (roster is now \"Steve Buck\")",
+          "url": "https://github.com/jsundram/AKM/commit/3548fb83a56e20784991d5392d727d98aac0675f"
+        },
+        {
+          "sha": "5dedea17495f1e6a35106e713c8222da00c4c315",
+          "date": "2026-07-05T23:22:26Z",
+          "message": "Network: resolve \"Preetcharn Saund\" + \"Steve\", fix blank-instrument sort test",
+          "url": "https://github.com/jsundram/AKM/commit/5dedea17495f1e6a35106e713c8222da00c4c315"
+        },
+        {
+          "sha": "6b7ed959ec831cefd15ea30a1b97ad7b0124f4ac",
+          "date": "2026-07-05T22:53:18Z",
+          "message": "Network: printable \"|\" key delimiter (drop the stray NUL bytes)",
+          "url": "https://github.com/jsundram/AKM/commit/6b7ed959ec831cefd15ea30a1b97ad7b0124f4ac"
+        },
+        {
+          "sha": "5be1882ec15bba3a209d70b01497e53632bf8218",
+          "date": "2026-07-05T22:42:56Z",
+          "message": "Network: parse the pieces sheet by header, not fixed column",
+          "url": "https://github.com/jsundram/AKM/commit/5be1882ec15bba3a209d70b01497e53632bf8218"
+        },
+        {
+          "sha": "1f40e02df23b229288b2a41c77247502f59b5744",
+          "date": "2026-07-04T18:20:16Z",
+          "message": "Add buildlog/: six-day build dashboard (hours, commits, code growth)",
+          "url": "https://github.com/jsundram/AKM/commit/1f40e02df23b229288b2a41c77247502f59b5744"
+        },
+        {
+          "sha": "ac893ef8eaa76beb9b0e358937df5d65df1cdf3b",
+          "date": "2026-07-04T12:24:30Z",
+          "message": "Bump SW to v57 (about.html changed after the v56 precache)",
+          "url": "https://github.com/jsundram/AKM/commit/ac893ef8eaa76beb9b0e358937df5d65df1cdf3b"
+        },
+        {
+          "sha": "f57237c51fbbf392b12d1c3dc53bc6f0f1838386",
+          "date": "2026-07-04T12:16:06Z",
+          "message": "About: rewrite in Jason's voice, add a CTA into the app",
+          "url": "https://github.com/jsundram/AKM/commit/f57237c51fbbf392b12d1c3dc53bc6f0f1838386"
+        },
+        {
+          "sha": "ca8c8c92277bc1574d09a30047da9669def98fb9",
+          "date": "2026-07-03T08:53:33Z",
+          "message": "Map: un-merge Akademie from Kultursaal \u2014 rename reconcile now idempotent",
+          "url": "https://github.com/jsundram/AKM/commit/ca8c8c92277bc1574d09a30047da9669def98fb9"
+        },
+        {
+          "sha": "9896d8dac7bd09508377d0feace88ac1b7da6135",
+          "date": "2026-07-03T08:47:10Z",
+          "message": "Map: split footprints match split pins; legend says \"lodging + food\"",
+          "url": "https://github.com/jsundram/AKM/commit/9896d8dac7bd09508377d0feace88ac1b7da6135"
+        },
+        {
+          "sha": "0008ec05905e6df076ea93497271a611a544217d",
+          "date": "2026-07-03T08:40:05Z",
+          "message": "Map: lodging footprints were black \u2014 selector typo",
+          "url": "https://github.com/jsundram/AKM/commit/0008ec05905e6df076ea93497271a611a544217d"
+        },
+        {
+          "sha": "b2b95d21b6b1e1e24c3eaae0d43dcd227dd58cc2",
+          "date": "2026-07-03T08:37:28Z",
+          "message": "Map: Akademie/Kultursaal relabel, split-role pins, readable legend",
+          "url": "https://github.com/jsundram/AKM/commit/b2b95d21b6b1e1e24c3eaae0d43dcd227dd58cc2"
+        },
+        {
+          "sha": "021ce875eb15c7200169c58efb77fe6aabf1a324",
+          "date": "2026-07-03T08:07:24Z",
+          "message": "No faculty-rehearsal CTAs; call out your unscheduled blocks instead",
+          "url": "https://github.com/jsundram/AKM/commit/021ce875eb15c7200169c58efb77fe6aabf1a324"
+        },
+        {
+          "sha": "e362f8089a3d999627b2628819b5d968a4a632fd",
+          "date": "2026-07-03T07:43:41Z",
+          "message": "Faculty rehearsals: only open (THEATRE/KS) + only when you're free",
+          "url": "https://github.com/jsundram/AKM/commit/e362f8089a3d999627b2628819b5d968a4a632fd"
+        },
+        {
+          "sha": "b34711d304bb1576ae14ebd760e692f8b2d1d489",
+          "date": "2026-07-03T06:22:32Z",
+          "message": "Parse the sheet's live curveballs: new rooms, mid-day faculty cells",
+          "url": "https://github.com/jsundram/AKM/commit/b34711d304bb1576ae14ebd760e692f8b2d1d489"
+        },
+        {
+          "sha": "35b4f5be88815b15071c70007b2131f3c68ab191",
+          "date": "2026-07-03T01:37:54Z",
+          "message": "About page, reached via the wordmark",
+          "url": "https://github.com/jsundram/AKM/commit/35b4f5be88815b15071c70007b2131f3c68ab191"
+        },
+        {
+          "sha": "39d81990bd41601668b22dad324581fc8a461828",
+          "date": "2026-07-03T01:15:23Z",
+          "message": "Multi-user: first-open picker, per-user day on every page",
+          "url": "https://github.com/jsundram/AKM/commit/39d81990bd41601668b22dad324581fc8a461828"
+        },
+        {
+          "sha": "6865e7bac2862750240a3157ae3278b3e85d53b8",
+          "date": "2026-07-02T23:14:06Z",
+          "message": "Personal events: brass \"just for me\" styling + tap-to-edit",
+          "url": "https://github.com/jsundram/AKM/commit/6865e7bac2862750240a3157ae3278b3e85d53b8"
+        },
+        {
+          "sha": "7c5e110ee58843a738c9abf3b78279d069575eff",
+          "date": "2026-07-02T07:32:18Z",
+          "message": "Schedule: recognize A3 as a room; alias it to Kultursaal on the map",
+          "url": "https://github.com/jsundram/AKM/commit/7c5e110ee58843a738c9abf3b78279d069575eff"
+        },
+        {
+          "sha": "48763705595acad742024dffce21befdf81a1a8a",
+          "date": "2026-07-02T07:06:09Z",
+          "message": "Schedule: stop the DAILY NOTES block from being parsed as dinners",
+          "url": "https://github.com/jsundram/AKM/commit/48763705595acad742024dffce21befdf81a1a8a"
+        }
+      ]
+    },
+    {
+      "name": "pwa-starter",
+      "html_url": "https://github.com/jsundram/pwa-starter",
+      "description": null,
+      "language": "JavaScript",
+      "pushed_at": "2026-07-22T05:47:17Z",
+      "commit_count": 20,
+      "commits": [
+        {
+          "sha": "adf8ed2efcb8c00c9a9cbfa7fca5b2eb06f61ec6",
+          "date": "2026-07-22T05:47:15Z",
+          "message": "Analytics: GoatCounter is the fleet default; the sheet-ping is the known-audience exception",
+          "url": "https://github.com/jsundram/pwa-starter/commit/adf8ed2efcb8c00c9a9cbfa7fca5b2eb06f61ec6"
+        },
+        {
+          "sha": "8d54c4814dcb80669f9aaefe7c0d853ecfa8b041",
+          "date": "2026-07-22T04:53:33Z",
+          "message": "Cut applyUpdate()'s dead focus restore; document what the #6 review proved",
+          "url": "https://github.com/jsundram/pwa-starter/commit/8d54c4814dcb80669f9aaefe7c0d853ecfa8b041"
+        },
+        {
+          "sha": "22048896b1909006d71d04753be76f1604a5f581",
+          "date": "2026-07-20T08:36:33Z",
+          "message": "Restrict stamping to whole-file copies; revert three bad stamps",
+          "url": "https://github.com/jsundram/pwa-starter/commit/22048896b1909006d71d04753be76f1604a5f581"
+        },
+        {
+          "sha": "7d7682f45adaf1ab01d157768f2ed7fe405447dd",
+          "date": "2026-07-20T08:32:26Z",
+          "message": "Record quartet-log as a known non-copy, not a downstream repo",
+          "url": "https://github.com/jsundram/pwa-starter/commit/7d7682f45adaf1ab01d157768f2ed7fe405447dd"
+        },
+        {
+          "sha": "f69a2d10735f14dc69079cb87e187f58f194b75e",
+          "date": "2026-07-20T08:30:56Z",
+          "message": "Key PROPAGATE notes by (file, sha), not sha alone",
+          "url": "https://github.com/jsundram/pwa-starter/commit/f69a2d10735f14dc69079cb87e187f58f194b75e"
+        },
+        {
+          "sha": "b79d99ca208d964d427faf364d2fac698dcaf925",
+          "date": "2026-07-20T08:29:53Z",
+          "message": "Add --at to the stamper; document two-way flow",
+          "url": "https://github.com/jsundram/pwa-starter/commit/b79d99ca208d964d427faf364d2fac698dcaf925"
+        },
+        {
+          "sha": "b143d4a03fa27cd1b144989f27f1e5c00be54543",
+          "date": "2026-07-20T08:21:10Z",
+          "message": "Track downstream copies; document the fixes and the CDN gap",
+          "url": "https://github.com/jsundram/pwa-starter/commit/b143d4a03fa27cd1b144989f27f1e5c00be54543"
+        },
+        {
+          "sha": "ddd9ab806b060048700c56cb1f228c90ee315890",
+          "date": "2026-07-20T08:20:28Z",
+          "message": "Refuse empty payloads, paint from cache first, repaint gently",
+          "url": "https://github.com/jsundram/pwa-starter/commit/ddd9ab806b060048700c56cb1f228c90ee315890"
+        },
+        {
+          "sha": "e88a743e6eb34168ff7edabd63e5f8f4462c070d",
+          "date": "2026-07-20T08:20:09Z",
+          "message": "Serve same-origin .json stale-while-revalidate, not network-first",
+          "url": "https://github.com/jsundram/pwa-starter/commit/e88a743e6eb34168ff7edabd63e5f8f4462c070d"
+        },
+        {
+          "sha": "2ed87e9a5e130cf5b9542b06b5e23a08cf5727cf",
+          "date": "2026-07-20T08:19:57Z",
+          "message": "Gate service-worker cache writes on resp.ok",
+          "url": "https://github.com/jsundram/pwa-starter/commit/2ed87e9a5e130cf5b9542b06b5e23a08cf5727cf"
+        },
+        {
+          "sha": "bd16c2169de40e0959fde940b8e095ba74a58abd",
+          "date": "2026-07-15T21:54:51Z",
+          "message": "Add gallery-deck as the boundary-case reference app",
+          "url": "https://github.com/jsundram/pwa-starter/commit/bd16c2169de40e0959fde940b8e095ba74a58abd"
+        },
+        {
+          "sha": "9cb4c7f262c92843cfae13bbcf2473ad8c3d4fca",
+          "date": "2026-07-15T06:33:48Z",
+          "message": "Reconcile README wtq row with CLAUDE.md offline audit",
+          "url": "https://github.com/jsundram/pwa-starter/commit/9cb4c7f262c92843cfae13bbcf2473ad8c3d4fca"
+        },
+        {
+          "sha": "c82e0eeca8e0d4f141b8071371f97494920769fb",
+          "date": "2026-07-15T06:33:26Z",
+          "message": "Merge wtq/internet/AKM pattern audit into CLAUDE.md",
+          "url": "https://github.com/jsundram/pwa-starter/commit/c82e0eeca8e0d4f141b8071371f97494920769fb"
+        },
+        {
+          "sha": "6e91d95c0817835d5520cd110d2016a7f3ad99a5",
+          "date": "2026-07-15T06:33:26Z",
+          "message": "Merge citation Sources table into README",
+          "url": "https://github.com/jsundram/pwa-starter/commit/6e91d95c0817835d5520cd110d2016a7f3ad99a5"
+        },
+        {
+          "sha": "814b8dd4ae02f42ab45ad006fedf3888a9082b4c",
+          "date": "2026-07-14T19:00:03Z",
+          "message": "Ship the build-toolchain setup script + document dependencies",
+          "url": "https://github.com/jsundram/pwa-starter/commit/814b8dd4ae02f42ab45ad006fedf3888a9082b4c"
+        },
+        {
+          "sha": "08eefba26f2751e946d71387423d87f094d88f67",
+          "date": "2026-07-14T18:59:49Z",
+          "message": "Enforce OG share-card size + document the touch hover\u2192tap fallback",
+          "url": "https://github.com/jsundram/pwa-starter/commit/08eefba26f2751e946d71387423d87f094d88f67"
+        },
+        {
+          "sha": "c2b4d180e8b0f127f09a707a91f5ba5e024d2efc",
+          "date": "2026-07-14T18:16:48Z",
+          "message": "sw.js: never intercept/cache the SW's own script (fixes #2)",
+          "url": "https://github.com/jsundram/pwa-starter/commit/c2b4d180e8b0f127f09a707a91f5ba5e024d2efc"
+        },
+        {
+          "sha": "1284e7e9341017948c18eb4d1c155e3940187db0",
+          "date": "2026-07-14T17:48:56Z",
+          "message": "Fold five patterns from the quartet-log audit into the skeleton (#1)",
+          "url": "https://github.com/jsundram/pwa-starter/commit/1284e7e9341017948c18eb4d1c155e3940187db0"
+        },
+        {
+          "sha": "16eadab643c650c99fb593d14a0729904ae2b727",
+          "date": "2026-07-14T04:19:59Z",
+          "message": "Generate placeholder icons + share card",
+          "url": "https://github.com/jsundram/pwa-starter/commit/16eadab643c650c99fb593d14a0729904ae2b727"
+        },
+        {
+          "sha": "b928fbc24dd9f1b90daefcce2d8dbf7e167ad46c",
+          "date": "2026-07-12T14:17:51Z",
+          "message": "pwa-starter: opinionated skeleton + checklist for small static PWAs",
+          "url": "https://github.com/jsundram/pwa-starter/commit/b928fbc24dd9f1b90daefcce2d8dbf7e167ad46c"
+        }
+      ]
+    },
+    {
+      "name": "somerville-typemap",
+      "html_url": "https://github.com/jsundram/somerville-typemap",
+      "description": "Typographic map of Somerville, MA \u2014 every feature rendered as text",
+      "language": "HTML",
+      "pushed_at": "2026-07-22T22:45:12Z",
+      "commit_count": 17,
+      "commits": [
+        {
+          "sha": "25069b314a7af576e169f7c9f0a78e49ef36cfa1",
+          "date": "2026-07-22T22:41:44Z",
+          "message": "Merge warp iteration notes (user-driven experiment)",
+          "url": "https://github.com/jsundram/somerville-typemap/commit/25069b314a7af576e169f7c9f0a78e49ef36cfa1"
+        },
+        {
+          "sha": "c66f8135a0302a2cd2378dd7d20a8ce2de24d2e9",
+          "date": "2026-07-22T22:41:44Z",
+          "message": "warp: de-skew glyphs, trim tuning, HILLSIDE split scaffold (user iteration)",
+          "url": "https://github.com/jsundram/somerville-typemap/commit/c66f8135a0302a2cd2378dd7d20a8ce2de24d2e9"
+        },
+        {
+          "sha": "87e1e5ef92833c508434075dd4387f453933787c",
+          "date": "2026-07-22T22:38:26Z",
+          "message": "Merge feat/typographic-engine: engine, data pipeline, layers, experiments",
+          "url": "https://github.com/jsundram/somerville-typemap/commit/87e1e5ef92833c508434075dd4387f453933787c"
+        },
+        {
+          "sha": "6e91eca5a797a50ad81d7e78b33cb886044e12d1",
+          "date": "2026-07-22T22:38:26Z",
+          "message": "CLAUDE.md working notes + README layout refresh",
+          "url": "https://github.com/jsundram/somerville-typemap/commit/6e91eca5a797a50ad81d7e78b33cb886044e12d1"
+        },
+        {
+          "sha": "681ffb0e30092ed991f40cccbae388986418a264",
+          "date": "2026-07-22T19:30:44Z",
+          "message": "Split boundaries into lines (L7) + annotations (L8); alignment loop",
+          "url": "https://github.com/jsundram/somerville-typemap/commit/681ffb0e30092ed991f40cccbae388986418a264"
+        },
+        {
+          "sha": "095a6989d4cb20993bf8fabeac8afa82473ae697",
+          "date": "2026-07-22T19:06:04Z",
+          "message": "Boundaries audit pass vs basemap; viewer defaults to basemap+boundaries+transit",
+          "url": "https://github.com/jsundram/somerville-typemap/commit/095a6989d4cb20993bf8fabeac8afa82473ae697"
+        },
+        {
+          "sha": "6c814a220c99ef527f47be36e1edf31704e8367a",
+          "date": "2026-07-22T18:45:21Z",
+          "message": "Boundaries layer precision pass",
+          "url": "https://github.com/jsundram/somerville-typemap/commit/6c814a220c99ef527f47be36e1edf31704e8367a"
+        },
+        {
+          "sha": "5d8dfcf595079673508f615f8fcde81a024e8fcc",
+          "date": "2026-07-22T18:17:14Z",
+          "message": "Border polish: flat-cap clips, piecewise classification, path>rail, abbreviations",
+          "url": "https://github.com/jsundram/somerville-typemap/commit/5d8dfcf595079673508f615f8fcde81a024e8fcc"
+        },
+        {
+          "sha": "ed14953f1deaff24c47e9c1119a2c1c9ee0924b8",
+          "date": "2026-07-22T17:53:19Z",
+          "message": "Route relations, culvert filtering, borders stroke real feature geometry",
+          "url": "https://github.com/jsundram/somerville-typemap/commit/ed14953f1deaff24c47e9c1119a2c1c9ee0924b8"
+        },
+        {
+          "sha": "b7269a43f34f685df21e84cc1205ad7347ec3aab",
+          "date": "2026-07-22T17:39:28Z",
+          "message": "Path through Davis, exterior border classification, warp steering doc",
+          "url": "https://github.com/jsundram/somerville-typemap/commit/b7269a43f34f685df21e84cc1205ad7347ec3aab"
+        },
+        {
+          "sha": "38c6c379ef4db7dd5232f7d38f28e5cc155627d1",
+          "date": "2026-07-22T17:26:33Z",
+          "message": "Border demarcation, path continuations, warp sub-problem harness",
+          "url": "https://github.com/jsundram/somerville-typemap/commit/38c6c379ef4db7dd5232f7d38f28e5cc155627d1"
+        },
+        {
+          "sha": "d87b73312b5150eb365aa3297d76b500d55724ca",
+          "date": "2026-07-22T17:01:45Z",
+          "message": "Boundaries layer, adjacency-aware coloring, text dedupe, crammed heroes",
+          "url": "https://github.com/jsundram/somerville-typemap/commit/d87b73312b5150eb365aa3297d76b500d55724ca"
+        },
+        {
+          "sha": "05d477a0c43904c8497663f0add47f0bde5024c3",
+          "date": "2026-07-22T08:31:06Z",
+          "message": "Layered rendering, fitted heroes, adjacent towns, toggleable viewer",
+          "url": "https://github.com/jsundram/somerville-typemap/commit/05d477a0c43904c8497663f0add47f0bde5024c3"
+        },
+        {
+          "sha": "39a6e8336900b4431cda0dc1a501ceb63fd39fa4",
+          "date": "2026-07-22T08:12:07Z",
+          "message": "Full Somerville assembly: render_map.py",
+          "url": "https://github.com/jsundram/somerville-typemap/commit/39a6e8336900b4431cda0dc1a501ceb63fd39fa4"
+        },
+        {
+          "sha": "4ba9c489a7d34eabad1f5cd4b4f5066775636d9e",
+          "date": "2026-07-22T08:05:20Z",
+          "message": "Data layer: official city neighborhoods + network-tolerant Overpass fetch",
+          "url": "https://github.com/jsundram/somerville-typemap/commit/4ba9c489a7d34eabad1f5cd4b4f5066775636d9e"
+        },
+        {
+          "sha": "2b82b2ffe7f722b285687f30e95aec0735131dc2",
+          "date": "2026-07-22T07:59:18Z",
+          "message": "Typographic fill engine + proving fixture",
+          "url": "https://github.com/jsundram/somerville-typemap/commit/2b82b2ffe7f722b285687f30e95aec0735131dc2"
+        },
+        {
+          "sha": "99234a82362b95ecf9ee6c613cd7306158c12874",
+          "date": "2026-07-22T07:53:25Z",
+          "message": "Scaffold: README with vision, data sources, and licensing notes",
+          "url": "https://github.com/jsundram/somerville-typemap/commit/99234a82362b95ecf9ee6c613cd7306158c12874"
+        }
+      ]
+    },
+    {
+      "name": "haydn-info-card",
+      "html_url": "https://github.com/jsundram/haydn-info-card",
+      "description": "code and data to generate the Haydn Quartet Info Card",
+      "language": "Python",
+      "pushed_at": "2026-07-23T16:51:13Z",
+      "commit_count": 15,
+      "commits": [
+        {
+          "sha": "8a561a60ad222acad59fc80581cb7cfbb23e27a6",
+          "date": "2026-07-23T16:51:01Z",
+          "message": "Bump SW cache to haydn-v8 so installed clients pick up the new icons",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/8a561a60ad222acad59fc80581cb7cfbb23e27a6"
+        },
+        {
+          "sha": "0cb307f36fa5a9e1521000e579d247f8c531da44",
+          "date": "2026-07-23T16:50:47Z",
+          "message": "Merge icon harmonization with Boccherini sibling icon",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/0cb307f36fa5a9e1521000e579d247f8c531da44"
+        },
+        {
+          "sha": "113a49956a11e93e72164d1fa9d0b0564007e1a1",
+          "date": "2026-07-22T17:29:48Z",
+          "message": "PWA: navigate in place for Spotify links, no leftover in-app sheet",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/113a49956a11e93e72164d1fa9d0b0564007e1a1"
+        },
+        {
+          "sha": "101ffcb868f6eb68124f2af3b1cd61141880e5a9",
+          "date": "2026-07-22T17:29:29Z",
+          "message": "Fix mobile phantom scroll for real: html overflow + tooltip anchor",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/101ffcb868f6eb68124f2af3b1cd61141880e5a9"
+        },
+        {
+          "sha": "5e1658b32327b312afaee67946b49cf87ae373b9",
+          "date": "2026-07-22T05:09:17Z",
+          "message": "Stamp app.js with pwa-starter provenance (@ 8d54c48)",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/5e1658b32327b312afaee67946b49cf87ae373b9"
+        },
+        {
+          "sha": "ab307348c9e57ab940322e88132a42b08a2ebea2",
+          "date": "2026-07-22T05:05:58Z",
+          "message": "Serve opera.json stale-while-revalidate, not network-first (pwa-starter e88a743)",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/ab307348c9e57ab940322e88132a42b08a2ebea2"
+        },
+        {
+          "sha": "032148839ca4f330e82638bda2fca206efa2da9c",
+          "date": "2026-07-22T05:05:28Z",
+          "message": "Movement-bar fills reference CSS vars instead of frozen snapshots",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/032148839ca4f330e82638bda2fca206efa2da9c"
+        },
+        {
+          "sha": "9b7d7ca91b34ac213389b8b2fb82f148a0879ef8",
+          "date": "2026-07-22T04:12:41Z",
+          "message": "Sync sw.js hardening from pwa-starter: gate cache writes, serve cache on 4xx/5xx (bump to v3)",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/9b7d7ca91b34ac213389b8b2fb82f148a0879ef8"
+        },
+        {
+          "sha": "3ef0cc337492cabb9fb8e6792b05107c559009dc",
+          "date": "2026-07-22T04:10:01Z",
+          "message": "Fix touch double-fire on movement bars; align touch detection with CSS",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/3ef0cc337492cabb9fb8e6792b05107c559009dc"
+        },
+        {
+          "sha": "dcc61889863175be205e62a7e1a17d6defb88ded",
+          "date": "2026-07-14T20:01:30Z",
+          "message": "Fix mobile card scrolling past content bottom",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/dcc61889863175be205e62a7e1a17d6defb88ded"
+        },
+        {
+          "sha": "596aa41af8c4c5695b2d89df514fca4e8c5a63b8",
+          "date": "2026-07-14T18:44:34Z",
+          "message": "Add PWA install + offline support (manifest, service worker, cache-bust guard)",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/596aa41af8c4c5695b2d89df514fca4e8c5a63b8"
+        },
+        {
+          "sha": "28a9561c42d73a8ecc1e93d6342a3cfd21c9398a",
+          "date": "2026-07-14T18:32:36Z",
+          "message": "update readme with goatcounter link",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/28a9561c42d73a8ecc1e93d6342a3cfd21c9398a"
+        },
+        {
+          "sha": "4ca31e9420d0fe2fb03801854d02b1cc395988a1",
+          "date": "2026-07-04T12:38:55Z",
+          "message": "Recolor site icons to Opus 33 cyan; round the apple-touch corners",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/4ca31e9420d0fe2fb03801854d02b1cc395988a1"
+        },
+        {
+          "sha": "9bb767c13784a91f38b4194d7c752d626400a5f9",
+          "date": "2026-07-04T12:34:41Z",
+          "message": "Harden link previews: compress OG images, add favicons + meta polish",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/9bb767c13784a91f38b4194d7c752d626400a5f9"
+        },
+        {
+          "sha": "d4ccccdd9c81dc10e590f49996481748ffaea0be",
+          "date": "2026-07-04T12:25:03Z",
+          "message": "Add GoatCounter analytics to web pages",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/d4ccccdd9c81dc10e590f49996481748ffaea0be"
+        }
+      ]
+    },
+    {
+      "name": "quartets.boccherini.org",
+      "html_url": "https://github.com/jsundram/quartets.boccherini.org",
+      "description": "Interactive periodic table visualization of Boccherini's 91 string quartets",
+      "language": "HTML",
+      "pushed_at": "2026-07-23T07:40:43Z",
+      "commit_count": 10,
+      "commits": [
+        {
+          "sha": "a89e5eb2f4ed3ee2d461e0b69aee9df33228bd6d",
+          "date": "2026-07-22T17:22:17Z",
+          "message": "Port haydn mobile/PWA fixes; fix two deeper scroll bugs; clean Spotify taps",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/a89e5eb2f4ed3ee2d461e0b69aee9df33228bd6d"
+        },
+        {
+          "sha": "dac1baed75c8f40c4410d9777810a019c4c3f97a",
+          "date": "2026-07-22T06:11:44Z",
+          "message": "Point GoatCounter at per-site boccherini-periodic-table dashboard",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/dac1baed75c8f40c4410d9777810a019c4c3f97a"
+        },
+        {
+          "sha": "1d54e38d12e636f7ce1c234398d6ab0ffb15af59",
+          "date": "2026-07-22T05:59:57Z",
+          "message": "Add GoatCounter analytics (cookieless, async, offline-silent)",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/1d54e38d12e636f7ce1c234398d6ab0ffb15af59"
+        },
+        {
+          "sha": "5f0bf046cbc25aac8a48e30811a4d007375801d8",
+          "date": "2026-07-22T05:24:18Z",
+          "message": "Advance pwa-starter provenance stamp to 8d54c48",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/5f0bf046cbc25aac8a48e30811a4d007375801d8"
+        },
+        {
+          "sha": "58decc4e1c5f36ebd0620fdde49927f848c1c3c1",
+          "date": "2026-07-22T05:08:32Z",
+          "message": "Serve boot-time .json stale-while-revalidate, not network-first (fixes #23)",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/58decc4e1c5f36ebd0620fdde49927f848c1c3c1"
+        },
+        {
+          "sha": "f0ad3f3f21e32162b805c18f37e9248f377b4c3a",
+          "date": "2026-07-22T04:49:58Z",
+          "message": "Make nicknames legible: 0.75em, drop quotes (fixes #15)",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/f0ad3f3f21e32162b805c18f37e9248f377b4c3a"
+        },
+        {
+          "sha": "d72c20d896f2a82bec6e5c2e0c44a5c2d020bf2d",
+          "date": "2026-07-22T04:15:58Z",
+          "message": "Movement bar fills reference CSS vars instead of frozen snapshots (#19)",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/d72c20d896f2a82bec6e5c2e0c44a5c2d020bf2d"
+        },
+        {
+          "sha": "b7510e3d4b506741b725c6c7349a451e7b119838",
+          "date": "2026-07-22T03:54:43Z",
+          "message": "PWA: installable + offline + link previews (reconciles #18 and #20) (#21)",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/b7510e3d4b506741b725c6c7349a451e7b119838"
+        },
+        {
+          "sha": "dedf2963d46e20eaa1e109515dde6700d655fefa",
+          "date": "2026-07-22T03:51:48Z",
+          "message": "Refresh iPad/iPhone visual baselines for WebKit 26.5 (#22)",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/dedf2963d46e20eaa1e109515dde6700d655fefa"
+        },
+        {
+          "sha": "e14ea1f1d89c9444c630a5797c77b00ef8b92450",
+          "date": "2026-07-22T03:34:39Z",
+          "message": "Add SessionStart hook for Claude Code web environments (#11)",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/e14ea1f1d89c9444c630a5797c77b00ef8b92450"
+        }
+      ]
+    },
+    {
+      "name": "quartet-log",
+      "html_url": "https://github.com/jsundram/quartet-log",
+      "description": "code for log.quartetroulette.com",
+      "language": "JavaScript",
+      "pushed_at": "2026-07-22T19:49:18Z",
+      "commit_count": 8,
+      "commits": [
+        {
+          "sha": "a83c8854368ea9911a5e43ffe738e92e80d9c0cb",
+          "date": "2026-07-22T19:49:16Z",
+          "message": "Add fullscreen vertical calendar mode for mobile",
+          "url": "https://github.com/jsundram/quartet-log/commit/a83c8854368ea9911a5e43ffe738e92e80d9c0cb"
+        },
+        {
+          "sha": "a14d1c9b36568910ee2b09533c185395f3a54fa7",
+          "date": "2026-07-22T18:22:47Z",
+          "message": "Serve dev builds through a no-store proxy",
+          "url": "https://github.com/jsundram/quartet-log/commit/a14d1c9b36568910ee2b09533c185395f3a54fa7"
+        },
+        {
+          "sha": "64ac3bb9b2234d85fcc7960e75088f8970e95efd",
+          "date": "2026-07-22T18:22:38Z",
+          "message": "Enable network-graph fullscreen on mobile",
+          "url": "https://github.com/jsundram/quartet-log/commit/64ac3bb9b2234d85fcc7960e75088f8970e95efd"
+        },
+        {
+          "sha": "0e7002eb51d1053f8fd5145b68cbd1b4fb18145e",
+          "date": "2026-07-22T18:22:31Z",
+          "message": "Add aggregate stat tiles to the dashboard",
+          "url": "https://github.com/jsundram/quartet-log/commit/0e7002eb51d1053f8fd5145b68cbd1b4fb18145e"
+        },
+        {
+          "sha": "01f14f1b3c3cea183e575c3f53119bbfff4e62c3",
+          "date": "2026-07-22T06:13:01Z",
+          "message": "Add GoatCounter analytics with anonymous per-user split",
+          "url": "https://github.com/jsundram/quartet-log/commit/01f14f1b3c3cea183e575c3f53119bbfff4e62c3"
+        },
+        {
+          "sha": "fd71bde6c05fd9093020dd25093c7084b3a707b2",
+          "date": "2026-07-20T06:50:35Z",
+          "message": "Reject empty fetch responses instead of caching them",
+          "url": "https://github.com/jsundram/quartet-log/commit/fd71bde6c05fd9093020dd25093c7084b3a707b2"
+        },
+        {
+          "sha": "3e6825db1dacc871bd9f7a15497096635491f2e9",
+          "date": "2026-07-14T18:12:55Z",
+          "message": "Add tap-to-update version row to the offline shell",
+          "url": "https://github.com/jsundram/quartet-log/commit/3e6825db1dacc871bd9f7a15497096635491f2e9"
+        },
+        {
+          "sha": "eab9fc0c383d5e22c0c0b29a41f402f4ab7dd85d",
+          "date": "2026-07-14T17:49:08Z",
+          "message": "Add offline service worker and fix the web app manifest (#1)",
+          "url": "https://github.com/jsundram/quartet-log/commit/eab9fc0c383d5e22c0c0b29a41f402f4ab7dd85d"
+        }
+      ]
+    },
+    {
+      "name": "boccherini-sampler",
+      "html_url": "https://github.com/jsundram/boccherini-sampler",
+      "description": null,
+      "language": "Python",
+      "pushed_at": "2026-07-18T16:08:11Z",
+      "commit_count": 8,
+      "commits": [
+        {
+          "sha": "6cb519722d5ede93f2640c10a855ac44169b3369",
+          "date": "2026-07-18T16:07:33Z",
+          "message": "Add plan.md + editions.json schema and example (data<->sampler contract)",
+          "url": "https://github.com/jsundram/boccherini-sampler/commit/6cb519722d5ede93f2640c10a855ac44169b3369"
+        },
+        {
+          "sha": "072030199c8ad80d534e4fb026ad2b28dbaca128",
+          "date": "2026-07-18T15:09:23Z",
+          "message": "Make bundle splits self-verifying so truncation fails the build",
+          "url": "https://github.com/jsundram/boccherini-sampler/commit/072030199c8ad80d534e4fb026ad2b28dbaca128"
+        },
+        {
+          "sha": "933292d96fccee9d7ee78e5eebe539e353c72b1c",
+          "date": "2026-07-18T06:32:51Z",
+          "message": "Fix: Op.33/5 Violin II was missing its 3rd page",
+          "url": "https://github.com/jsundram/boccherini-sampler/commit/933292d96fccee9d7ee78e5eebe539e353c72b1c"
+        },
+        {
+          "sha": "1d9147d975ac53e205c40b82d5ae30205fcb34f5",
+          "date": "2026-07-18T00:14:46Z",
+          "message": "Make the QR page URL (and code) clickable for tablet viewing",
+          "url": "https://github.com/jsundram/boccherini-sampler/commit/1d9147d975ac53e205c40b82d5ae30205fcb34f5"
+        },
+        {
+          "sha": "78382f77b58520a2281e80aafe9379cbce88abac",
+          "date": "2026-07-18T00:12:44Z",
+          "message": "Add share card (OG/Twitter meta) + favicon and theme-color",
+          "url": "https://github.com/jsundram/boccherini-sampler/commit/78382f77b58520a2281e80aafe9379cbce88abac"
+        },
+        {
+          "sha": "d761f760eb84f99fac028e832c70a1642142faae",
+          "date": "2026-07-18T00:08:47Z",
+          "message": "Add cello difficulty to group tables; keep QR URL on one line",
+          "url": "https://github.com/jsundram/boccherini-sampler/commit/d761f760eb84f99fac028e832c70a1642142faae"
+        },
+        {
+          "sha": "8e25c5c8c0079aff992d9133b775c609bc95ef79",
+          "date": "2026-07-17T23:46:43Z",
+          "message": "Add QR page, floating banner, difficulty link, and bonus quartets",
+          "url": "https://github.com/jsundram/boccherini-sampler/commit/8e25c5c8c0079aff992d9133b775c609bc95ef79"
+        },
+        {
+          "sha": "fdf09d3da8306934f203c606db3e9c174347e4ca",
+          "date": "2026-07-17T23:30:57Z",
+          "message": "Boccherini sampler: two-group part bundles + download page",
+          "url": "https://github.com/jsundram/boccherini-sampler/commit/fdf09d3da8306934f203c606db3e9c174347e4ca"
+        }
+      ]
+    },
+    {
+      "name": "spotify-tile",
+      "html_url": "https://github.com/jsundram/spotify-tile",
+      "description": null,
+      "language": "Python",
+      "pushed_at": "2026-07-24T20:31:11Z",
+      "commit_count": 5,
+      "commits": [
+        {
+          "sha": "84d8ab45be8f822e172ec2efd3218082f849d28d",
+          "date": "2026-07-24T19:05:36Z",
+          "message": "Render story text as HarfBuzz-shaped outline paths",
+          "url": "https://github.com/jsundram/spotify-tile/commit/84d8ab45be8f822e172ec2efd3218082f849d28d"
+        },
+        {
+          "sha": "fae95ba62f05e676ee405f37f49a93be3d9d7078",
+          "date": "2026-07-24T18:55:40Z",
+          "message": "Handle composer-prefixed titles and period-less movements",
+          "url": "https://github.com/jsundram/spotify-tile/commit/fae95ba62f05e676ee405f37f49a93be3d9d7078"
+        },
+        {
+          "sha": "38e5637ac20ca3ad7590b9c328ad14a70a40bc54",
+          "date": "2026-07-24T18:00:17Z",
+          "message": "Add Instagram-story generator for rendered tracks",
+          "url": "https://github.com/jsundram/spotify-tile/commit/38e5637ac20ca3ad7590b9c328ad14a70a40bc54"
+        },
+        {
+          "sha": "9678494065d9c28e2e2d49845cd1401c3e9f323a",
+          "date": "2026-07-24T17:04:29Z",
+          "message": "link to sources",
+          "url": "https://github.com/jsundram/spotify-tile/commit/9678494065d9c28e2e2d49845cd1401c3e9f323a"
+        },
+        {
+          "sha": "3398beaf61b11a8518b0fd599d26e0c42dcb045c",
+          "date": "2026-07-24T16:57:16Z",
+          "message": "Initial commit: geomusic \u2014 (Geo) Musical Configurations reimplementation",
+          "url": "https://github.com/jsundram/spotify-tile/commit/3398beaf61b11a8518b0fd599d26e0c42dcb045c"
+        }
+      ]
+    },
+    {
+      "name": "quartet-chooser",
+      "html_url": "https://github.com/jsundram/quartet-chooser",
+      "description": "The code behind Quartet Roulette (https://quartetroulette.com)",
+      "language": "Python",
+      "pushed_at": "2026-07-24T08:14:40Z",
+      "commit_count": 2,
+      "commits": [
+        {
+          "sha": "29ec4ad6ae697a5e57b5ae44657772d457ed2404",
+          "date": "2026-07-24T07:54:06Z",
+          "message": "Pin Node to 18.x (.nvmrc + engines)",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/29ec4ad6ae697a5e57b5ae44657772d457ed2404"
+        },
+        {
+          "sha": "4d3a2e9b3c17e34eab5729ade9ba9cb3509f07c2",
+          "date": "2026-07-24T07:37:38Z",
+          "message": "Security fixes: got SSRF override, GA removal, Dependabot config",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/4d3a2e9b3c17e34eab5729ade9ba9cb3509f07c2"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Only public repositories owned by the user are included.",
+    "Commit author matching can miss alternate or unlinked email identities.",
+    "Merge and coauthored commits are retained; interpret counts with care."
+  ]
+}

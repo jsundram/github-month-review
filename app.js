@@ -289,9 +289,29 @@
     return `${head}–${tail}, ${ey}`;
   }
 
+  // Scrapers read the static <head>; this refreshes it for anything that runs JS — the browser tab,
+  // a bookmark, and clients that render before scraping. Only rewrites tags already in the HTML
+  // (never appends), and the og:image stays the one static card.
+  function setMeta(selector, attr, value) {
+    const node = document.querySelector(selector);
+    if (node) node.setAttribute(attr, value);
+  }
+
+  function updateHead(month) {
+    const title = `${month.label} — GitHub review — ${index.user}`;
+    const desc = month.lede || `${index.user}'s public GitHub work — ${month.label}.`;
+    document.title = title;
+    setMeta('meta[name="description"]', 'content', desc);
+    setMeta('meta[property="og:title"]', 'content', title);
+    setMeta('meta[property="og:description"]', 'content', desc);
+    setMeta('meta[name="twitter:title"]', 'content', title);
+    setMeta('meta[name="twitter:description"]', 'content', desc);
+    if (index.site) setMeta('meta[property="og:url"]', 'content', `${index.site}#${month.id}`);
+  }
+
   function render(month) {
     current = month;
-    document.title = `${month.label} — GitHub review — ${index.user}`;
+    updateHead(month);
     renderHero(month);
     renderMetrics(month);
     observeWeeks(renderWeeks(month));

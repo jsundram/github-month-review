@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <!-- 1200x630 share card. Source only — the <head> references the rasterised og.png (absolute https
+       URL); regenerate it with scripts/make-og.sh after editing this. Echoes the hero: ink field, a
+       faint grid, thin orbit rings, and the accent disc bleeding off the bottom-right corner. -->
+  <defs>
+    <pattern id="grid" width="58" height="58" patternUnits="userSpaceOnUse">
+      <path d="M58 0H0V58" fill="none" stroke="#ffffff" stroke-opacity=".055" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="fademask"><rect width="1200" height="630" fill="url(#fade)"/></mask>
+    <clipPath id="frame"><rect width="1200" height="630"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="630" fill="#171918"/>
+    <rect width="1200" height="630" fill="url(#grid)" mask="url(#fademask)"/>
+    <circle cx="1170" cy="720" r="300" fill="#ef6045"/>
+    <circle cx="1120" cy="150" r="330" fill="none" stroke="#ffffff" stroke-opacity=".14" stroke-width="2"/>
+    <circle cx="1150" cy="250" r="210" fill="none" stroke="#ffffff" stroke-opacity=".14" stroke-width="2"/>
+
+    <text x="80" y="120" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif"
+          font-size="24" font-weight="800" letter-spacing="6" fill="#fffdf7" fill-opacity=".72">JS · GITHUB REVIEW</text>
+
+    <text x="76" y="330" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif"
+          font-size="118" font-weight="800" letter-spacing="-2" fill="#fffdf7">The month</text>
+    <text x="76" y="452" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif"
+          font-size="118" font-weight="800" letter-spacing="-2" fill="#fffdf7">in review.</text>
+
+    <rect x="80" y="500" width="120" height="6" rx="3" fill="#ef6045"/>
+    <text x="80" y="556" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif"
+          font-size="30" font-weight="400" fill="#c9c7c0">Public GitHub work, one narrative per week — quiet weeks included.</text>
+  </g>
+</svg>

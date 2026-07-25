@@ -23,9 +23,19 @@ data/months/*.js    window.REVIEW_MONTHS["YYYY-MM"] — one month, loaded on dem
 data/raw/*.json     GitHub snapshots (generated, never hand-edited)
 drafts/*.md         per-month interviews, answers, and pending-commit reports
 drafts/*.json       provenance: the facts each narrative was written against
-scripts/            fetch, draft, test, screenshot
+scripts/            fetch, draft, test, screenshot, and the icon/OG rasterizers
+assets/             favicon + og.png share card; PNGs are generated, never hand-edited
 shots/              Playwright output (regenerated, safe to delete)
 ```
+
+**Link previews.** The `<head>` carries Open Graph / Twitter Card tags (adopted from `pwa-starter`)
+so a pasted URL previews as a card. `assets/icon.svg` and `assets/og.svg` are the sources; the PNGs
+come from `scripts/make-icons.sh` / `scripts/make-og.sh` — edit the SVG and rerun, never hand-edit a
+PNG. The card must stay a raster at an absolute URL and under the size gate in `make-og.sh` (a too-big
+card scrapes as a grey box); `og-lint.py` re-checks it at commit time. The static tags are what a
+scraper sees; `render()` refreshes title/description/`og:url` per month via `updateHead()`, only ever
+rewriting tags already in the HTML — never appending, which would collide with the month `<script>`
+loader. The absolute URLs are built from `REVIEW_INDEX.site`.
 
 **`update.py` must never write narrative.** It is scheduled, so anything it touches
 can be clobbered unattended. On a month that already has a file it only re-fetches

@@ -31,6 +31,8 @@ Then `http://localhost:8000`. A specific month is `#YYYY-MM`, e.g.
 - `scripts/draft_month.py` — turns a snapshot into a skeleton plus an interview
 - `scripts/smoke_test.js` — headless render test
 - `scripts/screenshots.py` — Playwright captures into `shots/`
+- `assets/` — favicon and the `og.png` link-preview card, generated from the `.svg` sources
+- `scripts/make-og.sh` / `scripts/make-icons.sh` — rasterize those SVGs; `scripts/og-lint.py` guards the card's size
 
 ## Running it
 
@@ -86,6 +88,30 @@ uv run scripts/screenshots.py --list
 Needs the browser once: `uv run --with playwright playwright install chromium`.
 The shots cover the states the render test cannot see — quiet weeks, a fully quiet
 month, the open month menu, expanded evidence, mobile, and print.
+
+## Social preview & icons
+
+The `<head>` carries Open Graph / Twitter Card tags so a pasted link previews as a card rather
+than a bare URL — a pattern carried over from `pwa-starter`. The card and favicon have SVG sources
+under `assets/`; edit those, then regenerate the rasters:
+
+```bash
+./scripts/make-icons.sh      # assets/icon.svg  -> icon-180/192/512.png
+./scripts/make-og.sh         # assets/og.svg    -> og.png (1200x630, size-gated)
+```
+
+`make-og.sh` fails if the card lands over the scraper size budget (a too-big card previews as a grey
+box); `scripts/og-lint.py` re-checks it at commit time. Both prefer `rsvg-convert` and fall back to
+`scripts/render_svg.py` (the Playwright already used for screenshots). To have the lint nag on every
+commit, enable the warn-only hook once per clone:
+
+```bash
+git config core.hooksPath .githooks
+```
+
+The tags' absolute URLs assume the GitHub Pages origin in `data/index.js` (`site`); `app.js`
+refreshes the title, description, and `og:url` per month for anything that runs JS, while the static
+tags stay correct for scrapers.
 
 ## What the page deliberately does not do
 

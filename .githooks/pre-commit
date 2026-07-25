@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Warn-only pre-commit guard (adopted from pwa-starter). Enable once per clone:
+#   git config core.hooksPath .githooks
+# Never blocks a commit — it nags. og-lint catches an OG share card too big to scrape (previews as a
+# grey box). Gate it in CI with a real exit code (og-lint.py exits 1) if you want teeth.
+python3 scripts/og-lint.py || true
+exit 0

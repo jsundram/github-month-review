@@ -102,7 +102,12 @@ under `assets/`; edit those, then regenerate the rasters:
 
 `make-og.sh` fails if the card lands over the scraper size budget (a too-big card previews as a grey
 box); `scripts/og-lint.py` re-checks it at commit time. Both prefer `rsvg-convert` and fall back to
-`scripts/render_svg.py` (the Playwright already used for screenshots). The tags' absolute URLs assume
+`scripts/render_svg.py` (the Playwright already used for screenshots). To have the lint nag on every
+commit, enable the warn-only hook once per clone:
+
+```bash
+git config core.hooksPath .githooks
+``` The tags' absolute URLs assume
 the GitHub Pages origin in `data/index.js` (`site`); `app.js` refreshes the title, description, and
 `og:url` per month for anything that runs JS, while the static tags stay correct for scrapers.
 

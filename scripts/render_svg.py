@@ -38,12 +38,10 @@ def main() -> None:
         f"svg{{display:block;width:{w}px;height:{h}px}}</style>" + svg
     )
 
-    # The env pins one Chromium build; a bare launch may hunt for a newer one. Honour an explicit
-    # path, else the conventional pw-browsers symlink, else let Playwright decide.
-    exe = os.environ.get("CHROME_BIN") or "/opt/pw-browsers/chromium"
-    launch = {"args": ["--no-sandbox"]}
-    if Path(exe).exists():
-        launch["executable_path"] = exe
+    # Bare launch finds Playwright's own Chromium, same as screenshots.py. CHROME_BIN overrides it
+    # when a specific build must be pointed at.
+    exe = os.environ.get("CHROME_BIN")
+    launch = {"executable_path": exe} if exe and Path(exe).exists() else {}
 
     with sync_playwright() as p:
         browser = p.chromium.launch(**launch)

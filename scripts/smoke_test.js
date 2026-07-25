@@ -110,6 +110,16 @@ async function main() {
   const metrics = el('metricGrid');
   const menu = el('monthMenu');
 
+  // The stub fabricates an element for any selector, so the per-month checks below only prove
+  // updateHead() wrote *something* — they can't see whether the static tags a scraper reads are
+  // actually in the HTML. Assert that half directly against the file.
+  console.log('\n== static link-preview tags present in index.html ==');
+  const indexHtml = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
+  for (const sel of ['property="og:title"', 'property="og:description"', 'property="og:url"',
+                     'property="og:image"', 'name="twitter:card"', 'rel="canonical"']) {
+    check(`index.html carries ${sel}`, indexHtml.includes(sel));
+  }
+
   console.log('\n== no hash: newest month ==');
   const first = await navigate('');
   check('loaded the newest month file', first && first.src === 'data/months/2026-07.js', first && first.src);

@@ -107,9 +107,11 @@ commit, enable the warn-only hook once per clone:
 
 ```bash
 git config core.hooksPath .githooks
-``` The tags' absolute URLs assume
-the GitHub Pages origin in `data/index.js` (`site`); `app.js` refreshes the title, description, and
-`og:url` per month for anything that runs JS, while the static tags stay correct for scrapers.
+```
+
+The tags' absolute URLs assume the GitHub Pages origin in `data/index.js` (`site`); `app.js`
+refreshes the title, description, and `og:url` per month for anything that runs JS, while the static
+tags stay correct for scrapers.
 
 ## What the page deliberately does not do
 

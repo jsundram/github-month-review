@@ -12,7 +12,7 @@
 set -euo pipefail
 here="$(cd "$(dirname "$0")" && pwd)"
 cd "$here/../assets"
-svg="${1:-og.svg}"; svg="${svg##*/}"   # accept "og.svg" or a path; keep the basename
+svg="${1:-og.svg}"; svg="${svg##*/}"   # optional SVG name in assets/ (default og.svg); a leading path is dropped
 png="${svg%.svg}.png"
 if command -v rsvg-convert >/dev/null; then
   rsvg-convert -w 1200 -h 630 "$svg" -o "$png"

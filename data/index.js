@@ -3,6 +3,7 @@
 window.REVIEW_INDEX = {
   user: "jsundram",
   profile: "https://github.com/jsundram",
+  site: "https://jsundram.github.io/github-month-review/",   // deploy origin; app.js builds per-month og:url from it
   months: [
     {
       id: "2026-07",

@@ -3,9 +3,37 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#171918" />
-  <meta name="description" content="A month-by-month review of Jason Sundram's public GitHub work, one narrative per week." />
+  <meta name="color-scheme" content="light" />   <!-- the page is a light paper document; the hero paints its own ink field -->
+  <meta name="theme-color" content="#171918" />   <!-- browser-UI tint, matched to the hero at the top of the page -->
+
   <title>GitHub month in review — Jason Sundram</title>
+  <meta name="description" content="A month-by-month review of Jason Sundram's public GitHub work, one narrative per week." />
+  <link rel="canonical" href="https://jsundram.github.io/github-month-review/" />
+
+  <!-- Favicon / home-screen icon. assets/icon.svg is the source; the PNGs come from
+       scripts/make-icons.sh. (iOS ignores SVG for apple-touch-icon, so ship the 180 PNG.) -->
+  <link rel="icon" type="image/svg+xml" href="assets/icon.svg" />
+  <link rel="icon" type="image/png" href="assets/icon-192.png" />
+  <link rel="apple-touch-icon" href="assets/icon-180.png" />
+
+  <!-- Link previews (adopted from pwa-starter). og:image MUST be an ABSOLUTE https URL to a RASTER
+       PNG, 1200x630, kept small — iMessage/WhatsApp/Slack reject relative paths and SVG. The static
+       values below are what a scraper (no JS) sees; app.js refreshes title/description/url per month
+       for anything that executes JS. Regenerate the card with scripts/make-og.sh. -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="GitHub month in review" />
+  <meta property="og:title" content="GitHub month in review — Jason Sundram" />
+  <meta property="og:description" content="A month-by-month review of Jason Sundram's public GitHub work, one narrative per week." />
+  <meta property="og:url" content="https://jsundram.github.io/github-month-review/" />
+  <meta property="og:image" content="https://jsundram.github.io/github-month-review/assets/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Dark title card reading “The month in review — public GitHub work, one narrative per week.”" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="GitHub month in review — Jason Sundram" />
+  <meta name="twitter:description" content="A month-by-month review of Jason Sundram's public GitHub work, one narrative per week." />
+  <meta name="twitter:image" content="https://jsundram.github.io/github-month-review/assets/og.png" />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>

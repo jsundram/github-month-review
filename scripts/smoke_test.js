@@ -31,8 +31,8 @@ function makeEl() {
       },
       contains(c) { return this._s.has(c); },
     },
-    setAttribute(k, v) { if (k === 'href') this.href = v; },
-    getAttribute() { return null; },
+    setAttribute(k, v) { this._attrs = this._attrs || {}; this._attrs[k] = v; if (k === 'href') this.href = v; },
+    getAttribute(k) { return this._attrs && k in this._attrs ? this._attrs[k] : null; },
     addEventListener() {}, focus() {}, closest() { return null; },
     querySelectorAll() { return []; }, appendChild() {},
     get innerHTML() { return this._html; },
@@ -118,6 +118,11 @@ async function main() {
   check('in-progress month flagged', /month in progress/.test(eyebrow.textContent), eyebrow.textContent);
   check('lede rendered', lede.textContent.length > 40);
   check('document title names the month', document.title === 'July 2026 — GitHub review — jsundram', document.title);
+  const meta = sel => el(sel).getAttribute('content');
+  check('og:title tracks the document title', meta('meta[property="og:title"]') === document.title, meta('meta[property="og:title"]'));
+  check('og:description filled from the lede', (meta('meta[property="og:description"]') || '').length > 40);
+  check('meta description mirrors og:description', meta('meta[name="description"]') === meta('meta[property="og:description"]'));
+  check('og:url carries the month hash', /\/github-month-review\/#2026-07$/.test(el('meta[property="og:url"]').getAttribute('content')), el('meta[property="og:url"]').getAttribute('content'));
   check('metrics rendered', count(metrics.innerHTML, /class="metric"/g) === 4);
   check('active weeks rendered', count(weeks.innerHTML, /<article class="week-chapter"/g) === 4);
   check('quiet week rendered compactly', count(weeks.innerHTML, /week-chapter quiet/g) === 1);

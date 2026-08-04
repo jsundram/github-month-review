@@ -1,0 +1,216 @@
+{
+  "generated_at": "2026-08-04T22:28:25.549183+00:00",
+  "user": "jsundram",
+  "month": "2026-08",
+  "coverage": {
+    "start": "2026-08-01",
+    "end": "2026-08-04"
+  },
+  "repositories": [
+    {
+      "name": "haydn-info-card",
+      "html_url": "https://github.com/jsundram/haydn-info-card",
+      "description": "code and data to generate the Haydn Quartet Info Card",
+      "language": "Python",
+      "pushed_at": "2026-08-04T21:49:59Z",
+      "commit_count": 13,
+      "commits": [
+        {
+          "sha": "ac01ffede83abb80160eef5b1375bd5ca850f6c9",
+          "date": "2026-08-04T21:37:09Z",
+          "message": "sw: reunite ensureShellOnce() with its doc block (sync with pwa-starter 3ec3032)",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/ac01ffede83abb80160eef5b1375bd5ca850f6c9"
+        },
+        {
+          "sha": "d028dad6ac5b9ced3bd7a20655de2d19ba7c3cfd",
+          "date": "2026-08-04T21:29:49Z",
+          "message": "sw: extract isTransientStatus() (sync with pwa-starter 9c197b0)",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/d028dad6ac5b9ced3bd7a20655de2d19ba7c3cfd"
+        },
+        {
+          "sha": "4d0fd873b1e6bd2ede0f5eae9189ecbeac83ec17",
+          "date": "2026-08-04T20:53:50Z",
+          "message": "sw.js: don't serve the offline page for an online 301 or 404 (pwa-starter 77fcb35)",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/4d0fd873b1e6bd2ede0f5eae9189ecbeac83ec17"
+        },
+        {
+          "sha": "bfe3e6c49c05b872c8d93af46775724a1bdde660",
+          "date": "2026-08-04T20:18:19Z",
+          "message": "Merge pull request #12 from jsundram/shot-mobile-flags",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/bfe3e6c49c05b872c8d93af46775724a1bdde660"
+        },
+        {
+          "sha": "149f9d3d74d29238271e255c1e5c02a18fd0ee0e",
+          "date": "2026-08-04T20:16:15Z",
+          "message": "README: document shot.sh's MOBILE / DARK / DSF flags",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/149f9d3d74d29238271e255c1e5c02a18fd0ee0e"
+        },
+        {
+          "sha": "a9f53e0e6fcb864252ac763f6ee6d08a20185258",
+          "date": "2026-08-04T20:07:58Z",
+          "message": "shot.sh: add MOBILE / DARK / DSF flags for phone-layout screenshots",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/a9f53e0e6fcb864252ac763f6ee6d08a20185258"
+        },
+        {
+          "sha": "86c4618527d68e37bdcd4c7381ea636ee32a7bc2",
+          "date": "2026-08-04T18:13:43Z",
+          "message": "Merge: serve the app shell cache-first so slow networks can't blank the screen (PR #10)",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/86c4618527d68e37bdcd4c7381ea636ee32a7bc2"
+        },
+        {
+          "sha": "50f93cdd2fb51f103d5098cbdd358215d3da0a90",
+          "date": "2026-08-02T06:18:06Z",
+          "message": "Docs: update the mobile-scale gotcha for the dynamic fitMobile scale",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/50f93cdd2fb51f103d5098cbdd358215d3da0a90"
+        },
+        {
+          "sha": "395daa3ef334f2b5f33bc994f737fc94daf651c6",
+          "date": "2026-08-02T06:11:17Z",
+          "message": "Restore mobile tooltip: don't claim the card key tap on touch",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/395daa3ef334f2b5f33bc994f737fc94daf651c6"
+        },
+        {
+          "sha": "8601471dd6ae4a3cff536c752f03a760f9a973fa",
+          "date": "2026-08-02T05:44:45Z",
+          "message": "Merge: fill the screen on the mobile web card (PR #9)",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/8601471dd6ae4a3cff536c752f03a760f9a973fa"
+        },
+        {
+          "sha": "983eeb79f9e13e0332a100e75fc14d3464e363f0",
+          "date": "2026-08-02T05:44:38Z",
+          "message": "Bump SW cache to haydn-v13 for the mobile fit shell change",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/983eeb79f9e13e0332a100e75fc14d3464e363f0"
+        },
+        {
+          "sha": "d501c8b5d8c81d3a8064bc5222a4fadf89814b5e",
+          "date": "2026-08-02T05:12:51Z",
+          "message": "Merge: tap a quartet's key to highlight its key-group (PR #8)",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/d501c8b5d8c81d3a8064bc5222a4fadf89814b5e"
+        },
+        {
+          "sha": "a9febb3453ca64a64a3cb61df72dfac787846491",
+          "date": "2026-08-02T05:12:42Z",
+          "message": "Drop button role from touch tooltip key; it's click-only",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/a9febb3453ca64a64a3cb61df72dfac787846491"
+        }
+      ]
+    },
+    {
+      "name": "pwa-starter",
+      "html_url": "https://github.com/jsundram/pwa-starter",
+      "description": null,
+      "language": "JavaScript",
+      "pushed_at": "2026-08-04T21:50:06Z",
+      "commit_count": 4,
+      "commits": [
+        {
+          "sha": "3ec30329d91eeb80a8742698be0685061025de90",
+          "date": "2026-08-04T21:36:57Z",
+          "message": "sw.js: move isTransientStatus() above ensureShellOnce()'s doc block",
+          "url": "https://github.com/jsundram/pwa-starter/commit/3ec30329d91eeb80a8742698be0685061025de90"
+        },
+        {
+          "sha": "9c197b0b9335afb23b557b284d805b5bbfa61f41",
+          "date": "2026-08-04T21:28:27Z",
+          "message": "sw.js: extract isTransientStatus() \u2014 one predicate for both error-judgment sites",
+          "url": "https://github.com/jsundram/pwa-starter/commit/9c197b0b9335afb23b557b284d805b5bbfa61f41"
+        },
+        {
+          "sha": "64b442dfba37a8f80e6eafdcbbf24c9e2a83c1bd",
+          "date": "2026-08-04T20:52:25Z",
+          "message": "PROPAGATE: record 77fcb35's porting constraints for the #9 lie-fi family",
+          "url": "https://github.com/jsundram/pwa-starter/commit/64b442dfba37a8f80e6eafdcbbf24c9e2a83c1bd"
+        },
+        {
+          "sha": "77fcb3552cda40048a6ccc02c4d5046e9637de6e",
+          "date": "2026-08-04T20:52:11Z",
+          "message": "sw.js: serve the shell cache-first with a bounded network fallback (#9)",
+          "url": "https://github.com/jsundram/pwa-starter/commit/77fcb3552cda40048a6ccc02c4d5046e9637de6e"
+        }
+      ]
+    },
+    {
+      "name": "AKM",
+      "html_url": "https://github.com/jsundram/AKM",
+      "description": "take akm data and make it more useful",
+      "language": "JavaScript",
+      "pushed_at": "2026-08-04T21:48:11Z",
+      "commit_count": 3,
+      "commits": [
+        {
+          "sha": "b81668970969e74d27a587ef03d100ad785567b9",
+          "date": "2026-08-04T21:37:09Z",
+          "message": "sw: reunite ensureShellOnce() with its doc block (sync with pwa-starter 3ec3032)",
+          "url": "https://github.com/jsundram/AKM/commit/b81668970969e74d27a587ef03d100ad785567b9"
+        },
+        {
+          "sha": "74bf3c715e8e16e265bb7dca5594fca4e2568448",
+          "date": "2026-08-04T21:29:49Z",
+          "message": "sw: extract isTransientStatus() (sync with pwa-starter 9c197b0)",
+          "url": "https://github.com/jsundram/AKM/commit/74bf3c715e8e16e265bb7dca5594fca4e2568448"
+        },
+        {
+          "sha": "2bfe4d091227f2fbb2df5e3d55d371f3718c726c",
+          "date": "2026-08-04T21:07:30Z",
+          "message": "sw: modernize to the pwa-starter offline family (77fcb35); bump V to akm-v109",
+          "url": "https://github.com/jsundram/AKM/commit/2bfe4d091227f2fbb2df5e3d55d371f3718c726c"
+        }
+      ]
+    },
+    {
+      "name": "quartets.boccherini.org",
+      "html_url": "https://github.com/jsundram/quartets.boccherini.org",
+      "description": "Interactive periodic table visualization of Boccherini's 91 string quartets",
+      "language": "Python",
+      "pushed_at": "2026-08-04T21:45:53Z",
+      "commit_count": 3,
+      "commits": [
+        {
+          "sha": "c130d47c35e5f093022c8497b76ef225844ee78b",
+          "date": "2026-08-04T21:37:09Z",
+          "message": "sw: reunite ensureShellOnce() with its doc block (sync with pwa-starter 3ec3032)",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/c130d47c35e5f093022c8497b76ef225844ee78b"
+        },
+        {
+          "sha": "6dbeb47a4c7cf370e7b5763fe47366ade404f7d5",
+          "date": "2026-08-04T21:29:49Z",
+          "message": "sw: extract isTransientStatus() (sync with pwa-starter 9c197b0)",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/6dbeb47a4c7cf370e7b5763fe47366ade404f7d5"
+        },
+        {
+          "sha": "7fbe72b8828441602ee42b6a17da5cab205ed691",
+          "date": "2026-08-04T20:57:07Z",
+          "message": "sw.js: serve the shell cache-first with a bounded network fallback (pwa-starter 77fcb35)",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/7fbe72b8828441602ee42b6a17da5cab205ed691"
+        }
+      ]
+    },
+    {
+      "name": "quartet-log",
+      "html_url": "https://github.com/jsundram/quartet-log",
+      "description": "code for log.quartetroulette.com",
+      "language": "JavaScript",
+      "pushed_at": "2026-08-04T21:49:01Z",
+      "commit_count": 2,
+      "commits": [
+        {
+          "sha": "4c4717cf00578bf09d6cc806e57519280443b6b7",
+          "date": "2026-08-04T21:39:46Z",
+          "message": "sw: bound the cache-miss fetch too; make the tests pin what they claim",
+          "url": "https://github.com/jsundram/quartet-log/commit/4c4717cf00578bf09d6cc806e57519280443b6b7"
+        },
+        {
+          "sha": "5df540f1e74a71794c7bc3c5b869bb6ec822f3fb",
+          "date": "2026-08-04T21:01:12Z",
+          "message": "sw: bound the network-first waits so lie-fi can't blank the screen",
+          "url": "https://github.com/jsundram/quartet-log/commit/5df540f1e74a71794c7bc3c5b869bb6ec822f3fb"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Only public repositories owned by the user are included.",
+    "Commit author matching can miss alternate or unlinked email identities.",
+    "Merge and coauthored commits are retained; interpret counts with care."
+  ]
+}

@@ -1,4 +1,6 @@
 .DS_Store
+# GITHUB_TOKEN lives here; see the update.py docstring.
+.env
 __pycache__/
 *.pyc
 update.log

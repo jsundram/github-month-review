@@ -16,6 +16,10 @@ already has a hand-written file, a refresh only re-fetches the snapshot and
 reports what has landed since the narrative was written. Rewriting a month that
 already has prose requires --new --force, which says so out loud.
 
+A GITHUB_TOKEN raises the API rate limit from 60 to 5,000 requests/hour. Put it
+in a .env file next to this script (gitignored) as GITHUB_TOKEN=..., or export
+it. A fine-grained token with "Public repositories (read-only)" access is enough.
+
 Scheduling (weekly, Monday 08:00):
 
     0 8 * * 1  cd /path/to/repo && /opt/homebrew/bin/uv run update.py >> update.log 2>&1
@@ -51,6 +55,19 @@ def step(title: str) -> None:
 
 def current_month() -> str:
     return date.today().strftime("%Y-%m")
+
+
+def load_dotenv() -> None:
+    """Read KEY=VALUE lines from .env into the environment (real env vars win)."""
+    env_file = ROOT / ".env"
+    if not env_file.exists():
+        return
+    for line in env_file.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, _, value = line.partition("=")
+        os.environ.setdefault(key.strip(), value.strip().strip("'\""))
 
 
 def snapshot_provenance(snapshot: dict) -> dict:
@@ -120,6 +137,7 @@ def main() -> int:
     parser.add_argument("--fail-on-stale", action="store_true",
                         help="Exit 2 if a month's narrative is behind its snapshot (for CI)")
     args = parser.parse_args()
+    load_dotenv()
 
     if args.check:
         step("Render test")

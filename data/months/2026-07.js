@@ -3,27 +3,26 @@ window.REVIEW_MONTHS["2026-07"] = {
   id: "2026-07",
   label: "July 2026",
   status: "active",
-  inProgress: true,
   coverage: {
     start: "2026-07-01",
-    end: "2026-07-24"
+    end: "2026-07-31"
   },
-  lede: "Two halves. AKM was polished and finished through the festival, which ended on Jul 13, with videos released and linked afterwards. Then the patterns it had proved were formalised into pwa-starter and carried back into the Haydn and Boccherini periodic tables and Quartet Log.",
+  lede: "Two halves. AKM was polished and finished through the festival, which ended on Jul 13, with videos released and linked afterwards. Then the patterns it had proved were formalised into pwa-starter and carried back into the Haydn and Boccherini periodic tables and Quartet Log. The month ended at SoCal, another chamber-music workshop, with the Haydn card in use.",
   metrics: [
     {
-      value: "20",
+      value: "24",
       label: "days with commits",
-      note: "Of the 24 covered so far; the month runs to Jul 31"
+      note: "Of the month's 31; commits nearly stop once SoCal starts on Jul 26"
     },
     {
-      value: "9",
+      value: "11",
       label: "public repos touched",
-      note: "Counted from commits, Jul 1–24"
+      note: "Counted from commits, Jul 1–31"
     },
     {
-      value: "4",
+      value: "5",
       label: "projects started",
-      note: "pwa-starter Jul 13, boccherini-sampler Jul 17, somerville-typemap Jul 22, spotify-tile Jul 24"
+      note: "pwa-starter Jul 13, boccherini-sampler Jul 17, somerville-typemap Jul 22, spotify-tile and this review page Jul 24"
     },
     {
       value: "5",
@@ -146,7 +145,7 @@ window.REVIEW_MONTHS["2026-07"] = {
       status: "active",
       intensity: 5,
       title: "A down day, spent working.",
-      summary: "Jul 20 hardened pwa-starter's service worker: gate every cache write on resp.ok, so a 502 can't overwrite a good cached file and survive as the offline fallback; serve same-origin JSON stale-while-revalidate rather than network-first; refuse empty payloads and paint from cache first. Jul 22 was the busiest day of the month at 41 commits across four repos. somerville-typemap went from nothing to a layered typographic map of the city — Overpass data, boundaries, route relations, adjacency-aware colouring, and glyph warping. The pwa-starter fixes went out to quartets.boccherini.org, haydn-info-card, and Quartet Log, along with cookieless GoatCounter analytics. On Jul 24, spotify-tile started and quartet-chooser got security fixes.",
+      summary: "Jul 20 hardened pwa-starter's service worker: gate every cache write on resp.ok, so a 502 can't overwrite a good cached file and survive as the offline fallback; serve same-origin JSON stale-while-revalidate rather than network-first; refuse empty payloads and paint from cache first. Jul 22 was the busiest day of the month at 41 commits across four repos. somerville-typemap went from nothing to a layered typographic map of the city — Overpass data, boundaries, route relations, adjacency-aware colouring, and glyph warping. The pwa-starter fixes went out to quartets.boccherini.org, haydn-info-card, and Quartet Log, along with cookieless GoatCounter analytics. On Jul 24, spotify-tile started, this review page had its first commit, and quartet-chooser's security fixes widened into a migration: Gatsby replaced by a custom esbuild SSG over Jul 24–25, parity fixtures snapshotted from the old build first, tests run in CI, the Node 18 pin dropped. daily-composers followed on Jul 25. The same day, an offline blank screen — hit first-hand trying to open the Haydn card on a phone with no wifi — was fixed in pwa-starter and ported to quartets.boccherini.org and haydn-info-card. SoCal began Jul 26.",
       note: "Jul 22 was the first day off in a long stretch. It went into more work, on the strength of the previous three weeks having gone well.",
       themes: ["platform", "music", "visual"],
       projects: [
@@ -167,6 +166,12 @@ window.REVIEW_MONTHS["2026-07"] = {
           repo: "spotify-tile",
           desc: "A reimplementation of (Geo) Musical Configurations, with an Instagram-story generator and HarfBuzz-shaped text.",
           url: "https://github.com/jsundram/spotify-tile"
+        },
+        {
+          name: "Quartet Chooser",
+          repo: "quartet-chooser",
+          desc: "Migrated from Gatsby to a custom esbuild SSG; accumulated security issues had made even small site fixes feel blocked behind that work first.",
+          url: "https://github.com/jsundram/quartet-chooser"
         }
       ],
       evidence: [
@@ -177,7 +182,10 @@ window.REVIEW_MONTHS["2026-07"] = {
         { text: "Port haydn mobile/PWA fixes; fix two deeper scroll bugs; clean Spotify taps", url: "https://github.com/jsundram/quartets.boccherini.org/commit/a89e5eb2f4ed3ee2d461e0b69aee9df33228bd6d" },
         { text: "Sync sw.js hardening from pwa-starter: gate cache writes, serve cache on 4xx/5xx", url: "https://github.com/jsundram/haydn-info-card/commit/9b7d7ca91b34ac213389b8b2fb82f148a0879ef8" },
         { text: "Add fullscreen vertical calendar mode for mobile", url: "https://github.com/jsundram/quartet-log/commit/a83c8854368ea9911a5e43ffe738e92e80d9c0cb" },
-        { text: "Initial commit: geomusic — (Geo) Musical Configurations reimplementation", url: "https://github.com/jsundram/spotify-tile/commit/3398beaf61b11a8518b0fd599d26e0c42dcb045c" }
+        { text: "Initial commit: geomusic — (Geo) Musical Configurations reimplementation", url: "https://github.com/jsundram/spotify-tile/commit/3398beaf61b11a8518b0fd599d26e0c42dcb045c" },
+        { text: "Cut over the build: Gatsby -> esbuild SSG", url: "https://github.com/jsundram/quartet-chooser/commit/5f2d37377c027f58cd82d11898df23acc98e3ded" },
+        { text: "Fix the offline blank screen: per-file precache, scoped reads, terminal fallback (#7)", url: "https://github.com/jsundram/pwa-starter/commit/dd763caa20df75ea6a0ce2633f30d2a9fd1b8015" },
+        { text: "daily-composers: replace Gatsby with esbuild + custom static site generator", url: "https://github.com/jsundram/daily-composers/commit/9543dd08621a660589a66e879f90a0f844f86b9a" }
       ]
     },
     {
@@ -185,8 +193,25 @@ window.REVIEW_MONTHS["2026-07"] = {
       number: "05",
       range: "Jul 27–31",
       dates: { start: "2026-07-27", end: "2026-07-31" },
-      status: "nodata",
-      note: "Not yet covered. The month is still in progress; the snapshot ends Jul 24."
+      status: "active",
+      intensity: 1,
+      title: "A week at SoCal.",
+      summary: "The SoCal chamber music workshop ran Jul 26–Aug 1: rehearsing the Tchaikovsky Piano Trio, reading chamber music, socializing. The only commits are the Haydn card being adjusted while in use — a Peters volume highlight filter on Jul 28, the table scan behind it credited to Derek Downes of Durham Music, and the opus-label column aligned on Jul 30, each with a service-worker cache bump so installed clients picked up the change.",
+      note: "The workshop straddles the month boundary; its last day, Aug 1, belongs to August.",
+      themes: ["field", "travel", "music"],
+      projects: [
+        {
+          name: "Haydn Info Card",
+          repo: "haydn-info-card",
+          desc: "A Peters volume filter and an alignment fix, made while the card was in use at the workshop.",
+          url: "https://github.com/jsundram/haydn-info-card"
+        }
+      ],
+      evidence: [
+        { text: "Merge: Peters volume highlight filter", url: "https://github.com/jsundram/haydn-info-card/commit/3435926452af8c483d4b777b06a5791d86bcb50c" },
+        { text: "Credit the Peters table scan to Derek Downes, Durham Music", url: "https://github.com/jsundram/haydn-info-card/commit/3f44d1cffd6416072af06510f80e35008b913be8" },
+        { text: "Align the opus label column; count padding and borders in table width", url: "https://github.com/jsundram/haydn-info-card/commit/b3d20204c2221e52097325560e95dc40ea296e7d" }
+      ]
     }
   ],
   threads: [
@@ -205,10 +230,10 @@ window.REVIEW_MONTHS["2026-07"] = {
       url: "https://github.com/jsundram/pwa-starter/commit/22048896b1909006d71d04753be76f1604a5f581"
     },
     {
-      title: "Spotify Tile, one day old",
+      title: "Spotify Tile, one day of commits old",
       repo: "spotify-tile",
       status: "active",
-      note: "Started Jul 24 after a stop at SIGGRAPH to see Shirley Wu's work, and looking at posters on the way out. A reimplementation of (Geo) Musical Configurations, with an Instagram-story generator and story text rendered as HarfBuzz-shaped outline paths.",
+      note: "Started Jul 24 after a stop at SIGGRAPH to see Shirley Wu's work, and looking at posters on the way out — then no public commits for the rest of the month. A reimplementation of (Geo) Musical Configurations, with an Instagram-story generator and story text rendered as HarfBuzz-shaped outline paths. The next idea is to regenerate the acoustic analysis its features depend on, from the data already out there and the Echo Nest analyzer documentation (an3); it looks very possible.",
       url: "https://github.com/jsundram/spotify-tile/commit/84d8ab45be8f822e172ec2efd3218082f849d28d"
     }
   ]

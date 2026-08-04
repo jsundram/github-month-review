@@ -1,20 +1,32 @@
 {
-  "generated_at": "2026-07-24T20:54:48.407185+00:00",
+  "generated_at": "2026-08-04T22:45:52.465039+00:00",
   "user": "jsundram",
   "month": "2026-07",
   "coverage": {
     "start": "2026-07-01",
-    "end": "2026-07-24"
+    "end": "2026-07-31"
   },
   "repositories": [
     {
       "name": "AKM",
       "html_url": "https://github.com/jsundram/AKM",
       "description": "take akm data and make it more useful",
-      "language": "HTML",
-      "pushed_at": "2026-07-17T22:07:25Z",
-      "commit_count": 111,
+      "language": "JavaScript",
+      "pushed_at": "2026-08-04T21:48:11Z",
+      "commit_count": 113,
       "commits": [
+        {
+          "sha": "62a779a15fd5922b9ed33051723487a77f5a9d2e",
+          "date": "2026-07-24T21:35:46Z",
+          "message": "buildlog: MM.DD axis ticks, and thin them when days crowd",
+          "url": "https://github.com/jsundram/AKM/commit/62a779a15fd5922b9ed33051723487a77f5a9d2e"
+        },
+        {
+          "sha": "ea865f6d853035b2dad34be32d1c7cabcbd6b7c0",
+          "date": "2026-07-24T21:26:54Z",
+          "message": "buildlog: refresh through 2026-07-24 (225 commits, 47h in session)",
+          "url": "https://github.com/jsundram/AKM/commit/ea865f6d853035b2dad34be32d1c7cabcbd6b7c0"
+        },
         {
           "sha": "c3de6b4380e525a2f87c053930ef7f9bd1ab2e08",
           "date": "2026-07-17T20:10:37Z",
@@ -684,13 +696,329 @@
       ]
     },
     {
+      "name": "quartet-chooser",
+      "html_url": "https://github.com/jsundram/quartet-chooser",
+      "description": "The code behind Quartet Roulette (https://quartetroulette.com)",
+      "language": "Python",
+      "pushed_at": "2026-07-31T06:12:56Z",
+      "commit_count": 44,
+      "commits": [
+        {
+          "sha": "c3728c7f1a9a271861595e93b2e8bb4616cb4ccc",
+          "date": "2026-07-25T21:58:24Z",
+          "message": "add pointer to log.quartetroulette.com",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/c3728c7f1a9a271861595e93b2e8bb4616cb4ccc"
+        },
+        {
+          "sha": "131b441e2d0128ed6133cebb7c32100b90027f94",
+          "date": "2026-07-25T21:51:12Z",
+          "message": "README: use the same feedback-form short link as the about page",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/131b441e2d0128ed6133cebb7c32100b90027f94"
+        },
+        {
+          "sha": "07fd8d01459f9d52268ae97d8d9e3ddb59367547",
+          "date": "2026-07-25T21:43:32Z",
+          "message": "Build every title from SITE_TITLE, not a repeated literal",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/07fd8d01459f9d52268ae97d8d9e3ddb59367547"
+        },
+        {
+          "sha": "5f8a1eda5a14b001cd0847df0d1fb44cbcd6a9a2",
+          "date": "2026-07-25T21:42:59Z",
+          "message": "Render <title> in <head> only: one Head export per page",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/5f8a1eda5a14b001cd0847df0d1fb44cbcd6a9a2"
+        },
+        {
+          "sha": "545f92f6853b25237ff689fee31e0c9d66d18710",
+          "date": "2026-07-25T20:10:27Z",
+          "message": "Make every \ud83d\udd00 a real link: one mechanism, one navigation",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/545f92f6853b25237ff689fee31e0c9d66d18710"
+        },
+        {
+          "sha": "fcd772fe3682f232353de3853473b4098b2bedb2",
+          "date": "2026-07-25T19:50:15Z",
+          "message": "Note what the nav shuffle change drags along",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/fcd772fe3682f232353de3853473b4098b2bedb2"
+        },
+        {
+          "sha": "3f167833e8e18e74496d3bab22017033f345e8ea",
+          "date": "2026-07-25T19:44:59Z",
+          "message": "Add a design note for the randomness story",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/3f167833e8e18e74496d3bab22017033f345e8ea"
+        },
+        {
+          "sha": "797f8aa52ffb5dcd66f40491f69304f604c61426",
+          "date": "2026-07-25T19:44:50Z",
+          "message": "Correct two things the Node 24 bump left stale",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/797f8aa52ffb5dcd66f40491f69304f604c61426"
+        },
+        {
+          "sha": "93d7f537522ac4c24b9a83f5708408ef530fccc2",
+          "date": "2026-07-25T19:44:40Z",
+          "message": "Delete choose_one(): stop rolling dice at build time",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/93d7f537522ac4c24b9a83f5708408ef530fccc2"
+        },
+        {
+          "sha": "879b4482840f3bbce58a13b641050eeee0215d3c",
+          "date": "2026-07-25T19:13:53Z",
+          "message": "Build on Node 24; drop the vestigial package version (#33)",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/879b4482840f3bbce58a13b641050eeee0215d3c"
+        },
+        {
+          "sha": "3a5fc56e8d25b47c796e0c676c2b7cba3c447b0c",
+          "date": "2026-07-25T18:46:03Z",
+          "message": "Log the shelved composer-anniversary-banner idea and its exploration",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/3a5fc56e8d25b47c796e0c676c2b7cba3c447b0c"
+        },
+        {
+          "sha": "515365406718058e554afe4452ab7f59e1ebb1a7",
+          "date": "2026-07-25T18:28:46Z",
+          "message": "Adopt the two construction-era tools into scripts/, runnable via uv",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/515365406718058e554afe4452ab7f59e1ebb1a7"
+        },
+        {
+          "sha": "07a12e14a466cbf9074defa32b6a51f31ebdecf9",
+          "date": "2026-07-25T18:19:07Z",
+          "message": "Plan: pause Phases 2-3 for feature work; record why and how to resume",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/07a12e14a466cbf9074defa32b6a51f31ebdecf9"
+        },
+        {
+          "sha": "9c2c9ad63ec4858661bea44fb4136a76f04c7f74",
+          "date": "2026-07-25T18:12:23Z",
+          "message": "Record the Netlify UI cleanup sweep; correct the case-handling story",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/9c2c9ad63ec4858661bea44fb4136a76f04c7f74"
+        },
+        {
+          "sha": "5f22c494a45b0509e7c998db680a3597e115dc8f",
+          "date": "2026-07-25T18:15:51Z",
+          "message": "Make the 404 page useful: site nav and a composer list (#31)",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/5f22c494a45b0509e7c998db680a3597e115dc8f"
+        },
+        {
+          "sha": "9ebffb71514016237e195ac4b9cb3c21040e27e2",
+          "date": "2026-07-25T17:20:50Z",
+          "message": "Plan: Phase 1.5 done; redirect stubs ruled out, 404 covers the case",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/9ebffb71514016237e195ac4b9cb3c21040e27e2"
+        },
+        {
+          "sha": "3ac68ea84ea1cd640589300080b00340a10ef3d5",
+          "date": "2026-07-25T17:02:29Z",
+          "message": "Fix double slash in composer/work og:image URLs (#29)",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/3ac68ea84ea1cd640589300080b00340a10ef3d5"
+        },
+        {
+          "sha": "f99d4fd8cbb64b9de1ccfae2735892288628448e",
+          "date": "2026-07-25T16:55:39Z",
+          "message": "Re-shuffle the \ud83d\udd00 links on a bfcache restore (#30)",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/f99d4fd8cbb64b9de1ccfae2735892288628448e"
+        },
+        {
+          "sha": "c77287dff6660b17f7e9bc418965b76274e42206",
+          "date": "2026-07-25T16:44:26Z",
+          "message": "Lowercase the 18 composer URLs (Phase 1.5) (#28)",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/c77287dff6660b17f7e9bc418965b76274e42206"
+        },
+        {
+          "sha": "561cbaac880a666c9c77f02d9dad90b61ccb08e7",
+          "date": "2026-07-25T09:02:28Z",
+          "message": "Plan doc: past-tense the PR backlog, flag the UI settings as unverified",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/561cbaac880a666c9c77f02d9dad90b61ccb08e7"
+        },
+        {
+          "sha": "73175a28e06a380ef3719bd314403fd99c1123a0",
+          "date": "2026-07-25T08:54:03Z",
+          "message": "Record the measured security outcome",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/73175a28e06a380ef3719bd314403fd99c1123a0"
+        },
+        {
+          "sha": "b6b3bfe7206966667b3824106e14a5b3b1c7e0b4",
+          "date": "2026-07-25T08:44:22Z",
+          "message": "Update the plan: Phase 1 done, add Phase 1.5 for URL case",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/b6b3bfe7206966667b3824106e14a5b3b1c7e0b4"
+        },
+        {
+          "sha": "aa1941894a3313c21ed4fc88f2acbda2c24b1db1",
+          "date": "2026-07-25T07:53:22Z",
+          "message": "Follow-up polish: conditional shuffle.js, README, tripwire comment",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/aa1941894a3313c21ed4fc88f2acbda2c24b1db1"
+        },
+        {
+          "sha": "be5afccacc97982c47971f16ebd11b34c7b98e36",
+          "date": "2026-07-25T07:53:22Z",
+          "message": "Least privilege for the test workflow",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/be5afccacc97982c47971f16ebd11b34c7b98e36"
+        },
+        {
+          "sha": "79e8dc2d034ea294223588251bd75b81db56c6e8",
+          "date": "2026-07-25T07:53:22Z",
+          "message": "Share route discovery between the tests and the fixture generator",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/79e8dc2d034ea294223588251bd75b81db56c6e8"
+        },
+        {
+          "sha": "acefa93aa285f42fad42c4f7b0268956fb1c0c2d",
+          "date": "2026-07-25T00:31:26Z",
+          "message": "Cover the client scripts",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/acefa93aa285f42fad42c4f7b0268956fb1c0c2d"
+        },
+        {
+          "sha": "ffcd7cbfd34fc1afae143897eb9f85060b299ee5",
+          "date": "2026-07-25T00:30:10Z",
+          "message": "Pin esbuild browser targets; derive icon links from the manifest",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/ffcd7cbfd34fc1afae143897eb9f85060b299ee5"
+        },
+        {
+          "sha": "8e5635a99e678b257df13cdb7e14df5a21bad772",
+          "date": "2026-07-25T00:29:12Z",
+          "message": "Delete rendering paths that can no longer run",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/8e5635a99e678b257df13cdb7e14df5a21bad772"
+        },
+        {
+          "sha": "924c87ee322265900d1b3a32025f31d5d40e0f5a",
+          "date": "2026-07-25T00:28:29Z",
+          "message": "Restore aria-current on the active nav link",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/924c87ee322265900d1b3a32025f31d5d40e0f5a"
+        },
+        {
+          "sha": "513a07beaf309bda46af5cbb17825fec8bec1dd1",
+          "date": "2026-07-25T00:27:47Z",
+          "message": "Document fixture regeneration (npm run test:update)",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/513a07beaf309bda46af5cbb17825fec8bec1dd1"
+        },
+        {
+          "sha": "d04b37de188f3d44a5342788058e327355a3f99c",
+          "date": "2026-07-25T00:27:18Z",
+          "message": "Run npm test in CI",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/d04b37de188f3d44a5342788058e327355a3f99c"
+        },
+        {
+          "sha": "1c3f6427a89864dbb09c10ba1a008a0c5fdc78e6",
+          "date": "2026-07-25T00:27:07Z",
+          "message": "Make the build's toolchain a hard dependency",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/1c3f6427a89864dbb09c10ba1a008a0c5fdc78e6"
+        },
+        {
+          "sha": "1e6dcf57f9efba01fd9f28d1d9175acd242310ad",
+          "date": "2026-07-25T00:26:41Z",
+          "message": "Fix composer \ud83d\udd00 links (were frozen at build time)",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/1e6dcf57f9efba01fd9f28d1d9175acd242310ad"
+        },
+        {
+          "sha": "49ada8a655ab32d87d2b8d8843a3a56c7604f452",
+          "date": "2026-07-24T23:04:59Z",
+          "message": "Guard page writes against escaping dist/ (defense in depth)",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/49ada8a655ab32d87d2b8d8843a3a56c7604f452"
+        },
+        {
+          "sha": "1892b4d561ff27a96f552d6d3b2c72843234c963",
+          "date": "2026-07-24T23:00:32Z",
+          "message": "Unpin Node 18 (was a Gatsby 4 constraint)",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/1892b4d561ff27a96f552d6d3b2c72843234c963"
+        },
+        {
+          "sha": "5f2d37377c027f58cd82d11898df23acc98e3ded",
+          "date": "2026-07-24T23:00:14Z",
+          "message": "Cut over the build: Gatsby -> esbuild SSG",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/5f2d37377c027f58cd82d11898df23acc98e3ded"
+        },
+        {
+          "sha": "57b4f00ac7cc3ec62e6583914892c08a6431d8cb",
+          "date": "2026-07-24T22:58:54Z",
+          "message": "Add build verification tests (npm test)",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/57b4f00ac7cc3ec62e6583914892c08a6431d8cb"
+        },
+        {
+          "sha": "1306a3a7f73c5f08b9f5467ffe099e7680c6cc41",
+          "date": "2026-07-24T22:57:49Z",
+          "message": "Add esbuild + custom SSG (scripts/build.mjs)",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/1306a3a7f73c5f08b9f5467ffe099e7680c6cc41"
+        },
+        {
+          "sha": "234b859c15c9e5b0b11f6a3eb7d637af55c4e553",
+          "date": "2026-07-24T22:52:40Z",
+          "message": "Vendor manifest icons into static/",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/234b859c15c9e5b0b11f6a3eb7d637af55c4e553"
+        },
+        {
+          "sha": "6eb44bcd2d77230f0a28b66b1df452d7bac97860",
+          "date": "2026-07-24T22:51:40Z",
+          "message": "Port components off Gatsby APIs",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/6eb44bcd2d77230f0a28b66b1df452d7bac97860"
+        },
+        {
+          "sha": "cc0dab8b6c80e42241c2083ac82307215f25d83e",
+          "date": "2026-07-24T22:49:44Z",
+          "message": "camelCase CSS module class names",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/cc0dab8b6c80e42241c2083ac82307215f25d83e"
+        },
+        {
+          "sha": "04c1726c1f014d45d5f9c8f6e302dfccf22ba048",
+          "date": "2026-07-24T22:49:25Z",
+          "message": "Add parity fixtures snapshotted from the current Gatsby build",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/04c1726c1f014d45d5f9c8f6e302dfccf22ba048"
+        },
+        {
+          "sha": "29ec4ad6ae697a5e57b5ae44657772d457ed2404",
+          "date": "2026-07-24T07:54:06Z",
+          "message": "Pin Node to 18.x (.nvmrc + engines)",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/29ec4ad6ae697a5e57b5ae44657772d457ed2404"
+        },
+        {
+          "sha": "4d3a2e9b3c17e34eab5729ade9ba9cb3509f07c2",
+          "date": "2026-07-24T07:37:38Z",
+          "message": "Security fixes: got SSRF override, GA removal, Dependabot config",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/4d3a2e9b3c17e34eab5729ade9ba9cb3509f07c2"
+        }
+      ]
+    },
+    {
       "name": "pwa-starter",
       "html_url": "https://github.com/jsundram/pwa-starter",
       "description": null,
       "language": "JavaScript",
-      "pushed_at": "2026-07-22T05:47:17Z",
-      "commit_count": 20,
+      "pushed_at": "2026-08-04T21:50:06Z",
+      "commit_count": 27,
       "commits": [
+        {
+          "sha": "8d86f7cf6f5be0ca9982315a6bb38cb0bc44b035",
+          "date": "2026-07-26T02:38:16Z",
+          "message": "check-downstream: support pinning a copy out of tracking",
+          "url": "https://github.com/jsundram/pwa-starter/commit/8d86f7cf6f5be0ca9982315a6bb38cb0bc44b035"
+        },
+        {
+          "sha": "d22c1192a8c2dfd794f0b51a47d9efa46599c187",
+          "date": "2026-07-26T00:32:10Z",
+          "message": "PROPAGATE: haydn-info-card ported + verified; gallery-deck is the last copy behind",
+          "url": "https://github.com/jsundram/pwa-starter/commit/d22c1192a8c2dfd794f0b51a47d9efa46599c187"
+        },
+        {
+          "sha": "b1e34e1a745aa6368df1b49697aaa46c22769e88",
+          "date": "2026-07-26T00:20:05Z",
+          "message": "sw-lint docstring: five checks now, not four",
+          "url": "https://github.com/jsundram/pwa-starter/commit/b1e34e1a745aa6368df1b49697aaa46c22769e88"
+        },
+        {
+          "sha": "fd15052af0f04cbe04c34a4199ce590bd317b4c0",
+          "date": "2026-07-26T00:13:19Z",
+          "message": "sw-lint: check app.js's VER_PREFIX against sw.js's V stem",
+          "url": "https://github.com/jsundram/pwa-starter/commit/fd15052af0f04cbe04c34a4199ce590bd317b4c0"
+        },
+        {
+          "sha": "5e48fbb6b546db835238c199b8533a48c75693c7",
+          "date": "2026-07-25T23:20:12Z",
+          "message": "PROPAGATE: record dd763ca's porting constraints for the #7 offline family",
+          "url": "https://github.com/jsundram/pwa-starter/commit/5e48fbb6b546db835238c199b8533a48c75693c7"
+        },
+        {
+          "sha": "dd763caa20df75ea6a0ce2633f30d2a9fd1b8015",
+          "date": "2026-07-25T23:19:43Z",
+          "message": "Fix the offline blank screen: per-file precache, scoped reads, terminal fallback (#7)",
+          "url": "https://github.com/jsundram/pwa-starter/commit/dd763caa20df75ea6a0ce2633f30d2a9fd1b8015"
+        },
+        {
+          "sha": "0c4163f690b2a5cd49b05cbb262733c5acfd2a6f",
+          "date": "2026-07-25T08:23:35Z",
+          "message": "mention share preview sites as a means of testing rather than just texting a link",
+          "url": "https://github.com/jsundram/pwa-starter/commit/0c4163f690b2a5cd49b05cbb262733c5acfd2a6f"
+        },
         {
           "sha": "adf8ed2efcb8c00c9a9cbfa7fca5b2eb06f61ec6",
           "date": "2026-07-22T05:47:15Z",
@@ -814,6 +1142,278 @@
       ]
     },
     {
+      "name": "haydn-info-card",
+      "html_url": "https://github.com/jsundram/haydn-info-card",
+      "description": "code and data to generate the Haydn Quartet Info Card",
+      "language": "Python",
+      "pushed_at": "2026-08-04T21:49:59Z",
+      "commit_count": 23,
+      "commits": [
+        {
+          "sha": "4929700cef56f26b08f98961bd73579d51e91814",
+          "date": "2026-07-30T08:12:43Z",
+          "message": "Bump SW cache to haydn-v11 so installed clients get the label alignment",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/4929700cef56f26b08f98961bd73579d51e91814"
+        },
+        {
+          "sha": "6df2cb18eeef6a7efcf2fd52d0a30757ccfeafda",
+          "date": "2026-07-30T08:12:43Z",
+          "message": "Regenerate the index og:image for the new table geometry",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/6df2cb18eeef6a7efcf2fd52d0a30757ccfeafda"
+        },
+        {
+          "sha": "b3d20204c2221e52097325560e95dc40ea296e7d",
+          "date": "2026-07-30T08:12:26Z",
+          "message": "Align the opus label column; count padding and borders in table width",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/b3d20204c2221e52097325560e95dc40ea296e7d"
+        },
+        {
+          "sha": "3f44d1cffd6416072af06510f80e35008b913be8",
+          "date": "2026-07-28T23:55:44Z",
+          "message": "Credit the Peters table scan to Derek Downes, Durham Music",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/3f44d1cffd6416072af06510f80e35008b913be8"
+        },
+        {
+          "sha": "3435926452af8c483d4b777b06a5791d86bcb50c",
+          "date": "2026-07-28T23:53:01Z",
+          "message": "Merge: Peters volume highlight filter",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/3435926452af8c483d4b777b06a5791d86bcb50c"
+        },
+        {
+          "sha": "1b3c7a137f4d68f1268871d41c862075ceb3f378",
+          "date": "2026-07-28T23:51:08Z",
+          "message": "Bump SW cache to haydn-v10 so installed clients get the Peters filter",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/1b3c7a137f4d68f1268871d41c862075ceb3f378"
+        },
+        {
+          "sha": "2c86c8b454c0165eedcd23f36379bcea58e18068",
+          "date": "2026-07-28T23:50:41Z",
+          "message": "Give the Peters filter a focus ring and radiogroup semantics",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/2c86c8b454c0165eedcd23f36379bcea58e18068"
+        },
+        {
+          "sha": "007523960d0c90cb34c89a8b96189f9519b9dfd4",
+          "date": "2026-07-26T00:31:09Z",
+          "message": "Fix the offline blank screen: port pwa-starter dd763ca (per-file precache, scoped reads, terminal fallback)",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/007523960d0c90cb34c89a8b96189f9519b9dfd4"
+        },
+        {
+          "sha": "8a561a60ad222acad59fc80581cb7cfbb23e27a6",
+          "date": "2026-07-23T16:51:01Z",
+          "message": "Bump SW cache to haydn-v8 so installed clients pick up the new icons",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/8a561a60ad222acad59fc80581cb7cfbb23e27a6"
+        },
+        {
+          "sha": "0cb307f36fa5a9e1521000e579d247f8c531da44",
+          "date": "2026-07-23T16:50:47Z",
+          "message": "Merge icon harmonization with Boccherini sibling icon",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/0cb307f36fa5a9e1521000e579d247f8c531da44"
+        },
+        {
+          "sha": "113a49956a11e93e72164d1fa9d0b0564007e1a1",
+          "date": "2026-07-22T17:29:48Z",
+          "message": "PWA: navigate in place for Spotify links, no leftover in-app sheet",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/113a49956a11e93e72164d1fa9d0b0564007e1a1"
+        },
+        {
+          "sha": "101ffcb868f6eb68124f2af3b1cd61141880e5a9",
+          "date": "2026-07-22T17:29:29Z",
+          "message": "Fix mobile phantom scroll for real: html overflow + tooltip anchor",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/101ffcb868f6eb68124f2af3b1cd61141880e5a9"
+        },
+        {
+          "sha": "5e1658b32327b312afaee67946b49cf87ae373b9",
+          "date": "2026-07-22T05:09:17Z",
+          "message": "Stamp app.js with pwa-starter provenance (@ 8d54c48)",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/5e1658b32327b312afaee67946b49cf87ae373b9"
+        },
+        {
+          "sha": "ab307348c9e57ab940322e88132a42b08a2ebea2",
+          "date": "2026-07-22T05:05:58Z",
+          "message": "Serve opera.json stale-while-revalidate, not network-first (pwa-starter e88a743)",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/ab307348c9e57ab940322e88132a42b08a2ebea2"
+        },
+        {
+          "sha": "032148839ca4f330e82638bda2fca206efa2da9c",
+          "date": "2026-07-22T05:05:28Z",
+          "message": "Movement-bar fills reference CSS vars instead of frozen snapshots",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/032148839ca4f330e82638bda2fca206efa2da9c"
+        },
+        {
+          "sha": "9b7d7ca91b34ac213389b8b2fb82f148a0879ef8",
+          "date": "2026-07-22T04:12:41Z",
+          "message": "Sync sw.js hardening from pwa-starter: gate cache writes, serve cache on 4xx/5xx (bump to v3)",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/9b7d7ca91b34ac213389b8b2fb82f148a0879ef8"
+        },
+        {
+          "sha": "3ef0cc337492cabb9fb8e6792b05107c559009dc",
+          "date": "2026-07-22T04:10:01Z",
+          "message": "Fix touch double-fire on movement bars; align touch detection with CSS",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/3ef0cc337492cabb9fb8e6792b05107c559009dc"
+        },
+        {
+          "sha": "dcc61889863175be205e62a7e1a17d6defb88ded",
+          "date": "2026-07-14T20:01:30Z",
+          "message": "Fix mobile card scrolling past content bottom",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/dcc61889863175be205e62a7e1a17d6defb88ded"
+        },
+        {
+          "sha": "596aa41af8c4c5695b2d89df514fca4e8c5a63b8",
+          "date": "2026-07-14T18:44:34Z",
+          "message": "Add PWA install + offline support (manifest, service worker, cache-bust guard)",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/596aa41af8c4c5695b2d89df514fca4e8c5a63b8"
+        },
+        {
+          "sha": "28a9561c42d73a8ecc1e93d6342a3cfd21c9398a",
+          "date": "2026-07-14T18:32:36Z",
+          "message": "update readme with goatcounter link",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/28a9561c42d73a8ecc1e93d6342a3cfd21c9398a"
+        },
+        {
+          "sha": "4ca31e9420d0fe2fb03801854d02b1cc395988a1",
+          "date": "2026-07-04T12:38:55Z",
+          "message": "Recolor site icons to Opus 33 cyan; round the apple-touch corners",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/4ca31e9420d0fe2fb03801854d02b1cc395988a1"
+        },
+        {
+          "sha": "9bb767c13784a91f38b4194d7c752d626400a5f9",
+          "date": "2026-07-04T12:34:41Z",
+          "message": "Harden link previews: compress OG images, add favicons + meta polish",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/9bb767c13784a91f38b4194d7c752d626400a5f9"
+        },
+        {
+          "sha": "d4ccccdd9c81dc10e590f49996481748ffaea0be",
+          "date": "2026-07-04T12:25:03Z",
+          "message": "Add GoatCounter analytics to web pages",
+          "url": "https://github.com/jsundram/haydn-info-card/commit/d4ccccdd9c81dc10e590f49996481748ffaea0be"
+        }
+      ]
+    },
+    {
+      "name": "quartets.boccherini.org",
+      "html_url": "https://github.com/jsundram/quartets.boccherini.org",
+      "description": "Interactive periodic table visualization of Boccherini's 91 string quartets",
+      "language": "Python",
+      "pushed_at": "2026-08-04T21:45:53Z",
+      "commit_count": 19,
+      "commits": [
+        {
+          "sha": "5ec7213058443e3e61f5b93adad0381a80e800b7",
+          "date": "2026-07-26T00:27:50Z",
+          "message": "Re-stamp sw.js provenance at pwa-starter dd763ca",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/5ec7213058443e3e61f5b93adad0381a80e800b7"
+        },
+        {
+          "sha": "445e89d6895286724c5d18c702d3393c5972e712",
+          "date": "2026-07-25T22:55:08Z",
+          "message": "Merge pull request #24 from jsundram/fix/offline-blank-screen-empty-precache",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/445e89d6895286724c5d18c702d3393c5972e712"
+        },
+        {
+          "sha": "16c1c1e4f8ef4c5eb51184dfed03dfe2a411064f",
+          "date": "2026-07-25T22:55:00Z",
+          "message": "Own the shell precache outright: coherent, collectable, bootable",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/16c1c1e4f8ef4c5eb51184dfed03dfe2a411064f"
+        },
+        {
+          "sha": "6a059dfce080cbd60a6ea3b3d6cff02fe07784fe",
+          "date": "2026-07-25T19:47:05Z",
+          "message": "Correct the completeness claim; pin scoped reads with a test",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/6a059dfce080cbd60a6ea3b3d6cff02fe07784fe"
+        },
+        {
+          "sha": "a00d3f03b167fc4fd6861a9d4c38d26470db7d7a",
+          "date": "2026-07-25T19:19:36Z",
+          "message": "Scope cache reads to the current version; guard non-GET and 206",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/a00d3f03b167fc4fd6861a9d4c38d26470db7d7a"
+        },
+        {
+          "sha": "4fa5e7c0b6df1ea6100b16cdb064c2f73858e5ee",
+          "date": "2026-07-25T18:58:07Z",
+          "message": "Anchor checkVer()'s version parse; align sw_lint's SHELL parser",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/4fa5e7c0b6df1ea6100b16cdb064c2f73858e5ee"
+        },
+        {
+          "sha": "2445183182797eef83fa5ded45d2344a3db0fc07",
+          "date": "2026-07-25T18:41:50Z",
+          "message": "Collect the stale cache once the new one is complete, not just at activate",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/2445183182797eef83fa5ded45d2344a3db0fc07"
+        },
+        {
+          "sha": "801d41fea4958792fc10086ab2df8e32b3726b05",
+          "date": "2026-07-25T18:18:13Z",
+          "message": "Address review: repair before purge, and don't serve HTML for subresources",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/801d41fea4958792fc10086ab2df8e32b3726b05"
+        },
+        {
+          "sha": "92975fa1cd9608cfc2e0080ac1cb1092c44c48d9",
+          "date": "2026-07-25T18:01:50Z",
+          "message": "Fix blank white screen offline when the precache is empty",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/92975fa1cd9608cfc2e0080ac1cb1092c44c48d9"
+        },
+        {
+          "sha": "a89e5eb2f4ed3ee2d461e0b69aee9df33228bd6d",
+          "date": "2026-07-22T17:22:17Z",
+          "message": "Port haydn mobile/PWA fixes; fix two deeper scroll bugs; clean Spotify taps",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/a89e5eb2f4ed3ee2d461e0b69aee9df33228bd6d"
+        },
+        {
+          "sha": "dac1baed75c8f40c4410d9777810a019c4c3f97a",
+          "date": "2026-07-22T06:11:44Z",
+          "message": "Point GoatCounter at per-site boccherini-periodic-table dashboard",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/dac1baed75c8f40c4410d9777810a019c4c3f97a"
+        },
+        {
+          "sha": "1d54e38d12e636f7ce1c234398d6ab0ffb15af59",
+          "date": "2026-07-22T05:59:57Z",
+          "message": "Add GoatCounter analytics (cookieless, async, offline-silent)",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/1d54e38d12e636f7ce1c234398d6ab0ffb15af59"
+        },
+        {
+          "sha": "5f0bf046cbc25aac8a48e30811a4d007375801d8",
+          "date": "2026-07-22T05:24:18Z",
+          "message": "Advance pwa-starter provenance stamp to 8d54c48",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/5f0bf046cbc25aac8a48e30811a4d007375801d8"
+        },
+        {
+          "sha": "58decc4e1c5f36ebd0620fdde49927f848c1c3c1",
+          "date": "2026-07-22T05:08:32Z",
+          "message": "Serve boot-time .json stale-while-revalidate, not network-first (fixes #23)",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/58decc4e1c5f36ebd0620fdde49927f848c1c3c1"
+        },
+        {
+          "sha": "f0ad3f3f21e32162b805c18f37e9248f377b4c3a",
+          "date": "2026-07-22T04:49:58Z",
+          "message": "Make nicknames legible: 0.75em, drop quotes (fixes #15)",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/f0ad3f3f21e32162b805c18f37e9248f377b4c3a"
+        },
+        {
+          "sha": "d72c20d896f2a82bec6e5c2e0c44a5c2d020bf2d",
+          "date": "2026-07-22T04:15:58Z",
+          "message": "Movement bar fills reference CSS vars instead of frozen snapshots (#19)",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/d72c20d896f2a82bec6e5c2e0c44a5c2d020bf2d"
+        },
+        {
+          "sha": "b7510e3d4b506741b725c6c7349a451e7b119838",
+          "date": "2026-07-22T03:54:43Z",
+          "message": "PWA: installable + offline + link previews (reconciles #18 and #20) (#21)",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/b7510e3d4b506741b725c6c7349a451e7b119838"
+        },
+        {
+          "sha": "dedf2963d46e20eaa1e109515dde6700d655fefa",
+          "date": "2026-07-22T03:51:48Z",
+          "message": "Refresh iPad/iPhone visual baselines for WebKit 26.5 (#22)",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/dedf2963d46e20eaa1e109515dde6700d655fefa"
+        },
+        {
+          "sha": "e14ea1f1d89c9444c630a5797c77b00ef8b92450",
+          "date": "2026-07-22T03:34:39Z",
+          "message": "Add SessionStart hook for Claude Code web environments (#11)",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/e14ea1f1d89c9444c630a5797c77b00ef8b92450"
+        }
+      ]
+    },
+    {
       "name": "somerville-typemap",
       "html_url": "https://github.com/jsundram/somerville-typemap",
       "description": "Typographic map of Somerville, MA \u2014 every feature rendered as text",
@@ -926,181 +1526,11 @@
       ]
     },
     {
-      "name": "haydn-info-card",
-      "html_url": "https://github.com/jsundram/haydn-info-card",
-      "description": "code and data to generate the Haydn Quartet Info Card",
-      "language": "Python",
-      "pushed_at": "2026-07-23T16:51:13Z",
-      "commit_count": 15,
-      "commits": [
-        {
-          "sha": "8a561a60ad222acad59fc80581cb7cfbb23e27a6",
-          "date": "2026-07-23T16:51:01Z",
-          "message": "Bump SW cache to haydn-v8 so installed clients pick up the new icons",
-          "url": "https://github.com/jsundram/haydn-info-card/commit/8a561a60ad222acad59fc80581cb7cfbb23e27a6"
-        },
-        {
-          "sha": "0cb307f36fa5a9e1521000e579d247f8c531da44",
-          "date": "2026-07-23T16:50:47Z",
-          "message": "Merge icon harmonization with Boccherini sibling icon",
-          "url": "https://github.com/jsundram/haydn-info-card/commit/0cb307f36fa5a9e1521000e579d247f8c531da44"
-        },
-        {
-          "sha": "113a49956a11e93e72164d1fa9d0b0564007e1a1",
-          "date": "2026-07-22T17:29:48Z",
-          "message": "PWA: navigate in place for Spotify links, no leftover in-app sheet",
-          "url": "https://github.com/jsundram/haydn-info-card/commit/113a49956a11e93e72164d1fa9d0b0564007e1a1"
-        },
-        {
-          "sha": "101ffcb868f6eb68124f2af3b1cd61141880e5a9",
-          "date": "2026-07-22T17:29:29Z",
-          "message": "Fix mobile phantom scroll for real: html overflow + tooltip anchor",
-          "url": "https://github.com/jsundram/haydn-info-card/commit/101ffcb868f6eb68124f2af3b1cd61141880e5a9"
-        },
-        {
-          "sha": "5e1658b32327b312afaee67946b49cf87ae373b9",
-          "date": "2026-07-22T05:09:17Z",
-          "message": "Stamp app.js with pwa-starter provenance (@ 8d54c48)",
-          "url": "https://github.com/jsundram/haydn-info-card/commit/5e1658b32327b312afaee67946b49cf87ae373b9"
-        },
-        {
-          "sha": "ab307348c9e57ab940322e88132a42b08a2ebea2",
-          "date": "2026-07-22T05:05:58Z",
-          "message": "Serve opera.json stale-while-revalidate, not network-first (pwa-starter e88a743)",
-          "url": "https://github.com/jsundram/haydn-info-card/commit/ab307348c9e57ab940322e88132a42b08a2ebea2"
-        },
-        {
-          "sha": "032148839ca4f330e82638bda2fca206efa2da9c",
-          "date": "2026-07-22T05:05:28Z",
-          "message": "Movement-bar fills reference CSS vars instead of frozen snapshots",
-          "url": "https://github.com/jsundram/haydn-info-card/commit/032148839ca4f330e82638bda2fca206efa2da9c"
-        },
-        {
-          "sha": "9b7d7ca91b34ac213389b8b2fb82f148a0879ef8",
-          "date": "2026-07-22T04:12:41Z",
-          "message": "Sync sw.js hardening from pwa-starter: gate cache writes, serve cache on 4xx/5xx (bump to v3)",
-          "url": "https://github.com/jsundram/haydn-info-card/commit/9b7d7ca91b34ac213389b8b2fb82f148a0879ef8"
-        },
-        {
-          "sha": "3ef0cc337492cabb9fb8e6792b05107c559009dc",
-          "date": "2026-07-22T04:10:01Z",
-          "message": "Fix touch double-fire on movement bars; align touch detection with CSS",
-          "url": "https://github.com/jsundram/haydn-info-card/commit/3ef0cc337492cabb9fb8e6792b05107c559009dc"
-        },
-        {
-          "sha": "dcc61889863175be205e62a7e1a17d6defb88ded",
-          "date": "2026-07-14T20:01:30Z",
-          "message": "Fix mobile card scrolling past content bottom",
-          "url": "https://github.com/jsundram/haydn-info-card/commit/dcc61889863175be205e62a7e1a17d6defb88ded"
-        },
-        {
-          "sha": "596aa41af8c4c5695b2d89df514fca4e8c5a63b8",
-          "date": "2026-07-14T18:44:34Z",
-          "message": "Add PWA install + offline support (manifest, service worker, cache-bust guard)",
-          "url": "https://github.com/jsundram/haydn-info-card/commit/596aa41af8c4c5695b2d89df514fca4e8c5a63b8"
-        },
-        {
-          "sha": "28a9561c42d73a8ecc1e93d6342a3cfd21c9398a",
-          "date": "2026-07-14T18:32:36Z",
-          "message": "update readme with goatcounter link",
-          "url": "https://github.com/jsundram/haydn-info-card/commit/28a9561c42d73a8ecc1e93d6342a3cfd21c9398a"
-        },
-        {
-          "sha": "4ca31e9420d0fe2fb03801854d02b1cc395988a1",
-          "date": "2026-07-04T12:38:55Z",
-          "message": "Recolor site icons to Opus 33 cyan; round the apple-touch corners",
-          "url": "https://github.com/jsundram/haydn-info-card/commit/4ca31e9420d0fe2fb03801854d02b1cc395988a1"
-        },
-        {
-          "sha": "9bb767c13784a91f38b4194d7c752d626400a5f9",
-          "date": "2026-07-04T12:34:41Z",
-          "message": "Harden link previews: compress OG images, add favicons + meta polish",
-          "url": "https://github.com/jsundram/haydn-info-card/commit/9bb767c13784a91f38b4194d7c752d626400a5f9"
-        },
-        {
-          "sha": "d4ccccdd9c81dc10e590f49996481748ffaea0be",
-          "date": "2026-07-04T12:25:03Z",
-          "message": "Add GoatCounter analytics to web pages",
-          "url": "https://github.com/jsundram/haydn-info-card/commit/d4ccccdd9c81dc10e590f49996481748ffaea0be"
-        }
-      ]
-    },
-    {
-      "name": "quartets.boccherini.org",
-      "html_url": "https://github.com/jsundram/quartets.boccherini.org",
-      "description": "Interactive periodic table visualization of Boccherini's 91 string quartets",
-      "language": "HTML",
-      "pushed_at": "2026-07-23T07:40:43Z",
-      "commit_count": 10,
-      "commits": [
-        {
-          "sha": "a89e5eb2f4ed3ee2d461e0b69aee9df33228bd6d",
-          "date": "2026-07-22T17:22:17Z",
-          "message": "Port haydn mobile/PWA fixes; fix two deeper scroll bugs; clean Spotify taps",
-          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/a89e5eb2f4ed3ee2d461e0b69aee9df33228bd6d"
-        },
-        {
-          "sha": "dac1baed75c8f40c4410d9777810a019c4c3f97a",
-          "date": "2026-07-22T06:11:44Z",
-          "message": "Point GoatCounter at per-site boccherini-periodic-table dashboard",
-          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/dac1baed75c8f40c4410d9777810a019c4c3f97a"
-        },
-        {
-          "sha": "1d54e38d12e636f7ce1c234398d6ab0ffb15af59",
-          "date": "2026-07-22T05:59:57Z",
-          "message": "Add GoatCounter analytics (cookieless, async, offline-silent)",
-          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/1d54e38d12e636f7ce1c234398d6ab0ffb15af59"
-        },
-        {
-          "sha": "5f0bf046cbc25aac8a48e30811a4d007375801d8",
-          "date": "2026-07-22T05:24:18Z",
-          "message": "Advance pwa-starter provenance stamp to 8d54c48",
-          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/5f0bf046cbc25aac8a48e30811a4d007375801d8"
-        },
-        {
-          "sha": "58decc4e1c5f36ebd0620fdde49927f848c1c3c1",
-          "date": "2026-07-22T05:08:32Z",
-          "message": "Serve boot-time .json stale-while-revalidate, not network-first (fixes #23)",
-          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/58decc4e1c5f36ebd0620fdde49927f848c1c3c1"
-        },
-        {
-          "sha": "f0ad3f3f21e32162b805c18f37e9248f377b4c3a",
-          "date": "2026-07-22T04:49:58Z",
-          "message": "Make nicknames legible: 0.75em, drop quotes (fixes #15)",
-          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/f0ad3f3f21e32162b805c18f37e9248f377b4c3a"
-        },
-        {
-          "sha": "d72c20d896f2a82bec6e5c2e0c44a5c2d020bf2d",
-          "date": "2026-07-22T04:15:58Z",
-          "message": "Movement bar fills reference CSS vars instead of frozen snapshots (#19)",
-          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/d72c20d896f2a82bec6e5c2e0c44a5c2d020bf2d"
-        },
-        {
-          "sha": "b7510e3d4b506741b725c6c7349a451e7b119838",
-          "date": "2026-07-22T03:54:43Z",
-          "message": "PWA: installable + offline + link previews (reconciles #18 and #20) (#21)",
-          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/b7510e3d4b506741b725c6c7349a451e7b119838"
-        },
-        {
-          "sha": "dedf2963d46e20eaa1e109515dde6700d655fefa",
-          "date": "2026-07-22T03:51:48Z",
-          "message": "Refresh iPad/iPhone visual baselines for WebKit 26.5 (#22)",
-          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/dedf2963d46e20eaa1e109515dde6700d655fefa"
-        },
-        {
-          "sha": "e14ea1f1d89c9444c630a5797c77b00ef8b92450",
-          "date": "2026-07-22T03:34:39Z",
-          "message": "Add SessionStart hook for Claude Code web environments (#11)",
-          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/e14ea1f1d89c9444c630a5797c77b00ef8b92450"
-        }
-      ]
-    },
-    {
       "name": "quartet-log",
       "html_url": "https://github.com/jsundram/quartet-log",
       "description": "code for log.quartetroulette.com",
       "language": "JavaScript",
-      "pushed_at": "2026-07-22T19:49:18Z",
+      "pushed_at": "2026-08-04T21:49:01Z",
       "commit_count": 8,
       "commits": [
         {
@@ -1216,7 +1646,7 @@
       "html_url": "https://github.com/jsundram/spotify-tile",
       "description": null,
       "language": "Python",
-      "pushed_at": "2026-07-24T20:31:11Z",
+      "pushed_at": "2026-07-26T02:43:08Z",
       "commit_count": 5,
       "commits": [
         {
@@ -1252,24 +1682,58 @@
       ]
     },
     {
-      "name": "quartet-chooser",
-      "html_url": "https://github.com/jsundram/quartet-chooser",
-      "description": "The code behind Quartet Roulette (https://quartetroulette.com)",
-      "language": "Python",
-      "pushed_at": "2026-07-24T08:14:40Z",
+      "name": "daily-composers",
+      "html_url": "https://github.com/jsundram/daily-composers",
+      "description": "learn more and listen more",
+      "language": "JavaScript",
+      "pushed_at": "2026-07-25T23:12:44Z",
+      "commit_count": 4,
+      "commits": [
+        {
+          "sha": "c49c70a9722d5b0ce50aa495012b9a59d237e6aa",
+          "date": "2026-07-25T23:12:42Z",
+          "message": "Drop the dead public/ gitignore entry",
+          "url": "https://github.com/jsundram/daily-composers/commit/c49c70a9722d5b0ce50aa495012b9a59d237e6aa"
+        },
+        {
+          "sha": "1917be3af1e194833feed5fb08928445a8eab4c5",
+          "date": "2026-07-25T22:55:26Z",
+          "message": "Point docs at the new composer-data pipeline repo",
+          "url": "https://github.com/jsundram/daily-composers/commit/1917be3af1e194833feed5fb08928445a8eab4c5"
+        },
+        {
+          "sha": "f286136e5461fda104eb4a476c7151892c49e846",
+          "date": "2026-07-25T22:45:18Z",
+          "message": "Clean up README; move open TODOs to TODO.md; add CLAUDE.md",
+          "url": "https://github.com/jsundram/daily-composers/commit/f286136e5461fda104eb4a476c7151892c49e846"
+        },
+        {
+          "sha": "9543dd08621a660589a66e879f90a0f844f86b9a",
+          "date": "2026-07-25T22:37:56Z",
+          "message": "Replace Gatsby with esbuild + custom static site generator",
+          "url": "https://github.com/jsundram/daily-composers/commit/9543dd08621a660589a66e879f90a0f844f86b9a"
+        }
+      ]
+    },
+    {
+      "name": "github-month-review",
+      "html_url": "https://github.com/jsundram/github-month-review",
+      "description": "A month-by-month review of public GitHub work, with a short narrative for each week.",
+      "language": "JavaScript",
+      "pushed_at": "2026-08-04T22:29:22Z",
       "commit_count": 2,
       "commits": [
         {
-          "sha": "29ec4ad6ae697a5e57b5ae44657772d457ed2404",
-          "date": "2026-07-24T07:54:06Z",
-          "message": "Pin Node to 18.x (.nvmrc + engines)",
-          "url": "https://github.com/jsundram/quartet-chooser/commit/29ec4ad6ae697a5e57b5ae44657772d457ed2404"
+          "sha": "278b84149dcac521ac59500ce22f17d0c482afde",
+          "date": "2026-07-25T07:58:38Z",
+          "message": "Adopt pwa-starter link-preview patterns (OG/Twitter, favicon, share card) (#1)",
+          "url": "https://github.com/jsundram/github-month-review/commit/278b84149dcac521ac59500ce22f17d0c482afde"
         },
         {
-          "sha": "4d3a2e9b3c17e34eab5729ade9ba9cb3509f07c2",
-          "date": "2026-07-24T07:37:38Z",
-          "message": "Security fixes: got SSRF override, GA removal, Dependabot config",
-          "url": "https://github.com/jsundram/quartet-chooser/commit/4d3a2e9b3c17e34eab5729ade9ba9cb3509f07c2"
+          "sha": "05d6e5471238f8206e139a7071a6de10c7a90d9f",
+          "date": "2026-07-24T21:45:34Z",
+          "message": "Month-by-month review of public GitHub work",
+          "url": "https://github.com/jsundram/github-month-review/commit/05d6e5471238f8206e139a7071a6de10c7a90d9f"
         }
       ]
     }

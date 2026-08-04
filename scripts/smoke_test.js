@@ -124,8 +124,8 @@ async function main() {
   const first = await navigate('');
   check('loaded the newest month file', first && first.src === 'data/months/2026-07.js', first && first.src);
   check('hero splits month and year', hero.innerHTML === 'July<br /><span>2026</span>', hero.innerHTML);
-  check('coverage range is compact', /Covers Jul 1–24, 2026/.test(eyebrow.textContent), eyebrow.textContent);
-  check('in-progress month flagged', /month in progress/.test(eyebrow.textContent), eyebrow.textContent);
+  check('coverage range is compact', /Covers Jul 1–31, 2026/.test(eyebrow.textContent), eyebrow.textContent);
+  check('completed month not flagged in progress', !/month in progress/.test(eyebrow.textContent), eyebrow.textContent);
   check('lede rendered', lede.textContent.length > 40);
   check('document title names the month', document.title === 'July 2026 — GitHub review — jsundram', document.title);
   const meta = sel => el(sel).getAttribute('content');
@@ -134,18 +134,16 @@ async function main() {
   check('meta description mirrors og:description', meta('meta[name="description"]') === meta('meta[property="og:description"]'));
   check('og:url carries the month hash', /\/github-month-review\/#2026-07$/.test(el('meta[property="og:url"]').getAttribute('content')), el('meta[property="og:url"]').getAttribute('content'));
   check('metrics rendered', count(metrics.innerHTML, /class="metric"/g) === 4);
-  check('active weeks rendered', count(weeks.innerHTML, /<article class="week-chapter"/g) === 4);
-  check('quiet week rendered compactly', count(weeks.innerHTML, /week-chapter quiet/g) === 1);
-  check('uncovered week says so', /Not covered/.test(weeks.innerHTML));
+  check('active weeks rendered', count(weeks.innerHTML, /<article class="week-chapter"/g) === 5);
+  check('July is fully active', count(weeks.innerHTML, /week-chapter quiet/g) === 0);
   check('week ids namespaced by month', /id="2026-07-w1"/.test(weeks.innerHTML));
   check('every week is in the nav', count(nav.innerHTML, /week-nav-button/g) === 5);
-  check('quiet week dimmed in nav', /week-nav-button quiet/.test(nav.innerHTML));
   check('evidence wrapped for animation', /evidence-inner/.test(weeks.innerHTML));
   check('intensity bars filled', /class="on"/.test(weeks.innerHTML));
   check('themes derived from weeks', /Platform/.test(el('heroThemes').innerHTML));
   // The [" ] guard keeps month-option-label / month-option-tag out of the count.
   check('menu lists every month', count(menu.innerHTML, /class="month-option[" ]/g) === 2);
-  check('menu tags the in-progress month', /in progress/.test(menu.innerHTML));
+  check('menu has no in-progress tag', !/in progress/.test(menu.innerHTML));
   check('no next month, prev available', el('monthNext').disabled && !el('monthPrev').disabled);
   check('no undefined in markup', !/undefined/.test(weeks.innerHTML + metrics.innerHTML + menu.innerHTML));
   check('footer names the month', el('footerLine').textContent.endsWith('July 2026'), el('footerLine').textContent);
@@ -198,6 +196,33 @@ async function main() {
   check('body marked no-metrics', document.body.classList.contains('no-metrics'));
   check('scroll cue skips the empty band', el('scrollCue').href === '#story', el('scrollCue').href);
   check('load-error cleared', !document.body.classList.contains('load-error'));
+
+  // Real months no longer exercise these paths (July completed), so fabricate one that does.
+  console.log('\n== quiet and uncovered weeks, in-progress month ==');
+  sandbox.window.REVIEW_INDEX.months.push(
+    { id: '2020-02', label: 'February 2020', file: 'data/months/2020-02.js', status: 'active', inProgress: true });
+  sandbox.window.REVIEW_MONTHS['2020-02'] = {
+    id: '2020-02', label: 'February 2020', status: 'active', inProgress: true,
+    coverage: { start: '2020-02-01', end: '2020-02-16' },
+    lede: 'A synthetic month exercising the quiet-week, uncovered-week, and in-progress paths.',
+    metrics: [],
+    weeks: [
+      { id: 'w1', number: '01', range: 'Feb 3–9', dates: { start: '2020-02-03', end: '2020-02-09' },
+        status: 'active', intensity: 2, title: 'Something.', summary: 'One active week.',
+        themes: [], projects: [], evidence: [] },
+      { id: 'w2', number: '02', range: 'Feb 10–16', dates: { start: '2020-02-10', end: '2020-02-16' },
+        status: 'quiet', note: 'Nothing committed.' },
+      { id: 'w3', number: '03', range: 'Feb 17–23', dates: { start: '2020-02-17', end: '2020-02-23' },
+        status: 'nodata', note: 'Outside the snapshot.' },
+    ],
+  };
+  await navigate('#2020-02');
+  check('in-progress month flagged', /month in progress/.test(eyebrow.textContent), eyebrow.textContent);
+  check('menu tags the in-progress month', /in progress/.test(menu.innerHTML));
+  check('quiet weeks rendered compactly', count(weeks.innerHTML, /week-chapter quiet/g) === 2);
+  check('quiet week says nothing recorded', /Nothing recorded/.test(weeks.innerHTML));
+  check('uncovered week says so', /Not covered/.test(weeks.innerHTML));
+  check('quiet week dimmed in nav', /week-nav-button quiet/.test(nav.innerHTML));
 }
 
 main().then(() => {

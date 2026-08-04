@@ -423,3 +423,43 @@ commits, and was wrong in ways worth recording:
 - It missed boccherini-sampler being an emergency, missed spotify-tile entirely, and described
   Jul 20–23 as "extraction and propagation" without noting that Jul 22 was a day off.
 - It reported "8 public repos touched"; the real figure for Jul 1–24 is 9.
+
+---
+
+## Answers — recorded 2026-08-04 (closing the month)
+
+The Jul 24 snapshot ended before the month did. The Aug 4 re-fetch covers Jul 1–31:
+11 repos, 270 commits, 24 days with commits. 74 commits landed after the narrative was
+written — most on Jul 24–26 (week 4), with week 5 nearly quiet. These answers close
+out weeks 4 and 5; the commit list they were asked against is the Aug 4 pending report.
+
+**11. Week 5 (Jul 27–31) — 7 commits on two days, all haydn-info-card. What was the week?**
+SoCal (https://www.socalchambermusic.com/) ran Jul 26–Aug 1. The time was filled with
+rehearsing the Tchaikovsky Piano Trio, reading chamber music, and socializing.
+
+**12. The quartet-chooser Gatsby → esbuild migration (42 commits, Jul 24–25;
+daily-composers followed on Jul 25). What prompted it?**
+Security / stale dependencies. The accumulating security issues made it feel like
+updating the site with small fixes needed to chew through that work first. Hopefully
+the port unblocks future changes of all sizes.
+
+**13. The offline blank-screen fix (pwa-starter #7 → boccherini → haydn). Hit, or found
+by inspection?**
+Hit first-hand: discovered while playing chamber music and trying to open the Haydn
+info card on a phone with poor network connectivity and no wifi.
+
+**14. New loose threads?**
+An idea to regenerate the acoustic analysis that powers the features spotify-tile uses,
+by consulting the existing data that's out there and the documentation for the Echo
+Nest's analyzer (an3). That work looks very possible.
+
+### Editorial decisions, closing pass
+
+- "Projects started" raised 4 → 5 to include this review page itself (github-month-review,
+  first commit Jul 24). It is a public repo in the snapshot like any other.
+- Week 5 intensity set to 1 when writing, with the same caveat as the others: an estimate,
+  not an answer.
+- The offered late-July thread candidates (shelved composer-anniversary banner,
+  quartet-chooser Phases 2–3 paused, gallery-deck behind on the offline fix) were not
+  picked up by the owner; only the spotify-tile analysis idea was added. The candidates
+  stay here, not on the page.

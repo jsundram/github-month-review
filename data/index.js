@@ -10,7 +10,6 @@ window.REVIEW_INDEX = {
       label: "July 2026",
       file: "data/months/2026-07.js",
       status: "active",
-      inProgress: true,
       blurb: "AKM finished through the festival, then its patterns formalised into pwa-starter and carried back out."
     },
     {

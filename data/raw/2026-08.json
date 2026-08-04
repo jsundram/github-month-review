@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T22:28:25.549183+00:00",
+  "generated_at": "2026-08-04T22:45:48.283636+00:00",
   "user": "jsundram",
   "month": "2026-08",
   "coverage": {
@@ -204,6 +204,22 @@
           "date": "2026-08-04T21:01:12Z",
           "message": "sw: bound the network-first waits so lie-fi can't blank the screen",
           "url": "https://github.com/jsundram/quartet-log/commit/5df540f1e74a71794c7bc3c5b869bb6ec822f3fb"
+        }
+      ]
+    },
+    {
+      "name": "github-month-review",
+      "html_url": "https://github.com/jsundram/github-month-review",
+      "description": "A month-by-month review of public GitHub work, with a short narrative for each week.",
+      "language": "JavaScript",
+      "pushed_at": "2026-08-04T22:29:22Z",
+      "commit_count": 1,
+      "commits": [
+        {
+          "sha": "2823e5ba2609f4ae13fecb617cf1c3c78331e7a1",
+          "date": "2026-08-04T22:29:19Z",
+          "message": "updating",
+          "url": "https://github.com/jsundram/github-month-review/commit/2823e5ba2609f4ae13fecb617cf1c3c78331e7a1"
         }
       ]
     }

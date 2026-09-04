@@ -122,35 +122,36 @@ async function main() {
 
   console.log('\n== no hash: newest month ==');
   const first = await navigate('');
-  check('loaded the newest month file', first && first.src === 'data/months/2026-07.js', first && first.src);
-  check('hero splits month and year', hero.innerHTML === 'July<br /><span>2026</span>', hero.innerHTML);
-  check('coverage range is compact', /Covers Jul 1–31, 2026/.test(eyebrow.textContent), eyebrow.textContent);
+  check('loaded the newest month file', first && first.src === 'data/months/2026-08.js', first && first.src);
+  check('hero splits month and year', hero.innerHTML === 'August<br /><span>2026</span>', hero.innerHTML);
+  check('coverage range is compact', /Covers Aug 1–31, 2026/.test(eyebrow.textContent), eyebrow.textContent);
   check('completed month not flagged in progress', !/month in progress/.test(eyebrow.textContent), eyebrow.textContent);
   check('lede rendered', lede.textContent.length > 40);
-  check('document title names the month', document.title === 'July 2026 — GitHub review — jsundram', document.title);
+  check('document title names the month', document.title === 'August 2026 — GitHub review — jsundram', document.title);
   const meta = sel => el(sel).getAttribute('content');
   check('og:title tracks the document title', meta('meta[property="og:title"]') === document.title, meta('meta[property="og:title"]'));
   check('og:description filled from the lede', (meta('meta[property="og:description"]') || '').length > 40);
   check('meta description mirrors og:description', meta('meta[name="description"]') === meta('meta[property="og:description"]'));
-  check('og:url carries the month hash', /\/github-month-review\/#2026-07$/.test(el('meta[property="og:url"]').getAttribute('content')), el('meta[property="og:url"]').getAttribute('content'));
+  check('og:url carries the month hash', /\/github-month-review\/#2026-08$/.test(el('meta[property="og:url"]').getAttribute('content')), el('meta[property="og:url"]').getAttribute('content'));
   check('metrics rendered', count(metrics.innerHTML, /class="metric"/g) === 4);
-  check('active weeks rendered', count(weeks.innerHTML, /<article class="week-chapter"/g) === 5);
-  check('July is fully active', count(weeks.innerHTML, /week-chapter quiet/g) === 0);
-  check('week ids namespaced by month', /id="2026-07-w1"/.test(weeks.innerHTML));
-  check('every week is in the nav', count(nav.innerHTML, /week-nav-button/g) === 5);
+  check('active weeks rendered', count(weeks.innerHTML, /<article class="week-chapter"/g) === 6);
+  check('August is fully active', count(weeks.innerHTML, /week-chapter quiet/g) === 0);
+  check('week ids namespaced by month', /id="2026-08-w1"/.test(weeks.innerHTML));
+  check('every week is in the nav', count(nav.innerHTML, /week-nav-button/g) === 6);
   check('evidence wrapped for animation', /evidence-inner/.test(weeks.innerHTML));
   check('intensity bars filled', /class="on"/.test(weeks.innerHTML));
   check('themes derived from weeks', /Platform/.test(el('heroThemes').innerHTML));
   // The [" ] guard keeps month-option-label / month-option-tag out of the count.
-  check('menu lists every month', count(menu.innerHTML, /class="month-option[" ]/g) === 2);
+  check('menu lists every month', count(menu.innerHTML, /class="month-option[" ]/g) === 3);
   check('menu has no in-progress tag', !/in progress/.test(menu.innerHTML));
   check('no next month, prev available', el('monthNext').disabled && !el('monthPrev').disabled);
   check('no undefined in markup', !/undefined/.test(weeks.innerHTML + metrics.innerHTML + menu.innerHTML));
-  check('footer names the month', el('footerLine').textContent.endsWith('July 2026'), el('footerLine').textContent);
+  check('footer names the month', el('footerLine').textContent.endsWith('August 2026'), el('footerLine').textContent);
   check('metrics present, band shown', !document.body.classList.contains('no-metrics'));
-  check('July loose threads shown', el('threads').hidden === false);
-  check('July has three threads', count(el('threadList').innerHTML, /class="thread"/g) === 3);
+  check('August loose threads shown', el('threads').hidden === false);
+  check('August has four threads', count(el('threadList').innerHTML, /class="thread"/g) === 4);
   check('an active thread is labelled', /thread-status active">Still going/.test(el('threadList').innerHTML));
+  check('a dropped thread is labelled', /thread-status dropped/.test(el('threadList').innerHTML));
   check('scroll cue targets the band', el('scrollCue').href === '#overview', el('scrollCue').href);
 
   console.log('\n== older month loads on demand ==');
@@ -169,7 +170,7 @@ async function main() {
 
   console.log('\n== unknown hash falls back to newest ==');
   const missing = await navigate('#1999-01');
-  check('rendered July', hero.innerHTML === 'July<br /><span>2026</span>', hero.innerHTML);
+  check('rendered August', hero.innerHTML === 'August<br /><span>2026</span>', hero.innerHTML);
   check('served from cache, no refetch', !missing);
 
   console.log('\n== a month file that will not load ==');

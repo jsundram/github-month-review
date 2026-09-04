@@ -1,12 +1,722 @@
 {
-  "generated_at": "2026-08-04T22:45:48.283636+00:00",
+  "generated_at": "2026-09-04T16:45:14.396182+00:00",
   "user": "jsundram",
   "month": "2026-08",
   "coverage": {
     "start": "2026-08-01",
-    "end": "2026-08-04"
+    "end": "2026-08-31"
   },
   "repositories": [
+    {
+      "name": "quartet-chooser",
+      "html_url": "https://github.com/jsundram/quartet-chooser",
+      "description": "The code behind Quartet Roulette (https://quartetroulette.com)",
+      "language": "JavaScript",
+      "pushed_at": "2026-09-04T06:14:12Z",
+      "commit_count": 62,
+      "commits": [
+        {
+          "sha": "54bb8e3183915d38e63e974011edfe32a084ecbd",
+          "date": "2026-08-31T18:39:44Z",
+          "message": "pwa.md + checklist: Phase 7 is merged and live",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/54bb8e3183915d38e63e974011edfe32a084ecbd"
+        },
+        {
+          "sha": "b2da4b1c79ba3e71f7b9bb4ab9ccbad4659093a8",
+          "date": "2026-08-31T05:23:34Z",
+          "message": "Review round 7: a 44px way out, and two comments that said false things",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/b2da4b1c79ba3e71f7b9bb4ab9ccbad4659093a8"
+        },
+        {
+          "sha": "0f46b92315143ec9cf207a0af4ad90a26e662984",
+          "date": "2026-08-30T23:43:42Z",
+          "message": "Review round 6: the player leaves the page as it found it, and svg-diff was unparseable",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/0f46b92315143ec9cf207a0af4ad90a26e662984"
+        },
+        {
+          "sha": "e247ad0aef0601abb37889ba9d2b85c80b4e28ce",
+          "date": "2026-08-30T22:28:28Z",
+          "message": "Review round 5: keyboard activation, a way out of the player, doc drift",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/e247ad0aef0601abb37889ba9d2b85c80b4e28ce"
+        },
+        {
+          "sha": "643c06a28e86b09790862637f0faa9366d460813",
+          "date": "2026-08-29T08:08:27Z",
+          "message": "Review round 4: per-click input, a stroke guard, and two of my own regressions",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/643c06a28e86b09790862637f0faa9366d460813"
+        },
+        {
+          "sha": "18c2bab3e42e5fd60d7e237399140b08afbf9561",
+          "date": "2026-08-29T05:21:46Z",
+          "message": "Review round 3: cache integrity, an rm -rf guard, and stop shipping the icon master",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/18c2bab3e42e5fd60d7e237399140b08afbf9561"
+        },
+        {
+          "sha": "02f50fc9185dd873ff7c20289f91647817f95f1d",
+          "date": "2026-08-29T05:12:57Z",
+          "message": "Review round 2: unwarp the logo, one player at a time, and a visual diff tool",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/02f50fc9185dd873ff7c20289f91647817f95f1d"
+        },
+        {
+          "sha": "5485410b3fa81c44f6de175802b3943c881ea8aa",
+          "date": "2026-08-29T03:48:53Z",
+          "message": "pwa.md: the header globs are verified, and record the review",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/5485410b3fa81c44f6de175802b3943c881ea8aa"
+        },
+        {
+          "sha": "3c47a4e3d32286605dbd34f02292ef7854c6ed54",
+          "date": "2026-08-29T03:47:40Z",
+          "message": "Review fixes: widen the fold guards, stop failing on non-drawing SVGs",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/3c47a4e3d32286605dbd34f02292ef7854c6ed54"
+        },
+        {
+          "sha": "3d60425ff45db10d312c5a8158ef5c5c73b576c8",
+          "date": "2026-08-29T03:38:34Z",
+          "message": "Tests build into a temp directory; SVGs become a source -> output step",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/3d60425ff45db10d312c5a8158ef5c5c73b576c8"
+        },
+        {
+          "sha": "9a914bbdbb9d49576e31a8c653f5a0be8ed5f52b",
+          "date": "2026-08-29T03:24:26Z",
+          "message": "Prune the SVG cache, and drop an unused parameter",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/9a914bbdbb9d49576e31a8c653f5a0be8ed5f52b"
+        },
+        {
+          "sha": "9771965c1e2162a986f2bf7594784badea0ee072",
+          "date": "2026-08-29T03:15:51Z",
+          "message": "Load svgo lazily: it costs 170ms to import and a warm build never calls it",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/9771965c1e2162a986f2bf7594784badea0ee072"
+        },
+        {
+          "sha": "a6a81007ed036968ca1bf4076f64f91e2f07bf8a",
+          "date": "2026-08-29T03:14:50Z",
+          "message": "Cache the optimized drawings: 10x build regression down to 1.9x",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/a6a81007ed036968ca1bf4076f64f91e2f07bf8a"
+        },
+        {
+          "sha": "1fd94cad27447243cd2098af5d6945732e02640a",
+          "date": "2026-08-28T23:16:07Z",
+          "message": "test: say why the host-aware build failed instead of \"Command failed\"",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/1fd94cad27447243cd2098af5d6945732e02640a"
+        },
+        {
+          "sha": "6fbbd17e3b0a88261a8b12e030a772e08f6d656c",
+          "date": "2026-08-28T22:56:24Z",
+          "message": "Add CLAUDE.md: the repo facts that should outlive pwa.md",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/6fbbd17e3b0a88261a8b12e030a772e08f6d656c"
+        },
+        {
+          "sha": "5022a71e71cc04eda6a4ae48c82a9e921d3412fe",
+          "date": "2026-08-28T22:51:12Z",
+          "message": "pwa.md + checklist: Phase 7 is open for review as PR #44",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/5022a71e71cc04eda6a4ae48c82a9e921d3412fe"
+        },
+        {
+          "sha": "93742b5d907f2d745024c17a6979ffb22df4bb45",
+          "date": "2026-08-28T22:26:15Z",
+          "message": "checklist: the two data fixes that belong in the drawings",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/93742b5d907f2d745024c17a6979ffb22df4bb45"
+        },
+        {
+          "sha": "17e5abb1c4f6cc2c813601335b48e93cd5611a8e",
+          "date": "2026-08-28T22:25:14Z",
+          "message": "pwa.md: audit what belongs in the drawings vs the pipeline",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/17e5abb1c4f6cc2c813601335b48e93cd5611a8e"
+        },
+        {
+          "sha": "26021c702ad332c144592a146b1ec78765a39d8e",
+          "date": "2026-08-28T22:14:27Z",
+          "message": "checklist: the drawings are half their weight; node simplification is what is left",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/26021c702ad332c144592a146b1ec78765a39d8e"
+        },
+        {
+          "sha": "ffbeae8f65f2f7522b07238f1483743fc7f48175",
+          "date": "2026-08-28T22:13:29Z",
+          "message": "pwa.md: record the transform fold and what it replaced",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/ffbeae8f65f2f7522b07238f1483743fc7f48175"
+        },
+        {
+          "sha": "079a4c336e15170b527894f61ae301fd6237eda0",
+          "date": "2026-08-28T22:13:02Z",
+          "message": "Phase 7: fold Inkscape's transforms into the coordinates",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/079a4c336e15170b527894f61ae301fd6237eda0"
+        },
+        {
+          "sha": "47b7a9827a720d301489517e431b2ea64efd39b5",
+          "date": "2026-08-28T21:52:25Z",
+          "message": "Phase 7: correct the SVG precision reasoning -- 600px was not the ceiling",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/47b7a9827a720d301489517e431b2ea64efd39b5"
+        },
+        {
+          "sha": "89c1c22ec1e5b4286c374337e1ba0649df50565e",
+          "date": "2026-08-28T21:39:48Z",
+          "message": "checklist: why the drawings are heavy, and the one lever left",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/89c1c22ec1e5b4286c374337e1ba0649df50565e"
+        },
+        {
+          "sha": "5e11cea85df80568b18c43253e59dc72eb6d9f02",
+          "date": "2026-08-28T21:39:05Z",
+          "message": "pwa.md: what is actually inside the SVGs, and speed by connection",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/5e11cea85df80568b18c43253e59dc72eb6d9f02"
+        },
+        {
+          "sha": "05aed1e290d775e8ff01fa33e05a78c4eb7a6b0f",
+          "date": "2026-08-28T21:38:41Z",
+          "message": "Phase 7: pick the SVG precision per drawing, not one number for all",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/05aed1e290d775e8ff01fa33e05a78c4eb7a6b0f"
+        },
+        {
+          "sha": "21fa48971e66893b5a00922a4a3f9496a59fc36c",
+          "date": "2026-08-28T20:31:12Z",
+          "message": "checklist: the raster question is answered, not pending",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/21fa48971e66893b5a00922a4a3f9496a59fc36c"
+        },
+        {
+          "sha": "705b06559312fce3dd2d9133058aeb64ec0d36d9",
+          "date": "2026-08-28T20:30:20Z",
+          "message": "pwa.md: the raster experiment says keep the SVGs, and correct the numbers",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/705b06559312fce3dd2d9133058aeb64ec0d36d9"
+        },
+        {
+          "sha": "9c0942906bf7cb627829e7769b626256a823985e",
+          "date": "2026-08-28T20:09:21Z",
+          "message": "checklist: svgo landed; rasterizing is now optional, not blocking",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/9c0942906bf7cb627829e7769b626256a823985e"
+        },
+        {
+          "sha": "b46df323ad641388fbdfb6be1c701fc371d9825f",
+          "date": "2026-08-28T20:08:44Z",
+          "message": "pwa.md: svgo's real numbers, and what rasterizing would still buy",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/b46df323ad641388fbdfb6be1c701fc371d9825f"
+        },
+        {
+          "sha": "5882d33d42dc5a0f831394084904287e387c0fe0",
+          "date": "2026-08-28T20:08:17Z",
+          "message": "Phase 7: run svgo over the portraits in the build",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/5882d33d42dc5a0f831394084904287e387c0fe0"
+        },
+        {
+          "sha": "5e5d01cbf863d79be5d5dcd23b711adcb38fef17",
+          "date": "2026-08-28T19:30:47Z",
+          "message": "checklist: Phase 7's real numbers, and the one decision it needs",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/5e5d01cbf863d79be5d5dcd23b711adcb38fef17"
+        },
+        {
+          "sha": "522d33425dabc9909a89e616211748f22c92460b",
+          "date": "2026-08-28T19:29:54Z",
+          "message": "pwa.md: correct Phase 7 with the measured numbers",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/522d33425dabc9909a89e616211748f22c92460b"
+        },
+        {
+          "sha": "e578c8b1a888fa6f07ad55e7da06eb29ff9fe4c1",
+          "date": "2026-08-28T19:28:58Z",
+          "message": "Phase 7: put the home page's eager images back, and say why",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/e578c8b1a888fa6f07ad55e7da06eb29ff9fe4c1"
+        },
+        {
+          "sha": "29297c76201f7ab12cc8125ac5db9d6af724dad7",
+          "date": "2026-08-28T16:12:55Z",
+          "message": "checklist: Phase 7 is built and needs eyes, Phase 5 is decided",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/29297c76201f7ab12cc8125ac5db9d6af724dad7"
+        },
+        {
+          "sha": "814f078846a07f1974073596c7d467dc4e4a4946",
+          "date": "2026-08-28T16:12:12Z",
+          "message": "pwa.md: record what Phase 7 measured, changed, and left open",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/814f078846a07f1974073596c7d467dc4e4a4946"
+        },
+        {
+          "sha": "91974e074c0fbffe4718da9449133623dd705d9c",
+          "date": "2026-08-28T16:11:09Z",
+          "message": "Phase 7: click-to-play, so a work page loads no Spotify frames",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/91974e074c0fbffe4718da9449133623dd705d9c"
+        },
+        {
+          "sha": "d70f2eccd70510c72ac2435424092d78064fd5ab",
+          "date": "2026-08-28T15:59:50Z",
+          "message": "Phase 7: move the nav shuffle lists into shuffle.js",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/d70f2eccd70510c72ac2435424092d78064fd5ab"
+        },
+        {
+          "sha": "c1d1a022757d4702b3eb999fd9df2295ae792f58",
+          "date": "2026-08-28T15:57:55Z",
+          "message": "Phase 7: cache headers, so a warm browser stops re-asking",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/c1d1a022757d4702b3eb999fd9df2295ae792f58"
+        },
+        {
+          "sha": "a5ad2b900db2a263d1abbeeee014b99d62ffbf45",
+          "date": "2026-08-28T15:56:28Z",
+          "message": "Phase 7: stop preloading 1.4 MB on the home page",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/a5ad2b900db2a263d1abbeeee014b99d62ffbf45"
+        },
+        {
+          "sha": "79790ef0bce2c6771428b93e8e5f94c097150189",
+          "date": "2026-08-28T04:10:13Z",
+          "message": "pwa.md + checklist: Phases 3 and 4 are merged and live",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/79790ef0bce2c6771428b93e8e5f94c097150189"
+        },
+        {
+          "sha": "e088500aa67fbbbd2bc72028b6ffae8c5f093e61",
+          "date": "2026-08-28T04:03:58Z",
+          "message": "pwa.md + checklist: previews count, and the adblocker check can use one",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/e088500aa67fbbbd2bc72028b6ffae8c5f093e61"
+        },
+        {
+          "sha": "d424376a7ab9827de7e612645df49d036e206036",
+          "date": "2026-08-28T04:03:08Z",
+          "message": "Revert the CONTEXT gate: previews count, and that is fine",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/d424376a7ab9827de7e612645df49d036e206036"
+        },
+        {
+          "sha": "222d8a86c44d5cd2e2bcbc3452d8e9f223731d8f",
+          "date": "2026-08-28T03:59:10Z",
+          "message": "pwa.md + checklist: record the review fixes, and that only production counts",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/222d8a86c44d5cd2e2bcbc3452d8e9f223731d8f"
+        },
+        {
+          "sha": "bd34cac685b9e418fdf801055534cca030591c94",
+          "date": "2026-08-28T03:58:20Z",
+          "message": "Review fixes: only middle clicks, only production, and never a console error",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/bd34cac685b9e418fdf801055534cca030591c94"
+        },
+        {
+          "sha": "4e2b7970d497526887df68824d8ff1e343f56bf0",
+          "date": "2026-08-27T23:03:03Z",
+          "message": "pwa.md + checklist: record Phase 4 and what still needs the deploy",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/4e2b7970d497526887df68824d8ff1e343f56bf0"
+        },
+        {
+          "sha": "452c7fab3483b61b8b56f416ba7ff55d2e339017",
+          "date": "2026-08-27T23:01:33Z",
+          "message": "Phase 4: count visits with GoatCounter, and plays as an event",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/452c7fab3483b61b8b56f416ba7ff55d2e339017"
+        },
+        {
+          "sha": "800f7dc73bf295b23295417e140791b2321bcbf7",
+          "date": "2026-08-27T22:33:31Z",
+          "message": "pwa.md: point round two's citations at the commit that survived",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/800f7dc73bf295b23295417e140791b2321bcbf7"
+        },
+        {
+          "sha": "75542320d1155ff77f92e9070f376d157cd1a909",
+          "date": "2026-08-27T22:33:16Z",
+          "message": "Review round 2: descriptions that match the page, and a dash for \"none\"",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/75542320d1155ff77f92e9070f376d157cd1a909"
+        },
+        {
+          "sha": "e3c951fad76c992de32c85c2672b520ddd08a81a",
+          "date": "2026-08-27T17:38:56Z",
+          "message": "pwa.md: record the review fixes in Phase 3's write-up",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/e3c951fad76c992de32c85c2672b520ddd08a81a"
+        },
+        {
+          "sha": "a4a0ad7078335fe16502545ff4f1ccee4ba9fb5c",
+          "date": "2026-08-27T17:38:29Z",
+          "message": "Review fixes: honest date labels, and no player without a recording",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/a4a0ad7078335fe16502545ff4f1ccee4ba9fb5c"
+        },
+        {
+          "sha": "bd7a045743d907b6b831fa3117e86e5b2e008ab4",
+          "date": "2026-08-27T06:23:44Z",
+          "message": "pwa.md + checklist: record Phase 3 and what it left for a device",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/bd7a045743d907b6b831fa3117e86e5b2e008ab4"
+        },
+        {
+          "sha": "8cd73152e7f273c9fd6d826fbe6feee2c068b51f",
+          "date": "2026-08-27T06:23:00Z",
+          "message": "Phase 3: safe-area insets, color-scheme, and the accessibility floor",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/8cd73152e7f273c9fd6d826fbe6feee2c068b51f"
+        },
+        {
+          "sha": "3e3b97d483e648f9e7706227feef461df170df4b",
+          "date": "2026-08-27T05:59:56Z",
+          "message": "Checklist: Phase 2 is merged, and an existing iOS shortcut will not self-update",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/3e3b97d483e648f9e7706227feef461df170df4b"
+        },
+        {
+          "sha": "194008d8046db24d5ebca945bfeac68e96b4df90",
+          "date": "2026-08-27T05:58:50Z",
+          "message": "pwa.md: record Phase 2's hashes, and why these PRs cannot be squashed",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/194008d8046db24d5ebca945bfeac68e96b4df90"
+        },
+        {
+          "sha": "e4c6da590993bcb289c26f043fd19e843ea2a664",
+          "date": "2026-08-27T05:55:12Z",
+          "message": "Review fixes: survive a pngquant skip, and guard manifest.icons",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/e4c6da590993bcb289c26f043fd19e843ea2a664"
+        },
+        {
+          "sha": "515d22bd51d48310c339bca5b8cf102ab03f24f2",
+          "date": "2026-08-27T05:51:30Z",
+          "message": "Commit the checklist generator so the status page can actually be kept current",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/515d22bd51d48310c339bca5b8cf102ab03f24f2"
+        },
+        {
+          "sha": "4e0f14ee969eb8bece11babc1db4139b0a371c5c",
+          "date": "2026-08-27T04:05:18Z",
+          "message": "Make the site installable: real manifest, maskable icon, install metas",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/4e0f14ee969eb8bece11babc1db4139b0a371c5c"
+        },
+        {
+          "sha": "5b7b708c104fe92ec24831f393e5f7aad23c13cd",
+          "date": "2026-08-27T03:46:35Z",
+          "message": "Point the Phase 1 share-card tradeoffs at their follow-up issues",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/5b7b708c104fe92ec24831f393e5f7aad23c13cd"
+        },
+        {
+          "sha": "943ce7196ca9846bce77b55516cf9d7f561162fc",
+          "date": "2026-08-26T19:05:27Z",
+          "message": "Tighten descriptions after the opengraph.xyz read",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/943ce7196ca9846bce77b55516cf9d7f561162fc"
+        },
+        {
+          "sha": "6c14a688360ba1bd65997eeb131cfdae788ccb41",
+          "date": "2026-08-26T18:45:18Z",
+          "message": "pwa.md: check off Phase 1, and commit the plan itself",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/6c14a688360ba1bd65997eeb131cfdae788ccb41"
+        },
+        {
+          "sha": "cfc37770b939c8f2f7f3c2ea7ff6e449f4d45c82",
+          "date": "2026-08-26T18:45:07Z",
+          "message": "Raster share cards and a full preview tag set on every page",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/cfc37770b939c8f2f7f3c2ea7ff6e449f4d45c82"
+        },
+        {
+          "sha": "bb4a5da32aa9bcc4ef76fee04b13a985796c24d8",
+          "date": "2026-08-18T21:37:40Z",
+          "message": "Omit iframe src entirely when a movement has no Spotify link",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/bb4a5da32aa9bcc4ef76fee04b13a985796c24d8"
+        }
+      ]
+    },
+    {
+      "name": "quartet-log",
+      "html_url": "https://github.com/jsundram/quartet-log",
+      "description": "code for log.quartetroulette.com",
+      "language": "JavaScript",
+      "pushed_at": "2026-09-02T22:17:37Z",
+      "commit_count": 53,
+      "commits": [
+        {
+          "sha": "f8340b5615727fc398c4d18bf91cf5a53c392169",
+          "date": "2026-08-31T21:03:05Z",
+          "message": "Add a 1M date range option and fix the range boundary math (#29)",
+          "url": "https://github.com/jsundram/quartet-log/commit/f8340b5615727fc398c4d18bf91cf5a53c392169"
+        },
+        {
+          "sha": "52ed20221de3663fa1ac298bac08f39b1d5b1ca4",
+          "date": "2026-08-29T06:23:23Z",
+          "message": "A blank cell is a ditto mark, whatever the gap (#24)",
+          "url": "https://github.com/jsundram/quartet-log/commit/52ed20221de3663fa1ac298bac08f39b1d5b1ca4"
+        },
+        {
+          "sha": "c11b24ca1bac58cd058dcc858d9e220d0975e314",
+          "date": "2026-08-28T03:58:13Z",
+          "message": "Audit tooling for player-name and ensemble data quality (#18)",
+          "url": "https://github.com/jsundram/quartet-log/commit/c11b24ca1bac58cd058dcc858d9e220d0975e314"
+        },
+        {
+          "sha": "d8dabb373e7979afcb9ee60662f6138aa804e05c",
+          "date": "2026-08-25T04:31:01Z",
+          "message": "Merge pull request #17 from jsundram/claude/player-list-scroll-refresh-tazfxw",
+          "url": "https://github.com/jsundram/quartet-log/commit/d8dabb373e7979afcb9ee60662f6138aa804e05c"
+        },
+        {
+          "sha": "a19724d36ce0b0770d2cd730640017f88235d0d0",
+          "date": "2026-08-20T22:44:58Z",
+          "message": "Merge pull request #16 from jsundram/calendar-year-stats-from-aggregate",
+          "url": "https://github.com/jsundram/quartet-log/commit/a19724d36ce0b0770d2cd730640017f88235d0d0"
+        },
+        {
+          "sha": "ac48802693eb59023187ec95aa77b062ee0e0aab",
+          "date": "2026-08-20T22:35:30Z",
+          "message": "address PR review findings on per-year calendar stats",
+          "url": "https://github.com/jsundram/quartet-log/commit/ac48802693eb59023187ec95aa77b062ee0e0aab"
+        },
+        {
+          "sha": "923d1c45c402cd31fddfbd656da64f9e98a48608",
+          "date": "2026-08-20T21:17:00Z",
+          "message": "derive calendar per-year stats from computeAggregateStats",
+          "url": "https://github.com/jsundram/quartet-log/commit/923d1c45c402cd31fddfbd656da64f9e98a48608"
+        },
+        {
+          "sha": "a242bbacc3f7a59074a666742e2908fbbf46cb0e",
+          "date": "2026-08-20T21:09:06Z",
+          "message": "build: never publish md/CLAUDE.md as a site page (#14)",
+          "url": "https://github.com/jsundram/quartet-log/commit/a242bbacc3f7a59074a666742e2908fbbf46cb0e"
+        },
+        {
+          "sha": "07203f68fdc3bf178b473157fb31dd63576ccbdb",
+          "date": "2026-08-20T21:02:44Z",
+          "message": "Merge pull request #10 from jsundram/unique-parts-stat",
+          "url": "https://github.com/jsundram/quartet-log/commit/07203f68fdc3bf178b473157fb31dd63576ccbdb"
+        },
+        {
+          "sha": "19e801324672fe31c2bc48a07c97dc03a8ec7dc3",
+          "date": "2026-08-20T20:42:58Z",
+          "message": "address PR review findings on the Unique Parts stat",
+          "url": "https://github.com/jsundram/quartet-log/commit/19e801324672fe31c2bc48a07c97dc03a8ec7dc3"
+        },
+        {
+          "sha": "1f9e0a4a09489bfc16b0fca0fd1a1a0cfce4bda3",
+          "date": "2026-08-19T21:59:44Z",
+          "message": "add Unique Parts stat to summary cards and per-year calendar column",
+          "url": "https://github.com/jsundram/quartet-log/commit/1f9e0a4a09489bfc16b0fca0fd1a1a0cfce4bda3"
+        },
+        {
+          "sha": "4397df5bef6b83cdb11f3d06d762ee37b5417e76",
+          "date": "2026-08-18T20:46:23Z",
+          "message": "add 5+ tab for quintet-and-larger rep with VA2 part support",
+          "url": "https://github.com/jsundram/quartet-log/commit/4397df5bef6b83cdb11f3d06d762ee37b5417e76"
+        },
+        {
+          "sha": "145b0530c394b9220bce7ff21a29aa7a70e5548d",
+          "date": "2026-08-10T15:25:00Z",
+          "message": "swap ALL tab stat labels to short form on mobile",
+          "url": "https://github.com/jsundram/quartet-log/commit/145b0530c394b9220bce7ff21a29aa7a70e5548d"
+        },
+        {
+          "sha": "bd9014e26fc70dee96bc1f0c8b3aa3ae55140f2e",
+          "date": "2026-08-09T18:39:41Z",
+          "message": "Merge pull request #9 from jsundram/bump-action-pins",
+          "url": "https://github.com/jsundram/quartet-log/commit/bd9014e26fc70dee96bc1f0c8b3aa3ae55140f2e"
+        },
+        {
+          "sha": "73bbcf32a28ac6c1382b6c25cb39cf1b433cc7d1",
+          "date": "2026-08-09T18:38:25Z",
+          "message": "bump action pins to node24 releases; add Dependabot to keep them moving",
+          "url": "https://github.com/jsundram/quartet-log/commit/73bbcf32a28ac6c1382b6c25cb39cf1b433cc7d1"
+        },
+        {
+          "sha": "74b38e4921a1ff635ba4697a6b20849b0ed83868",
+          "date": "2026-08-09T18:36:40Z",
+          "message": "add push_aliases.sh to sync the alias tables to the deploy secret",
+          "url": "https://github.com/jsundram/quartet-log/commit/74b38e4921a1ff635ba4697a6b20849b0ed83868"
+        },
+        {
+          "sha": "8afb8b670ef32c72e2315ff21ba18e8530c0a7f3",
+          "date": "2026-08-09T18:16:52Z",
+          "message": "architecture hardening: execute the 2026-08-08 review as 27 stacked diffs (#8)",
+          "url": "https://github.com/jsundram/quartet-log/commit/8afb8b670ef32c72e2315ff21ba18e8530c0a7f3"
+        },
+        {
+          "sha": "86fe0773ebf015f09af3af715ec4af78cfc9e55a",
+          "date": "2026-08-09T18:14:13Z",
+          "message": "retire the executed review + todo working docs",
+          "url": "https://github.com/jsundram/quartet-log/commit/86fe0773ebf015f09af3af715ec4af78cfc9e55a"
+        },
+        {
+          "sha": "a55631729fc5d07d67b1b5bb38c75623e8d758f8",
+          "date": "2026-08-09T17:33:24Z",
+          "message": "serve same-origin JSON stale-while-revalidate in the SW",
+          "url": "https://github.com/jsundram/quartet-log/commit/a55631729fc5d07d67b1b5bb38c75623e8d758f8"
+        },
+        {
+          "sha": "91ffefef30659d7bc4216204b40ceffce16309c7",
+          "date": "2026-08-09T17:31:59Z",
+          "message": "gate SW cache eviction on a verified-complete precache",
+          "url": "https://github.com/jsundram/quartet-log/commit/91ffefef30659d7bc4216204b40ceffce16309c7"
+        },
+        {
+          "sha": "c91588d46e7e90380edf9b545a736143eddf144c",
+          "date": "2026-08-09T17:30:41Z",
+          "message": "fix stale sw.js-probe doc comments, bound CI job runtimes",
+          "url": "https://github.com/jsundram/quartet-log/commit/c91588d46e7e90380edf9b545a736143eddf144c"
+        },
+        {
+          "sha": "00fd691fca6584cd03d7fe1528a17c59dd83b17c",
+          "date": "2026-08-09T17:30:11Z",
+          "message": "delete the never-matching CACHE_KEY_PREFIX branch from clearCachedData",
+          "url": "https://github.com/jsundram/quartet-log/commit/00fd691fca6584cd03d7fe1528a17c59dd83b17c"
+        },
+        {
+          "sha": "604409be3e06a91bd5d427366dcb373f6e0fcf3d",
+          "date": "2026-08-09T14:47:11Z",
+          "message": "update CLAUDE.md for the new module/tooltip/lazy-render reality",
+          "url": "https://github.com/jsundram/quartet-log/commit/604409be3e06a91bd5d427366dcb373f6e0fcf3d"
+        },
+        {
+          "sha": "385e7342f30bb7040d9162cc4d570ae09d8fa61f",
+          "date": "2026-08-09T14:46:05Z",
+          "message": "add Playwright boot smoke test to PR CI",
+          "url": "https://github.com/jsundram/quartet-log/commit/385e7342f30bb7040d9162cc4d570ae09d8fa61f"
+        },
+        {
+          "sha": "b42ca0e38c15d53a6a1aa3f530d96ef7f6c51758",
+          "date": "2026-08-09T14:38:57Z",
+          "message": "fix lint + type errors surfaced by the new floors on post-E1 files",
+          "url": "https://github.com/jsundram/quartet-log/commit/b42ca0e38c15d53a6a1aa3f530d96ef7f6c51758"
+        },
+        {
+          "sha": "e98d07536ca11bc18c0ec5a412e882469195eced",
+          "date": "2026-08-09T05:56:34Z",
+          "message": "add JSDoc typechecking floor: @ts-check data layer, tsc --noEmit in CI",
+          "url": "https://github.com/jsundram/quartet-log/commit/e98d07536ca11bc18c0ec5a412e882469195eced"
+        },
+        {
+          "sha": "74217e187cf786c8ef31efcecba832dd6d98bc36",
+          "date": "2026-08-09T05:44:31Z",
+          "message": "add eslint flat-config floor and fix violations",
+          "url": "https://github.com/jsundram/quartet-log/commit/74217e187cf786c8ef31efcecba832dd6d98bc36"
+        },
+        {
+          "sha": "e59d49f434e3c7e2df0c301a507dae8434eee993",
+          "date": "2026-08-09T05:57:04Z",
+          "message": "split musician network into component + per-view renderer modules",
+          "url": "https://github.com/jsundram/quartet-log/commit/e59d49f434e3c7e2df0c301a507dae8434eee993"
+        },
+        {
+          "sha": "726ad964f7935ecf2e40816f27af547593e1dfb0",
+          "date": "2026-08-09T05:57:09Z",
+          "message": "render only the visible composer tab on filter change",
+          "url": "https://github.com/jsundram/quartet-log/commit/726ad964f7935ecf2e40816f27af547593e1dfb0"
+        },
+        {
+          "sha": "8b0a2344e3130b819be00a53bbf54b81d3efe8e1",
+          "date": "2026-08-09T05:56:52Z",
+          "message": "split app.js into focused modules; state as truth; idempotent re-init",
+          "url": "https://github.com/jsundram/quartet-log/commit/8b0a2344e3130b819be00a53bbf54b81d3efe8e1"
+        },
+        {
+          "sha": "f1f4e7cf2061a10f27a1af7227f8ccefd9d06b8f",
+          "date": "2026-08-09T05:52:14Z",
+          "message": "extract pure computation out of the render layer into tested modules",
+          "url": "https://github.com/jsundram/quartet-log/commit/f1f4e7cf2061a10f27a1af7227f8ccefd9d06b8f"
+        },
+        {
+          "sha": "eb65f45264358fa4c562a24dc866b954de931d96",
+          "date": "2026-08-09T05:46:37Z",
+          "message": "consolidate four tooltip implementations into one module",
+          "url": "https://github.com/jsundram/quartet-log/commit/eb65f45264358fa4c562a24dc866b954de931d96"
+        },
+        {
+          "sha": "4820b67df6c62997f1acf3cd7fc3d2553def98ab",
+          "date": "2026-08-09T05:41:12Z",
+          "message": "sweep dead code, fix wrong comments, name load-bearing constants",
+          "url": "https://github.com/jsundram/quartet-log/commit/4820b67df6c62997f1acf3cd7fc3d2553def98ab"
+        },
+        {
+          "sha": "d8201c448395a9f04479bf990a5268df760cddb9",
+          "date": "2026-08-09T05:35:03Z",
+          "message": "move player-name tables to gitignored src/aliases.js with checked-in stub",
+          "url": "https://github.com/jsundram/quartet-log/commit/d8201c448395a9f04479bf990a5268df760cddb9"
+        },
+        {
+          "sha": "d175d9b60021361e2b3954c01332c40e62129726",
+          "date": "2026-08-09T05:32:19Z",
+          "message": "fix fetch races: first-load timeout, revalidate interleaving, silent refresh failures",
+          "url": "https://github.com/jsundram/quartet-log/commit/d175d9b60021361e2b3954c01332c40e62129726"
+        },
+        {
+          "sha": "6332f759df957a3da2082fe5f8f4779673dc64fd",
+          "date": "2026-08-09T05:30:29Z",
+          "message": "harden localStorage caching: atomic envelope, quota signal, precise clearing",
+          "url": "https://github.com/jsundram/quartet-log/commit/6332f759df957a3da2082fe5f8f4779673dc64fd"
+        },
+        {
+          "sha": "342366bcc64af6c6b63bf220e9630d3e9864206c",
+          "date": "2026-08-09T05:33:53Z",
+          "message": "fix Others header drift with a shared CSV-format module",
+          "url": "https://github.com/jsundram/quartet-log/commit/342366bcc64af6c6b63bf220e9630d3e9864206c"
+        },
+        {
+          "sha": "8f2137bbca50fe87dea4cc6346cbcdc67616b7ee",
+          "date": "2026-08-09T05:31:51Z",
+          "message": "anchor fillForward's prefix match; test fillForward, processRow, parseWork",
+          "url": "https://github.com/jsundram/quartet-log/commit/8f2137bbca50fe87dea4cc6346cbcdc67616b7ee"
+        },
+        {
+          "sha": "78938040611d2d3ac2978a7447853d961883b19b",
+          "date": "2026-08-09T05:29:52Z",
+          "message": "sort rows by timestamp after parse; guard empty datasets",
+          "url": "https://github.com/jsundram/quartet-log/commit/78938040611d2d3ac2978a7447853d961883b19b"
+        },
+        {
+          "sha": "fc16f3fbbf712ae715b2a7b0b09ad74bb934f1ad",
+          "date": "2026-08-09T05:34:36Z",
+          "message": "escape sheet-derived strings at every .html() tooltip sink",
+          "url": "https://github.com/jsundram/quartet-log/commit/fc16f3fbbf712ae715b2a7b0b09ad74bb934f1ad"
+        },
+        {
+          "sha": "4713ed5ad9b13de53f675a9d755e554c4f9fe810",
+          "date": "2026-08-09T05:31:24Z",
+          "message": "fix Random button reading first-render data; extract + test pickRandomWork",
+          "url": "https://github.com/jsundram/quartet-log/commit/4713ed5ad9b13de53f675a9d755e554c4f9fe810"
+        },
+        {
+          "sha": "d0f6988b80a9f834bdba4d8a841f23276ace69fa",
+          "date": "2026-08-09T05:29:25Z",
+          "message": "generate SW precache manifest and full-coverage version from build output",
+          "url": "https://github.com/jsundram/quartet-log/commit/d0f6988b80a9f834bdba4d8a841f23276ace69fa"
+        },
+        {
+          "sha": "cda1b34371e327bc120cb7cb71e731d0088e6657",
+          "date": "2026-08-09T05:22:46Z",
+          "message": "make src/ Node-resolvable; bundle d3 from npm, drop vendored copy",
+          "url": "https://github.com/jsundram/quartet-log/commit/cda1b34371e327bc120cb7cb71e731d0088e6657"
+        },
+        {
+          "sha": "783e5edcabd7d6e345b69e172149ddf568fec6f3",
+          "date": "2026-08-09T05:20:15Z",
+          "message": "add PR test workflow, pin CI supply chain, single-source tool versions",
+          "url": "https://github.com/jsundram/quartet-log/commit/783e5edcabd7d6e345b69e172149ddf568fec6f3"
+        },
+        {
+          "sha": "6b7645d2d9495ba899edb316d9454b7369c82929",
+          "date": "2026-08-09T05:16:59Z",
+          "message": "harden build.sh: fail loudly, clean teardown, scoped rewrites",
+          "url": "https://github.com/jsundram/quartet-log/commit/6b7645d2d9495ba899edb316d9454b7369c82929"
+        },
+        {
+          "sha": "d5883c1f045d3826a52195e2c1ece830d4f53db6",
+          "date": "2026-08-09T05:03:05Z",
+          "message": "plans for improving codebase (will remove once implemented)",
+          "url": "https://github.com/jsundram/quartet-log/commit/d5883c1f045d3826a52195e2c1ece830d4f53db6"
+        },
+        {
+          "sha": "67929bddfe6baf50f8b94ce13dcb2e36a00c9987",
+          "date": "2026-08-08T03:36:06Z",
+          "message": "Merge pull request #6 from jsundram/streak-start-tooltip",
+          "url": "https://github.com/jsundram/quartet-log/commit/67929bddfe6baf50f8b94ce13dcb2e36a00c9987"
+        },
+        {
+          "sha": "8f788650b2261197978ead4728d4a89990e13875",
+          "date": "2026-08-08T03:35:25Z",
+          "message": "clear the stat tooltip's max-width cap in the other shared-div tooltips",
+          "url": "https://github.com/jsundram/quartet-log/commit/8f788650b2261197978ead4728d4a89990e13875"
+        },
+        {
+          "sha": "a69464f14665b75ccbd1520502b1814dd24a3f2a",
+          "date": "2026-08-08T03:24:38Z",
+          "message": "show streak start date (and tie count) in streak tooltips",
+          "url": "https://github.com/jsundram/quartet-log/commit/a69464f14665b75ccbd1520502b1814dd24a3f2a"
+        },
+        {
+          "sha": "509eefaedfe3dd0c0cba3ef86e477877aa4e5785",
+          "date": "2026-08-07T22:36:35Z",
+          "message": "add max-streak metric to aggregate stats, calendar, and dashboard (#4)",
+          "url": "https://github.com/jsundram/quartet-log/commit/509eefaedfe3dd0c0cba3ef86e477877aa4e5785"
+        },
+        {
+          "sha": "0a3b60f961b639f5b50e313e3ea1780961f21121",
+          "date": "2026-08-07T05:29:37Z",
+          "message": "Partition dashboard Top Composers bar by user part (#3)",
+          "url": "https://github.com/jsundram/quartet-log/commit/0a3b60f961b639f5b50e313e3ea1780961f21121"
+        },
+        {
+          "sha": "4c4717cf00578bf09d6cc806e57519280443b6b7",
+          "date": "2026-08-04T21:39:46Z",
+          "message": "sw: bound the cache-miss fetch too; make the tests pin what they claim",
+          "url": "https://github.com/jsundram/quartet-log/commit/4c4717cf00578bf09d6cc806e57519280443b6b7"
+        },
+        {
+          "sha": "5df540f1e74a71794c7bc3c5b869bb6ec822f3fb",
+          "date": "2026-08-04T21:01:12Z",
+          "message": "sw: bound the network-first waits so lie-fi can't blank the screen",
+          "url": "https://github.com/jsundram/quartet-log/commit/5df540f1e74a71794c7bc3c5b869bb6ec822f3fb"
+        }
+      ]
+    },
     {
       "name": "haydn-info-card",
       "html_url": "https://github.com/jsundram/haydn-info-card",
@@ -100,9 +810,33 @@
       "html_url": "https://github.com/jsundram/pwa-starter",
       "description": null,
       "language": "JavaScript",
-      "pushed_at": "2026-08-04T21:50:06Z",
-      "commit_count": 4,
+      "pushed_at": "2026-08-26T18:43:36Z",
+      "commit_count": 8,
       "commits": [
+        {
+          "sha": "d2fad0148b486446d4676b4dd826dfa4e9961c0b",
+          "date": "2026-08-26T18:43:33Z",
+          "message": "Merge pull request #10 from jsundram/retrack-quartet-log",
+          "url": "https://github.com/jsundram/pwa-starter/commit/d2fad0148b486446d4676b4dd826dfa4e9961c0b"
+        },
+        {
+          "sha": "a0e00dd010afb43cbad32b71352aa97586c6abda",
+          "date": "2026-08-26T18:43:01Z",
+          "message": "check-downstream: report discovery-only hits in their own bucket",
+          "url": "https://github.com/jsundram/pwa-starter/commit/a0e00dd010afb43cbad32b71352aa97586c6abda"
+        },
+        {
+          "sha": "2b5037c330e8f5f124a9bc0a20513f9dc983055a",
+          "date": "2026-08-09T17:56:31Z",
+          "message": "PROPAGATE: update quartet-log's rows for the app.js split + SW hand-ports",
+          "url": "https://github.com/jsundram/pwa-starter/commit/2b5037c330e8f5f124a9bc0a20513f9dc983055a"
+        },
+        {
+          "sha": "ad8371b0d207ed690571e4424c7ff26da98268d4",
+          "date": "2026-08-09T17:56:30Z",
+          "message": "check-downstream: discovery-only basenames \u2014 re-see regions split into new files",
+          "url": "https://github.com/jsundram/pwa-starter/commit/ad8371b0d207ed690571e4424c7ff26da98268d4"
+        },
         {
           "sha": "3ec30329d91eeb80a8742698be0685061025de90",
           "date": "2026-08-04T21:36:57Z",
@@ -126,6 +860,34 @@
           "date": "2026-08-04T20:52:11Z",
           "message": "sw.js: serve the shell cache-first with a bounded network fallback (#9)",
           "url": "https://github.com/jsundram/pwa-starter/commit/77fcb3552cda40048a6ccc02c4d5046e9637de6e"
+        }
+      ]
+    },
+    {
+      "name": "github-month-review",
+      "html_url": "https://github.com/jsundram/github-month-review",
+      "description": "A month-by-month review of public GitHub work, with a short narrative for each week.",
+      "language": "JavaScript",
+      "pushed_at": "2026-08-04T23:06:00Z",
+      "commit_count": 3,
+      "commits": [
+        {
+          "sha": "ed0ad6855ec3b88fa2c7e609b115ed8a7177fdf8",
+          "date": "2026-08-04T23:05:56Z",
+          "message": "Close out July: full-month snapshot, SoCal week, week-4 additions",
+          "url": "https://github.com/jsundram/github-month-review/commit/ed0ad6855ec3b88fa2c7e609b115ed8a7177fdf8"
+        },
+        {
+          "sha": "8db6063cf8298f7d1d5e2cb76e5ed446d8d0a30d",
+          "date": "2026-08-04T23:05:48Z",
+          "message": "Load GITHUB_TOKEN from a gitignored .env",
+          "url": "https://github.com/jsundram/github-month-review/commit/8db6063cf8298f7d1d5e2cb76e5ed446d8d0a30d"
+        },
+        {
+          "sha": "2823e5ba2609f4ae13fecb617cf1c3c78331e7a1",
+          "date": "2026-08-04T22:29:19Z",
+          "message": "updating",
+          "url": "https://github.com/jsundram/github-month-review/commit/2823e5ba2609f4ae13fecb617cf1c3c78331e7a1"
         }
       ]
     },
@@ -186,40 +948,18 @@
       ]
     },
     {
-      "name": "quartet-log",
-      "html_url": "https://github.com/jsundram/quartet-log",
-      "description": "code for log.quartetroulette.com",
+      "name": "nh_tax_map",
+      "html_url": "https://github.com/jsundram/nh_tax_map",
+      "description": "Interactive choropleth map of NH property tax rates (2022-2025) built with D3.js",
       "language": "JavaScript",
-      "pushed_at": "2026-08-04T21:49:01Z",
-      "commit_count": 2,
-      "commits": [
-        {
-          "sha": "4c4717cf00578bf09d6cc806e57519280443b6b7",
-          "date": "2026-08-04T21:39:46Z",
-          "message": "sw: bound the cache-miss fetch too; make the tests pin what they claim",
-          "url": "https://github.com/jsundram/quartet-log/commit/4c4717cf00578bf09d6cc806e57519280443b6b7"
-        },
-        {
-          "sha": "5df540f1e74a71794c7bc3c5b869bb6ec822f3fb",
-          "date": "2026-08-04T21:01:12Z",
-          "message": "sw: bound the network-first waits so lie-fi can't blank the screen",
-          "url": "https://github.com/jsundram/quartet-log/commit/5df540f1e74a71794c7bc3c5b869bb6ec822f3fb"
-        }
-      ]
-    },
-    {
-      "name": "github-month-review",
-      "html_url": "https://github.com/jsundram/github-month-review",
-      "description": "A month-by-month review of public GitHub work, with a short narrative for each week.",
-      "language": "JavaScript",
-      "pushed_at": "2026-08-04T22:29:22Z",
+      "pushed_at": "2026-08-06T18:40:18Z",
       "commit_count": 1,
       "commits": [
         {
-          "sha": "2823e5ba2609f4ae13fecb617cf1c3c78331e7a1",
-          "date": "2026-08-04T22:29:19Z",
-          "message": "updating",
-          "url": "https://github.com/jsundram/github-month-review/commit/2823e5ba2609f4ae13fecb617cf1c3c78331e7a1"
+          "sha": "34677c1beaefe3b4946a79b93c4da2c14d79bee8",
+          "date": "2026-08-06T18:40:18Z",
+          "message": "cite inspiration",
+          "url": "https://github.com/jsundram/nh_tax_map/commit/34677c1beaefe3b4946a79b93c4da2c14d79bee8"
         }
       ]
     }

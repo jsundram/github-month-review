@@ -6,6 +6,13 @@ window.REVIEW_INDEX = {
   site: "https://jsundram.github.io/github-month-review/",   // deploy origin; app.js builds per-month og:url from it
   months: [
     {
+      id: "2026-08",
+      label: "August 2026",
+      file: "data/months/2026-08.js",
+      status: "active",
+      blurb: "The most music of any month yet, with quartet-chooser's PWA checklist, a quartet-log overhaul, and a Cozio bow dataset in the gaps."
+    },
+    {
       id: "2026-07",
       label: "July 2026",
       file: "data/months/2026-07.js",

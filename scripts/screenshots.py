@@ -90,6 +90,8 @@ def main() -> int:
         return 1
 
     shots = {
+        "august-full": "August 2026, full page",
+        "august-mobile": "August on a phone",
         "july-full": "July 2026, full page",
         "july-evidence": "July with evidence expanded",
         "july-menu": "July with the month menu open",
@@ -123,6 +125,20 @@ def main() -> int:
                 if quiet_month:
                     stub_quiet_month(page)
                 return page
+
+            if "august-full" in wanted:
+                page = new_page()
+                page.goto(f"{base}/#2026-08")
+                settle(page)
+                page.screenshot(path=OUT / "august-full.png", full_page=True)
+                page.close()
+
+            if "august-mobile" in wanted:
+                page = new_page(viewport=MOBILE)
+                page.goto(f"{base}/#2026-08")
+                settle(page)
+                page.screenshot(path=OUT / "august-mobile.png", full_page=True)
+                page.close()
 
             if "july-full" in wanted:
                 page = new_page()

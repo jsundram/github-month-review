@@ -397,6 +397,13 @@ month-in-review becomes an active thread ("built, hasn't landed").
 
 ## Corrections this interview produced
 
+- The three unpublished size reports (violin/viola/cello size against price) were first
+  read as September work from their Sep 4 modification times. The owner corrected this:
+  they were created Aug 28 and only regenerated later. `stat` birth times confirm it —
+  all nine files (analyzers, templates, dist pages) born 2026-08-28, with the analyzer
+  scripts unmodified since. Week 5 was amended to say six reports, three unpublished.
+
+
 - The owner assumed the Aug 9 quartet-log plans doc was still open ("I had forgotten
   entirely about the quartet-log plans doc, so I assume it is still open (?)"). The API
   says otherwise: d5883c1 (Aug 9, 05:03) added `architecture-review.md` and

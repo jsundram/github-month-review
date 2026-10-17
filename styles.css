@@ -177,7 +177,8 @@ body.load-error .dek { color: var(--gold); font-family: ui-monospace, SFMono-Reg
 .week-summary { margin: 26px 0 38px; max-width: 780px; font-family: Georgia, "Times New Roman", serif; font-size: 20px; line-height: 1.6; color: var(--ink-2); }
 .theme-list { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 28px; }
 .theme-tag { padding: 6px 9px; border: 1px solid var(--line); border-radius: 999px; font-size: 10px; text-transform: uppercase; letter-spacing: .09em; font-weight: 800; }
-.project-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
+/* auto-fill keeps empty tracks, so a lone card stays one column wide instead of stretching its screenshot */
+.project-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
 .project-card { text-decoration: none; border: 1px solid var(--line); border-radius: 14px; padding: 22px; min-height: 180px; transition: transform .2s ease, background .2s ease; }
 .project-card:hover { transform: translateY(-3px); background: var(--paper); }
 /* Stacked, not side by side: with three cards in a row the repo slug gets
@@ -187,6 +188,15 @@ body.load-error .dek { color: var(--gold); font-family: ui-monospace, SFMono-Reg
 .project-card code { display: block; margin-top: 5px; font-size: 10.5px; color: var(--muted); overflow-wrap: anywhere; }
 .project-card p { color: var(--muted); line-height: 1.45; font-size: 14px; }
 .project-card b { display: inline-block; margin-top: 12px; color: var(--accent); font-size: 12px; }
+/* Screenshot, flush with the card's top edge. The 16:10 box is reserved before the
+   image loads, so nothing below it moves. Cropped from the top: that is where a page's
+   title and controls are. */
+.project-card.has-shot { padding-top: 0; overflow: hidden; }
+.project-shot {
+  display: block; width: calc(100% + 44px); max-width: none; height: auto; aspect-ratio: 16 / 10;
+  margin: 0 -22px 18px; object-fit: cover; object-position: top center;
+  background: var(--paper); border-bottom: 1px solid var(--line);
+}
 
 .week-note {
   margin: 26px 0 0; padding: 15px 20px; max-width: 780px;
@@ -304,6 +314,7 @@ footer a { font-weight: 800; }
   .week-chapter { break-inside: avoid; }
   .evidence { grid-template-rows: 1fr; opacity: 1; margin-top: 20px; }
   .project-card { break-inside: avoid; }
+  .project-shot { aspect-ratio: 16 / 7; }
 }
 
 @media (prefers-reduced-motion: reduce) {

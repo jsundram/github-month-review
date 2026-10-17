@@ -1,0 +1,86 @@
+{
+  "AKM": {
+    "src": "assets/projects/AKM.jpg",
+    "alt": "The AlpenKammerMusik daily briefing for Monday 29 June, opening with the day's forecast and temperature curve."
+  },
+  "boccherini-haydn-timeline": {
+    "src": "assets/projects/boccherini-haydn-timeline.jpg",
+    "alt": "\"Two Lives in Quartets\": Haydn's quartets on the left and Boccherini's on the right, one bar per opus on a shared timeline from 1760 to 1805."
+  },
+  "boccherini-opus-48": {
+    "src": "assets/projects/boccherini-opus-48.jpg",
+    "alt": "The edition's review page for Op. 48 No. 5, Larghetto: each part's manuscript above the engraving, bar line under bar line, under a map of the movement's open CHECKs."
+  },
+  "boccherini-sampler": {
+    "src": "assets/projects/boccherini-sampler.jpg",
+    "alt": "The Boccherini Sampler: a reading-party page that bundles each group's parts into one PDF per instrument."
+  },
+  "github-month-review": {
+    "src": "assets/projects/github-month-review.jpg",
+    "alt": "This review's August 2026 page: the month in large type above its lede."
+  },
+  "haydn-info-card": {
+    "src": "assets/projects/haydn-info-card.jpg",
+    "alt": "Joseph Haydn \u2014 The 68 String Quartets: a grid of cards, one per quartet, giving its key, in rows by opus."
+  },
+  "haydn-lowdn": {
+    "src": "assets/projects/haydn-lowdn.jpg",
+    "alt": "Haydn String Quartets \u2014 Pitch Extremes by Movement: a coloured bar per part spanning each movement's lowest to highest note."
+  },
+  "haydnenthusiasts.org": {
+    "src": "assets/projects/haydnenthusiasts.org.jpg",
+    "alt": "The Haydn Enthusiasts concerts page: a strip of past concerts above a listing for a Haydn birthday concert on March 31, 2025."
+  },
+  "lissajous-tuner": {
+    "src": "assets/projects/lissajous-tuner.jpg",
+    "alt": "The Lissajous Tuner before it starts listening: Violin, Viola and Cello tabs, a Start listening button, and string pins for G3, D4, A4 and E5."
+  },
+  "lobsters-and-lighthouses": {
+    "src": "assets/projects/lobsters-and-lighthouses.jpg",
+    "alt": "Lobsters & Lighthouses: the June 22 day trip from Somerville up the coast to Cape Elizabeth and home \u2014 10 stops, 255 miles, 5:50 of driving."
+  },
+  "maestoso-127": {
+    "src": "assets/projects/maestoso-127.jpg",
+    "alt": "Opus 127: Maestoso \u2014 the opening bars in score above semicircles comparing recorded performances' timings."
+  },
+  "manuscript-labeler": {
+    "src": "assets/projects/manuscript-labeler.jpg",
+    "alt": "Five strips of handwritten manuscript staves, each bar line found by a detector marked with its confidence."
+  },
+  "mbta-glx": {
+    "src": "assets/projects/mbta-glx.jpg",
+    "alt": "The Magoun Square board, headed by two notices of upcoming Green Line suspensions."
+  },
+  "nh_tax_map": {
+    "src": "assets/projects/nh_tax_map.jpg",
+    "alt": "New Hampshire Property Tax Rates: a map of the state's towns shaded green by tax rate, for 2025."
+  },
+  "pwa-starter": {
+    "src": "assets/projects/pwa-starter.jpg",
+    "alt": "pwa-starter's placeholder shell: an APP header and a box asking to be replaced."
+  },
+  "quartet-chooser": {
+    "src": "assets/projects/quartet-chooser.jpg",
+    "alt": "Quartet Roulette's home page: a grid of illustrated composer portraits."
+  },
+  "quartet-composers": {
+    "src": "assets/projects/quartet-composers.jpg",
+    "alt": "String Quartet Composers, Fame view: a histogram of Wikipedia readership above a scatter of 790 composers."
+  },
+  "quartet-log": {
+    "src": "assets/projects/quartet-log.jpg",
+    "alt": "Quartet Log's setup screen, asking for the URL of a published Google Sheet."
+  },
+  "quartets.boccherini.org": {
+    "src": "assets/projects/quartets.boccherini.org.jpg",
+    "alt": "Luigi Boccherini (1743\u20131805) \u2013 91 String Quartets: a grid of cards, one per quartet, giving its key, in rows by opus."
+  },
+  "somerville-typemap": {
+    "src": "assets/projects/somerville-typemap.jpg",
+    "alt": "Somerville neighbourhood names warped to fill the shapes of their areas \u2014 Ball Square, Davis Square, Magoun Square and others."
+  },
+  "spotify-tile": {
+    "src": "assets/projects/spotify-tile.jpg",
+    "alt": "Three Spotify Tile renders: abstract geometric tiles, each generated from one song."
+  }
+}

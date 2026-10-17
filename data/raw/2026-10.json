@@ -1,0 +1,2108 @@
+{
+  "generated_at": "2026-10-17T19:03:35.403910+00:00",
+  "user": "jsundram",
+  "month": "2026-10",
+  "coverage": {
+    "start": "2026-10-01",
+    "end": "2026-10-17"
+  },
+  "repositories": [
+    {
+      "name": "boccherini-opus-48",
+      "html_url": "https://github.com/jsundram/boccherini-opus-48",
+      "description": null,
+      "language": "Python",
+      "private": true,
+      "pushed_at": "2026-10-17T08:48:15Z",
+      "commit_count": 174,
+      "commits": [
+        {
+          "sha": "7e3ac08ad46e9201cd00a8382e2e4d5eda2c1412",
+          "date": "2026-10-17T08:04:06Z",
+          "message": "Score proof page: a rebuild taken in place, not a reload",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/7e3ac08ad46e9201cd00a8382e2e4d5eda2c1412"
+        },
+        {
+          "sha": "bf1fedf228776cc92a4d130ddcd4c17c86d9f19e",
+          "date": "2026-10-17T08:00:31Z",
+          "message": "Op48-5 mvt I: all four parts from F-Po RES 507 (17)",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/bf1fedf228776cc92a4d130ddcd4c17c86d9f19e"
+        },
+        {
+          "sha": "6ab2b1d1d8de4a87233eab54f91ebdca07b533b3",
+          "date": "2026-10-17T08:00:31Z",
+          "message": "Evidence: count the person's comments and flags as corrections",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/6ab2b1d1d8de4a87233eab54f91ebdca07b533b3"
+        },
+        {
+          "sha": "bf640cd48625a94e07d059ad2f4fdb658c917b5a",
+          "date": "2026-10-17T07:23:56Z",
+          "message": "A bar running on to the next line shown whole; the recheck card as a wizard",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/bf640cd48625a94e07d059ad2f4fdb658c917b5a"
+        },
+        {
+          "sha": "2ef7e21c1a4765aaca3b9f7b0502639bb7c98ed0",
+          "date": "2026-10-17T06:04:22Z",
+          "message": "Score proof page: Revert on a recheck CHECK, with its picture; the log counts rechecks",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/2ef7e21c1a4765aaca3b9f7b0502639bb7c98ed0"
+        },
+        {
+          "sha": "6a30e1fdacb2a91f300378c68d7b767d5da83e9a",
+          "date": "2026-10-17T04:58:30Z",
+          "message": "/encode recheck: a CHECK on each changed line, a picture with what Revert puts back",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/6a30e1fdacb2a91f300378c68d7b767d5da83e9a"
+        },
+        {
+          "sha": "9727d5f47b2bb987999ac9aa384d1918ed359da7",
+          "date": "2026-10-17T04:58:30Z",
+          "message": "encode checks: a drawn natural where another part has that note sharp",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/9727d5f47b2bb987999ac9aa384d1918ed359da7"
+        },
+        {
+          "sha": "b7f7c0a1fae80b23a4bfcb9ea4782996cbc697c2",
+          "date": "2026-10-17T03:39:34Z",
+          "message": "Score proof: a split bar's repeat sign under each part's manuscript sign, its notes spread evenly",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/b7f7c0a1fae80b23a4bfcb9ea4782996cbc697c2"
+        },
+        {
+          "sha": "dd40332cbb0aca9b754c63f6f5c7f5e7156abd5b",
+          "date": "2026-10-16T23:06:45Z",
+          "message": "/encode: questions to the person with pictures, answerable from a phone",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/dd40332cbb0aca9b754c63f6f5c7f5e7156abd5b"
+        },
+        {
+          "sha": "39101d46eaa369317e365904bcca49c9ab3f17c4",
+          "date": "2026-10-16T21:45:31Z",
+          "message": "proof: a line's first bar starts at the engraved first note",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/39101d46eaa369317e365904bcca49c9ab3f17c4"
+        },
+        {
+          "sha": "a9947bd520fdca74f12879d8d1b825d0cc1c7dbe",
+          "date": "2026-10-16T21:35:05Z",
+          "message": "unfold-midi: review fixes, and the unfolded MIDI documented",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/a9947bd520fdca74f12879d8d1b825d0cc1c7dbe"
+        },
+        {
+          "sha": "639b84602b3c5c67da8bdb0fad6573739498c753",
+          "date": "2026-10-16T21:25:16Z",
+          "message": "Unfolded MIDI: repeats and da capo played out, a marker at each repeat sign",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/639b84602b3c5c67da8bdb0fad6573739498c753"
+        },
+        {
+          "sha": "432a375360b06d83a5b2cfc03281142ef2c7ebdf",
+          "date": "2026-10-16T21:14:50Z",
+          "message": "/encode: the person's comments are requests the fix agents carry out",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/432a375360b06d83a5b2cfc03281142ef2c7ebdf"
+        },
+        {
+          "sha": "e1630100179b91a0a132711d8b6553f3770ce664",
+          "date": "2026-10-16T20:44:14Z",
+          "message": "Op48-5 II encoded (/encode v5): 9.2 person-minutes per 100 bar-parts",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/e1630100179b91a0a132711d8b6553f3770ce664"
+        },
+        {
+          "sha": "1019e3dff110b6afbfec6233a51583ffb429a9a8",
+          "date": "2026-10-16T20:08:47Z",
+          "message": "Score proof: graces by bar with their length, as the part proof",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/1019e3dff110b6afbfec6233a51583ffb429a9a8"
+        },
+        {
+          "sha": "77dba68c2a61811d593c0dba1b598e351163a9d9",
+          "date": "2026-10-16T20:08:47Z",
+          "message": "/encode hand-off: start with make serve; homework answers settle their bars",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/77dba68c2a61811d593c0dba1b598e351163a9d9"
+        },
+        {
+          "sha": "a889e8bce7ed33656fca1e7e9504c3e10bce496f",
+          "date": "2026-10-16T20:08:47Z",
+          "message": "Zeus through the labeler's zeus-score package, the model by registry",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/a889e8bce7ed33656fca1e7e9504c3e10bce496f"
+        },
+        {
+          "sha": "371bd65415326f6cc26f6ed7c93b912b0e6b12d0",
+          "date": "2026-10-16T19:45:56Z",
+          "message": "Zeus: run J replaces run G, the floor kept at 3",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/371bd65415326f6cc26f6ed7c93b912b0e6b12d0"
+        },
+        {
+          "sha": "6ff84ebb897acc385dc4d1fc1a23c78970d3515c",
+          "date": "2026-10-16T19:45:56Z",
+          "message": "Zeus objections: a beam where we have an accidental is an objection",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/6ff84ebb897acc385dc4d1fc1a23c78970d3515c"
+        },
+        {
+          "sha": "c202d3f3e2dd263325e437265c1143691c8b1d35",
+          "date": "2026-10-16T19:31:41Z",
+          "message": "make changes-: the score and parts with what changed in color, for players",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/c202d3f3e2dd263325e437265c1143691c8b1d35"
+        },
+        {
+          "sha": "f7e90a8e92cc5d092fe38310b427e0844db6fd6c",
+          "date": "2026-10-16T19:23:39Z",
+          "message": "A repeat split across two lines, then an upbeat: skip the clef box",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/f7e90a8e92cc5d092fe38310b427e0844db6fd6c"
+        },
+        {
+          "sha": "c0d81f8e64ad95d8e6a88ceeda4cf86ef07c370f",
+          "date": "2026-10-16T19:23:29Z",
+          "message": "Proof and zoom read staff outlines from the bar export (closes #1)",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/c0d81f8e64ad95d8e6a88ceeda4cf86ef07c370f"
+        },
+        {
+          "sha": "3b190d52f156d06c6344dc17fc3cbe0a5d6f70c6",
+          "date": "2026-10-16T10:13:23Z",
+          "message": "Op48-5: start the quartet; Structure.ily from the F-Po RES 507 (17) labels",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/3b190d52f156d06c6344dc17fc3cbe0a5d6f70c6"
+        },
+        {
+          "sha": "f0dbb8f3e458ee090b682f8f9026833ab60757ce",
+          "date": "2026-10-16T09:17:56Z",
+          "message": "/encode v5: Zeus checks the read, repairs go to the person first",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/f0dbb8f3e458ee090b682f8f9026833ab60757ce"
+        },
+        {
+          "sha": "3f75db6efc9632272c699041334dc636f063a881",
+          "date": "2026-10-16T07:13:31Z",
+          "message": "Log: a CHECK fixed in the note file shows on the timeline",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/3f75db6efc9632272c699041334dc636f063a881"
+        },
+        {
+          "sha": "8e22ebb52812e6192c61a8e508555918607ce0c1",
+          "date": "2026-10-16T07:08:34Z",
+          "message": "Score proof page: go to a bar from the map, reloads keep the view, log zoom and parts",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/8e22ebb52812e6192c61a8e508555918607ce0c1"
+        },
+        {
+          "sha": "4a5724afc6949fbd904dd05e5d502049f3009b45",
+          "date": "2026-10-16T07:15:08Z",
+          "message": "Op48-2 II encoded (/encode v4): one pass by the person, nothing to recheck",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/4a5724afc6949fbd904dd05e5d502049f3009b45"
+        },
+        {
+          "sha": "07dd4806a9336b2969047442dd7f81a25a650014",
+          "date": "2026-10-16T07:08:34Z",
+          "message": "proof: a line ends where its bars end; a bar's grace notes start its line",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/07dd4806a9336b2969047442dd7f81a25a650014"
+        },
+        {
+          "sha": "7f61eb0c5d9eec00ee71be887e06237d8866b98e",
+          "date": "2026-10-16T06:07:24Z",
+          "message": "Score proof log: time per bar as the map, a row per movement, linked to the timeline",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/7f61eb0c5d9eec00ee71be887e06237d8866b98e"
+        },
+        {
+          "sha": "a6bf6b69b445fe47333a945b0f4135e4f0557648",
+          "date": "2026-10-16T05:49:31Z",
+          "message": "Score proof page: reloads behind an open box; a CHECK fixed in the note file is logged",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/a6bf6b69b445fe47333a945b0f4135e4f0557648"
+        },
+        {
+          "sha": "af36d5c4bb9d1993eb00cbb327395ea7f9ee9d10",
+          "date": "2026-10-16T05:49:31Z",
+          "message": "proof: a bar a \\partial opens mid-piece keeps its bar line",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/af36d5c4bb9d1993eb00cbb327395ea7f9ee9d10"
+        },
+        {
+          "sha": "85bec20c4dbe8cc5c174fbcd012c00c4a2b7d00a",
+          "date": "2026-10-16T04:53:26Z",
+          "message": "Score proof page: band on the bar lines, CHECK box beside its bar, Next, \u2325 for our LilyPond",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/85bec20c4dbe8cc5c174fbcd012c00c4a2b7d00a"
+        },
+        {
+          "sha": "7802c1c5107ddf98e1964b5479de42183c5c3845",
+          "date": "2026-10-16T03:02:23Z",
+          "message": "Labeler exports: Op48-2 cello's treble passages; bar boxes refitted",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/7802c1c5107ddf98e1964b5479de42183c5c3845"
+        },
+        {
+          "sha": "ffa896f458533df124eb6301937598acf4554205",
+          "date": "2026-10-16T03:02:02Z",
+          "message": "editionSource in every quartet; /encode settles CHECKs and reuses verdicts",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/ffa896f458533df124eb6301937598acf4554205"
+        },
+        {
+          "sha": "19d27f1b4a77f8b28ef9644632bd1fdada78e584",
+          "date": "2026-10-16T02:59:51Z",
+          "message": "Score proof page: openings shown, \u2325 for a bar's whole staff, map cursor, view in the address",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/19d27f1b4a77f8b28ef9644632bd1fdada78e584"
+        },
+        {
+          "sha": "aa19d8aa058c9e3e0931cfcd9f0ef1626b1d1bc8",
+          "date": "2026-10-16T02:44:56Z",
+          "message": "Score proof page: manuscript over engraving bar by bar, CHECKs answered from it",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/aa19d8aa058c9e3e0931cfcd9f0ef1626b1d1bc8"
+        },
+        {
+          "sha": "963592ff570bee16f28df714b19b7616fcae0c30",
+          "date": "2026-10-15T19:07:26Z",
+          "message": "aligned.html: both manuscripts and our engraving, bar by bar on one scroll",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/963592ff570bee16f28df714b19b7616fcae0c30"
+        },
+        {
+          "sha": "e4fed5d7c9dbef03567474c6e14fd1b1b68e5a2a",
+          "date": "2026-10-15T08:32:10Z",
+          "message": "/encode v4: conventions first, twins read apart, marks by family, one pass",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/e4fed5d7c9dbef03567474c6e14fd1b1b68e5a2a"
+        },
+        {
+          "sha": "08d980a53a3d1dd95164403949103189acddad53",
+          "date": "2026-10-15T07:59:14Z",
+          "message": "/encode v4 notes: the postmortem of Op48-2 I, and the levers",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/08d980a53a3d1dd95164403949103189acddad53"
+        },
+        {
+          "sha": "dcd54ef9f1c4287ffbfb4602ab4afd7257faa70c",
+          "date": "2026-10-15T07:48:45Z",
+          "message": "Op48-2 I tidied; its passes' time in the evidence",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/dcd54ef9f1c4287ffbfb4602ab4afd7257faa70c"
+        },
+        {
+          "sha": "4dee3ac3e98ae5d2d53918dbf130479c09b7b081",
+          "date": "2026-10-15T07:48:45Z",
+          "message": "The person's time from what their tools record: activity.py",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/4dee3ac3e98ae5d2d53918dbf130479c09b7b081"
+        },
+        {
+          "sha": "1fe4ea62ab04a686ea7dd7cd3ea8f73a03346692",
+          "date": "2026-10-15T07:48:45Z",
+          "message": "verify: fails until tidy.py check has passed since the person's last pass",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/1fe4ea62ab04a686ea7dd7cd3ea8f73a03346692"
+        },
+        {
+          "sha": "d2b388859f73aa969aad535d9eb39d1f991058e6",
+          "date": "2026-10-15T07:28:03Z",
+          "message": "Op48-2 I: all four parts, read from D-B KHM 603 and checked",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/d2b388859f73aa969aad535d9eb39d1f991058e6"
+        },
+        {
+          "sha": "b495cc6eb7b5a2676024c429af861d743800851a",
+          "date": "2026-10-15T07:28:03Z",
+          "message": "/encode: a correction of marks reaches every bar of its figure; recheck says what changed, :Revert",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/b495cc6eb7b5a2676024c429af861d743800851a"
+        },
+        {
+          "sha": "904b9a59a8bc61e35f322431f0a1d60676fde0ba",
+          "date": "2026-10-15T07:28:03Z",
+          "message": "make OPEN=1 opens PDFs in Skim",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/904b9a59a8bc61e35f322431f0a1d60676fde0ba"
+        },
+        {
+          "sha": "f107c368ea071bd578f9d13c67e59115ebb2435d",
+          "date": "2026-10-15T07:28:03Z",
+          "message": "proof: a bar of a multi-bar rest is boxed with the whole rest",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/f107c368ea071bd578f9d13c67e59115ebb2435d"
+        },
+        {
+          "sha": "fe5dbd8df776fa577081e0cfb5311b86f8af5965",
+          "date": "2026-10-15T07:28:03Z",
+          "message": "D-B KHM 603 labels: staff edges reach their last bar line (p20s3, p2s4)",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/fe5dbd8df776fa577081e0cfb5311b86f8af5965"
+        },
+        {
+          "sha": "e1f8b19ec9136286d2b8f5700a02b274af1d44f7",
+          "date": "2026-10-14T21:41:07Z",
+          "message": ":Checks with no part file open: the latest run waiting for the person",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/e1f8b19ec9136286d2b8f5700a02b274af1d44f7"
+        },
+        {
+          "sha": "a1884acfdc164dc7e09baf8407a6d007d549b98f",
+          "date": "2026-10-14T21:41:07Z",
+          "message": "keys.py: labeled sharps, Structure.ily and the catalog must agree",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/a1884acfdc164dc7e09baf8407a6d007d549b98f"
+        },
+        {
+          "sha": "21f4994fd0ea38ba9080658c07455a64415c8160",
+          "date": "2026-10-14T21:41:07Z",
+          "message": "Op48-2: A major, Trio in D major",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/21f4994fd0ea38ba9080658c07455a64415c8160"
+        },
+        {
+          "sha": "af086538fdea6a30347a2e90268323c33b207494",
+          "date": "2026-10-14T21:41:07Z",
+          "message": "D-B KHM 603 labels: three sharps, Trio two; vc mvt I bar boxes",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/af086538fdea6a30347a2e90268323c33b207494"
+        },
+        {
+          "sha": "94e8b9f0838554ac0d53c2d16cec31e87241e589",
+          "date": "2026-10-14T19:34:24Z",
+          "message": "/encode: plan only unread bars, no audit, cheaper class rounds, grouped CHECKs",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/94e8b9f0838554ac0d53c2d16cec31e87241e589"
+        },
+        {
+          "sha": "403fd43a7d2b5c9cf7731410c63e7e639fb14df9",
+          "date": "2026-10-14T18:10:19Z",
+          "message": "Op48-3 F-Pn: readers check the six new listings (difference-readers --new)",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/403fd43a7d2b5c9cf7731410c63e7e639fb14df9"
+        },
+        {
+          "sha": "516aff53a3c20c39621ce84309150ae0991fd9d9",
+          "date": "2026-10-14T13:11:45Z",
+          "message": "Op48-3 F-Pn report: every staff scored, readers' verdicts, dynamics",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/516aff53a3c20c39621ce84309150ae0991fd9d9"
+        },
+        {
+          "sha": "316ebb8973114d097e6f4556c14efcc0c6ea2b44",
+          "date": "2026-10-14T13:11:07Z",
+          "message": "differences: the labeler scores, readers check, dynamics read",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/316ebb8973114d097e6f4556c14efcc0c6ea2b44"
+        },
+        {
+          "sha": "f09cc67a3c210cb2417911391fe5327dced23246",
+          "date": "2026-10-14T08:51:30Z",
+          "message": "updated crops, marked v2 mvmt end",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/f09cc67a3c210cb2417911391fe5327dced23246"
+        },
+        {
+          "sha": "de30bad585763df4a18f8991ec0e8289a4a697f4",
+          "date": "2026-10-14T08:38:35Z",
+          "message": "Op48-3: where F-Pn Vma ms 1067-1 differs from F-Po RES 507 (14)",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/de30bad585763df4a18f8991ec0e8289a4a697f4"
+        },
+        {
+          "sha": "4335b42e56f5908e3b6b5ffe5b24ccbc4213cdb7",
+          "date": "2026-10-14T08:35:59Z",
+          "message": "Compare a second manuscript with our notes: make differences-",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/4335b42e56f5908e3b6b5ffe5b24ccbc4213cdb7"
+        },
+        {
+          "sha": "fc812300c6e98226ed8f3485929332fc25cfe42d",
+          "date": "2026-10-14T08:28:40Z",
+          "message": "/encode v3: a cheaper read, and note files that hold music only",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/fc812300c6e98226ed8f3485929332fc25cfe42d"
+        },
+        {
+          "sha": "58dbcd8e586c946292ca842c0b2b75ce8eb08816",
+          "date": "2026-10-14T06:07:16Z",
+          "message": ":Similar: after fixing a bar, the bars likely read the same way",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/58dbcd8e586c946292ca842c0b2b75ce8eb08816"
+        },
+        {
+          "sha": "0db497876b5000a97cbdd3101ccc75210cdf1a26",
+          "date": "2026-10-14T06:07:15Z",
+          "message": "/encode v3, first part: what Op48-3 I taught, built and measured",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/0db497876b5000a97cbdd3101ccc75210cdf1a26"
+        },
+        {
+          "sha": "ba5e5f5a4f401975bd4fe1e7835ab687b2887454",
+          "date": "2026-10-14T06:06:15Z",
+          "message": "make: one shape for every command; the score proof lets the parts go early",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/ba5e5f5a4f401975bd4fe1e7835ab687b2887454"
+        },
+        {
+          "sha": "ad71a5f5270ac7bd4ea88654f66515501a33c984",
+          "date": "2026-10-14T05:35:56Z",
+          "message": "make watch-proof: SCORE=1 and PLAYER=1",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/ad71a5f5270ac7bd4ea88654f66515501a33c984"
+        },
+        {
+          "sha": "c80e34d6fa766e36dbf00ad3447657e3ed28874e",
+          "date": "2026-10-14T05:16:47Z",
+          "message": "/encode: fixes and rules from Op48-3 I's review",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/c80e34d6fa766e36dbf00ad3447657e3ed28874e"
+        },
+        {
+          "sha": "fd1593ad791af7411364b708b0841032457ccc93",
+          "date": "2026-10-14T05:16:47Z",
+          "message": "Op48-3 movement I: read against F-Po RES 507 (14)",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/fd1593ad791af7411364b708b0841032457ccc93"
+        },
+        {
+          "sha": "ff5a284e5e9f3a8d4b403247f843bebf60feea29",
+          "date": "2026-10-14T04:18:42Z",
+          "message": "Player: a band on the bar where it's stopped; the score proof as a player page; go to a bar",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/ff5a284e5e9f3a8d4b403247f843bebf60feea29"
+        },
+        {
+          "sha": "2de960ad8215adbd217a0dae8bb4f49f0bef627f",
+          "date": "2026-10-14T04:18:27Z",
+          "message": "Proofs: an indented first staff at a full staff's scale; tall systems don't overlap",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/2de960ad8215adbd217a0dae8bb4f49f0bef627f"
+        },
+        {
+          "sha": "7b92522574b5ff7541eea01f65e013a6e7bfc444",
+          "date": "2026-10-13T21:19:17Z",
+          "message": "Review tools: clefless proof lines, :Checks in Vim",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/7b92522574b5ff7541eea01f65e013a6e7bfc444"
+        },
+        {
+          "sha": "22996a321e32d3608677dfc10a4222d80b241951",
+          "date": "2026-10-13T21:19:17Z",
+          "message": "What Op48-3 I taught the pipeline: hand conventions, v3 notes",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/22996a321e32d3608677dfc10a4222d80b241951"
+        },
+        {
+          "sha": "c335d4976da32d1b8ec305274689291f700af34e",
+          "date": "2026-10-13T21:19:17Z",
+          "message": "/encode: class checks in place of the blind checks (v2, item A)",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/c335d4976da32d1b8ec305274689291f700af34e"
+        },
+        {
+          "sha": "1c2610281704fa0fe45bab10de0779a68fb083a2",
+          "date": "2026-10-09T21:52:33Z",
+          "message": "Bar exports: the Berlin copies' keys and times",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/1c2610281704fa0fe45bab10de0779a68fb083a2"
+        },
+        {
+          "sha": "8ec573f16fd31e4d79ec83b5950f7daf18c5c347",
+          "date": "2026-10-09T21:24:49Z",
+          "message": "Bar exports: every page, staff and mark, bar line kinds and signatures",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/8ec573f16fd31e4d79ec83b5950f7daf18c5c347"
+        },
+        {
+          "sha": "560b86afbea191aa207858687b12868240135ca8",
+          "date": "2026-10-09T18:50:05Z",
+          "message": "Labels: the copyist's ordinals, \"Giugno\", all at the labeler's latest format",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/560b86afbea191aa207858687b12868240135ca8"
+        },
+        {
+          "sha": "645422a7b51292ae9fdef24063f97c044e3cdaf1",
+          "date": "2026-10-09T18:25:15Z",
+          "message": "A movement that opens on a grace note: clefs, key and time before it",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/645422a7b51292ae9fdef24063f97c044e3cdaf1"
+        },
+        {
+          "sha": "37a81b43defda39c535990d78fa81f925efaa5b5",
+          "date": "2026-10-09T06:03:27Z",
+          "message": "/encode v2 groundwork: classes measured, hand file, Opus-only readers",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/37a81b43defda39c535990d78fa81f925efaa5b5"
+        },
+        {
+          "sha": "fd0347484fe1655507a7d451cb2467f20f07b8fb",
+          "date": "2026-10-09T06:03:27Z",
+          "message": "Op48-3 II vn2 23: notes 1-2 are two-stem unisons",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/fd0347484fe1655507a7d451cb2467f20f07b8fb"
+        },
+        {
+          "sha": "1f61f8814d45e04950afe80140e5ef000dd880b9",
+          "date": "2026-10-09T05:31:39Z",
+          "message": "starting more labels",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/1f61f8814d45e04950afe80140e5ef000dd880b9"
+        },
+        {
+          "sha": "eceabaf58ce4f1e274648e38f75aae2f30386be2",
+          "date": "2026-10-08T22:16:59Z",
+          "message": "Crosscheck rework, measured; post-mortem of the first /encode run",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/eceabaf58ce4f1e274648e38f75aae2f30386be2"
+        },
+        {
+          "sha": "6e9e300bbe91c93a67312e793de405584a471912",
+          "date": "2026-10-08T21:14:26Z",
+          "message": "Encoding pipeline: fixes and additions from its first real run (Op48-3 II)",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/6e9e300bbe91c93a67312e793de405584a471912"
+        },
+        {
+          "sha": "02a707ca24d01484a673277426e981973b8a164b",
+          "date": "2026-10-08T21:14:14Z",
+          "message": "Op48-3 movement II: read against F-Po RES 507 (14)",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/02a707ca24d01484a673277426e981973b8a164b"
+        },
+        {
+          "sha": "f87248088914c620e67a8c3c5912ca60c9a4f762",
+          "date": "2026-10-08T08:08:58Z",
+          "message": "updated/refined G228 annotation.",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/f87248088914c620e67a8c3c5912ca60c9a4f762"
+        },
+        {
+          "sha": "4d7e50071c9b986c642e6c99cb4f2759416c09c4",
+          "date": "2026-10-07T21:57:22Z",
+          "message": "Add results of reflection on research direction",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/4d7e50071c9b986c642e6c99cb4f2759416c09c4"
+        },
+        {
+          "sha": "96c0e3c5568e1a6eb07ae96deb941d0ed3490906",
+          "date": "2026-10-07T21:56:56Z",
+          "message": "add clefs; improve G228/Vma annotation",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/96c0e3c5568e1a6eb07ae96deb941d0ed3490906"
+        },
+        {
+          "sha": "d7fbf1573a3f4d579852e1e1e8806db7b235592a",
+          "date": "2026-10-07T19:08:15Z",
+          "message": "The encoding pipeline: /encode, built from docs/encode-pipeline.md",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/d7fbf1573a3f4d579852e1e1e8806db7b235592a"
+        },
+        {
+          "sha": "eb12c47a263b7711ef7e71ece52ebdaad527a18a",
+          "date": "2026-10-06T22:57:33Z",
+          "message": "trying to make the machines do more work for me",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/eb12c47a263b7711ef7e71ece52ebdaad527a18a"
+        },
+        {
+          "sha": "e8add8905a44c5e920fc83f59ff96814b7d79041",
+          "date": "2026-10-06T22:51:24Z",
+          "message": "begin work on 228",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/e8add8905a44c5e920fc83f59ff96814b7d79041"
+        },
+        {
+          "sha": "051024282585ae9dca2262bf23c77d438cb56be3",
+          "date": "2026-10-06T22:32:55Z",
+          "message": "D-B KHM 602: viola p2|1 outline back on its staff; page 2 bends",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/051024282585ae9dca2262bf23c77d438cb56be3"
+        },
+        {
+          "sha": "f8066def97662a1304d3b5acc047d1c7b2de718f",
+          "date": "2026-10-06T22:28:51Z",
+          "message": "docs: the staff-position finding was one dragged outline (viola p2|1)",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/f8066def97662a1304d3b5acc047d1c7b2de718f"
+        },
+        {
+          "sha": "46eca7d57f230605c4327ebc92d061dbc942b51c",
+          "date": "2026-10-06T22:19:25Z",
+          "message": "Op48-1 movement II, all four parts: read against D-B KHM 602",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/46eca7d57f230605c4327ebc92d061dbc942b51c"
+        },
+        {
+          "sha": "f61ef4e97e0ea1b1e09842900f5b07b63e135892",
+          "date": "2026-10-06T21:55:44Z",
+          "message": "Score proof: the four parts' manuscripts as a score, over our engraving",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/f61ef4e97e0ea1b1e09842900f5b07b63e135892"
+        },
+        {
+          "sha": "1ffcaee779f371cf05d33163441c30a9c8ee4a40",
+          "date": "2026-10-06T07:44:41Z",
+          "message": "F-Po RES 507 (14): Violin II movement II end marked",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/1ffcaee779f371cf05d33163441c30a9c8ee4a40"
+        },
+        {
+          "sha": "158e9edc11f7d5492d67281747949a864c2820c6",
+          "date": "2026-10-06T07:43:16Z",
+          "message": "F-Po RES 507 (14): labels reviewed",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/158e9edc11f7d5492d67281747949a864c2820c6"
+        },
+        {
+          "sha": "e5a8667e480a8c64c1c109010e29d826988b3757",
+          "date": "2026-10-06T06:49:53Z",
+          "message": "player: hear the score and see where you are",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/e5a8667e480a8c64c1c109010e29d826988b3757"
+        },
+        {
+          "sha": "2864f02f38763f1716654810a22206930a3e3b22",
+          "date": "2026-10-06T06:47:18Z",
+          "message": "crosscheck: a notes check that hears what the ear heard; checked flags",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/2864f02f38763f1716654810a22206930a3e3b22"
+        },
+        {
+          "sha": "9a7c885c198e0e75af301ab942e4a0c313ece42b",
+          "date": "2026-10-06T06:38:10Z",
+          "message": "F-Po RES 507 (14): first labels (Op48-3, all four parts)",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/9a7c885c198e0e75af301ab942e4a0c313ece42b"
+        },
+        {
+          "sha": "d2a9c8bf306d3b67e065983bbae05488fb870142",
+          "date": "2026-10-06T06:10:22Z",
+          "message": "listened and fixed",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/d2a9c8bf306d3b67e065983bbae05488fb870142"
+        },
+        {
+          "sha": "0948bf010d4161a76b8303c8ab59876c350074de",
+          "date": "2026-10-06T04:33:37Z",
+          "message": "docs: LilyPond FAQ, linked from the README",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/0948bf010d4161a76b8303c8ab59876c350074de"
+        },
+        {
+          "sha": "b6579b6e13cb8160d1e80e53ce2b9b9ebb899729",
+          "date": "2026-10-06T04:28:14Z",
+          "message": "MIDI: one file a movement, named for it, none for a movement not begun",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/b6579b6e13cb8160d1e80e53ce2b9b9ebb899729"
+        },
+        {
+          "sha": "0fd67e17a495a496f054e15421d10d59e3db50b8",
+          "date": "2026-10-06T04:23:22Z",
+          "message": "proof: fill sheets across page turns; short last staff at scale; no cursor box",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/0fd67e17a495a496f054e15421d10d59e3db50b8"
+        },
+        {
+          "sha": "7a05a3cad5fc14a98107cf020cd441dac36e1c75",
+          "date": "2026-10-06T04:22:22Z",
+          "message": "op48.vim: :Bar's scroll calls max() with a list",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/7a05a3cad5fc14a98107cf020cd441dac36e1c75"
+        },
+        {
+          "sha": "11cb435022e57d54f65c5493d72489e9e2beac59",
+          "date": "2026-10-06T03:30:59Z",
+          "message": "vim: a user's guide to the like-view setup; one-line status messages",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/11cb435022e57d54f65c5493d72489e9e2beac59"
+        },
+        {
+          "sha": "d85998b9a9af382ccce50ddc273b6c40031f0f1a",
+          "date": "2026-10-06T03:30:59Z",
+          "message": "docs: lessons from the Cello, movement I",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/d85998b9a9af382ccce50ddc273b6c40031f0f1a"
+        },
+        {
+          "sha": "6d40eb88c6b2cde00df46b567cb3a2f07de06494",
+          "date": "2026-10-06T03:30:59Z",
+          "message": "Op48-1 Cello, movement I: read against D-B KHM 602",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/6d40eb88c6b2cde00df46b567cb3a2f07de06494"
+        },
+        {
+          "sha": "63019762d37cf7193626d48c36857074ffdd54f1",
+          "date": "2026-10-06T02:24:22Z",
+          "message": "op48.vim: :Bar shows the bar it jumps to in the like-view pane",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/63019762d37cf7193626d48c36857074ffdd54f1"
+        },
+        {
+          "sha": "aac1e5785f2f44d861ebb1baac7eb5a8b52e5633",
+          "date": "2026-10-06T02:16:32Z",
+          "message": "D-B KHM 602: improving v2 crop",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/aac1e5785f2f44d861ebb1baac7eb5a8b52e5633"
+        },
+        {
+          "sha": "85a09ba9e32fd45b85232412085ad71e3f9a2486",
+          "date": "2026-10-06T01:59:45Z",
+          "message": "like.py: the score column at one staff size, each manuscript beside its staff",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/85a09ba9e32fd45b85232412085ad71e3f9a2486"
+        },
+        {
+          "sha": "80b27fccca704706b486b9ce0a4be5f22cd896f3",
+          "date": "2026-10-06T01:59:25Z",
+          "message": "docs: lessons from Violin II movement I, round two",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/80b27fccca704706b486b9ce0a4be5f22cd896f3"
+        },
+        {
+          "sha": "d04cc8c8a8a22a0f17947f1d2cf4cdd6fe722512",
+          "date": "2026-10-06T01:59:25Z",
+          "message": "Op48-1 Violin II, movement I: read against D-B KHM 602",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/d04cc8c8a8a22a0f17947f1d2cf4cdd6fe722512"
+        },
+        {
+          "sha": "4f3ae3b0d8efe1329188163c4471922bde0d17ae",
+          "date": "2026-10-06T00:22:47Z",
+          "message": "scripts/heads.py: measure note heads on a zoom.py picture",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/4f3ae3b0d8efe1329188163c4471922bde0d17ae"
+        },
+        {
+          "sha": "73d9b820dcb22a80bdbe9988c500d2f8a7b5fa42",
+          "date": "2026-10-06T00:17:55Z",
+          "message": "Op48-1 Violin I, movement I: checked by Jason against D-B KHM 602",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/73d9b820dcb22a80bdbe9988c500d2f8a7b5fa42"
+        },
+        {
+          "sha": "0691689bcf0ee904eebd328483a66530cb978d27",
+          "date": "2026-10-05T23:56:56Z",
+          "message": "like.py: score column, manuscripts unlabelled and the system as wide as they are",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/0691689bcf0ee904eebd328483a66530cb978d27"
+        },
+        {
+          "sha": "d49ee428368e90485ee9162978935d44bd6a27ec",
+          "date": "2026-10-05T23:50:51Z",
+          "message": "like.py: docstring matches the pane",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/d49ee428368e90485ee9162978935d44bd6a27ec"
+        },
+        {
+          "sha": "5dba29b42d84df8f820c10a759b318c3b7332cef",
+          "date": "2026-10-05T23:50:39Z",
+          "message": "like.py: no code lines under the bar; Vim shows them",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/5dba29b42d84df8f820c10a759b318c3b7332cef"
+        },
+        {
+          "sha": "7b4ca0a742581f7ce248c2de1d29c56f73934906",
+          "date": "2026-10-05T23:50:30Z",
+          "message": "like.py: the lines under the bar as typed, like the excerpts",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/7b4ca0a742581f7ce248c2de1d29c56f73934906"
+        },
+        {
+          "sha": "ce41a91694f719530e2870ffcf8ace770285ce2d",
+          "date": "2026-10-05T23:16:13Z",
+          "message": "like.py: grace notes opening a bar in the one-bar score",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/ce41a91694f719530e2870ffcf8ace770285ce2d"
+        },
+        {
+          "sha": "de9d051ba12bc0694f6f075be892d032ec0d5c99",
+          "date": "2026-10-05T22:54:58Z",
+          "message": "like.py: automatic beams in the one-bar score",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/de9d051ba12bc0694f6f075be892d032ec0d5c99"
+        },
+        {
+          "sha": "7e6328f099bde0e30cd452eaf16de45499585b6d",
+          "date": "2026-10-05T22:50:57Z",
+          "message": "like.py: the bar in score is one engraved four-staff system",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/7e6328f099bde0e30cd452eaf16de45499585b6d"
+        },
+        {
+          "sha": "2ed3844aba050a05fa8475b8707984df41ac000b",
+          "date": "2026-10-05T22:44:27Z",
+          "message": "like.py: two columns under the bar; this part's matches, and the score",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/2ed3844aba050a05fa8475b8707984df41ac000b"
+        },
+        {
+          "sha": "c1b8b456ed01647087588e0e683a71c500fae120",
+          "date": "2026-10-05T22:32:29Z",
+          "message": "like.py: show LilyPond's warnings in the like-view pane",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/c1b8b456ed01647087588e0e683a71c500fae120"
+        },
+        {
+          "sha": "b06fa7d8cdc8b4181478f1de1d50d2e08fcedbd5",
+          "date": "2026-10-05T22:14:17Z",
+          "message": "proof: box the bar shown in Vim's like-view pane",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/b06fa7d8cdc8b4181478f1de1d50d2e08fcedbd5"
+        },
+        {
+          "sha": "ad4a440311459a1bd6c03f822db84e1669bda3eb",
+          "date": "2026-10-05T22:11:28Z",
+          "message": "like.py: rewrite the part's proof PDF after each run, in the background",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/ad4a440311459a1bd6c03f822db84e1669bda3eb"
+        },
+        {
+          "sha": "5eeda475cd95a1daa85f2f95c55e9e0ef59f4e10",
+          "date": "2026-10-05T22:02:42Z",
+          "message": "vim/op48.vim: saving a note file updates the like-view pane",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/5eeda475cd95a1daa85f2f95c55e9e0ef59f4e10"
+        },
+        {
+          "sha": "04aa0070c5829c2318df05407773ef9a4a48d401",
+          "date": "2026-10-05T06:30:02Z",
+          "message": "docs: lessons from Violin II and cello movement I",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/04aa0070c5829c2318df05407773ef9a4a48d401"
+        },
+        {
+          "sha": "deddf3368fbe178230d8baca389bc168f5088996",
+          "date": "2026-10-05T06:30:02Z",
+          "message": "zoom.py: show either bar of a multi-bar rest; name a missing bar",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/deddf3368fbe178230d8baca389bc168f5088996"
+        },
+        {
+          "sha": "ef30720f9907f2dcf6d54953fcbe558cbec80572",
+          "date": "2026-10-05T04:39:06Z",
+          "message": "bars.py set: refuse an edit that moves any bar, not just the line's",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/ef30720f9907f2dcf6d54953fcbe558cbec80572"
+        },
+        {
+          "sha": "c435f12ddd9dbcc7ef188df4564b7b3d566ac529",
+          "date": "2026-10-05T04:36:35Z",
+          "message": "Snapshots per worktree and retried on a held lock; review fixes",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/c435f12ddd9dbcc7ef188df4564b7b3d566ac529"
+        },
+        {
+          "sha": "c930648caf8b2bcf2c7716575474d9f1ca757e80",
+          "date": "2026-10-05T04:23:50Z",
+          "message": "Bars counted per bar check everywhere; \\p and snapshots made safe",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/c930648caf8b2bcf2c7716575474d9f1ca757e80"
+        },
+        {
+          "sha": "df87ea8f4d85e9e2958c43862bf8df17488505f8",
+          "date": "2026-10-05T04:02:47Z",
+          "message": "vim/op48.vim: the edition's Vim code, in one file in the repo",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/df87ea8f4d85e9e2958c43862bf8df17488505f8"
+        },
+        {
+          "sha": "76a6484b177fec3309be521279a67993b224fb6e",
+          "date": "2026-10-04T23:01:04Z",
+          "message": "scripts: one count of bars for all; the proof's octave warning runs again",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/76a6484b177fec3309be521279a67993b224fb6e"
+        },
+        {
+          "sha": "eaf5bcc952d45b4acd12dfc7e846e14ad39f822e",
+          "date": "2026-10-04T17:44:50Z",
+          "message": "like: fixes from code review",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/eaf5bcc952d45b4acd12dfc7e846e14ad39f822e"
+        },
+        {
+          "sha": "f36d2dc3da59c72d854a6592fe72b9294de7148a",
+          "date": "2026-10-04T17:17:40Z",
+          "message": "like.py: bars like the one being encoded, to paste and edit from Vim",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/f36d2dc3da59c72d854a6592fe72b9294de7148a"
+        },
+        {
+          "sha": "289bd7f1b9c3b3fe31e7b63238c16c928a4b70b9",
+          "date": "2026-10-04T17:17:40Z",
+          "message": "bars.py: count a multi-bar rest's line as its bars",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/289bd7f1b9c3b3fe31e7b63238c16c928a4b70b9"
+        },
+        {
+          "sha": "7805109250ccba20240a5900192a377f387d9894",
+          "date": "2026-10-04T15:36:10Z",
+          "message": "proof: refit a staff from the manuscript's widths when its last fit failed",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/7805109250ccba20240a5900192a377f387d9894"
+        },
+        {
+          "sha": "f9834908ad799099720d06af16fb2b0aad5cefed",
+          "date": "2026-10-04T05:57:08Z",
+          "message": "scripts: bars.py, show or replace one bar of a note file",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/f9834908ad799099720d06af16fb2b0aad5cefed"
+        },
+        {
+          "sha": "eb5031f425e0ddab74b017b2170119ee52601c39",
+          "date": "2026-10-04T05:54:28Z",
+          "message": "docs: refactor the part-checking guide for any part, key and clef",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/eb5031f425e0ddab74b017b2170119ee52601c39"
+        },
+        {
+          "sha": "8c4e5356a5e3c607d72469832a224fc462e97ba8",
+          "date": "2026-10-04T04:52:42Z",
+          "message": "proof: stop typesetting on a bar line, never inside the next bar",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/8c4e5356a5e3c607d72469832a224fc462e97ba8"
+        },
+        {
+          "sha": "3dab728e3534014cb17e2ef8e15d01f0401f74fb",
+          "date": "2026-10-04T04:47:17Z",
+          "message": "proof: text under or over a note takes no room between notes",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/3dab728e3534014cb17e2ef8e15d01f0401f74fb"
+        },
+        {
+          "sha": "b15790ce83936c81cb6794b5e37c2d0b4aa4e890",
+          "date": "2026-10-04T04:12:53Z",
+          "message": "make snapshot: keep uncommitted work on refs/snapshots/notes",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/b15790ce83936c81cb6794b5e37c2d0b4aa4e890"
+        },
+        {
+          "sha": "02f5be7f95e75ff50cc147c68f85dd2d7b95451c",
+          "date": "2026-10-04T04:12:48Z",
+          "message": "proof: one proof laid out like the manuscript, replacing the bar-by-bar strip",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/02f5be7f95e75ff50cc147c68f85dd2d7b95451c"
+        },
+        {
+          "sha": "da6fa3756bb64126233606f734bf39cf6561b57c",
+          "date": "2026-10-04T01:53:18Z",
+          "message": "D-B KHM 602: crop tweaks for Violin I bars 7-13 and 55",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/da6fa3756bb64126233606f734bf39cf6561b57c"
+        },
+        {
+          "sha": "a5d78904e8ed024e31d98263d6dc981aad114e89",
+          "date": "2026-10-04T01:51:53Z",
+          "message": "docs: reference card for octave marks in \\relative mode",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/a5d78904e8ed024e31d98263d6dc981aad114e89"
+        },
+        {
+          "sha": "039f401f74665b3c22ac5d68db8679bb28acdaee",
+          "date": "2026-10-04T01:51:53Z",
+          "message": "docs: checklist for checking a transcribed part against the manuscript",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/039f401f74665b3c22ac5d68db8679bb28acdaee"
+        },
+        {
+          "sha": "c20e9907a208c895ddf970d1cf8ca3969e8de8ae",
+          "date": "2026-10-04T01:51:53Z",
+          "message": "scripts: compare.py, each manuscript bar over our engraving of it",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/c20e9907a208c895ddf970d1cf8ca3969e8de8ae"
+        },
+        {
+          "sha": "002a4aef94591f13060e00f63ade70c708e98190",
+          "date": "2026-10-04T01:51:53Z",
+          "message": "scripts: crosscheck.py, one part against the other three",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/002a4aef94591f13060e00f63ade70c708e98190"
+        },
+        {
+          "sha": "a0a6bbfa06c8af6909ebd4fff20affb618b744a5",
+          "date": "2026-10-04T01:51:53Z",
+          "message": "scripts: zoom.py and pairs.py, manuscript bars at high zoom with a pitch grid",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/a0a6bbfa06c8af6909ebd4fff20affb618b744a5"
+        },
+        {
+          "sha": "671577876439f8c8fce978aa19cbfacafe3cc3fd",
+          "date": "2026-10-03T06:03:14Z",
+          "message": "README: view PDFs in Skim, which reloads them on every rebuild",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/671577876439f8c8fce978aa19cbfacafe3cc3fd"
+        },
+        {
+          "sha": "d4c5963e05f71ea71966230661dd6c85b7203594",
+          "date": "2026-10-03T05:55:52Z",
+          "message": "D-B KHM 602: latest labels (Violin II mvt II end-of-movement marker)",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/d4c5963e05f71ea71966230661dd6c85b7203594"
+        },
+        {
+          "sha": "e0c6ea554a67b7febe84873e6bf9437d902bd0a4",
+          "date": "2026-10-03T05:55:52Z",
+          "message": "Op48-1 mvt I: closing repeat sign at the end",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/e0c6ea554a67b7febe84873e6bf9437d902bd0a4"
+        },
+        {
+          "sha": "ae5f44afd2d83a1fb5abcb0cd71a88b41c5306cd",
+          "date": "2026-10-03T05:50:13Z",
+          "message": "Op48-1 viola mvt I: first complete, passed proof",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/ae5f44afd2d83a1fb5abcb0cd71a88b41c5306cd"
+        },
+        {
+          "sha": "8fd9a4d2ecc93cd1be8c8f55b5183488ffd0dbaa",
+          "date": "2026-10-02T22:03:24Z",
+          "message": "Proofs: short closing bars as spacers; D-B KHM 602 and 603 labels",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/8fd9a4d2ecc93cd1be8c8f55b5183488ffd0dbaa"
+        },
+        {
+          "sha": "c2b868c745a6bcc73a9d66c27652a3c6a0d7928f",
+          "date": "2026-10-02T21:45:55Z",
+          "message": "Proofs: upbeats inside a movement; proof parts for Op48-2",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/c2b868c745a6bcc73a9d66c27652a3c6a0d7928f"
+        },
+        {
+          "sha": "1b12ee920124f6a0172cecf5b312dcbb0d302196",
+          "date": "2026-10-02T20:33:05Z",
+          "message": "Op48-2: start the quartet; Structure.ily from the D-B KHM 603 labels",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/1b12ee920124f6a0172cecf5b312dcbb0d302196"
+        },
+        {
+          "sha": "f680d5760d8738880d8117af77c3f7fde3280f22",
+          "date": "2026-10-02T20:19:11Z",
+          "message": "make checks every music line ends in a bar check \"|\"",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/f680d5760d8738880d8117af77c3f7fde3280f22"
+        },
+        {
+          "sha": "1008e6b84684af6b403c79bf9062b003f0d0addd",
+          "date": "2026-10-02T19:10:38Z",
+          "message": "Proof parts for Violin II and Cello; their D-B bar markers",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/1008e6b84684af6b403c79bf9062b003f0d0addd"
+        },
+        {
+          "sha": "59746ba1a9d52cee9cde973b88ff8911f6dc446d",
+          "date": "2026-10-02T17:25:02Z",
+          "message": "README: proof parts in the proofreading step; tidy the proof commands",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/59746ba1a9d52cee9cde973b88ff8911f6dc446d"
+        },
+        {
+          "sha": "42f6fd9f3616072d131306a742193c40823c44e7",
+          "date": "2026-10-02T09:55:57Z",
+          "message": "Proof for Violin I; make proof builds every *-proof.ly (PART=Vn1 for one)",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/42f6fd9f3616072d131306a742193c40823c44e7"
+        },
+        {
+          "sha": "db9e59e5d47ebaa6757c2d682ea7c788ef2ba67b",
+          "date": "2026-10-02T07:55:11Z",
+          "message": "D-B KHM 602: viola movement II bar markers (72 bars, not yet reviewed)",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/db9e59e5d47ebaa6757c2d682ea7c788ef2ba67b"
+        },
+        {
+          "sha": "24da5132a6ea5bf5605ee8b72719c04ce645a457",
+          "date": "2026-10-02T07:23:54Z",
+          "message": "Op48-1 viola mvt I: redo bars 49-130 from the bar images (unchecked)",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/24da5132a6ea5bf5605ee8b72719c04ce645a457"
+        },
+        {
+          "sha": "1e0b93d202c36d2000faa03ccae6fb77607024c6",
+          "date": "2026-10-01T22:31:16Z",
+          "message": "Op48-1 viola mvt I: draft of the remaining bars, partly checked",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/1e0b93d202c36d2000faa03ccae6fb77607024c6"
+        },
+        {
+          "sha": "a18eb589f6477008b770c55edcf6b60d4004c843",
+          "date": "2026-10-01T21:51:30Z",
+          "message": "Proof builds faster: Cairo backend, and BARS=20-40 for a quick preview",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/a18eb589f6477008b770c55edcf6b60d4004c843"
+        },
+        {
+          "sha": "172a0bf1becfd6ac99bea6c39b1426bbf94f61b9",
+          "date": "2026-10-01T21:28:17Z",
+          "message": "D-B KHM 602: viola movement I labels reviewed and marked complete",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/172a0bf1becfd6ac99bea6c39b1426bbf94f61b9"
+        },
+        {
+          "sha": "ab4fd32dd4ae3bc15489d9f72fd44e6c5456a0e2",
+          "date": "2026-10-01T21:26:37Z",
+          "message": "Proof: manuscript sets the bar widths; openings only where both lines start",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/ab4fd32dd4ae3bc15489d9f72fd44e6c5456a0e2"
+        },
+        {
+          "sha": "4a539a140718c2771e8e67e25e44417cf551d427",
+          "date": "2026-10-01T21:03:43Z",
+          "message": "Proof: continuous colour strip, source page/staff labels",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/4a539a140718c2771e8e67e25e44417cf551d427"
+        },
+        {
+          "sha": "216b5c20f13a2b9e453de37c051e30bd8a1120e8",
+          "date": "2026-10-01T20:52:59Z",
+          "message": "make watch-proof-Op48-1: rebuild the proof on save or bar re-export",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/216b5c20f13a2b9e453de37c051e30bd8a1120e8"
+        },
+        {
+          "sha": "f2725df1b52b3e7e5d38008875abef3cc515ee31",
+          "date": "2026-10-01T20:45:16Z",
+          "message": "Proof part: each manuscript bar above its engraved bar (make proof-Op48-1)",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/f2725df1b52b3e7e5d38008875abef3cc515ee31"
+        },
+        {
+          "sha": "93a21da3fd30bcc8e299914fa3d335e8beb04ae8",
+          "date": "2026-10-01T07:16:15Z",
+          "message": "make watch: chime when a rebuild finishes (Basso on failure)",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/93a21da3fd30bcc8e299914fa3d335e8beb04ae8"
+        },
+        {
+          "sha": "2a40d3e7c14acf86e16cf1018d027307e950b015",
+          "date": "2026-10-01T07:16:15Z",
+          "message": "Op48-1 viola mvt I: drop stale 'not yet encoded' comment",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/2a40d3e7c14acf86e16cf1018d027307e950b015"
+        },
+        {
+          "sha": "4f31391bb0b53ad64d5899f1b1f3888ed0449380",
+          "date": "2026-10-01T07:12:30Z",
+          "message": "Op48-1 viola mvt I: bars 5-25",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/4f31391bb0b53ad64d5899f1b1f3888ed0449380"
+        },
+        {
+          "sha": "ba35f97df0589ae39b32177d1403f2543658900e",
+          "date": "2026-10-01T06:01:26Z",
+          "message": "Link to Philhar's encodings on GitHub, not a local path; add CLAUDE.md",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/ba35f97df0589ae39b32177d1403f2543658900e"
+        },
+        {
+          "sha": "b75a04409cc8d203e3c10d05c25a66a54a82be26",
+          "date": "2026-10-01T05:24:37Z",
+          "message": "Fix page resolution in the Berlin sources (G226, G227)",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/b75a04409cc8d203e3c10d05c25a66a54a82be26"
+        },
+        {
+          "sha": "e5351256ff786b50bbf0939e3ba380264f66da77",
+          "date": "2026-10-01T05:17:06Z",
+          "message": "Op48-1 cello part: braced Violin I opening, as in the manuscript",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/e5351256ff786b50bbf0939e3ba380264f66da77"
+        },
+        {
+          "sha": "c935f106beb532c34a5e94c1914feb134a39af89",
+          "date": "2026-10-01T05:11:50Z",
+          "message": "Op48-1 mvt I: bars 1-4, all parts",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/c935f106beb532c34a5e94c1914feb134a39af89"
+        },
+        {
+          "sha": "8f556aed9a802ede6aed110d6a64bd5d1ff410b7",
+          "date": "2026-10-01T05:11:50Z",
+          "message": "make watch: build in parallel and react only to LilyPond files",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/8f556aed9a802ede6aed110d6a64bd5d1ff410b7"
+        },
+        {
+          "sha": "cf7c854a7efe8d29c3fe6fffaa10d6e4cfbf646d",
+          "date": "2026-10-01T05:11:50Z",
+          "message": "Match Philhar's note-file conventions; state the precedent rule",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/cf7c854a7efe8d29c3fe6fffaa10d6e4cfbf646d"
+        }
+      ]
+    },
+    {
+      "name": "manuscript-labeler",
+      "html_url": "https://github.com/jsundram/manuscript-labeler",
+      "description": "Label scanned music manuscripts page by page: staves, bar lines, bar numbers, and confusing marks.",
+      "language": "Python",
+      "private": false,
+      "pushed_at": "2026-10-16T19:35:49Z",
+      "commit_count": 124,
+      "commits": [
+        {
+          "sha": "c9149fd9365b8ba09bb64734f33360fa1bbe4890",
+          "date": "2026-10-16T19:35:40Z",
+          "message": "Model card for Zeus, with the family's history on the clean test",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/c9149fd9365b8ba09bb64734f33360fa1bbe4890"
+        },
+        {
+          "sha": "2c87ecb6478094a23dde1e97d0eea9fa1bdb7bac",
+          "date": "2026-10-16T19:35:25Z",
+          "message": "zeus-score: Zeus as a package, with a model registry",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/2c87ecb6478094a23dde1e97d0eea9fa1bdb7bac"
+        },
+        {
+          "sha": "7005ba45483e7e0d88d54cd1ce719143f36d15c8",
+          "date": "2026-10-16T19:35:11Z",
+          "message": "zeus_score.py: explicit inputs, versioned output, trained-on marks",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/7005ba45483e7e0d88d54cd1ce719143f36d15c8"
+        },
+        {
+          "sha": "bc4eacb9596ede5427d043890f22c6ed2895cbdb",
+          "date": "2026-10-16T19:34:52Z",
+          "message": "Zeus page renders: one folder per PDF's contents, written atomically",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/bc4eacb9596ede5427d043890f22c6ed2895cbdb"
+        },
+        {
+          "sha": "c035c201c5d82cea4294fe7ca85dae42ba4be02d",
+          "date": "2026-10-16T10:19:52Z",
+          "message": "Warnings: a key one part writes and the others don't",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/c035c201c5d82cea4294fe7ca85dae42ba4be02d"
+        },
+        {
+          "sha": "ddc78daa35e335d7ba68462e8ba5ff5108852be4",
+          "date": "2026-10-16T10:11:52Z",
+          "message": "Labels: F-Po RES 507 (17), Op. 48 No. 5 (G. 230), first pass",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/ddc78daa35e335d7ba68462e8ba5ff5108852be4"
+        },
+        {
+          "sha": "d608b609b7c209b26e39f26bf3d36caf34d0ada6",
+          "date": "2026-10-16T09:55:49Z",
+          "message": "A movement ends where its part stops, marked or not",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/d608b609b7c209b26e39f26bf3d36caf34d0ada6"
+        },
+        {
+          "sha": "e51cd45a16cfeb130ec306ee1f392d2acdd52b1c",
+          "date": "2026-10-16T09:55:36Z",
+          "message": "Bar counts: no warnings from a movement Structure.ily hasn't written",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/e51cd45a16cfeb130ec306ee1f392d2acdd52b1c"
+        },
+        {
+          "sha": "325418b1c42431f4b54c0f7438f5a67578a66311",
+          "date": "2026-10-16T09:55:15Z",
+          "message": "Structure.ily: written once the parts agree, reviewed or not",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/325418b1c42431f4b54c0f7438f5a67578a66311"
+        },
+        {
+          "sha": "098c6b7d2ef918745a1241ed166b974902e0fad1",
+          "date": "2026-10-16T09:54:42Z",
+          "message": "A new page's part isn't carried past a page that was never labelled",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/098c6b7d2ef918745a1241ed166b974902e0fad1"
+        },
+        {
+          "sha": "2fd939de749b46a907c4b272015278b200f209a6",
+          "date": "2026-10-16T09:54:31Z",
+          "message": "Page corners on a backing lighter than the page",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/2fd939de749b46a907c4b272015278b200f209a6"
+        },
+        {
+          "sha": "98da8b289f7384156472d5aac23498430f3d3579",
+          "date": "2026-10-16T09:54:22Z",
+          "message": "Overlay: a staff with no bar lines no longer stops the page drawing",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/98da8b289f7384156472d5aac23498430f3d3579"
+        },
+        {
+          "sha": "c19a0c71ffd5dc9d05b6634cb2901a09fc951891",
+          "date": "2026-10-15T23:24:46Z",
+          "message": "Structure.ily: grace music takes no time",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/c19a0c71ffd5dc9d05b6634cb2901a09fc951891"
+        },
+        {
+          "sha": "169b0c9515e1913bf7ce4d69095c7edef7005074",
+          "date": "2026-10-15T22:12:13Z",
+          "message": "Labels: Vma ms 1067 (2)'s p. 3 crop margins",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/169b0c9515e1913bf7ce4d69095c7edef7005074"
+        },
+        {
+          "sha": "e52a7fe85854e472101e9dea726fc2304e533cc2",
+          "date": "2026-10-15T22:12:13Z",
+          "message": "Labels: Vma ms 1067 (1)'s misplaced bar line on p. 17",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/e52a7fe85854e472101e9dea726fc2304e533cc2"
+        },
+        {
+          "sha": "403eb688c15897139136bb3542d05f74ac621f09",
+          "date": "2026-10-15T19:41:59Z",
+          "message": "Zeus limited to the labelled clef: no better",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/403eb688c15897139136bb3542d05f74ac621f09"
+        },
+        {
+          "sha": "7ad31b2e54c5dfd65bc8f1ed05bcad839051e67f",
+          "date": "2026-10-15T19:34:41Z",
+          "message": "Zeus's clean test: KHM 603 movement I",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/7ad31b2e54c5dfd65bc8f1ed05bcad839051e67f"
+        },
+        {
+          "sha": "5ad1e1c0ba75ea02257afa909a4d6fddc20dc278",
+          "date": "2026-10-15T19:33:57Z",
+          "message": "Labels: KHM 603's cello clef changes",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/5ad1e1c0ba75ea02257afa909a4d6fddc20dc278"
+        },
+        {
+          "sha": "8ee08f8999b8514972bfeae321ad441d93ecd55a",
+          "date": "2026-10-15T08:55:27Z",
+          "message": "Labels: KHM 602's staff ends, KHM 603's review pass",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/8ee08f8999b8514972bfeae321ad441d93ecd55a"
+        },
+        {
+          "sha": "b30436188c7b79b8e163a33e5913b9377f3c19f7",
+          "date": "2026-10-15T08:55:19Z",
+          "message": "A staff ends at its last bar line, unless it runs on",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/b30436188c7b79b8e163a33e5913b9377f3c19f7"
+        },
+        {
+          "sha": "cb039f74e248f445f43b8e73867ddbc8ed8c294c",
+          "date": "2026-10-14T09:19:08Z",
+          "message": "autopair's alignment reaches the end however few measures Zeus read",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/cb039f74e248f445f43b8e73867ddbc8ed8c294c"
+        },
+        {
+          "sha": "005b16839e39ed1b3cdd3a7df64f4c0a702dca9b",
+          "date": "2026-10-14T09:15:22Z",
+          "message": "Zeus's score for a given reading, as a command the edition calls",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/005b16839e39ed1b3cdd3a7df64f4c0a702dca9b"
+        },
+        {
+          "sha": "7b4f03c8973749520249180c9f2cce0c76ba648f",
+          "date": "2026-10-14T08:38:12Z",
+          "message": "Zeus on other composers' manuscripts, scored against OSSQ's encodings",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/7b4f03c8973749520249180c9f2cce0c76ba648f"
+        },
+        {
+          "sha": "39a249b24a29dc0447fb34a8bbb35724cb1ee794",
+          "date": "2026-10-14T08:31:10Z",
+          "message": "Fine-tuning's learning-rate decay and augmentation as options",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/39a249b24a29dc0447fb34a8bbb35724cb1ee794"
+        },
+        {
+          "sha": "1f76c6dfd4c54b466932b500e1b22683a10188af",
+          "date": "2026-10-14T08:31:10Z",
+          "message": "Training pairs without labelling, from Philhar's encodings",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/1f76c6dfd4c54b466932b500e1b22683a10188af"
+        },
+        {
+          "sha": "449fa3080f3c549176bf6a518df88be1e0956def",
+          "date": "2026-10-14T08:30:57Z",
+          "message": "Bar-line detectors on a PDF nobody has labelled",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/449fa3080f3c549176bf6a518df88be1e0956def"
+        },
+        {
+          "sha": "3ed05a30775eca8c9279ebb669e946d72917c603",
+          "date": "2026-10-14T08:30:57Z",
+          "message": "Zeus's measures paired with the bar boxes when it reads a different number",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/3ed05a30775eca8c9279ebb669e946d72917c603"
+        },
+        {
+          "sha": "2f5ef5c9c8ae10cb995c0b74a7aacac3a19353c6",
+          "date": "2026-10-10T02:16:41Z",
+          "message": "Claude reading a bar's notes, taught by examples",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/2f5ef5c9c8ae10cb995c0b74a7aacac3a19353c6"
+        },
+        {
+          "sha": "6bb200fcf84079e97ff87c036e2c9b4ab23018da",
+          "date": "2026-10-10T02:16:41Z",
+          "message": "Zeus against the edition's encoding, and fine-tuned on it",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/6bb200fcf84079e97ff87c036e2c9b4ab23018da"
+        },
+        {
+          "sha": "e8b18178a97c91722eba8c77544f39771c5dfba1",
+          "date": "2026-10-09T21:52:32Z",
+          "message": "Labels: the Berlin copies' keys and times, from Structure.ily",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/e8b18178a97c91722eba8c77544f39771c5dfba1"
+        },
+        {
+          "sha": "1a69a8808df4fb9e52a3f390e03e0e16d712b9b6",
+          "date": "2026-10-09T21:34:27Z",
+          "message": "The labels files live in the labeler, under data/<edition>/",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/1a69a8808df4fb9e52a3f390e03e0e16d712b9b6"
+        },
+        {
+          "sha": "5d473fec607ffcf69332190073469a9a160259d5",
+          "date": "2026-10-09T21:24:32Z",
+          "message": "The bar export carries everything the editor records",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/5d473fec607ffcf69332190073469a9a160259d5"
+        },
+        {
+          "sha": "e39addc5b621d21121f2cf91b8734c272265b4dd",
+          "date": "2026-10-09T18:54:16Z",
+          "message": "The older-crops list lives with the crop model",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/e39addc5b621d21121f2cf91b8734c272265b4dd"
+        },
+        {
+          "sha": "d998e3c32cbcfbdd1700065deaade7497eb500d8",
+          "date": "2026-10-09T18:47:06Z",
+          "message": "SPEC: the staff fields the edition reads from the labels file",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/d998e3c32cbcfbdd1700065deaade7497eb500d8"
+        },
+        {
+          "sha": "025f55358e8234a99d3af3e876467894d33208ef",
+          "date": "2026-10-09T18:41:59Z",
+          "message": "A new title page gets Claude's lines of text as marks",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/025f55358e8234a99d3af3e876467894d33208ef"
+        },
+        {
+          "sha": "1c9b90c3f5a62ba91ae8e794cfc55afcfc1186af",
+          "date": "2026-10-09T18:33:35Z",
+          "message": "Claude finds the text on a title page",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/1c9b90c3f5a62ba91ae8e794cfc55afcfc1186af"
+        },
+        {
+          "sha": "816bc4595ac7d6527d4a59ec76381b933b6955ac",
+          "date": "2026-10-09T17:34:51Z",
+          "message": "Claude reads new pages and drawn text marks",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/816bc4595ac7d6527d4a59ec76381b933b6955ac"
+        },
+        {
+          "sha": "cf0fb733c90d4dc86b46754c2ad82961366d3922",
+          "date": "2026-10-09T09:22:00Z",
+          "message": "A measured test of Claude on page kinds, parts and mark text",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/cf0fb733c90d4dc86b46754c2ad82961366d3922"
+        },
+        {
+          "sha": "b738d42bf2d55a65ff677dbf10c152037f634650",
+          "date": "2026-10-09T07:46:12Z",
+          "message": "Crop edges learned from the editor's reviewed crops",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/b738d42bf2d55a65ff677dbf10c152037f634650"
+        },
+        {
+          "sha": "0405bcdcb4101839e660f5f69af2ddb188453e23",
+          "date": "2026-10-09T06:25:16Z",
+          "message": "The template's \"da capo\" mark doesn't make a movement real",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/0405bcdcb4101839e660f5f69af2ddb188453e23"
+        },
+        {
+          "sha": "6a597dcb08f1e87b566530f07198fdeb89340039",
+          "date": "2026-10-09T06:24:41Z",
+          "message": "Saves stay with their source across a switch",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/6a597dcb08f1e87b566530f07198fdeb89340039"
+        },
+        {
+          "sha": "fa020073827f2f8a65ee1e0e5dc153c54582a906",
+          "date": "2026-10-09T06:24:41Z",
+          "message": "Structure.ily proposes repeats, upbeats and movement ends",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/fa020073827f2f8a65ee1e0e5dc153c54582a906"
+        },
+        {
+          "sha": "b947927540b10cb229d704fecb6369873275a810",
+          "date": "2026-10-09T06:24:41Z",
+          "message": "Ignore .env (the project's API key)",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/b947927540b10cb229d704fecb6369873275a810"
+        },
+        {
+          "sha": "5140c87b6b7b149d6ec88aafda6d6c0a02f35985",
+          "date": "2026-10-09T04:00:14Z",
+          "message": "Results: unseen pages, and Detectron2 doesn't earn a vote",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/5140c87b6b7b149d6ec88aafda6d6c0a02f35985"
+        },
+        {
+          "sha": "daf4c4149ac1feda90992bbb074283dada51f7b3",
+          "date": "2026-10-09T04:00:14Z",
+          "message": "Cached predictions from Detectron2 and D-FINE; a vote comparison",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/daf4c4149ac1feda90992bbb074283dada51f7b3"
+        },
+        {
+          "sha": "052a6eef7ed4eb708485ec98e08bf7708b8b6033",
+          "date": "2026-10-08T21:49:32Z",
+          "message": "Tab carries on to the next page",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/052a6eef7ed4eb708485ec98e08bf7708b8b6033"
+        },
+        {
+          "sha": "9f8f4982de8879b82fb2b8e0e63f5c3166703ba4",
+          "date": "2026-10-08T21:47:06Z",
+          "message": "Labeler review fixes: Apply Start Below spares hand edits; notes wait",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/9f8f4982de8879b82fb2b8e0e63f5c3166703ba4"
+        },
+        {
+          "sha": "8137ed06306f03b93148dc51ad6263faf16c2039",
+          "date": "2026-10-08T21:47:06Z",
+          "message": "Detection: the detector's end first, then its start against it",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/8137ed06306f03b93148dc51ad6263faf16c2039"
+        },
+        {
+          "sha": "b0a1c91cc252fae6ec25db9c34b17b67d3dd4d78",
+          "date": "2026-10-08T21:43:05Z",
+          "message": "Edit report: \"changed\" counts every edit, not only moves",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/b0a1c91cc252fae6ec25db9c34b17b67d3dd4d78"
+        },
+        {
+          "sha": "5a1a022858474cfc432bbcc03ef3b8ef8021fcfe",
+          "date": "2026-10-08T21:43:04Z",
+          "message": "Labeler review fixes: notes, Apply Start Below, headings' bars",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/5a1a022858474cfc432bbcc03ef3b8ef8021fcfe"
+        },
+        {
+          "sha": "bb10bcd8f5cf3224fa24aa4ea6af6b084bce475e",
+          "date": "2026-10-08T21:43:04Z",
+          "message": "Test pages left out of training, worked out afresh",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/bb10bcd8f5cf3224fa24aa4ea6af6b084bce475e"
+        },
+        {
+          "sha": "1cd4f1bcdc96c96509bbf489d4899322eebeeb1b",
+          "date": "2026-10-08T21:43:04Z",
+          "message": "Detection guards: a shadow isn't a binding; ends need room for music",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/1cd4f1bcdc96c96509bbf489d4899322eebeeb1b"
+        },
+        {
+          "sha": "7ef96d6c5893e30bb027f23e7a4dd760b22c01a9",
+          "date": "2026-10-08T21:31:24Z",
+          "message": "A mark kind for a movement's title",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/7ef96d6c5893e30bb027f23e7a4dd760b22c01a9"
+        },
+        {
+          "sha": "d27f995a455a6abb552e455e9b4826408b5343e0",
+          "date": "2026-10-08T21:24:20Z",
+          "message": "Page corners: a bound volume's next page isn't this one",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/d27f995a455a6abb552e455e9b4826408b5343e0"
+        },
+        {
+          "sha": "8e335429657546640968091a89fdee4ff6c580ba",
+          "date": "2026-10-08T21:24:11Z",
+          "message": "Keys: 0 upbeat, . movement end, ] end at last bar line; hold h to see the page",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/8e335429657546640968091a89fdee4ff6c580ba"
+        },
+        {
+          "sha": "cf407d1c6891670d10a8ab857b107756d872cc3e",
+          "date": "2026-10-08T21:24:11Z",
+          "message": "Apply Start Below carries the right end too",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/cf407d1c6891670d10a8ab857b107756d872cc3e"
+        },
+        {
+          "sha": "98ea0915fce85e5d010489d3a6a63236358066dc",
+          "date": "2026-10-08T21:24:11Z",
+          "message": "A title page gets no clef",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/98ea0915fce85e5d010489d3a6a63236358066dc"
+        },
+        {
+          "sha": "a48ee5f8b621b0e939d67a0282a4ff1f3797d99d",
+          "date": "2026-10-08T21:12:00Z",
+          "message": "A detector's start box past the music isn't the staff's start",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/a48ee5f8b621b0e939d67a0282a4ff1f3797d99d"
+        },
+        {
+          "sha": "127930f18570c7de574cf5c8d81c09262eee2a2a",
+          "date": "2026-10-08T18:32:29Z",
+          "message": "Edit report: how much of detection the editor kept, page by page",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/127930f18570c7de574cf5c8d81c09262eee2a2a"
+        },
+        {
+          "sha": "3f295e60ddd4fc75d24ece5ed34d58a71105342b",
+          "date": "2026-10-08T18:32:03Z",
+          "message": "Test pages held out by page, for good",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/3f295e60ddd4fc75d24ece5ed34d58a71105342b"
+        },
+        {
+          "sha": "18a4325719910b98c55ec17501742ee87fcf2ab4",
+          "date": "2026-10-08T08:17:59Z",
+          "message": "Write a movement into Structure.ily from a source's labels",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/18a4325719910b98c55ec17501742ee87fcf2ab4"
+        },
+        {
+          "sha": "f29660c3360eb6a9e86274e60a694233a585d8df",
+          "date": "2026-10-08T08:02:08Z",
+          "message": "Key and time defaults from Structure.ily, for every source of the work",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/f29660c3360eb6a9e86274e60a694233a585d8df"
+        },
+        {
+          "sha": "3df3f2d34616489c9933720630dc3a0afa91f081",
+          "date": "2026-10-08T07:54:26Z",
+          "message": "Signature menus show their defaults; reviewing writes a movement's key and time",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/3df3f2d34616489c9933720630dc3a0afa91f081"
+        },
+        {
+          "sha": "c8f50359d685e90351ec68474b11882729c396b9",
+          "date": "2026-10-08T06:54:39Z",
+          "message": "Signatures: a line's clef, key and time, and changes mid-line",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/c8f50359d685e90351ec68474b11882729c396b9"
+        },
+        {
+          "sha": "25351f47daeaea5a2d50a27fe5dc1d721cf97a85",
+          "date": "2026-10-08T06:45:26Z",
+          "message": "Structure.ily bars numbered as LilyPond numbers them",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/25351f47daeaea5a2d50a27fe5dc1d721cf97a85"
+        },
+        {
+          "sha": "f7512c7ba2409ef92427ff68be2a4dc0004703e7",
+          "date": "2026-10-08T06:25:57Z",
+          "message": "A repeat in mid-bar: the pickup after it ends no numbered bar",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/f7512c7ba2409ef92427ff68be2a4dc0004703e7"
+        },
+        {
+          "sha": "83751ad405bddef03ecca3c4caaf1398cac14ee8",
+          "date": "2026-10-08T05:56:55Z",
+          "message": "Model card for YOLO26n with staff ends",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/83751ad405bddef03ecca3c4caaf1398cac14ee8"
+        },
+        {
+          "sha": "5db0d215b0db7635dff105ed913f4ef2be04296f",
+          "date": "2026-10-08T03:03:56Z",
+          "message": "Detection takes staff ends from the cached detector",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/5db0d215b0db7635dff105ed913f4ef2be04296f"
+        },
+        {
+          "sha": "3e431a1b22dc864f49afed725fd8913aba52c250",
+          "date": "2026-10-07T23:13:02Z",
+          "message": "Zeus zero-shot: counts our bars, misreads our clefs",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/3e431a1b22dc864f49afed725fd8913aba52c250"
+        },
+        {
+          "sha": "39d58041c5431baf3d0ce5ccb03e801d5567b4a4",
+          "date": "2026-10-07T23:13:02Z",
+          "message": "MUSCIMA++ pretraining: no gain",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/39d58041c5431baf3d0ce5ccb03e801d5567b4a4"
+        },
+        {
+          "sha": "7f612c6024f6d1fa35ea149927e4abb3a8457b9d",
+          "date": "2026-10-07T23:13:02Z",
+          "message": "Line detector learns where staves start and end",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/7f612c6024f6d1fa35ea149927e4abb3a8457b9d"
+        },
+        {
+          "sha": "d32310a4b0cf9f4e7e9bc030473c611518e0c534",
+          "date": "2026-10-07T19:41:35Z",
+          "message": "Clef marks: box each clef that changes the clef",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/d32310a4b0cf9f4e7e9bc030473c611518e0c534"
+        },
+        {
+          "sha": "113a08342c6ad2ae871d9d78375cc4a02ad70544",
+          "date": "2026-10-07T15:09:59Z",
+          "message": "Detection votes its bar lines with the detectors' cached predictions",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/113a08342c6ad2ae871d9d78375cc4a02ad70544"
+        },
+        {
+          "sha": "270f0ac81150f438126dcd5f8bc217e408fe738b",
+          "date": "2026-10-07T14:55:55Z",
+          "message": "Bake-off: staves by segmentation and oemer, two negative results",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/270f0ac81150f438126dcd5f8bc217e408fe738b"
+        },
+        {
+          "sha": "4ca91bfafcdc4a1df95c0eb077a344d97b69897a",
+          "date": "2026-10-07T14:55:55Z",
+          "message": "Bake-off: an unseen copy, and the vote end to end",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/4ca91bfafcdc4a1df95c0eb077a344d97b69897a"
+        },
+        {
+          "sha": "21aad351e869ec408fdab91935b6f042ef8d506f",
+          "date": "2026-10-07T14:55:55Z",
+          "message": "Cache the bar-line detectors' predictions for every page",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/21aad351e869ec408fdab91935b6f042ef8d506f"
+        },
+        {
+          "sha": "3c6ae1ac5eb46f0227b36052dbc7b7fc43646ca3",
+          "date": "2026-10-07T04:40:54Z",
+          "message": "Tab carries on from a deleted item",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/3c6ae1ac5eb46f0227b36052dbc7b7fc43646ca3"
+        },
+        {
+          "sha": "8a7bf23765b2eb10983a69683186622a305f6dd2",
+          "date": "2026-10-07T04:03:45Z",
+          "message": "Bake-off results: three hands, and votes among the current models",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/8a7bf23765b2eb10983a69683186622a305f6dd2"
+        },
+        {
+          "sha": "a874d1e013db6ef25856f68e0cbb6fd51226c0a5",
+          "date": "2026-10-07T00:44:19Z",
+          "message": "Model cards for the bar-line finders",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/a874d1e013db6ef25856f68e0cbb6fd51226c0a5"
+        },
+        {
+          "sha": "4e718f63ed0d2de45ea94e90a2d2c3cd088441e3",
+          "date": "2026-10-07T00:27:13Z",
+          "message": "Bar-line bake-off: three hands, new detectors, checkpoints judged",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/4e718f63ed0d2de45ea94e90a2d2c3cd088441e3"
+        },
+        {
+          "sha": "12260709d87cbad66c5743db821f73d0044dd659",
+          "date": "2026-10-07T00:27:12Z",
+          "message": "Learned filter: ink judged relative to the staff's paper",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/12260709d87cbad66c5743db821f73d0044dd659"
+        },
+        {
+          "sha": "00b917361d0a27ef7d33e2dda074369e2508156e",
+          "date": "2026-10-06T07:20:53Z",
+          "message": "No staff or crop outline beside the last bar line",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/00b917361d0a27ef7d33e2dda074369e2508156e"
+        },
+        {
+          "sha": "7d6bc41cf1922e1cdb1be72445a2284d1448ee5f",
+          "date": "2026-10-06T06:37:46Z",
+          "message": "Mark text suggestions follow the mark's kind",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/7d6bc41cf1922e1cdb1be72445a2284d1448ee5f"
+        },
+        {
+          "sha": "71ad2f1119538a8d79160f821fb979544e3b4e49",
+          "date": "2026-10-06T06:37:46Z",
+          "message": "A mark left of a line's music goes to that line's first bar",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/71ad2f1119538a8d79160f821fb979544e3b4e49"
+        },
+        {
+          "sha": "7312d272cf696a38b314ae92e59e8a937f97481b",
+          "date": "2026-10-06T06:37:46Z",
+          "message": "Stacked bar lines: flagged, and not created by snapping",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/7312d272cf696a38b314ae92e59e8a937f97481b"
+        },
+        {
+          "sha": "49c9cf58cf84df81eeb1f33388d0d7b589a90282",
+          "date": "2026-10-06T04:56:15Z",
+          "message": "Apply Start Below carries the left end too",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/49c9cf58cf84df81eeb1f33388d0d7b589a90282"
+        },
+        {
+          "sha": "af0b8864307da1f58b7999b0b8918fb86f2a79cb",
+          "date": "2026-10-06T04:56:15Z",
+          "message": "A staff's music start moves with its left end",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/af0b8864307da1f58b7999b0b8918fb86f2a79cb"
+        },
+        {
+          "sha": "ff7afee6afd9e2e4153353fbce59dc64c215f6ab",
+          "date": "2026-10-06T04:56:15Z",
+          "message": "End at last bar line also lengthens a staff that stops short",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/ff7afee6afd9e2e4153353fbce59dc64c215f6ab"
+        },
+        {
+          "sha": "6c883ac0803edbe4749c15122a3ffb15d4763cb2",
+          "date": "2026-10-06T04:56:15Z",
+          "message": "Staves stay on the paper and reach back over wide clefs",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/6c883ac0803edbe4749c15122a3ffb15d4763cb2"
+        },
+        {
+          "sha": "c56d2be30d5bf130b7cb419ab85cdc2c9864f87e",
+          "date": "2026-10-06T03:04:28Z",
+          "message": "Bar-line bake-off: shared mistakes and majority votes",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/c56d2be30d5bf130b7cb419ab85cdc2c9864f87e"
+        },
+        {
+          "sha": "cd32c80fee450c684b24ddd647dfb978da2af185",
+          "date": "2026-10-06T03:04:28Z",
+          "message": "Bar-line bake-off: width hints, bar-widths pass, end to end",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/cd32c80fee450c684b24ddd647dfb978da2af185"
+        },
+        {
+          "sha": "33a913b0115d7058e6cb618dee12f3ad4e217774",
+          "date": "2026-10-06T03:04:28Z",
+          "message": "Learned bar-line filter: a second pass that sees bar widths",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/33a913b0115d7058e6cb618dee12f3ad4e217774"
+        },
+        {
+          "sha": "b93210b813972eb0d969c42ec826b476a6166a3c",
+          "date": "2026-10-05T20:43:25Z",
+          "message": "Flag bars much wider or narrower than their line's typical bar",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/b93210b813972eb0d969c42ec826b476a6166a3c"
+        },
+        {
+          "sha": "b415c35221eb00908c788aca0c1df4206c297cea",
+          "date": "2026-10-05T16:57:18Z",
+          "message": "Learned bar-line filter, trained on the editor's reviewed pages",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/b415c35221eb00908c788aca0c1df4206c297cea"
+        },
+        {
+          "sha": "f5262405387cd224a56cc073b0d68362ba929a03",
+          "date": "2026-10-05T16:42:36Z",
+          "message": "Bar-line bake-off: harness and results",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/f5262405387cd224a56cc073b0d68362ba929a03"
+        },
+        {
+          "sha": "cf2e4fd66280ab1756e9dd71c02a377383119633",
+          "date": "2026-10-02T22:05:33Z",
+          "message": "Detection tests cover the second copyist (KHM 603)",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/cf2e4fd66280ab1756e9dd71c02a377383119633"
+        },
+        {
+          "sha": "8216f17894ef6290b76452d24618046421de5dfc",
+          "date": "2026-10-02T22:05:06Z",
+          "message": "New pages take the music start from the editor's previous page",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/8216f17894ef6290b76452d24618046421de5dfc"
+        },
+        {
+          "sha": "6ed6f41e3def915d890515da490d9132fa9c2950",
+          "date": "2026-10-02T22:04:47Z",
+          "message": "Drop the 'ink past the staff' stem test for bar lines",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/6ed6f41e3def915d890515da490d9132fa9c2950"
+        },
+        {
+          "sha": "d93b7331f582930ec229cc8981c553b82fec129f",
+          "date": "2026-10-02T22:04:27Z",
+          "message": "Tuning tool: don't mix up pages of different sources",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/d93b7331f582930ec229cc8981c553b82fec129f"
+        },
+        {
+          "sha": "d2796dcf49c7b9903befae24b0ec9915c4d0961d",
+          "date": "2026-10-02T21:39:14Z",
+          "message": "Suggest mark texts already used anywhere in the edition",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/d2796dcf49c7b9903befae24b0ec9915c4d0961d"
+        },
+        {
+          "sha": "21b66b1b05a7370fe4868e793caa026f442064d6",
+          "date": "2026-10-02T21:29:17Z",
+          "message": "Hold t or g with up/down to move the top or bottom crop edge",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/21b66b1b05a7370fe4868e793caa026f442064d6"
+        },
+        {
+          "sha": "459d71d052611c79f04e45ac974b5ddf352e7d3f",
+          "date": "2026-10-02T21:29:17Z",
+          "message": "Detail view starts open",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/459d71d052611c79f04e45ac974b5ddf352e7d3f"
+        },
+        {
+          "sha": "067200f2fec05f8ce44fd7b825245d334e2cc498",
+          "date": "2026-10-02T21:20:16Z",
+          "message": "Tab moves to the next item of the kind selected",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/067200f2fec05f8ce44fd7b825245d334e2cc498"
+        },
+        {
+          "sha": "5e3d8af7e8011d45052eb9db32ee7765ec608bbe",
+          "date": "2026-10-02T20:30:36Z",
+          "message": "Structure.ily reader counts bars as LilyPond does",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/5e3d8af7e8011d45052eb9db32ee7765ec608bbe"
+        },
+        {
+          "sha": "238206e08b2ef9d0f53199161ed9409d0eacf2bd",
+          "date": "2026-10-02T20:30:36Z",
+          "message": "Text marks outside the crops go to the last bar they reach",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/238206e08b2ef9d0f53199161ed9409d0eacf2bd"
+        },
+        {
+          "sha": "3cc6c3c2eff054585403a01ee73f1518ffb5a6b8",
+          "date": "2026-10-02T20:08:20Z",
+          "message": "Rename the start-carrying button to \"Apply Start Below\"",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/3cc6c3c2eff054585403a01ee73f1518ffb5a6b8"
+        },
+        {
+          "sha": "c80128c08c85456c6ed502aaa0652dfe248dc789",
+          "date": "2026-10-02T19:48:34Z",
+          "message": "Blank pages get no part or clef; colour charts are \"other\"",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/c80128c08c85456c6ed502aaa0652dfe248dc789"
+        },
+        {
+          "sha": "033e1c33eb64d08ba0e3de9e45b6bef402af0405",
+          "date": "2026-10-02T19:48:34Z",
+          "message": "Don't propose empty staves",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/033e1c33eb64d08ba0e3de9e45b6bef402af0405"
+        },
+        {
+          "sha": "7626b0555495e6179a484945b3ec03be077f4afa",
+          "date": "2026-10-02T19:44:59Z",
+          "message": "Carry one line's music start to the lines below it",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/7626b0555495e6179a484945b3ec03be077f4afa"
+        },
+        {
+          "sha": "546f476c03145e0569acfb7d0e9c51fb3ad0e2c2",
+          "date": "2026-10-02T19:22:11Z",
+          "message": "Arrow keys move a clicked handle",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/546f476c03145e0569acfb7d0e9c51fb3ad0e2c2"
+        },
+        {
+          "sha": "dc881b39ef90311a6f7be5313184889374f69daf",
+          "date": "2026-10-02T19:22:11Z",
+          "message": "End a staff where its music ends mid-line",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/dc881b39ef90311a6f7be5313184889374f69daf"
+        },
+        {
+          "sha": "738a79481cb475dddad39d31cca7a7c9cac0a650",
+          "date": "2026-10-02T19:21:49Z",
+          "message": "Clef detection: skip braces and opening lines, not bass clefs",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/738a79481cb475dddad39d31cca7a7c9cac0a650"
+        },
+        {
+          "sha": "8194309ef66e2f3e3ef9f194556806a39b649c49",
+          "date": "2026-10-02T19:21:29Z",
+          "message": "Music start: see accidentals written above the staff",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/8194309ef66e2f3e3ef9f194556806a39b649c49"
+        },
+        {
+          "sha": "ea0e680bb27eaae1e1d1e4ed9b891cacf7c254be",
+          "date": "2026-10-02T18:30:33Z",
+          "message": "Snap hand-placed bar lines to the ink",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/ea0e680bb27eaae1e1d1e4ed9b891cacf7c254be"
+        },
+        {
+          "sha": "ca67deda481015a113717dad53ef4135b2743d45",
+          "date": "2026-10-02T18:08:42Z",
+          "message": "Staff left edge follows the clef; crops reach each staff's own ink",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/ca67deda481015a113717dad53ef4135b2743d45"
+        },
+        {
+          "sha": "ab8be13a1814e6846ffc9be6775059c335c6ed41",
+          "date": "2026-10-02T18:08:35Z",
+          "message": "Marks: drag a box around the marking, made on release",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/ab8be13a1814e6846ffc9be6775059c335c6ed41"
+        },
+        {
+          "sha": "1af879ca0998e4e4ad3f335ae7345333a22add62",
+          "date": "2026-10-02T18:08:23Z",
+          "message": "Page corners: fit the paper's edges, and a Reset to detected button",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/1af879ca0998e4e4ad3f335ae7345333a22add62"
+        },
+        {
+          "sha": "800548c0346b6ca927b30c9d88479f0513cd8a21",
+          "date": "2026-10-02T09:06:01Z",
+          "message": "Reviewed button shows the page's state: red until reviewed, then green",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/800548c0346b6ca927b30c9d88479f0513cd8a21"
+        },
+        {
+          "sha": "893b165bd22a858296e99e130572baa66dc2186f",
+          "date": "2026-10-02T08:46:53Z",
+          "message": "Regression test and tuning tool for bar-line detection",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/893b165bd22a858296e99e130572baa66dc2186f"
+        },
+        {
+          "sha": "d637367df3c6e5231f0a7be486e03b3aad593f96",
+          "date": "2026-10-02T08:41:42Z",
+          "message": "Fewer false and fewer missed bar lines",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/d637367df3c6e5231f0a7be486e03b3aad593f96"
+        },
+        {
+          "sha": "55f486700b7720a02cfb4cc816355de7c22ff2bb",
+          "date": "2026-10-01T20:50:14Z",
+          "message": "Keep reviewed pages reviewed when edited",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/55f486700b7720a02cfb4cc816355de7c22ff2bb"
+        },
+        {
+          "sha": "507fdc35e8fc204deb96a4110c2fdd5605797e77",
+          "date": "2026-10-01T20:17:51Z",
+          "message": "Working labeler: server, editor, labels format and better detection",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/507fdc35e8fc204deb96a4110c2fdd5605797e77"
+        },
+        {
+          "sha": "6bbb006a27de93c2192a5da9dc1429240e7cf669",
+          "date": "2026-10-01T19:00:59Z",
+          "message": "Add MIT license",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/6bbb006a27de93c2192a5da9dc1429240e7cf669"
+        },
+        {
+          "sha": "f3f29638305a2f3a45cf6d2a312412731aef9050",
+          "date": "2026-10-01T18:56:05Z",
+          "message": "Initial spec, staff and bar-line detector, and prototype reading aids",
+          "url": "https://github.com/jsundram/manuscript-labeler/commit/f3f29638305a2f3a45cf6d2a312412731aef9050"
+        }
+      ]
+    },
+    {
+      "name": "quartet-log",
+      "html_url": "https://github.com/jsundram/quartet-log",
+      "description": "code for log.quartetroulette.com",
+      "language": "JavaScript",
+      "private": false,
+      "pushed_at": "2026-10-11T21:53:55Z",
+      "commit_count": 10,
+      "commits": [
+        {
+          "sha": "93784c2a3daadc82a10072726d9241e1a881c12e",
+          "date": "2026-10-04T01:38:01Z",
+          "message": "Merge pull request #59 from jsundram/last-played-on-confirmation",
+          "url": "https://github.com/jsundram/quartet-log/commit/93784c2a3daadc82a10072726d9241e1a881c12e"
+        },
+        {
+          "sha": "845d0b4cd1663bf12397ec8441a9493f37193c71",
+          "date": "2026-10-04T00:58:47Z",
+          "message": "Address review: one pass over the log, one sitting start",
+          "url": "https://github.com/jsundram/quartet-log/commit/845d0b4cd1663bf12397ec8441a9493f37193c71"
+        },
+        {
+          "sha": "5d0da9586c65405da810eb57ecc064c871424c92",
+          "date": "2026-10-03T06:28:30Z",
+          "message": "Address review: fallback layout, \"today\", steadier e2e",
+          "url": "https://github.com/jsundram/quartet-log/commit/5d0da9586c65405da810eb57ecc064c871424c92"
+        },
+        {
+          "sha": "740e967a424c367c4b790be6d99fd90a3336de7c",
+          "date": "2026-10-03T06:08:45Z",
+          "message": "Say when each piece in the sitting was last played",
+          "url": "https://github.com/jsundram/quartet-log/commit/740e967a424c367c4b790be6d99fd90a3336de7c"
+        },
+        {
+          "sha": "7810eb639a432c3261889ee65237398cc431ba46",
+          "date": "2026-10-03T06:08:45Z",
+          "message": "Keep the sitting's times on one line on a phone",
+          "url": "https://github.com/jsundram/quartet-log/commit/7810eb639a432c3261889ee65237398cc431ba46"
+        },
+        {
+          "sha": "7d946dbc56221b362d5da7cea6d865f765c6a48f",
+          "date": "2026-10-03T05:25:21Z",
+          "message": "Merge pull request #58 from jsundram/first-row-of-session-writes-out",
+          "url": "https://github.com/jsundram/quartet-log/commit/7d946dbc56221b362d5da7cea6d865f765c6a48f"
+        },
+        {
+          "sha": "81aa63af868c48d4f7f5bd89e463c36b97a5a39b",
+          "date": "2026-10-03T04:54:30Z",
+          "message": "Write the sheet's own text when a session opens",
+          "url": "https://github.com/jsundram/quartet-log/commit/81aa63af868c48d4f7f5bd89e463c36b97a5a39b"
+        },
+        {
+          "sha": "9ae07a4fe28f04d80e25eebf314cb4bee8402510",
+          "date": "2026-10-03T04:54:30Z",
+          "message": "Let a later row from another device beat this one's morning copy",
+          "url": "https://github.com/jsundram/quartet-log/commit/9ae07a4fe28f04d80e25eebf314cb4bee8402510"
+        },
+        {
+          "sha": "ae5cfe36e7107eea2ab14842abcfc0369dde6c28",
+          "date": "2026-10-03T04:33:48Z",
+          "message": "Put the mid-session e2e tests inside a session",
+          "url": "https://github.com/jsundram/quartet-log/commit/ae5cfe36e7107eea2ab14842abcfc0369dde6c28"
+        },
+        {
+          "sha": "209ba8c0e49a367c47c81a8cd60f84aedb6f9105",
+          "date": "2026-10-03T04:10:31Z",
+          "message": "Write names and location out on the first row of a session",
+          "url": "https://github.com/jsundram/quartet-log/commit/209ba8c0e49a367c47c81a8cd60f84aedb6f9105"
+        }
+      ]
+    },
+    {
+      "name": "quartets.boccherini.org",
+      "html_url": "https://github.com/jsundram/quartets.boccherini.org",
+      "description": "Interactive periodic table visualization of Boccherini's 91 string quartets",
+      "language": "HTML",
+      "private": false,
+      "pushed_at": "2026-10-15T22:38:18Z",
+      "commit_count": 7,
+      "commits": [
+        {
+          "sha": "28ec7f8e4e416281ba802d3a00696ad377ea0ba6",
+          "date": "2026-10-15T22:38:11Z",
+          "message": "Title footnote: 91* = 45 Quartets (1 unfinished) and 46 Quartettini",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/28ec7f8e4e416281ba802d3a00696ad377ea0ba6"
+        },
+        {
+          "sha": "e0bb8067837782d36b080e30656e65244437e741",
+          "date": "2026-10-14T22:06:26Z",
+          "message": "Bottom strip: purple for piccola, green for grande, darker when longer",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/e0bb8067837782d36b080e30656e65244437e741"
+        },
+        {
+          "sha": "28a59337c648a738c9361622286dc434b3207074",
+          "date": "2026-10-14T20:52:05Z",
+          "message": "G202: collapse Minuetto / Larghetto / Minuetto into one movement",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/28a59337c648a738c9361622286dc434b3207074"
+        },
+        {
+          "sha": "322b4d17f205feeb98ad7c0c493d2a664dab10e7",
+          "date": "2026-10-14T20:12:33Z",
+          "message": "Add \"?\" help guide: a tour of the table and an annotated card anatomy",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/322b4d17f205feeb98ad7c0c493d2a664dab10e7"
+        },
+        {
+          "sha": "5cf0305a98557a684b023859073d4f933fdb6934",
+          "date": "2026-10-14T19:36:10Z",
+          "message": "Add Kammermusikverlag, Steglein and Zanibon parts; record edition numbering",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/5cf0305a98557a684b023859073d4f933fdb6934"
+        },
+        {
+          "sha": "d37146972568d34d36953f99aaf7565e0feb28b5",
+          "date": "2026-10-07T20:44:19Z",
+          "message": "Add G230 recording; document that opera.json is generated",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/d37146972568d34d36953f99aaf7565e0feb28b5"
+        },
+        {
+          "sha": "286dfde05cc2729fd9fe0312b5c12a96e1d863e3",
+          "date": "2026-10-07T20:44:08Z",
+          "message": "sw: check the running bundle's version (APP_V), not cache keys (pwa-starter#17)",
+          "url": "https://github.com/jsundram/quartets.boccherini.org/commit/286dfde05cc2729fd9fe0312b5c12a96e1d863e3"
+        }
+      ]
+    },
+    {
+      "name": "quartet-chooser",
+      "html_url": "https://github.com/jsundram/quartet-chooser",
+      "description": "The code behind Quartet Roulette (https://quartetroulette.com)",
+      "language": "JavaScript",
+      "private": false,
+      "pushed_at": "2026-10-14T20:52:11Z",
+      "commit_count": 7,
+      "commits": [
+        {
+          "sha": "0c6309e0953b356ad46f02dda45659a725c30351",
+          "date": "2026-10-14T20:52:04Z",
+          "message": "Merge Boccherini Op. 32 No. 2 minuet and larghetto into one movement",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/0c6309e0953b356ad46f02dda45659a725c30351"
+        },
+        {
+          "sha": "0624841875401d0d957ee49afa12f0dc1666fbdc",
+          "date": "2026-10-09T04:56:42Z",
+          "message": "Merge pull request #51 from jsundram/deps/react-19.3.0",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/0624841875401d0d957ee49afa12f0dc1666fbdc"
+        },
+        {
+          "sha": "2e9edaabc682046b95f24d13537f6c5734ea3b82",
+          "date": "2026-10-09T04:55:50Z",
+          "message": "Bump react and react-dom to 19.3.0 together",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/2e9edaabc682046b95f24d13537f6c5734ea3b82"
+        },
+        {
+          "sha": "6e6721080e735e055845533a1495f5ece71d2c30",
+          "date": "2026-10-09T04:55:20Z",
+          "message": "Merge pull request #47 from jsundram/dependabot/pip/scripts/svgpathtools-1.8.0",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/6e6721080e735e055845533a1495f5ece71d2c30"
+        },
+        {
+          "sha": "f64b6339bfdfb709f1c670e00059b2e20eca8a73",
+          "date": "2026-10-09T04:55:15Z",
+          "message": "Merge pull request #50 from jsundram/dependabot/npm_and_yarn/source-map-js-1.2.2",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/f64b6339bfdfb709f1c670e00059b2e20eca8a73"
+        },
+        {
+          "sha": "4b9142f534e9797ec56e924c1157f80d12c291e8",
+          "date": "2026-10-07T19:49:31Z",
+          "message": "data: two recordings for Boccherini G230",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/4b9142f534e9797ec56e924c1157f80d12c291e8"
+        },
+        {
+          "sha": "a39a57a5f552c552b61c59276570e45ea000cc54",
+          "date": "2026-10-07T19:49:31Z",
+          "message": "update.py: read the published CSVs instead of the Sheets API",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/a39a57a5f552c552b61c59276570e45ea000cc54"
+        }
+      ]
+    },
+    {
+      "name": "mbta-glx",
+      "html_url": "https://github.com/jsundram/mbta-glx",
+      "description": "Inbound Green Line ETAs for Magoun Square, with error bars and a push that says when to leave.",
+      "language": "Python",
+      "private": false,
+      "pushed_at": "2026-10-10T22:20:06Z",
+      "commit_count": 7,
+      "commits": [
+        {
+          "sha": "3e706bc5129215b050d481d85ea65741d83bb194",
+          "date": "2026-10-10T22:19:52Z",
+          "message": "Daily data through 2026-10-11",
+          "url": "https://github.com/jsundram/mbta-glx/commit/3e706bc5129215b050d481d85ea65741d83bb194"
+        },
+        {
+          "sha": "6f2f77fae3568c2f01abfc6be6a17d0c9e056532",
+          "date": "2026-10-10T22:19:30Z",
+          "message": "Let the self-score panel narrow to the last N trains",
+          "url": "https://github.com/jsundram/mbta-glx/commit/6f2f77fae3568c2f01abfc6be6a17d0c9e056532"
+        },
+        {
+          "sha": "d384b53f6f029c7d9273389e02b560c423fb15a3",
+          "date": "2026-10-10T22:19:06Z",
+          "message": "Add the figures page, served from the backend rather than published",
+          "url": "https://github.com/jsundram/mbta-glx/commit/d384b53f6f029c7d9273389e02b560c423fb15a3"
+        },
+        {
+          "sha": "8a913978f4d794931c52590f418bd9503b3a4321",
+          "date": "2026-10-10T22:17:09Z",
+          "message": "Run the always-on agents in their own environment, not uv run",
+          "url": "https://github.com/jsundram/mbta-glx/commit/8a913978f4d794931c52590f418bd9503b3a4321"
+        },
+        {
+          "sha": "495a408d5cb9e7bbc57bb65fb5c6034589810118",
+          "date": "2026-10-07T21:49:39Z",
+          "message": "Save each day's trip -> block map before the API drops it",
+          "url": "https://github.com/jsundram/mbta-glx/commit/495a408d5cb9e7bbc57bb65fb5c6034589810118"
+        },
+        {
+          "sha": "0311cbedfe91844af6ae12648a332f49b2c85115",
+          "date": "2026-10-07T20:56:42Z",
+          "message": "Read only Magoun's predictions when replaying a compacted day",
+          "url": "https://github.com/jsundram/mbta-glx/commit/0311cbedfe91844af6ae12648a332f49b2c85115"
+        },
+        {
+          "sha": "7b894d303d53f0aef44e8b4988c9189d781c1aa6",
+          "date": "2026-10-01T18:41:14Z",
+          "message": "Write down the Tailscale work that is not done",
+          "url": "https://github.com/jsundram/mbta-glx/commit/7b894d303d53f0aef44e8b4988c9189d781c1aa6"
+        }
+      ]
+    },
+    {
+      "name": "boccherini-haydn-timeline",
+      "html_url": "https://github.com/jsundram/boccherini-haydn-timeline",
+      "description": "Two Lives in Quartets: Haydn's and Boccherini's string quartets on a shared timeline",
+      "language": "HTML",
+      "private": false,
+      "pushed_at": "2026-10-14T20:59:39Z",
+      "commit_count": 4,
+      "commits": [
+        {
+          "sha": "f353f1e679c6a3c7648c64b95ad9cb1c881e4b69",
+          "date": "2026-10-14T20:59:01Z",
+          "message": "Update Op. 32 movement count from opera.json (23 -> 21)",
+          "url": "https://github.com/jsundram/boccherini-haydn-timeline/commit/f353f1e679c6a3c7648c64b95ad9cb1c881e4b69"
+        },
+        {
+          "sha": "80f0f8f7733ce93083d3e9901c33a02035112bfa",
+          "date": "2026-10-10T21:53:43Z",
+          "message": "README: show the chart, compare with the first version",
+          "url": "https://github.com/jsundram/boccherini-haydn-timeline/commit/80f0f8f7733ce93083d3e9901c33a02035112bfa"
+        },
+        {
+          "sha": "1a9353fa79bf0034059bc80d39162422e01fc4b1",
+          "date": "2026-10-10T21:49:52Z",
+          "message": "Editorial redesign: serif type, shared summary rows, print formats",
+          "url": "https://github.com/jsundram/boccherini-haydn-timeline/commit/1a9353fa79bf0034059bc80d39162422e01fc4b1"
+        },
+        {
+          "sha": "f0cac8aab02680b5d7f952c3c5f22053ff19dfac",
+          "date": "2026-10-07T21:40:58Z",
+          "message": "Retitle to \"Two Lives in Quartets\"; tint quartettini, draw life-lines",
+          "url": "https://github.com/jsundram/boccherini-haydn-timeline/commit/f0cac8aab02680b5d7f952c3c5f22053ff19dfac"
+        }
+      ]
+    },
+    {
+      "name": "boccherini-sources",
+      "html_url": "https://github.com/jsundram/boccherini-sources",
+      "description": "Scans of Boccherini's string quartets, keyed to the G\u00e9rard catalogue and tied back to RISM",
+      "language": "Python",
+      "private": false,
+      "pushed_at": "2026-10-02T09:33:19Z",
+      "commit_count": 1,
+      "commits": [
+        {
+          "sha": "194aafb44addaece0bbd88b1640d2e88e0fd680d",
+          "date": "2026-10-01T18:36:26Z",
+          "message": "Boccherini quartet sources: the census, its tooling, and the index",
+          "url": "https://github.com/jsundram/boccherini-sources/commit/194aafb44addaece0bbd88b1640d2e88e0fd680d"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Public repositories owned by the user are included, plus any private ones named explicitly: boccherini-opus-48.",
+    "Commit author matching can miss alternate or unlinked email identities.",
+    "Merge and coauthored commits are retained; interpret counts with care."
+  ]
+}

@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Fetch a reproducible public GitHub activity snapshot for one month.
+"""Fetch a reproducible GitHub activity snapshot for one month.
+
+Public repos owned by the user are found automatically. A private repo is
+included only when named with --private, and only if the token can read it;
+nothing private is ever discovered by listing.
 
 This collects facts only. It never writes narrative and never touches
 data/months/. Run draft_month.py afterwards to turn a snapshot into a
@@ -8,6 +12,7 @@ month skeleton plus an interview.
 Usage:
   GITHUB_TOKEN=... python3 scripts/fetch_github.py --month 2026-07
   GITHUB_TOKEN=... python3 scripts/fetch_github.py --month 2026-07 --until 2026-07-23
+  GITHUB_TOKEN=... python3 scripts/fetch_github.py --month 2026-09 --private some-repo
 
 Without a token GitHub's unauthenticated rate limit is easy to exhaust.
 Output goes to data/raw/<month>.json.
@@ -92,6 +97,8 @@ def main() -> int:
     parser.add_argument("--since", help="Override the start date (YYYY-MM-DD)")
     parser.add_argument("--until", help="Clamp the end date (YYYY-MM-DD); use for a month in progress")
     parser.add_argument("--output", help="Defaults to data/raw/<month>.json")
+    parser.add_argument("--private", action="append", default=[], metavar="REPO",
+                        help="Also include this private repo (repeatable; needs a token that can read it)")
     args = parser.parse_args()
 
     first, last = month_bounds(args.month)
@@ -101,10 +108,17 @@ def main() -> int:
         raise SystemExit("error: --until is before the start of the window")
 
     token = os.environ.get("GITHUB_TOKEN")
+    if args.private and not token:
+        raise SystemExit("error: --private needs a GITHUB_TOKEN that can read those repos")
     since_iso, until_iso = f"{start}T00:00:00Z", f"{end}T23:59:59Z"
 
     repos_url = f"{API}/users/{urllib.parse.quote(args.user)}/repos?per_page=100&sort=pushed&type=owner"
     repos = paged(repos_url, token)
+    known = {r["name"] for r in repos}
+    for name in args.private:
+        if name not in known:
+            repo, _ = request_json(f"{API}/repos/{args.user}/{urllib.parse.quote(name)}", token)
+            repos.append(repo)
 
     snapshot: dict[str, Any] = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -113,7 +127,8 @@ def main() -> int:
         "coverage": {"start": start.isoformat(), "end": end.isoformat()},
         "repositories": [],
         "limitations": [
-            "Only public repositories owned by the user are included.",
+            "Public repositories owned by the user are included, plus any private ones named "
+            "explicitly: " + (", ".join(args.private) if args.private else "none") + ".",
             "Commit author matching can miss alternate or unlinked email identities.",
             "Merge and coauthored commits are retained; interpret counts with care.",
         ],
@@ -135,6 +150,7 @@ def main() -> int:
             "html_url": repo["html_url"],
             "description": repo.get("description"),
             "language": repo.get("language"),
+            "private": bool(repo.get("private")),
             "pushed_at": pushed,
             "commit_count": len(commits),
             "commits": [

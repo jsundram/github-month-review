@@ -10,9 +10,9 @@ window.REVIEW_MONTHS["2026-08"] = {
   lede: "More music than any month before it — playing 28 of 31 days — with the project work fitted into the gaps: a service-worker fix pushed across five apps in a day, a quartet-log overhaul planned and executed inside another, quartet-chooser walked through a phased PWA checklist, and a bow dataset scraped from the Cozio Archive into three published reports.",
   metrics: [
     {
-      value: "146",
+      value: "154",
       label: "public commits",
-      note: "Across 8 repos; 17 of the month's 31 days have commits"
+      note: "Across 9 repos; 17 of the month's 31 days have commits"
     },
     {
       value: "142",
@@ -46,7 +46,11 @@ window.REVIEW_MONTHS["2026-08"] = {
           name: "Haydn Info Card",
           repo: "haydn-info-card",
           desc: "Key-group highlighting and mobile fixes, from using the card at SoCal.",
-          url: "https://github.com/jsundram/haydn-info-card"
+          url: "https://github.com/jsundram/haydn-info-card",
+          image: {
+            src: "assets/projects/haydn-info-card.jpg",
+            alt: "Joseph Haydn — The 68 String Quartets: a grid of cards, one per quartet, giving its key, in rows by opus."
+          }
         }
       ],
       evidence: [
@@ -71,13 +75,21 @@ window.REVIEW_MONTHS["2026-08"] = {
           name: "PWA Starter",
           repo: "pwa-starter",
           desc: "An opinionated skeleton and checklist for small static PWAs; source of the week's cache-first fix.",
-          url: "https://github.com/jsundram/pwa-starter"
+          url: "https://github.com/jsundram/pwa-starter",
+          image: {
+            src: "assets/projects/pwa-starter.jpg",
+            alt: "pwa-starter's placeholder shell: an APP header and a box asking to be replaced."
+          }
         },
         {
           name: "Quartet Log",
           repo: "quartet-log",
           desc: "Overhauled in a day from its own written review: tests, modules, CI, lint and type floors.",
-          url: "https://github.com/jsundram/quartet-log"
+          url: "https://github.com/jsundram/quartet-log",
+          image: {
+            src: "assets/projects/quartet-log.jpg",
+            alt: "Quartet Log's setup screen, asking for the URL of a published Google Sheet."
+          }
         },
         {
           name: "Haydn Info Card",
@@ -124,8 +136,8 @@ window.REVIEW_MONTHS["2026-08"] = {
       dates: { start: "2026-08-17", end: "2026-08-23" },
       status: "active",
       intensity: 2,
-      title: "quartet-log features between sessions.",
-      summary: "A small feature run on quartet-log: a 5+ tab for quintet-and-larger repertoire with second-viola part support, a Unique Parts stat on the summary cards and per-year calendar, and the calendar's per-year stats derived from the same aggregate computation the rest of the app uses. quartet-chooser got one fix — omit the iframe src entirely when a movement has no Spotify link.",
+      title: "quartet-log features, and a Boccherini–Haydn timeline.",
+      summary: "A small feature run on quartet-log: a 5+ tab for quintet-and-larger repertoire with second-viola part support, a Unique Parts stat on the summary cards and per-year calendar, and the calendar's per-year stats derived from the same aggregate computation the rest of the app uses. quartet-chooser got one fix — omit the iframe src entirely when a movement has no Spotify link. On Aug 20 boccherini-haydn-timeline started: a timeline of the two composers' string quartets, one bar per opus, moved out of a Claude artifact drafted in February into its own repo, with a Playwright pipeline that captures it as PNG, PDF, and SVG. The rest of that day's eight commits are layout — bar scaling, Haydn's Op. 1 and Op. 2 split into separate bars, a tick for each quartet, optical centering.",
       themes: ["music"],
       projects: [
         {
@@ -138,14 +150,30 @@ window.REVIEW_MONTHS["2026-08"] = {
           name: "Quartet Chooser",
           repo: "quartet-chooser",
           desc: "One iframe fix, ahead of the checklist run the following week.",
-          url: "https://github.com/jsundram/quartet-chooser"
+          url: "https://github.com/jsundram/quartet-chooser",
+          image: {
+            src: "assets/projects/quartet-chooser.jpg",
+            alt: "Quartet Roulette's home page: a grid of illustrated composer portraits."
+          }
+        },
+        {
+          name: "Boccherini–Haydn timeline",
+          repo: "boccherini-haydn-timeline",
+          desc: "A February Claude artifact moved into a repo of its own, with a capture pipeline.",
+          url: "https://github.com/jsundram/boccherini-haydn-timeline",
+          image: {
+            src: "assets/projects/boccherini-haydn-timeline.jpg",
+            alt: "\"Two Lives in Quartets\": Haydn's quartets on the left and Boccherini's on the right, one bar per opus on a shared timeline from 1760 to 1805."
+          }
         }
       ],
       evidence: [
         { text: "add 5+ tab for quintet-and-larger rep with VA2 part support", url: "https://github.com/jsundram/quartet-log/commit/4397df5bef6b83cdb11f3d06d762ee37b5417e76" },
         { text: "add Unique Parts stat to summary cards and per-year calendar column", url: "https://github.com/jsundram/quartet-log/commit/1f9e0a4a09489bfc16b0fca0fd1a1a0cfce4bda3" },
         { text: "derive calendar per-year stats from computeAggregateStats", url: "https://github.com/jsundram/quartet-log/commit/923d1c45c402cd31fddfbd656da64f9e98a48608" },
-        { text: "Omit iframe src entirely when a movement has no Spotify link", url: "https://github.com/jsundram/quartet-chooser/commit/bb4a5da32aa9bcc4ef76fee04b13a985796c24d8" }
+        { text: "Omit iframe src entirely when a movement has no Spotify link", url: "https://github.com/jsundram/quartet-chooser/commit/bb4a5da32aa9bcc4ef76fee04b13a985796c24d8" },
+        { text: "Scaffold repo with Playwright capture pipeline (PNG/PDF/SVG)", url: "https://github.com/jsundram/boccherini-haydn-timeline/commit/e7c06e088bc8c6845aa5ae03c57ea10c5ad139eb" },
+        { text: "Split Haydn Op. 1/2 into separate bars: Op. 1 (6) 1758, Op. 2 (4) 1759", url: "https://github.com/jsundram/boccherini-haydn-timeline/commit/64b645b08c73e2713e901df06b1d5ae18a76d6ad" }
       ]
     },
     {

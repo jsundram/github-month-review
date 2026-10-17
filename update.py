@@ -20,6 +20,10 @@ A GITHUB_TOKEN raises the API rate limit from 60 to 5,000 requests/hour. Put it
 in a .env file next to this script (gitignored) as GITHUB_TOKEN=..., or export
 it. A fine-grained token with "Public repositories (read-only)" access is enough.
 
+To include private repos, list them in .env as PRIVATE_REPOS=name1,name2 and give
+the token read access to them (Contents: read-only). Only repos named there are
+fetched; their names, commit messages, and links end up in the public snapshot.
+
 Scheduling (weekly, Monday 08:00):
 
     0 8 * * 1  cd /path/to/repo && /opt/homebrew/bin/uv run update.py >> update.log 2>&1
@@ -163,6 +167,8 @@ def main() -> int:
         if not os.environ.get("GITHUB_TOKEN"):
             print("  note: GITHUB_TOKEN is unset; the unauthenticated rate limit is low")
         fetch = [PY, "scripts/fetch_github.py", "--month", month, "--user", args.user]
+        for name in filter(None, (n.strip() for n in os.environ.get("PRIVATE_REPOS", "").split(","))):
+            fetch += ["--private", name]
         if month == current_month():
             fetch += ["--until", today]          # do not ask for days that have not happened
         if sh(*fetch).returncode != 0:

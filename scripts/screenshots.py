@@ -80,6 +80,12 @@ def serve(directory: Path) -> tuple[str, socketserver.TCPServer]:
 def settle(page) -> None:
     page.wait_for_function("document.querySelector('#weekList').children.length > 0")
     page.wait_for_timeout(350)          # reveal + collapse transitions
+    # Project screenshots are loading="lazy", and a full-page capture does not scroll, so
+    # anything below the first screen would be shot blank. Load them all and wait.
+    page.evaluate("""() => Promise.all([...document.querySelectorAll('img.project-shot')].map(img => {
+        img.loading = 'eager';
+        return img.complete ? null : new Promise(done => { img.onload = img.onerror = done; });
+    }))""")
 
 
 def main() -> int:
@@ -90,6 +96,9 @@ def main() -> int:
         return 1
 
     shots = {
+        "october-full": "October 2026 (in progress), full page",
+        "october-mobile": "October on a phone",
+        "september-full": "September 2026, full page",
         "august-full": "August 2026, full page",
         "august-mobile": "August on a phone",
         "july-full": "July 2026, full page",
@@ -125,6 +134,16 @@ def main() -> int:
                 if quiet_month:
                     stub_quiet_month(page)
                 return page
+
+            for name, month, viewport in (("october-full", "2026-10", DESKTOP),
+                                          ("october-mobile", "2026-10", MOBILE),
+                                          ("september-full", "2026-09", DESKTOP)):
+                if name in wanted:
+                    page = new_page(viewport=viewport)
+                    page.goto(f"{base}/#{month}")
+                    settle(page)
+                    page.screenshot(path=OUT / f"{name}.png", full_page=True)
+                    page.close()
 
             if "august-full" in wanted:
                 page = new_page()

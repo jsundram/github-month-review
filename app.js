@@ -183,7 +183,7 @@
         </aside>
         <div class="week-main">
           <p class="quiet-heading">${heading}</p>
-          <p class="quiet-note">${esc(week.note || 'No public activity in this week.')}</p>
+          <p class="quiet-note">${esc(week.note || 'No activity in this week.')}</p>
         </div>
       </article>`;
   }
@@ -207,13 +207,15 @@
           <h3>${esc(week.title)}</h3>
           <p class="week-summary">${esc(week.summary)}</p>
           ${projects.length ? `<div class="project-list">${projects.map(p => `
-            <a class="project-card" href="${esc(p.url)}" target="_blank" rel="noreferrer">
+            <a class="project-card${p.image && p.image.src ? ' has-shot' : ''}" href="${esc(p.url)}" target="_blank" rel="noreferrer">
+              ${p.image && p.image.src ? `<img class="project-shot" src="${esc(p.image.src)}" alt="${esc(p.image.alt || '')}"
+                width="1200" height="750" loading="lazy" decoding="async">` : ''}
               <header><h4>${esc(p.name)}</h4><code>${esc(p.repo)}</code></header>
               <p>${esc(p.desc)}</p><b>Open repository ↗</b>
             </a>`).join('')}</div>` : ''}
           ${week.note ? `<p class="week-note">${esc(week.note)}</p>` : ''}
           ${evidence.length ? `<div class="evidence"><div class="evidence-inner">
-            <h5>Public evidence</h5>
+            <h5>Evidence</h5>
             <ul>${evidence.map(item =>
               `<li><a href="${esc(item.url)}" target="_blank" rel="noreferrer">${esc(item.text)} ↗</a></li>`).join('')}</ul>
           </div></div>` : ''}
@@ -229,7 +231,7 @@
       el.weekList.innerHTML = `
         <div class="month-quiet">
           <h3>A quiet month.</h3>
-          <p>${esc(month.quietNote || month.lede || 'No public GitHub activity recorded in this month.')}</p>
+          <p>${esc(month.quietNote || month.lede || 'No GitHub activity recorded in this month.')}</p>
         </div>`;
       return weeks;
     }
@@ -299,7 +301,7 @@
 
   function updateHead(month) {
     const title = `${month.label} — GitHub review — ${index.user}`;
-    const desc = month.lede || `${index.user}'s public GitHub work — ${month.label}.`;
+    const desc = month.lede || `${index.user}'s GitHub work — ${month.label}.`;
     document.title = title;
     setMeta('meta[name="description"]', 'content', desc);
     setMeta('meta[property="og:title"]', 'content', title);
@@ -316,7 +318,7 @@
     renderMetrics(month);
     observeWeeks(renderWeeks(month));
     renderThreads(month);
-    el.footerLine.textContent = `${index.user} · public GitHub review · ${month.label}`;
+    el.footerLine.textContent = `${index.user} · GitHub review · ${month.label}`;
     document.body.classList.remove('load-error');
     document.body.classList.toggle('month-is-quiet', month.status === 'quiet');
   }
@@ -353,6 +355,15 @@
   }
 
   window.addEventListener('hashchange', () => show(resolve()));
+
+  // A project screenshot that fails to load drops out; the card reads fine without it.
+  // `error` does not bubble, so listen in the capture phase.
+  el.weekList.addEventListener('error', event => {
+    const img = event.target;
+    if (!img.classList || !img.classList.contains('project-shot')) return;
+    img.closest('.project-card').classList.remove('has-shot');
+    img.remove();
+  }, true);
 
   /* ------------------------------------------------------- evidence toggle */
 

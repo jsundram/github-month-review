@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# pwa-starter: og-lint.py @ 08eefba
 # /// script
 # requires-python = ">=3.9"
 # ///
@@ -14,8 +15,7 @@ So: if this commit stages an oversized OG image, warn.
 
 MAX_BYTES keeps a margin under WhatsApp's ~300 KB scrape cutoff (keep in sync with make-og.sh).
 
-Adopted from jsundram/pwa-starter (scripts/og-lint.py). Run it in CI with a real exit code, or by
-hand:
+The pre-commit hook runs it warn-only; run it in CI with a real exit code. By hand:
     python3 scripts/og-lint.py
 """
 import subprocess, sys

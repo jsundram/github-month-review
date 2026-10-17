@@ -31,6 +31,6 @@
 
     <rect x="80" y="500" width="120" height="6" rx="3" fill="#ef6045"/>
     <text x="80" y="556" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif"
-          font-size="30" font-weight="400" fill="#c9c7c0">Public GitHub work, one narrative per week — quiet weeks included.</text>
+          font-size="30" font-weight="400" fill="#c9c7c0">GitHub work, one narrative per week — quiet weeks included.</text>
   </g>
 </svg>

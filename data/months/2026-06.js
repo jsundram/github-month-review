@@ -47,7 +47,11 @@ window.REVIEW_MONTHS["2026-06"] = {
           name: "Quartet Log",
           repo: "quartet-log",
           desc: "A record of quartets played, with a dashboard over the history. Code for log.quartetroulette.com.",
-          url: "https://github.com/jsundram/quartet-log"
+          url: "https://github.com/jsundram/quartet-log",
+          image: {
+            src: "assets/projects/quartet-log.jpg",
+            alt: "Quartet Log's setup screen, asking for the URL of a published Google Sheet."
+          }
         }
       ],
       evidence: [
@@ -75,13 +79,21 @@ window.REVIEW_MONTHS["2026-06"] = {
           name: "Lobsters & Lighthouses",
           repo: "lobsters-and-lighthouses",
           desc: "A Maine day-trip handout: tides, daylight, stops, and charging, computed from a config and published as one self-contained page.",
-          url: "https://github.com/jsundram/lobsters-and-lighthouses"
+          url: "https://github.com/jsundram/lobsters-and-lighthouses",
+          image: {
+            src: "assets/projects/lobsters-and-lighthouses.jpg",
+            alt: "Lobsters & Lighthouses: the June 22 day trip from Somerville up the coast to Cape Elizabeth and home — 10 stops, 255 miles, 5:50 of driving."
+          }
         },
         {
           name: "Haydn Lowdn",
           repo: "haydn-lowdn",
           desc: "The range of each part across the Haydn quartets, plotted so it reads on a phone.",
-          url: "https://github.com/jsundram/haydn-lowdn"
+          url: "https://github.com/jsundram/haydn-lowdn",
+          image: {
+            src: "assets/projects/haydn-lowdn.jpg",
+            alt: "Haydn String Quartets — Pitch Extremes by Movement: a coloured bar per part spanning each movement's lowest to highest note."
+          }
         },
         {
           name: "Quartet Log",
@@ -155,13 +167,21 @@ window.REVIEW_MONTHS["2026-06"] = {
           name: "Haydn Info Card",
           repo: "haydn-info-card",
           desc: "The printed card ported to an interactive D3 web page, with movement bars scaled by real track durations.",
-          url: "https://github.com/jsundram/haydn-info-card"
+          url: "https://github.com/jsundram/haydn-info-card",
+          image: {
+            src: "assets/projects/haydn-info-card.jpg",
+            alt: "Joseph Haydn — The 68 String Quartets: a grid of cards, one per quartet, giving its key, in rows by opus."
+          }
         },
         {
           name: "AKM",
           repo: "AKM",
           desc: "First commits: a personal schedule app for the Lesachtal festival, offline from the start.",
-          url: "https://github.com/jsundram/AKM"
+          url: "https://github.com/jsundram/AKM",
+          image: {
+            src: "assets/projects/AKM.jpg",
+            alt: "The AlpenKammerMusik daily briefing for Monday 29 June, opening with the day's forecast and temperature curve."
+          }
         }
       ],
       evidence: [
@@ -195,7 +215,11 @@ window.REVIEW_MONTHS["2026-06"] = {
           name: "Haydn Enthusiasts",
           repo: "haydnenthusiasts.org",
           desc: "Download and interactive calls to action for the info card.",
-          url: "https://github.com/jsundram/haydnenthusiasts.org"
+          url: "https://github.com/jsundram/haydnenthusiasts.org",
+          image: {
+            src: "assets/projects/haydnenthusiasts.org.jpg",
+            alt: "The Haydn Enthusiasts concerts page: a strip of past concerts above a listing for a Haydn birthday concert on March 31, 2025."
+          }
         }
       ],
       evidence: [

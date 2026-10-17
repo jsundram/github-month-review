@@ -47,13 +47,21 @@ window.REVIEW_MONTHS["2026-07"] = {
           name: "AKM",
           repo: "AKM",
           desc: "A festival companion, converted from one person's schedule into everyone's in the week before it was needed.",
-          url: "https://github.com/jsundram/AKM"
+          url: "https://github.com/jsundram/AKM",
+          image: {
+            src: "assets/projects/AKM.jpg",
+            alt: "The AlpenKammerMusik daily briefing for Monday 29 June, opening with the day's forecast and temperature curve."
+          }
         },
         {
           name: "Haydn Info Card",
           repo: "haydn-info-card",
           desc: "Smaller fixes to the interactive card alongside the AKM work.",
-          url: "https://github.com/jsundram/haydn-info-card"
+          url: "https://github.com/jsundram/haydn-info-card",
+          image: {
+            src: "assets/projects/haydn-info-card.jpg",
+            alt: "Joseph Haydn — The 68 String Quartets: a grid of cards, one per quartet, giving its key, in rows by opus."
+          }
         }
       ],
       evidence: [
@@ -121,7 +129,11 @@ window.REVIEW_MONTHS["2026-07"] = {
           name: "Boccherini Sampler",
           repo: "boccherini-sampler",
           desc: "Playable part bundles with QR and tablet access, built in two days for a reading session that evening.",
-          url: "https://github.com/jsundram/boccherini-sampler"
+          url: "https://github.com/jsundram/boccherini-sampler",
+          image: {
+            src: "assets/projects/boccherini-sampler.jpg",
+            alt: "The Boccherini Sampler: a reading-party page that bundles each group's parts into one PDF per instrument."
+          }
         },
         {
           name: "PWA Starter",
@@ -153,25 +165,41 @@ window.REVIEW_MONTHS["2026-07"] = {
           name: "PWA Starter",
           repo: "pwa-starter",
           desc: "Cache-write gating, stale-while-revalidate JSON, empty-payload refusal, and a record of which apps need which fix.",
-          url: "https://github.com/jsundram/pwa-starter"
+          url: "https://github.com/jsundram/pwa-starter",
+          image: {
+            src: "assets/projects/pwa-starter.jpg",
+            alt: "pwa-starter's placeholder shell: an APP header and a box asking to be replaced."
+          }
         },
         {
           name: "Somerville Typemap",
           repo: "somerville-typemap",
           desc: "A map of Somerville where every feature is rendered as text. Built in a single day.",
-          url: "https://github.com/jsundram/somerville-typemap"
+          url: "https://github.com/jsundram/somerville-typemap",
+          image: {
+            src: "assets/projects/somerville-typemap.jpg",
+            alt: "Somerville neighbourhood names warped to fill the shapes of their areas — Ball Square, Davis Square, Magoun Square and others."
+          }
         },
         {
           name: "Spotify Tile",
           repo: "spotify-tile",
           desc: "A reimplementation of (Geo) Musical Configurations, with an Instagram-story generator and HarfBuzz-shaped text.",
-          url: "https://github.com/jsundram/spotify-tile"
+          url: "https://github.com/jsundram/spotify-tile",
+          image: {
+            src: "assets/projects/spotify-tile.jpg",
+            alt: "Three Spotify Tile renders: abstract geometric tiles, each generated from one song."
+          }
         },
         {
           name: "Quartet Chooser",
           repo: "quartet-chooser",
           desc: "Migrated from Gatsby to a custom esbuild SSG; accumulated security issues had made even small site fixes feel blocked behind that work first.",
-          url: "https://github.com/jsundram/quartet-chooser"
+          url: "https://github.com/jsundram/quartet-chooser",
+          image: {
+            src: "assets/projects/quartet-chooser.jpg",
+            alt: "Quartet Roulette's home page: a grid of illustrated composer portraits."
+          }
         }
       ],
       evidence: [

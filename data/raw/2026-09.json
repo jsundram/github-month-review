@@ -1,0 +1,2088 @@
+{
+  "generated_at": "2026-10-17T19:02:34.250585+00:00",
+  "user": "jsundram",
+  "month": "2026-09",
+  "coverage": {
+    "start": "2026-09-01",
+    "end": "2026-09-30"
+  },
+  "repositories": [
+    {
+      "name": "quartet-composers",
+      "html_url": "https://github.com/jsundram/quartet-composers",
+      "description": "String Quartet Composers -- an interactive explorer",
+      "language": "Python",
+      "private": false,
+      "pushed_at": "2026-10-03T10:55:21Z",
+      "commit_count": 131,
+      "commits": [
+        {
+          "sha": "34eee024dc472cb567c669a000f0dba479422662",
+          "date": "2026-09-24T21:03:47Z",
+          "message": "Merge pull request #119 from jsundram/swarm-quartet-hue-94",
+          "url": "https://github.com/jsundram/quartet-composers/commit/34eee024dc472cb567c669a000f0dba479422662"
+        },
+        {
+          "sha": "fd1f32714bb38552ad4080d1c6263448004d182c",
+          "date": "2026-09-24T20:56:51Z",
+          "message": "Merge origin/main: the prose cut, the deleted TODO, and the swarm's stretch",
+          "url": "https://github.com/jsundram/quartet-composers/commit/fd1f32714bb38552ad4080d1c6263448004d182c"
+        },
+        {
+          "sha": "9982b0b2894df25881a161366e7ee6bf7811646b",
+          "date": "2026-09-19T20:49:52Z",
+          "message": "Class the swarm's ramp into seven, so the prolific are told apart",
+          "url": "https://github.com/jsundram/quartet-composers/commit/9982b0b2894df25881a161366e7ee6bf7811646b"
+        },
+        {
+          "sha": "b637fc1b22357547f98d9486fab60a88b46204be",
+          "date": "2026-09-19T19:55:22Z",
+          "message": "ui.test: report a missing quartetDomain() as one red check, not a dead run",
+          "url": "https://github.com/jsundram/quartet-composers/commit/b637fc1b22357547f98d9486fab60a88b46204be"
+        },
+        {
+          "sha": "e1c04987e6b7f1e29bb3c9ea8db9e833e246f30a",
+          "date": "2026-09-19T19:52:30Z",
+          "message": "Colour the swarm by quartet count, not lifespan (#94)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/e1c04987e6b7f1e29bb3c9ea8db9e833e246f30a"
+        },
+        {
+          "sha": "149510a538685f7ccb6bafba8afc20a0049b1b4b",
+          "date": "2026-09-18T18:21:24Z",
+          "message": "Cut the prose volume, and stop the pre-commit hook being opt-in (#115)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/149510a538685f7ccb6bafba8afc20a0049b1b4b"
+        },
+        {
+          "sha": "d6c400f1720b70c2197602c884c4cf0c3113c760",
+          "date": "2026-09-17T07:47:13Z",
+          "message": "CLAUDE.md holds the rule, not the incident (#75)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/d6c400f1720b70c2197602c884c4cf0c3113c760"
+        },
+        {
+          "sha": "35d77621040bb2ad6e3d16a9cdf1b9fb0f161560",
+          "date": "2026-09-17T05:55:28Z",
+          "message": "History belongs in the commit and the issue, not in a file (#76)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/35d77621040bb2ad6e3d16a9cdf1b9fb0f161560"
+        },
+        {
+          "sha": "d0a9d410baf36dad69b02fc9337f20369a24da84",
+          "date": "2026-09-17T05:16:50Z",
+          "message": "Make codehash's answer line up with the source it came from (#80)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/d0a9d410baf36dad69b02fc9337f20369a24da84"
+        },
+        {
+          "sha": "b660918bb2a75569f816137e52abe6a85b543d84",
+          "date": "2026-09-17T01:35:20Z",
+          "message": "Measure the prose ratio in one place, and check every diff against it (#77)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/b660918bb2a75569f816137e52abe6a85b543d84"
+        },
+        {
+          "sha": "d055e5a95f1f7662fd9157d40fce92fce1a3c70c",
+          "date": "2026-09-16T19:36:19Z",
+          "message": "Ask whether a number reaching prose is a record, and audit the ones already there (#74)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/d055e5a95f1f7662fd9157d40fce92fce1a3c70c"
+        },
+        {
+          "sha": "4a6e87443c59d45e111bd5a86d0ed31d0ff1f4ce",
+          "date": "2026-09-15T23:12:15Z",
+          "message": "Cut the comments and docs that could not go red; fix the gates that let them through (#67)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/4a6e87443c59d45e111bd5a86d0ed31d0ff1f4ce"
+        },
+        {
+          "sha": "b00629c19859aefd9a8b5c5f988c57bfbd236d3a",
+          "date": "2026-09-15T21:11:18Z",
+          "message": "Merge pull request #73 from jsundram/imslp-ui-61",
+          "url": "https://github.com/jsundram/quartet-composers/commit/b00629c19859aefd9a8b5c5f988c57bfbd236d3a"
+        },
+        {
+          "sha": "cf002109299f2842748ababc26f84a97e4722321",
+          "date": "2026-09-15T19:32:09Z",
+          "message": "Make both panel pills accent links, and say \"quartets\" (#61)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/cf002109299f2842748ababc26f84a97e4722321"
+        },
+        {
+          "sha": "381dcaae874957529ecdf5b5779752b708342a98",
+          "date": "2026-09-15T19:15:41Z",
+          "message": "Put Wikipedia and IMSLP in one row, as the same kind of thing (#61)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/381dcaae874957529ecdf5b5779752b708342a98"
+        },
+        {
+          "sha": "0ac7efa98da9bdbb8b4d17dc836cc7834dec7329",
+          "date": "2026-09-15T18:54:24Z",
+          "message": "Rename the IMSLP crawl and stop it spending 604 KB on key names (#61)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/0ac7efa98da9bdbb8b4d17dc836cc7834dec7329"
+        },
+        {
+          "sha": "df27bbf78aefa115ffe115fa876ca0e2551b493a",
+          "date": "2026-09-15T18:36:27Z",
+          "message": "Put IMSLP on the page: one column, one pill, and a pipeline that runs the other way (#61)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/df27bbf78aefa115ffe115fa876ca0e2551b493a"
+        },
+        {
+          "sha": "2de7c51d4e9282a8b773db810a05979f8b672ddb",
+          "date": "2026-09-13T18:12:44Z",
+          "message": "Answer the seventh review: stop enumerating reply shapes, and three more figures",
+          "url": "https://github.com/jsundram/quartet-composers/commit/2de7c51d4e9282a8b773db810a05979f8b672ddb"
+        },
+        {
+          "sha": "3f0b7d10230217d0e6a0192338771927509b72f1",
+          "date": "2026-09-13T07:37:46Z",
+          "message": "Point TODO.md at #68, and untangle the #62 entry",
+          "url": "https://github.com/jsundram/quartet-composers/commit/3f0b7d10230217d0e6a0192338771927509b72f1"
+        },
+        {
+          "sha": "062bbc85ec1e2fba428aa73fab6ffa9000f2ac78",
+          "date": "2026-09-13T07:30:34Z",
+          "message": "Answer the sixth review: a title the wiki refuses, and four figures that drifted apart",
+          "url": "https://github.com/jsundram/quartet-composers/commit/062bbc85ec1e2fba428aa73fab6ffa9000f2ac78"
+        },
+        {
+          "sha": "ed0435cc76768a3aead690749cf50dc7f0c357ea",
+          "date": "2026-09-13T05:50:03Z",
+          "message": "Answer the fifth review: the interwiki answer was filed where nothing looks",
+          "url": "https://github.com/jsundram/quartet-composers/commit/ed0435cc76768a3aead690749cf50dc7f0c357ea"
+        },
+        {
+          "sha": "0f8859ad63f45c9570f418d49479cb60c8cc202d",
+          "date": "2026-09-12T22:13:09Z",
+          "message": "Answer the fourth review: an absence nothing can answer, and two predicates that had to agree",
+          "url": "https://github.com/jsundram/quartet-composers/commit/0f8859ad63f45c9570f418d49479cb60c8cc202d"
+        },
+        {
+          "sha": "ca7ceb81e8b428f978a4e2643009cd5481678d46",
+          "date": "2026-09-12T21:29:41Z",
+          "message": "Answer the third review: the last two absences, and the bytes behind ten requests",
+          "url": "https://github.com/jsundram/quartet-composers/commit/ca7ceb81e8b428f978a4e2643009cd5481678d46"
+        },
+        {
+          "sha": "2562d1a7013eec5afb6bf05f235123074d580767",
+          "date": "2026-09-12T17:05:38Z",
+          "message": "Answer the rereview: a floor that missed its own case, and two absences nobody re-asked",
+          "url": "https://github.com/jsundram/quartet-composers/commit/2562d1a7013eec5afb6bf05f235123074d580767"
+        },
+        {
+          "sha": "18ee91b084955d112ccc1b35d4f63580551c2a71",
+          "date": "2026-09-12T16:22:42Z",
+          "message": "Answer the review: a key that is not one, and a short crawl that looked like an answer",
+          "url": "https://github.com/jsundram/quartet-composers/commit/18ee91b084955d112ccc1b35d4f63580551c2a71"
+        },
+        {
+          "sha": "d75a24c4159dd9aaa4c61fbf410f0a73234a5a6a",
+          "date": "2026-09-12T08:57:35Z",
+          "message": "Record #62 as done in TODO.md, and reprice a warm crawl",
+          "url": "https://github.com/jsundram/quartet-composers/commit/d75a24c4159dd9aaa4c61fbf410f0a73234a5a6a"
+        },
+        {
+          "sha": "9b7952fb018c0df4887603026de8fc6261c856e0",
+          "date": "2026-09-12T08:56:56Z",
+          "message": "Make the IMSLP crawl able to discover again (#62)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/9b7952fb018c0df4887603026de8fc6261c856e0"
+        },
+        {
+          "sha": "44987010f72ad88a4f32e789e4f288d4b26548e4",
+          "date": "2026-09-12T08:25:05Z",
+          "message": "Point the catalogue-template gaps at #63",
+          "url": "https://github.com/jsundram/quartet-composers/commit/44987010f72ad88a4f32e789e4f288d4b26548e4"
+        },
+        {
+          "sha": "93d239daba9071cee7883cd196e86dde3b10b0ab",
+          "date": "2026-09-12T08:23:50Z",
+          "message": "Give the inert-COVERS finding a case that can actually go red on the branch",
+          "url": "https://github.com/jsundram/quartet-composers/commit/93d239daba9071cee7883cd196e86dde3b10b0ab"
+        },
+        {
+          "sha": "d51c12f0d8dd392260c8693e120901f76953b473",
+          "date": "2026-09-12T08:22:45Z",
+          "message": "Answer the review: a cached non-answer, an inert gate, and prose that outran its data",
+          "url": "https://github.com/jsundram/quartet-composers/commit/d51c12f0d8dd392260c8693e120901f76953b473"
+        },
+        {
+          "sha": "dce5a99bf6d71988db81efc6c3754c71e5d39549",
+          "date": "2026-09-12T07:52:49Z",
+          "message": "Join IMSLP's string quartets to the roster, and two pages that grade the join",
+          "url": "https://github.com/jsundram/quartet-composers/commit/dce5a99bf6d71988db81efc6c3754c71e5d39549"
+        },
+        {
+          "sha": "339e916200dde5fde3411d64336a99f4287b3c0e",
+          "date": "2026-09-11T21:24:46Z",
+          "message": "Stop restating the UI suite's size in two comments #49 put there",
+          "url": "https://github.com/jsundram/quartet-composers/commit/339e916200dde5fde3411d64336a99f4287b3c0e"
+        },
+        {
+          "sha": "0fd5f99c63439a188976b97fe99a385b0e3322c2",
+          "date": "2026-09-11T20:57:27Z",
+          "message": "Answer the review: a suite that cannot commit #49, and three messages that state what they checked",
+          "url": "https://github.com/jsundram/quartet-composers/commit/0fd5f99c63439a188976b97fe99a385b0e3322c2"
+        },
+        {
+          "sha": "f81f57f45967678c58c719b28c2a30d8e3cd193f",
+          "date": "2026-09-11T20:35:51Z",
+          "message": "Wait on the process, not on the port: the clear already knew (#49)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/f81f57f45967678c58c719b28c2a30d8e3cd193f"
+        },
+        {
+          "sha": "22f3aff2026fdac79a61ab8e562c0344d100b3ad",
+          "date": "2026-09-11T20:19:01Z",
+          "message": "Give every checkout its own two ports, and refuse the ones that are not ours (#49)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/22f3aff2026fdac79a61ab8e562c0344d100b3ad"
+        },
+        {
+          "sha": "f59b446acf3298f857b1b87a7821dee7d361da3d",
+          "date": "2026-09-11T16:54:55Z",
+          "message": "Finish the sweep: the skip is half a rule, and the header outlived its file",
+          "url": "https://github.com/jsundram/quartet-composers/commit/f59b446acf3298f857b1b87a7821dee7d361da3d"
+        },
+        {
+          "sha": "f08c77fa8c52abdc7e1bef499f13cab6bfdbf381",
+          "date": "2026-09-11T07:40:21Z",
+          "message": "Set UI_OUT in a step: the runner context does not reach a job-level env",
+          "url": "https://github.com/jsundram/quartet-composers/commit/f08c77fa8c52abdc7e1bef499f13cab6bfdbf381"
+        },
+        {
+          "sha": "4c241af1842b490fed08401bd6e6c599c5392c36",
+          "date": "2026-09-11T07:38:54Z",
+          "message": "Answer the review: a profile that is fresh regardless of who owns $OUT,",
+          "url": "https://github.com/jsundram/quartet-composers/commit/4c241af1842b490fed08401bd6e6c599c5392c36"
+        },
+        {
+          "sha": "e2e9a1bd548a75917b1d32fafa5cc317c1ab2345",
+          "date": "2026-09-10T23:05:18Z",
+          "message": "Record what the first three CI runs of the suite found",
+          "url": "https://github.com/jsundram/quartet-composers/commit/e2e9a1bd548a75917b1d32fafa5cc317c1ab2345"
+        },
+        {
+          "sha": "78043888c641c4b857f3d3a6029d2a26d678a131",
+          "date": "2026-09-10T23:03:03Z",
+          "message": "Acknowledge a copy even when the clipboard write never settles",
+          "url": "https://github.com/jsundram/quartet-composers/commit/78043888c641c4b857f3d3a6029d2a26d678a131"
+        },
+        {
+          "sha": "56d5fae406d2a9d7a30e993ef15f2c7192fc2c33",
+          "date": "2026-09-10T22:58:57Z",
+          "message": "Take the vendor Chrome before a snap chromium, and say which one ran",
+          "url": "https://github.com/jsundram/quartet-composers/commit/56d5fae406d2a9d7a30e993ef15f2c7192fc2c33"
+        },
+        {
+          "sha": "ec8575748cb001522eaf4d3636a03b79ae7d459b",
+          "date": "2026-09-10T22:55:42Z",
+          "message": "Report which branch of share() the platform took, instead of asserting one",
+          "url": "https://github.com/jsundram/quartet-composers/commit/ec8575748cb001522eaf4d3636a03b79ae7d459b"
+        },
+        {
+          "sha": "6e4809c68b924ea71987acf1ddbf19b6d3a9e788",
+          "date": "2026-09-10T22:47:16Z",
+          "message": "Run the browser suite in CI, and let the branch gate ablate against it",
+          "url": "https://github.com/jsundram/quartet-composers/commit/6e4809c68b924ea71987acf1ddbf19b6d3a9e788"
+        },
+        {
+          "sha": "d6f9e462a4290652381b155470b73400dbfaeab2",
+          "date": "2026-09-10T22:26:49Z",
+          "message": "Point the CI-job entry at the issue that now holds it (#56)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/d6f9e462a4290652381b155470b73400dbfaeab2"
+        },
+        {
+          "sha": "2d7b70712a3022624cb7f8f5ca6e11a94f0d0aef",
+          "date": "2026-09-10T22:26:08Z",
+          "message": "Record the Linux run, and specify the CI job rather than leaving it a decision",
+          "url": "https://github.com/jsundram/quartet-composers/commit/2d7b70712a3022624cb7f8f5ca6e11a94f0d0aef"
+        },
+        {
+          "sha": "acacccb9976896911b78f244a5b42a0930113c31",
+          "date": "2026-09-10T22:02:51Z",
+          "message": "Answer the second review: measure both phone widths everywhere, and stop CLAUDE.md pointing at a closed issue",
+          "url": "https://github.com/jsundram/quartet-composers/commit/acacccb9976896911b78f244a5b42a0930113c31"
+        },
+        {
+          "sha": "ecd52bd12031ed1c104c20030b4ea9716a0178e3",
+          "date": "2026-09-10T21:49:06Z",
+          "message": "Bump V for the shell files the review answer touched",
+          "url": "https://github.com/jsundram/quartet-composers/commit/ecd52bd12031ed1c104c20030b4ea9716a0178e3"
+        },
+        {
+          "sha": "7aeca914bc6d45192ab6d7faeac63166f65d1d74",
+          "date": "2026-09-10T21:48:34Z",
+          "message": "Answer the review: a name that contains what it draws, a guard at both widths, and a comment that stops claiming Linux",
+          "url": "https://github.com/jsundram/quartet-composers/commit/7aeca914bc6d45192ab6d7faeac63166f65d1d74"
+        },
+        {
+          "sha": "91ba460a0666535863248243c0f8a9d5aec19a60",
+          "date": "2026-09-10T21:24:53Z",
+          "message": "Fit the phone table in a font we do not choose, and check both widths (#53)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/91ba460a0666535863248243c0f8a9d5aec19a60"
+        },
+        {
+          "sha": "e4b43a350c8e7ffa206d8577a4334705cde919f3",
+          "date": "2026-09-10T06:58:08Z",
+          "message": "Recentre each stripe's jitter, and stop the card drifting on a top-up",
+          "url": "https://github.com/jsundram/quartet-composers/commit/e4b43a350c8e7ffa206d8577a4334705cde919f3"
+        },
+        {
+          "sha": "40a6fce29c2101be678b521fa06a2570981f9bf3",
+          "date": "2026-09-10T05:52:31Z",
+          "message": "Rank the Fame jitter instead of hashing it (#45)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/40a6fce29c2101be678b521fa06a2570981f9bf3"
+        },
+        {
+          "sha": "65081f7f60d84715f9c32da00cb4ac114a25f6e7",
+          "date": "2026-09-10T07:22:36Z",
+          "message": "Answer the review: carry the float tolerance across, and stop the gate",
+          "url": "https://github.com/jsundram/quartet-composers/commit/65081f7f60d84715f9c32da00cb4ac114a25f6e7"
+        },
+        {
+          "sha": "e2f5fc5e30538ea06c9a10511651a7cc807ebd3b",
+          "date": "2026-09-10T06:54:02Z",
+          "message": "Trim the comments this branch added",
+          "url": "https://github.com/jsundram/quartet-composers/commit/e2f5fc5e30538ea06c9a10511651a7cc807ebd3b"
+        },
+        {
+          "sha": "3af9b75a5701834f40ba71b52e36f1abf7dd0f57",
+          "date": "2026-09-10T06:43:17Z",
+          "message": "Pin the readership floor at 10, and cut the comments back",
+          "url": "https://github.com/jsundram/quartet-composers/commit/3af9b75a5701834f40ba71b52e36f1abf7dd0f57"
+        },
+        {
+          "sha": "f45a64fd13538d9f71a7f0df5d88098abebf4bf0",
+          "date": "2026-09-10T05:29:45Z",
+          "message": "Stop spending a decade of the readership axis on an empty band (#38)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/f45a64fd13538d9f71a7f0df5d88098abebf4bf0"
+        },
+        {
+          "sha": "e3274003a615fdb23ba53722aef230e5e663d574",
+          "date": "2026-09-10T04:59:33Z",
+          "message": "Stop counting a redlink as a composer",
+          "url": "https://github.com/jsundram/quartet-composers/commit/e3274003a615fdb23ba53722aef230e5e663d574"
+        },
+        {
+          "sha": "ee1f203cb10ce1d1ab43f8177a60caac78b24b22",
+          "date": "2026-09-10T06:48:12Z",
+          "message": "Link the provenance to its revision, and cut the explaining",
+          "url": "https://github.com/jsundram/quartet-composers/commit/ee1f203cb10ce1d1ab43f8177a60caac78b24b22"
+        },
+        {
+          "sha": "b3a6e1a3e23239a35b48edbed97693e0dc4a1ea9",
+          "date": "2026-09-10T04:19:51Z",
+          "message": "Take the ui job back out, and write down what it measured",
+          "url": "https://github.com/jsundram/quartet-composers/commit/b3a6e1a3e23239a35b48edbed97693e0dc4a1ea9"
+        },
+        {
+          "sha": "ae23c2bb86421c8772a2c7ea895cdd13b0c6e763",
+          "date": "2026-09-10T04:12:02Z",
+          "message": "Say why chrome failed, instead of a bare ECONNREFUSED",
+          "url": "https://github.com/jsundram/quartet-composers/commit/ae23c2bb86421c8772a2c7ea895cdd13b0c6e763"
+        },
+        {
+          "sha": "a3ebf1af5405fd15eae4f02da97616ad96d314bb",
+          "date": "2026-09-10T04:08:13Z",
+          "message": "Try the browser suite in CI: ubuntu-latest ships Chrome, it just needs node 22",
+          "url": "https://github.com/jsundram/quartet-composers/commit/a3ebf1af5405fd15eae4f02da97616ad96d314bb"
+        },
+        {
+          "sha": "8d88f9a64b5c5183be51abb2594da4044ea74934",
+          "date": "2026-09-10T03:58:54Z",
+          "message": "Answer the second review: a crashed suite is not a skipped one",
+          "url": "https://github.com/jsundram/quartet-composers/commit/8d88f9a64b5c5183be51abb2594da4044ea74934"
+        },
+        {
+          "sha": "aa6d20f6dab9335cbeb749149f641deada734561",
+          "date": "2026-09-10T03:39:04Z",
+          "message": "Answer the review: restore per file, and stop the gates passing in silence",
+          "url": "https://github.com/jsundram/quartet-composers/commit/aa6d20f6dab9335cbeb749149f641deada734561"
+        },
+        {
+          "sha": "7a5ccaf030d398056aa52493635fe098e02a2191",
+          "date": "2026-09-10T03:10:03Z",
+          "message": "Make a fix prove itself, and pin every number the docs can compute",
+          "url": "https://github.com/jsundram/quartet-composers/commit/7a5ccaf030d398056aa52493635fe098e02a2191"
+        },
+        {
+          "sha": "e84b8bc627a8f14d9fda2e57ebd19f8c8b6e3623",
+          "date": "2026-09-09T22:12:05Z",
+          "message": "Answer the review: key the grips join by side, and stop the tests indexing on DOM order (#40)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/e84b8bc627a8f14d9fda2e57ebd19f8c8b6e3623"
+        },
+        {
+          "sha": "ba256d268e9b8aab7a98b8091b3cd6086c725db5",
+          "date": "2026-09-09T20:56:45Z",
+          "message": "Draw the brush handles as crossfilter's grips, not d3's rect (#40)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/ba256d268e9b8aab7a98b8091b3cd6086c725db5"
+        },
+        {
+          "sha": "7686d09dcf6ede0b04bf6cc2013d95589afbc65d",
+          "date": "2026-09-09T06:16:08Z",
+          "message": "Make the lede one static line, and delete what it was dragging (#35, #36)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/7686d09dcf6ede0b04bf6cc2013d95589afbc65d"
+        },
+        {
+          "sha": "98273b286249e22798c208e2344dca94e50db3da",
+          "date": "2026-09-09T05:50:15Z",
+          "message": "Centre the glyphs on the axis title's line rather than its baseline (#35)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/98273b286249e22798c208e2344dca94e50db3da"
+        },
+        {
+          "sha": "8cc3f81e62b0c0350f9846b6a85a7011e79125f7",
+          "date": "2026-09-09T05:37:44Z",
+          "message": "Sit the glyphs on the axis title's baseline (#35)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/8cc3f81e62b0c0350f9846b6a85a7011e79125f7"
+        },
+        {
+          "sha": "6084233645f4711bfed79898ab02862b23257344",
+          "date": "2026-09-09T05:28:17Z",
+          "message": "Draw the chart tools as bare glyphs, not pills moved onto the chart (#35)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/6084233645f4711bfed79898ab02862b23257344"
+        },
+        {
+          "sha": "2b0e234a683c8b988d18daa9ea78eb30bf76b521",
+          "date": "2026-09-09T05:20:34Z",
+          "message": "Stop the chart's own svg rule from inflating the icons (#35)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/2b0e234a683c8b988d18daa9ea78eb30bf76b521"
+        },
+        {
+          "sha": "0c8b9620b5695852620a7a1e911da1d2cb088d51",
+          "date": "2026-09-09T05:15:05Z",
+          "message": "Put the chart tools in the axis-title band, over no dot in any view (#35)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/0c8b9620b5695852620a7a1e911da1d2cb088d51"
+        },
+        {
+          "sha": "2054eb87956f6c484e4aee9995baa0af0301ab07",
+          "date": "2026-09-09T04:37:21Z",
+          "message": "One Reset filters button, and give Share and Full screen the canvas (#35)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/2054eb87956f6c484e4aee9995baa0af0301ab07"
+        },
+        {
+          "sha": "20da0457ec75328e8d2744f39aad1cf67d52bc61",
+          "date": "2026-09-09T05:56:19Z",
+          "message": "Compare V against the branch it is about to merge into (#32)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/20da0457ec75328e8d2744f39aad1cf67d52bc61"
+        },
+        {
+          "sha": "c9175ca871eb83de71799e8f69887aa917e5881b",
+          "date": "2026-09-09T04:09:20Z",
+          "message": "Give the brush's Clear button a stable place and a real tap target (#31)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/c9175ca871eb83de71799e8f69887aa917e5881b"
+        },
+        {
+          "sha": "8ff055611d71b3d15d561f254c878f889e6d83c2",
+          "date": "2026-09-08T21:20:32Z",
+          "message": "Point the two new entries at the issues they earned (#29)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/8ff055611d71b3d15d561f254c878f889e6d83c2"
+        },
+        {
+          "sha": "9e20606d5576459e31bc8304257daccb1781367c",
+          "date": "2026-09-08T20:10:44Z",
+          "message": "Price the brush fix from the code, not from a guess (#29)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/9e20606d5576459e31bc8304257daccb1781367c"
+        },
+        {
+          "sha": "c655821b79e8237e0774b1cb7640e38317c55c9f",
+          "date": "2026-09-08T19:39:49Z",
+          "message": "Answer the review: the figure, the brush, the version, the anchor (#29)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/c655821b79e8237e0774b1cb7640e38317c55c9f"
+        },
+        {
+          "sha": "379b21d263567ac5df821e159493a3993703b8e4",
+          "date": "2026-09-08T18:46:21Z",
+          "message": "Put the chart's controls above the plot so a press moves nothing (#29)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/379b21d263567ac5df821e159493a3993703b8e4"
+        },
+        {
+          "sha": "c98dbfb947e1ef0909b28e742a31346aa71594ab",
+          "date": "2026-09-08T19:47:15Z",
+          "message": "Re-measure the lede's box when the claim changed out of sight (#27)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/c98dbfb947e1ef0909b28e742a31346aa71594ab"
+        },
+        {
+          "sha": "c51987036c816fd623039b2ccbdbfc452ba583b6",
+          "date": "2026-09-08T19:40:15Z",
+          "message": "Count the check this branch added (#27)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/c51987036c816fd623039b2ccbdbfc452ba583b6"
+        },
+        {
+          "sha": "1940d9a733e2509717dcafa4bfaaf2ba53bae70c",
+          "date": "2026-09-08T19:24:18Z",
+          "message": "Measure the sentence the page prints, under every pill (#27)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/1940d9a733e2509717dcafa4bfaaf2ba53bae70c"
+        },
+        {
+          "sha": "52888870f74a11da82162f0d6b49ed7b37478d48",
+          "date": "2026-09-08T16:46:54Z",
+          "message": "Point the residual switcher shift at the issue it earned (#29)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/52888870f74a11da82162f0d6b49ed7b37478d48"
+        },
+        {
+          "sha": "23f7381fd3ac481e64a266aced5bbc971269d23e",
+          "date": "2026-09-08T16:45:44Z",
+          "message": "Reserve the lede's box so an unmade claim moves nothing (#27)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/23f7381fd3ac481e64a266aced5bbc971269d23e"
+        },
+        {
+          "sha": "83d535d6486b270d351fb369dbb235702f108c37",
+          "date": "2026-09-08T13:10:10Z",
+          "message": "Point the layout-shift entry at the issue it earned (#27)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/83d535d6486b270d351fb369dbb235702f108c37"
+        },
+        {
+          "sha": "d812c28287bc4df85697ebdd88aed8c17632f6f2",
+          "date": "2026-09-08T13:09:15Z",
+          "message": "Let the lede describe the view that is on screen (#24)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/d812c28287bc4df85697ebdd88aed8c17632f6f2"
+        },
+        {
+          "sha": "172202fcd263f21d991b0397b923ee40824b228f",
+          "date": "2026-09-08T07:41:30Z",
+          "message": "Name the trap the pairing check sets (#23)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/172202fcd263f21d991b0397b923ee40824b228f"
+        },
+        {
+          "sha": "830107d1b83b58185ca4c79b48f739c1af927691",
+          "date": "2026-09-08T07:29:28Z",
+          "message": "Check the pairing rule instead of stating it (#23)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/830107d1b83b58185ca4c79b48f739c1af927691"
+        },
+        {
+          "sha": "ba32fcafb41d7c89c5a29db58585bc8c83ce5098",
+          "date": "2026-09-08T07:13:12Z",
+          "message": "Address sixth review: fix the fixes, and take the count I said I would leave (#23)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/ba32fcafb41d7c89c5a29db58585bc8c83ce5098"
+        },
+        {
+          "sha": "fd7be6f3e2fa49deaf239964a127737104f18389",
+          "date": "2026-09-08T06:52:17Z",
+          "message": "Say nine where the list has nine (#23)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/fd7be6f3e2fa49deaf239964a127737104f18389"
+        },
+        {
+          "sha": "bf469280fa462e9e0973f1d7d9586e4a7fdd18ec",
+          "date": "2026-09-08T06:50:59Z",
+          "message": "Address fifth review: pin the collapse-to-empty guard, and stop the negative case ageing badly (#23)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/bf469280fa462e9e0973f1d7d9586e4a7fdd18ec"
+        },
+        {
+          "sha": "377de9751246fe705bf950361f95c73862871cbf",
+          "date": "2026-09-08T06:31:52Z",
+          "message": "Address fourth review: one predicate for the holes, and the negative case (#23)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/377de9751246fe705bf950361f95c73862871cbf"
+        },
+        {
+          "sha": "a7372b5dcfbb79e09cbd4edc38e424e996843791",
+          "date": "2026-09-08T06:09:06Z",
+          "message": "Address third review: make the gate and the stitch share one rule (#23)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/a7372b5dcfbb79e09cbd4edc38e424e996843791"
+        },
+        {
+          "sha": "8930cbcacd7bc468f24b6bcc3735a3a5ffe8103b",
+          "date": "2026-09-08T05:46:37Z",
+          "message": "Address second review: an exact gate for the stitch, and cases for the rest (#23)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/8930cbcacd7bc468f24b6bcc3735a3a5ffe8103b"
+        },
+        {
+          "sha": "7bcf10f93b268000ac2b0ce87f66784a1c60d120",
+          "date": "2026-09-08T05:15:27Z",
+          "message": "Address review: guard the repair's network calls, null the move month (#23)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/7bcf10f93b268000ac2b0ce87f66784a1c60d120"
+        },
+        {
+          "sha": "fdb7b2debb4438265090e86ec6111c6bb3016954",
+          "date": "2026-09-08T04:47:25Z",
+          "message": "Count page views under the title the article was actually at (#23)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/fdb7b2debb4438265090e86ec6111c6bb3016954"
+        },
+        {
+          "sha": "4f0874cb21c4e1c162cdc7b7e796c1750e2da42c",
+          "date": "2026-09-07T20:58:01Z",
+          "message": "Re-derive the rings when the picture changes shape (#7)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/4f0874cb21c4e1c162cdc7b7e796c1750e2da42c"
+        },
+        {
+          "sha": "a2d93138a747a250ea9f554c3a1342ae79394e6f",
+          "date": "2026-09-07T20:08:15Z",
+          "message": "Write the lede's claims from the data (#7)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/a2d93138a747a250ea9f554c3a1342ae79394e6f"
+        },
+        {
+          "sha": "605a4ee42c4007869f4e41dd0cfc481d2c31257a",
+          "date": "2026-09-07T19:59:59Z",
+          "message": "Make a derived ring stand apart, not just stand out (#7)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/605a4ee42c4007869f4e41dd0cfc481d2c31257a"
+        },
+        {
+          "sha": "9e882aef95a58ee6373650debf14aabc870eba88",
+          "date": "2026-09-07T19:29:49Z",
+          "message": "Fill a curated set of women under the Women filter (#7)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/9e882aef95a58ee6373650debf14aabc870eba88"
+        },
+        {
+          "sha": "3a34a735b823049595b674e81d62701179cca5a1",
+          "date": "2026-09-07T18:06:21Z",
+          "message": "Say 790 in both places that describe the plot (#21)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/3a34a735b823049595b674e81d62701179cca5a1"
+        },
+        {
+          "sha": "05f5a3a278629cecedfc6e6a1ff90878898fc9cb",
+          "date": "2026-09-07T17:59:18Z",
+          "message": "Address review of the three fixes (#14, #20, #21)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/05f5a3a278629cecedfc6e6a1ff90878898fc9cb"
+        },
+        {
+          "sha": "9bc357e7d72e996505520fa278338e40c3ded441",
+          "date": "2026-09-07T17:37:07Z",
+          "message": "Say what the page is for in the link preview, and guard both counts (#21)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/9bc357e7d72e996505520fa278338e40c3ded441"
+        },
+        {
+          "sha": "bb4a3dd948aaee90add28d74283962613e9316e7",
+          "date": "2026-09-07T17:36:53Z",
+          "message": "Don't fit the frame to a handful of dots (#20)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/bb4a3dd948aaee90add28d74283962613e9316e7"
+        },
+        {
+          "sha": "22576ea48957787c698ef9a16ed47d275ddadd1c",
+          "date": "2026-09-07T17:36:38Z",
+          "message": "Print the bare surname where one composer owns it (#14)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/22576ea48957787c698ef9a16ed47d275ddadd1c"
+        },
+        {
+          "sha": "07c950f19e560caf978cd5d4f186141ad1501bb2",
+          "date": "2026-09-07T05:17:04Z",
+          "message": "Draw a readership sparkline from the whole page-view history (#13)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/07c950f19e560caf978cd5d4f186141ad1501bb2"
+        },
+        {
+          "sha": "20515440299eabd8ec26af2ba8e6a172746bfff2",
+          "date": "2026-09-06T20:29:32Z",
+          "message": "Fit the link preview to what a scraper renders, and lint it (#19)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/20515440299eabd8ec26af2ba8e6a172746bfff2"
+        },
+        {
+          "sha": "37f2a0ad21c20bae6e2fa5d4d38dbacd26a9c635",
+          "date": "2026-09-06T19:59:58Z",
+          "message": "Make the filled set the repertoire, and name every ring (#3, #10) (#18)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/37f2a0ad21c20bae6e2fa5d4d38dbacd26a9c635"
+        },
+        {
+          "sha": "9a54a2fdacf116b18ead9b9086e127a3fff23c0b",
+          "date": "2026-09-06T03:46:34Z",
+          "message": "Mock the quartet-roulette highlight set on a phone (#3) (#12)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/9a54a2fdacf116b18ead9b9086e127a3fff23c0b"
+        },
+        {
+          "sha": "797153728393d27c4c0e9f74b3531a624de4ef4f",
+          "date": "2026-09-06T02:59:46Z",
+          "message": "Rename the Readers view to Fame (#5) (#11)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/797153728393d27c4c0e9f74b3531a624de4ef4f"
+        },
+        {
+          "sha": "557b23a12b6f60b6908d9edc45fcb6638104409f",
+          "date": "2026-09-05T22:47:35Z",
+          "message": "Count the plotted composers in the empty panel (#8)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/557b23a12b6f60b6908d9edc45fcb6638104409f"
+        },
+        {
+          "sha": "c173427ad3e199cd7e029a1343eebefc9f332a8d",
+          "date": "2026-09-05T21:33:08Z",
+          "message": "Derive the outlier ring from the filtered group",
+          "url": "https://github.com/jsundram/quartet-composers/commit/c173427ad3e199cd7e029a1343eebefc9f332a8d"
+        },
+        {
+          "sha": "427a2bb57591a7000c46717794a97a66d4cbfefb",
+          "date": "2026-09-05T21:16:08Z",
+          "message": "Read BOOT out of sw.js in the test rather than keeping a copy",
+          "url": "https://github.com/jsundram/quartet-composers/commit/427a2bb57591a7000c46717794a97a66d4cbfefb"
+        },
+        {
+          "sha": "afb6c4a3911cc3b6e57dd9728bab55c50191edf9",
+          "date": "2026-09-05T20:36:24Z",
+          "message": "Fit the chart's frame to the filter (#6)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/afb6c4a3911cc3b6e57dd9728bab55c50191edf9"
+        },
+        {
+          "sha": "3d062f50370065f221a275bc65ee0926ba9c9b1b",
+          "date": "2026-09-05T20:24:13Z",
+          "message": "Shorten the composer names the chart labels (#2)",
+          "url": "https://github.com/jsundram/quartet-composers/commit/3d062f50370065f221a275bc65ee0926ba9c9b1b"
+        },
+        {
+          "sha": "e7dbe85a4bb832d473841b4cbe47bd4fb3f52279",
+          "date": "2026-09-05T20:09:14Z",
+          "message": "Make labels a function of zoom, like a map",
+          "url": "https://github.com/jsundram/quartet-composers/commit/e7dbe85a4bb832d473841b4cbe47bd4fb3f52279"
+        },
+        {
+          "sha": "b7d5a4b457865165081ddfa720fe1b40c02ee926",
+          "date": "2026-09-05T19:26:48Z",
+          "message": "Label the filtered readers view, and give the filter row back its width",
+          "url": "https://github.com/jsundram/quartet-composers/commit/b7d5a4b457865165081ddfa720fe1b40c02ee926"
+        },
+        {
+          "sha": "43834c61c0d3d7fd4a9a83961b5437a77b18f859",
+          "date": "2026-09-05T18:56:44Z",
+          "message": "Add composer gender from Wikidata P21, and a filter for it",
+          "url": "https://github.com/jsundram/quartet-composers/commit/43834c61c0d3d7fd4a9a83961b5437a77b18f859"
+        },
+        {
+          "sha": "43b77a5ba2016e87effe55a6c89f15fb266d81d2",
+          "date": "2026-09-05T17:45:39Z",
+          "message": "Footnote: credit the right experiment, and stop dating this data to 2014",
+          "url": "https://github.com/jsundram/quartet-composers/commit/43b77a5ba2016e87effe55a6c89f15fb266d81d2"
+        },
+        {
+          "sha": "c88fbd6745e2ff573b8452df77e1b8d342c64966",
+          "date": "2026-09-05T07:49:04Z",
+          "message": "Fix nine review findings, one of which was deleting a composer's label",
+          "url": "https://github.com/jsundram/quartet-composers/commit/c88fbd6745e2ff573b8452df77e1b8d342c64966"
+        },
+        {
+          "sha": "57f9eebaa3e663847834c5e0d70a6ea74dbeabfe",
+          "date": "2026-09-05T07:28:26Z",
+          "message": "Lifespan ramp: YlGnBu, sequential, no dead middle",
+          "url": "https://github.com/jsundram/quartet-composers/commit/57f9eebaa3e663847834c5e0d70a6ea74dbeabfe"
+        },
+        {
+          "sha": "8075db8c181953ef2b84bfe85e4bb98001b7d4db",
+          "date": "2026-09-05T07:24:28Z",
+          "message": "Lifespan reads hot to cold; one more surname the rule got wrong; mocks/",
+          "url": "https://github.com/jsundram/quartet-composers/commit/8075db8c181953ef2b84bfe85e4bb98001b7d4db"
+        },
+        {
+          "sha": "18da25e0ca2d9f137ff71d832ebd192187ba8914",
+          "date": "2026-09-05T07:07:50Z",
+          "message": "Note the gender-filter issue in the agenda",
+          "url": "https://github.com/jsundram/quartet-composers/commit/18da25e0ca2d9f137ff71d832ebd192187ba8914"
+        },
+        {
+          "sha": "6a028f43606a956db800b9f9dbd59a7311cb1777",
+          "date": "2026-09-05T07:02:25Z",
+          "message": "Re-encode the chart around the argument: output against attention",
+          "url": "https://github.com/jsundram/quartet-composers/commit/6a028f43606a956db800b9f9dbd59a7311cb1777"
+        },
+        {
+          "sha": "00c2ecebe849f5a805cff4b1f12846e880e18986",
+          "date": "2026-09-05T06:12:43Z",
+          "message": "Fix five things that made this hard to use on a phone",
+          "url": "https://github.com/jsundram/quartet-composers/commit/00c2ecebe849f5a805cff4b1f12846e880e18986"
+        },
+        {
+          "sha": "5af5820d078858133e3fa8480e4262f607c95fec",
+          "date": "2026-09-05T04:39:09Z",
+          "message": "Add a data gate that catches the bugs tests never did, and write down the agenda",
+          "url": "https://github.com/jsundram/quartet-composers/commit/5af5820d078858133e3fa8480e4262f607c95fec"
+        },
+        {
+          "sha": "f5c1c80864c1c4c76ade8cc19efc7ea5a630c042",
+          "date": "2026-09-05T04:30:13Z",
+          "message": "Remove four bits of dead code left by the rebuild",
+          "url": "https://github.com/jsundram/quartet-composers/commit/f5c1c80864c1c4c76ade8cc19efc7ea5a630c042"
+        },
+        {
+          "sha": "50db15564448773c90c5d1ea12fa5558bc34e510",
+          "date": "2026-09-05T04:19:23Z",
+          "message": "Add a readership filter, and stop calling page views \"popularity\"",
+          "url": "https://github.com/jsundram/quartet-composers/commit/50db15564448773c90c5d1ea12fa5558bc34e510"
+        },
+        {
+          "sha": "5bdc63fded21792f0243b94005bb2f7abe4adf91",
+          "date": "2026-09-05T04:06:19Z",
+          "message": "Re-scrape everything: 884 composers, real dates, 12-month median views",
+          "url": "https://github.com/jsundram/quartet-composers/commit/5bdc63fded21792f0243b94005bb2f7abe4adf91"
+        },
+        {
+          "sha": "b5fda86e7352f8ec401160f90565cbc839fe6a3b",
+          "date": "2026-09-05T03:09:34Z",
+          "message": "Resolve Wikipedia titles before asking for page views",
+          "url": "https://github.com/jsundram/quartet-composers/commit/b5fda86e7352f8ec401160f90565cbc839fe6a3b"
+        },
+        {
+          "sha": "5f390f9853f4eed1ec5b8b84d05224b9ea12a7f7",
+          "date": "2026-09-04T23:33:37Z",
+          "message": "Refresh page views to 2026-08, and fix four bugs it exposed",
+          "url": "https://github.com/jsundram/quartet-composers/commit/5f390f9853f4eed1ec5b8b84d05224b9ea12a7f7"
+        },
+        {
+          "sha": "1f3766c0453e1f09d3bb2916fff1c9381fec90bf",
+          "date": "2026-09-04T23:14:07Z",
+          "message": "Remake the 2014 quartet-composers fisheye chart",
+          "url": "https://github.com/jsundram/quartet-composers/commit/1f3766c0453e1f09d3bb2916fff1c9381fec90bf"
+        }
+      ]
+    },
+    {
+      "name": "mbta-glx",
+      "html_url": "https://github.com/jsundram/mbta-glx",
+      "description": "Inbound Green Line ETAs for Magoun Square, with error bars and a push that says when to leave.",
+      "language": "Python",
+      "private": false,
+      "pushed_at": "2026-10-10T22:20:06Z",
+      "commit_count": 84,
+      "commits": [
+        {
+          "sha": "56dcd827cb90410b1d14235bc92c77d8e882ae4a",
+          "date": "2026-09-28T00:33:17Z",
+          "message": "Give the board its own origin instead of paths on a shared host",
+          "url": "https://github.com/jsundram/mbta-glx/commit/56dcd827cb90410b1d14235bc92c77d8e882ae4a"
+        },
+        {
+          "sha": "880ea9293be5f5fda8d19c0cd210c61b2040ab46",
+          "date": "2026-09-27T18:23:26Z",
+          "message": "Say why an unmapped tailnet path 404s",
+          "url": "https://github.com/jsundram/mbta-glx/commit/880ea9293be5f5fda8d19c0cd210c61b2040ab46"
+        },
+        {
+          "sha": "9b58c0095fe5cd89bbc1dc2d8299427bd07b5e82",
+          "date": "2026-09-27T18:20:30Z",
+          "message": "Ask how trains ran TODAY, and give the board a face",
+          "url": "https://github.com/jsundram/mbta-glx/commit/9b58c0095fe5cd89bbc1dc2d8299427bd07b5e82"
+        },
+        {
+          "sha": "3c6c2d66c4999ba0436a3f13ccb21352643d2f7e",
+          "date": "2026-09-26T22:49:08Z",
+          "message": "Settings belong in the browser, not in a native prompt",
+          "url": "https://github.com/jsundram/mbta-glx/commit/3c6c2d66c4999ba0436a3f13ccb21352643d2f7e"
+        },
+        {
+          "sha": "04af8616e3725084ef77c2a81354e55e9166f19d",
+          "date": "2026-09-26T22:42:53Z",
+          "message": "Fit the MBTA band instead of guessing it symmetric",
+          "url": "https://github.com/jsundram/mbta-glx/commit/04af8616e3725084ef77c2a81354e55e9166f19d"
+        },
+        {
+          "sha": "55817f9f2c38d4384b2ff568dec17ef77026d681",
+          "date": "2026-09-26T22:09:36Z",
+          "message": "Say which train, where it is, and how wrong it can be",
+          "url": "https://github.com/jsundram/mbta-glx/commit/55817f9f2c38d4384b2ff568dec17ef77026d681"
+        },
+        {
+          "sha": "1f66770c107f7ba7b80e674dda0f10e51debb100",
+          "date": "2026-09-26T21:37:59Z",
+          "message": "Setup steps named a file that has been renamed",
+          "url": "https://github.com/jsundram/mbta-glx/commit/1f66770c107f7ba7b80e674dda0f10e51debb100"
+        },
+        {
+          "sha": "d46df11f5a71fa34a0274aa18616c83ba9f82502",
+          "date": "2026-09-26T21:37:04Z",
+          "message": "Write down what is deployed, and one command that checks it",
+          "url": "https://github.com/jsundram/mbta-glx/commit/d46df11f5a71fa34a0274aa18616c83ba9f82502"
+        },
+        {
+          "sha": "36f217229cbdbd6b4e5eeecb9166606b46fcb7e6",
+          "date": "2026-09-26T21:22:21Z",
+          "message": "Say where an MBTA key actually buys something",
+          "url": "https://github.com/jsundram/mbta-glx/commit/36f217229cbdbd6b4e5eeecb9166606b46fcb7e6"
+        },
+        {
+          "sha": "65ba132ee9973c44e30c8f0cb5e9c755786af66e",
+          "date": "2026-09-26T21:16:01Z",
+          "message": "Fix the key guard, which failed on a key being handled correctly",
+          "url": "https://github.com/jsundram/mbta-glx/commit/65ba132ee9973c44e30c8f0cb5e9c755786af66e"
+        },
+        {
+          "sha": "6437544cdc82085e6722de84be73b2168a1cab77",
+          "date": "2026-09-26T21:13:45Z",
+          "message": "Back off when rate-limited, and offer the fix where the problem appears",
+          "url": "https://github.com/jsundram/mbta-glx/commit/6437544cdc82085e6722de84be73b2168a1cab77"
+        },
+        {
+          "sha": "bfe8812d5c6268ac74d936540a7432e5820f3367",
+          "date": "2026-09-26T20:50:16Z",
+          "message": "Two API keys, because the backend and the board cannot share one",
+          "url": "https://github.com/jsundram/mbta-glx/commit/bfe8812d5c6268ac74d936540a7432e5820f3367"
+        },
+        {
+          "sha": "05ade1efefc7bd5252ab409a27b5ffaa9cac391e",
+          "date": "2026-09-26T20:40:06Z",
+          "message": "The notifier could never see a skip, and the board gets a short URL",
+          "url": "https://github.com/jsundram/mbta-glx/commit/05ade1efefc7bd5252ab409a27b5ffaa9cac391e"
+        },
+        {
+          "sha": "068aa5efa264bf7f6287934a4d95f2c363e39735",
+          "date": "2026-09-26T20:23:45Z",
+          "message": "Review: the archiver warning was unreadable in the cases it exists for",
+          "url": "https://github.com/jsundram/mbta-glx/commit/068aa5efa264bf7f6287934a4d95f2c363e39735"
+        },
+        {
+          "sha": "615c74c297ac9f5c02d1ce4e60ea57a2eaa3e5da",
+          "date": "2026-09-26T20:03:24Z",
+          "message": "Show a dead archiver, prove the strikethrough, and correct the retention claim",
+          "url": "https://github.com/jsundram/mbta-glx/commit/615c74c297ac9f5c02d1ce4e60ea57a2eaa3e5da"
+        },
+        {
+          "sha": "24536929c44ef5bab8754d5f7fa1dfd8b54db615",
+          "date": "2026-09-26T19:46:10Z",
+          "message": "Review: the skip fetch could freeze the board, and a dead feed the backend",
+          "url": "https://github.com/jsundram/mbta-glx/commit/24536929c44ef5bab8754d5f7fa1dfd8b54db615"
+        },
+        {
+          "sha": "d57d71860072ba7af2f544712009267f081a9920",
+          "date": "2026-09-26T19:23:49Z",
+          "message": "Give the backend a launchd agent, or /skips answers nothing",
+          "url": "https://github.com/jsundram/mbta-glx/commit/d57d71860072ba7af2f544712009267f081a9920"
+        },
+        {
+          "sha": "45df07203a15226a2a02a2c98ed4da0f7a115f30",
+          "date": "2026-09-26T19:22:11Z",
+          "message": "M4 transport: /skips, named for the one thing it serves",
+          "url": "https://github.com/jsundram/mbta-glx/commit/45df07203a15226a2a02a2c98ed4da0f7a115f30"
+        },
+        {
+          "sha": "ae1ad18b83a4170cf81c68faf0e79d4541dbb145",
+          "date": "2026-09-26T18:30:19Z",
+          "message": "Two things the first deploy taught, and the nudge that registers them",
+          "url": "https://github.com/jsundram/mbta-glx/commit/ae1ad18b83a4170cf81c68faf0e79d4541dbb145"
+        },
+        {
+          "sha": "b13e1e5e06aacec81942f28d49302092c85286cf",
+          "date": "2026-09-26T18:28:30Z",
+          "message": "Name the skips in the CI log",
+          "url": "https://github.com/jsundram/mbta-glx/commit/b13e1e5e06aacec81942f28d49302092c85286cf"
+        },
+        {
+          "sha": "090834b513ad3373d3e3626ab2c7cc729c3c8868",
+          "date": "2026-09-26T18:22:56Z",
+          "message": "Review 2: finish the locking job, in both directions",
+          "url": "https://github.com/jsundram/mbta-glx/commit/090834b513ad3373d3e3626ab2c7cc729c3c8868"
+        },
+        {
+          "sha": "ae26cf1915a795e26d2bf13d64b56dbd1d9f8ae0",
+          "date": "2026-09-26T18:19:58Z",
+          "message": "Review 2: which plan a command from the board is allowed to touch",
+          "url": "https://github.com/jsundram/mbta-glx/commit/ae26cf1915a795e26d2bf13d64b56dbd1d9f8ae0"
+        },
+        {
+          "sha": "d95ba90b55c4b5cfdd6eaf88f5c2510c02fe73dd",
+          "date": "2026-09-26T18:05:56Z",
+          "message": "Two things the live run showed, neither of which a test was watching for",
+          "url": "https://github.com/jsundram/mbta-glx/commit/d95ba90b55c4b5cfdd6eaf88f5c2510c02fe73dd"
+        },
+        {
+          "sha": "f39e6ed2741cdd6e3d8c396c4dfc9efd56d6e0fc",
+          "date": "2026-09-26T17:48:10Z",
+          "message": "A live check for the notifier, and the no-show it caught on the first run",
+          "url": "https://github.com/jsundram/mbta-glx/commit/f39e6ed2741cdd6e3d8c396c4dfc9efd56d6e0fc"
+        },
+        {
+          "sha": "b1a30a15ffbb1e881fea759803c7e67c77040196",
+          "date": "2026-09-26T17:19:46Z",
+          "message": "Correct the two places that describe the superseded re-arm rule",
+          "url": "https://github.com/jsundram/mbta-glx/commit/b1a30a15ffbb1e881fea759803c7e67c77040196"
+        },
+        {
+          "sha": "997579467907473f51b2325ae4b3d8c55640e2f8",
+          "date": "2026-09-26T17:19:25Z",
+          "message": "Review: name the train the button commits, and get I/O out of the lock",
+          "url": "https://github.com/jsundram/mbta-glx/commit/997579467907473f51b2325ae4b3d8c55640e2f8"
+        },
+        {
+          "sha": "a74def02d34630706ee94b06ddc6984eaede82e3",
+          "date": "2026-09-26T17:16:18Z",
+          "message": "Review: the handoff was overwriting the plan it was meant to complement",
+          "url": "https://github.com/jsundram/mbta-glx/commit/a74def02d34630706ee94b06ddc6984eaede82e3"
+        },
+        {
+          "sha": "97ccdae9b52c32b6c71914dbc4a07abd490df952",
+          "date": "2026-09-26T16:45:49Z",
+          "message": "Write down what M5 built, and what ntfy does not do",
+          "url": "https://github.com/jsundram/mbta-glx/commit/97ccdae9b52c32b6c71914dbc4a07abd490df952"
+        },
+        {
+          "sha": "d51269b11bebaa6fad047146a14911b9d40a586f",
+          "date": "2026-09-26T16:43:13Z",
+          "message": "Make the sleeping host a missed nudge, not a wrong one",
+          "url": "https://github.com/jsundram/mbta-glx/commit/d51269b11bebaa6fad047146a14911b9d40a586f"
+        },
+        {
+          "sha": "198a87393c894c3fce1a397458cfd74c016ef57d",
+          "date": "2026-09-26T16:41:18Z",
+          "message": "Stop the tick from saving over a tap, and the buttons from dying quietly",
+          "url": "https://github.com/jsundram/mbta-glx/commit/198a87393c894c3fce1a397458cfd74c016ef57d"
+        },
+        {
+          "sha": "8a045d12c25b13c52d305a1a45bd04bc5ff0e3ce",
+          "date": "2026-09-26T16:39:16Z",
+          "message": "Hand the bell's alert to the notifier, and stop trusting Sequence-ID",
+          "url": "https://github.com/jsundram/mbta-glx/commit/8a045d12c25b13c52d305a1a45bd04bc5ff0e3ce"
+        },
+        {
+          "sha": "cdc2c74de463a131f787131f75efacb11810274b",
+          "date": "2026-09-26T16:22:35Z",
+          "message": "Stop dropping the commitment when the feed goes quiet",
+          "url": "https://github.com/jsundram/mbta-glx/commit/cdc2c74de463a131f787131f75efacb11810274b"
+        },
+        {
+          "sha": "6168325b043fbc2eb9b332ad7c4d15e9ff4f60d0",
+          "date": "2026-09-26T16:20:07Z",
+          "message": "Drive the tick, and fix the slip it could not announce",
+          "url": "https://github.com/jsundram/mbta-glx/commit/6168325b043fbc2eb9b332ad7c4d15e9ff4f60d0"
+        },
+        {
+          "sha": "0aeb04428e24401ba50133d4f8092a0f323780e2",
+          "date": "2026-09-26T16:10:40Z",
+          "message": "Derive the scorer's bands from the model instead of restating them",
+          "url": "https://github.com/jsundram/mbta-glx/commit/0aeb04428e24401ba50133d4f8092a0f323780e2"
+        },
+        {
+          "sha": "a6e8c6140a845c200c9e0eb20519f02c73ce5f53",
+          "date": "2026-09-26T15:23:07Z",
+          "message": "Fix eleven review findings, and make the allowlist actually enforce",
+          "url": "https://github.com/jsundram/mbta-glx/commit/a6e8c6140a845c200c9e0eb20519f02c73ce5f53"
+        },
+        {
+          "sha": "c39242784254ba442f093d31ebb3ac064f10dc24",
+          "date": "2026-09-26T14:58:02Z",
+          "message": "Keep no-show evidence, and make the static property enforceable",
+          "url": "https://github.com/jsundram/mbta-glx/commit/c39242784254ba442f093d31ebb3ac064f10dc24"
+        },
+        {
+          "sha": "ca9fadcc2b5628f1604d28194bf30f9ad503d0aa",
+          "date": "2026-09-26T14:36:15Z",
+          "message": "Give the walk one home instead of eight",
+          "url": "https://github.com/jsundram/mbta-glx/commit/ca9fadcc2b5628f1604d28194bf30f9ad503d0aa"
+        },
+        {
+          "sha": "6fa8730dc875ac4c56d96a2ca9d93d63038f3785",
+          "date": "2026-09-26T12:31:41Z",
+          "message": "Fix nine review findings in the M3 pipeline",
+          "url": "https://github.com/jsundram/mbta-glx/commit/6fa8730dc875ac4c56d96a2ca9d93d63038f3785"
+        },
+        {
+          "sha": "c1576b124cd6f1674b2f03880ac44c26cb559ee4",
+          "date": "2026-09-26T06:34:49Z",
+          "message": "Write down what M3 built, and where each half has to run",
+          "url": "https://github.com/jsundram/mbta-glx/commit/c1576b124cd6f1674b2f03880ac44c26cb559ee4"
+        },
+        {
+          "sha": "45928bdea7a0de4bb224060dd3b2b0d144d5a214",
+          "date": "2026-09-26T06:30:58Z",
+          "message": "M3: GitHub Actions, and the rating watch that triggers a refit",
+          "url": "https://github.com/jsundram/mbta-glx/commit/45928bdea7a0de4bb224060dd3b2b0d144d5a214"
+        },
+        {
+          "sha": "928cac0ca2c54e629f77bcfedc5233699f827498",
+          "date": "2026-09-26T06:30:41Z",
+          "message": "M3: wire the refit, and make it halt where the judgement is",
+          "url": "https://github.com/jsundram/mbta-glx/commit/928cac0ca2c54e629f77bcfedc5233699f827498"
+        },
+        {
+          "sha": "5c282c0005154c41f65145e401e6e414c05e019d",
+          "date": "2026-09-26T06:15:27Z",
+          "message": "M3: publish.py, and a manifest that cannot lose an artifact",
+          "url": "https://github.com/jsundram/mbta-glx/commit/5c282c0005154c41f65145e401e6e414c05e019d"
+        },
+        {
+          "sha": "d607714ded4ea2a14b7421be5c68d95eaeaf4bbf",
+          "date": "2026-09-26T06:11:37Z",
+          "message": "M3: score the board and publish it as stats.json",
+          "url": "https://github.com/jsundram/mbta-glx/commit/d607714ded4ea2a14b7421be5c68d95eaeaf4bbf"
+        },
+        {
+          "sha": "0d86fda6575800e43f23181aee853784872de5c5",
+          "date": "2026-09-26T05:49:14Z",
+          "message": "Tell M3 that a refit publishes three artifacts, not one",
+          "url": "https://github.com/jsundram/mbta-glx/commit/0d86fda6575800e43f23181aee853784872de5c5"
+        },
+        {
+          "sha": "434dca52c8d11e98545ad91c286a08910d819c1d",
+          "date": "2026-09-26T05:03:58Z",
+          "message": "Note the playwright pin the cached browsers need",
+          "url": "https://github.com/jsundram/mbta-glx/commit/434dca52c8d11e98545ad91c286a08910d819c1d"
+        },
+        {
+          "sha": "a92c39080d16a22030e0720fd05674ef23f8a899",
+          "date": "2026-09-26T05:03:39Z",
+          "message": "Cover the dwell counter in the browser check",
+          "url": "https://github.com/jsundram/mbta-glx/commit/a92c39080d16a22030e0720fd05674ef23f8a899"
+        },
+        {
+          "sha": "bc75219945599000609c148feda91dd3a7c05bb4",
+          "date": "2026-09-26T04:59:37Z",
+          "message": "Write down what M2 measured, and the archive's missing revenue field",
+          "url": "https://github.com/jsundram/mbta-glx/commit/bc75219945599000609c148feda91dd3a7c05bb4"
+        },
+        {
+          "sha": "e38dd1b15f0b7d8afed326f3bae9134ad8e3f959",
+          "date": "2026-09-26T04:57:23Z",
+          "message": "M2: the static board, verified in a browser from file://",
+          "url": "https://github.com/jsundram/mbta-glx/commit/e38dd1b15f0b7d8afed326f3bae9134ad8e3f959"
+        },
+        {
+          "sha": "ef9166b527f48eae964d84222200a4a5f0087aaa",
+          "date": "2026-09-26T04:45:07Z",
+          "message": "M2: port compute_rows to JavaScript and pin it against Python",
+          "url": "https://github.com/jsundram/mbta-glx/commit/ef9166b527f48eae964d84222200a4a5f0087aaa"
+        },
+        {
+          "sha": "2eba73cb631f0041c7ca0aae433908b4374b6865",
+          "date": "2026-09-26T04:37:28Z",
+          "message": "Publish the stop ids to model.json so the JS port re-types nothing",
+          "url": "https://github.com/jsundram/mbta-glx/commit/2eba73cb631f0041c7ca0aae433908b4374b6865"
+        },
+        {
+          "sha": "5976c999d5997c504a7d121b41fd513cd3a86ddf",
+          "date": "2026-09-26T04:29:48Z",
+          "message": "Move shared constants into model.json; sharpen the M2 spec",
+          "url": "https://github.com/jsundram/mbta-glx/commit/5976c999d5997c504a7d121b41fd513cd3a86ddf"
+        },
+        {
+          "sha": "cf98fcdc954577da220914c2cca09903cca30891",
+          "date": "2026-09-26T04:26:14Z",
+          "message": "M1: extract a pure prediction function and pin it with fixtures",
+          "url": "https://github.com/jsundram/mbta-glx/commit/cf98fcdc954577da220914c2cca09903cca30891"
+        },
+        {
+          "sha": "edc9ef76d8ebdc1c6eb763c9437fc3f8c8eb7911",
+          "date": "2026-09-26T04:20:02Z",
+          "message": "Add architecture.md: the buildout plan",
+          "url": "https://github.com/jsundram/mbta-glx/commit/edc9ef76d8ebdc1c6eb763c9437fc3f8c8eb7911"
+        },
+        {
+          "sha": "31bea2c3312f46ccc3a10ec49d22045a09ba9308",
+          "date": "2026-09-26T04:15:07Z",
+          "message": "Add CLAUDE.md with the invariants that fail silently",
+          "url": "https://github.com/jsundram/mbta-glx/commit/31bea2c3312f46ccc3a10ec49d22045a09ba9308"
+        },
+        {
+          "sha": "ab517ffb6004bec275870283b73a158d3cd9573c",
+          "date": "2026-09-26T04:12:52Z",
+          "message": "Make the board survive use as an always-on tablet dashboard",
+          "url": "https://github.com/jsundram/mbta-glx/commit/ab517ffb6004bec275870283b73a158d3cd9573c"
+        },
+        {
+          "sha": "ffb1ab10e3947e6ea4a63001c3e16533d731ad22",
+          "date": "2026-09-26T04:07:56Z",
+          "message": "Arm push notifications from the board, with no backend",
+          "url": "https://github.com/jsundram/mbta-glx/commit/ffb1ab10e3947e6ea4a63001c3e16533d731ad22"
+        },
+        {
+          "sha": "1121ca4adcaa2ab60cedcb15cdd4e16c13c67ea8",
+          "date": "2026-09-26T04:03:07Z",
+          "message": "Switch compaction to delta parquet: 7.9x, and directly queryable",
+          "url": "https://github.com/jsundram/mbta-glx/commit/1121ca4adcaa2ab60cedcb15cdd4e16c13c67ea8"
+        },
+        {
+          "sha": "3b8d4ca135bdea9ba1607cae69a8f02ce9aa43ff",
+          "date": "2026-09-26T03:48:50Z",
+          "message": "Add DuckDB query helper for ad-hoc analysis",
+          "url": "https://github.com/jsundram/mbta-glx/commit/3b8d4ca135bdea9ba1607cae69a8f02ce9aa43ff"
+        },
+        {
+          "sha": "f8f2deaaaf82b2553886282b6465e7bd3ba58715",
+          "date": "2026-09-26T03:43:38Z",
+          "message": "Compact finished archive days 4.9x, verified lossless",
+          "url": "https://github.com/jsundram/mbta-glx/commit/f8f2deaaaf82b2553886282b6465e7bd3ba58715"
+        },
+        {
+          "sha": "1fbf93fbec2460e7dda019c299ff6c8ce4eb8c15",
+          "date": "2026-09-26T03:29:57Z",
+          "message": "Measure how long daily updating stays worth it",
+          "url": "https://github.com/jsundram/mbta-glx/commit/1fbf93fbec2460e7dda019c299ff6c8ce4eb8c15"
+        },
+        {
+          "sha": "e21973060248a074d000ac721ea8861261806988",
+          "date": "2026-09-26T03:26:40Z",
+          "message": "Verify and document the static-frontend deploy architecture",
+          "url": "https://github.com/jsundram/mbta-glx/commit/e21973060248a074d000ac721ea8861261806988"
+        },
+        {
+          "sha": "be6e7262d2925411989da40966636a9c4b66bed7",
+          "date": "2026-09-26T02:59:27Z",
+          "message": "Add a replay harness; the quantile turns out not to be the lever",
+          "url": "https://github.com/jsundram/mbta-glx/commit/be6e7262d2925411989da40966636a9c4b66bed7"
+        },
+        {
+          "sha": "a8ca91d6c7804177af4ef42e50fd92a12dc86463",
+          "date": "2026-09-26T02:33:43Z",
+          "message": "Archive alert state; capture downtown platforms; extend prune to 30 days",
+          "url": "https://github.com/jsundram/mbta-glx/commit/a8ca91d6c7804177af4ef42e50fd92a12dc86463"
+        },
+        {
+          "sha": "c5a6297c48d27eef61c64643c3985b270bce9a1c",
+          "date": "2026-09-26T00:33:05Z",
+          "message": "Act on MBTA's own skip and cancellation markers",
+          "url": "https://github.com/jsundram/mbta-glx/commit/c5a6297c48d27eef61c64643c3985b270bce9a1c"
+        },
+        {
+          "sha": "d13e566ce0880bf41fb938a0e84ccac028e17933",
+          "date": "2026-09-25T20:40:48Z",
+          "message": "Integrate service alerts; score suspended destinations at zero",
+          "url": "https://github.com/jsundram/mbta-glx/commit/d13e566ce0880bf41fb938a0e84ccac028e17933"
+        },
+        {
+          "sha": "db1ffd1e085cc374f6c2712957e0e578d1014b55",
+          "date": "2026-09-25T20:29:46Z",
+          "message": "Draw trains as cars labelled with their real car number",
+          "url": "https://github.com/jsundram/mbta-glx/commit/db1ffd1e085cc374f6c2712957e0e578d1014b55"
+        },
+        {
+          "sha": "a820158621d0721dbd2f238e093fe9faab231973",
+          "date": "2026-09-25T03:59:00Z",
+          "message": "Reorder the board so the map separates future from past",
+          "url": "https://github.com/jsundram/mbta-glx/commit/a820158621d0721dbd2f238e093fe9faab231973"
+        },
+        {
+          "sha": "a48797d7913b34dee8494a70108f69faaf998641",
+          "date": "2026-09-25T03:54:07Z",
+          "message": "Score the last 10 trains against the leave-now advice",
+          "url": "https://github.com/jsundram/mbta-glx/commit/a48797d7913b34dee8494a70108f69faaf998641"
+        },
+        {
+          "sha": "50a9d7f6302023c3b3ce1b2934c7ae5bc74bb81b",
+          "date": "2026-09-25T03:45:49Z",
+          "message": "Restyle the map as a T diagram; correct the express-running claim",
+          "url": "https://github.com/jsundram/mbta-glx/commit/50a9d7f6302023c3b3ce1b2934c7ae5bc74bb81b"
+        },
+        {
+          "sha": "84f95d64c6524f6dd7bbec1dffafab0d6381419c",
+          "date": "2026-09-25T03:28:57Z",
+          "message": "Exclude non-revenue trains; de-duplicate terminus; latch the due state",
+          "url": "https://github.com/jsundram/mbta-glx/commit/84f95d64c6524f6dd7bbec1dffafab0d6381419c"
+        },
+        {
+          "sha": "a00ab1b87d38c5ccc822b9e89370c75496005b8e",
+          "date": "2026-09-24T21:58:21Z",
+          "message": "Fix glitchy dwell counter; add a live GLX line map to the board",
+          "url": "https://github.com/jsundram/mbta-glx/commit/a00ab1b87d38c5ccc822b9e89370c75496005b8e"
+        },
+        {
+          "sha": "27f8c3d0acc53e39ec250393a7a8b32b9317d702",
+          "date": "2026-09-24T21:24:47Z",
+          "message": "Announce ETA revisions; add a live status board",
+          "url": "https://github.com/jsundram/mbta-glx/commit/27f8c3d0acc53e39ec250393a7a8b32b9317d702"
+        },
+        {
+          "sha": "8a826bf7ccfdc4c9071a5823f77c0f3c2a42ae14",
+          "date": "2026-09-24T21:13:23Z",
+          "message": "Debounce longer than the observed flap; reframe recovery as a question",
+          "url": "https://github.com/jsundram/mbta-glx/commit/8a826bf7ccfdc4c9071a5823f77c0f3c2a42ae14"
+        },
+        {
+          "sha": "0853edea699f89f52907af14901a33037341e7eb",
+          "date": "2026-09-24T20:55:31Z",
+          "message": "Add regression tests for every bug found in live running",
+          "url": "https://github.com/jsundram/mbta-glx/commit/0853edea699f89f52907af14901a33037341e7eb"
+        },
+        {
+          "sha": "beecd00ef5fbbcaf7041e57e3f20186d5d896a68",
+          "date": "2026-09-24T20:48:32Z",
+          "message": "Stop the commitment walking to the next train; fix arrival undercount",
+          "url": "https://github.com/jsundram/mbta-glx/commit/beecd00ef5fbbcaf7041e57e3f20186d5d896a68"
+        },
+        {
+          "sha": "32f4e3d2c7aa4d23540464d25f6969b83f522c9c",
+          "date": "2026-09-24T20:25:31Z",
+          "message": "Accept destination names; plan for measuring prediction volatility",
+          "url": "https://github.com/jsundram/mbta-glx/commit/32f4e3d2c7aa4d23540464d25f6969b83f522c9c"
+        },
+        {
+          "sha": "83df89aec3d7219355cb8075fe89b9e1bf407bce",
+          "date": "2026-09-24T20:18:21Z",
+          "message": "Debounce no-show detection: MBTA predictions flap by minutes",
+          "url": "https://github.com/jsundram/mbta-glx/commit/83df89aec3d7219355cb8075fe89b9e1bf407bce"
+        },
+        {
+          "sha": "ebef74c69e5c0b232805f1dbb81435fd50e4fd9d",
+          "date": "2026-09-24T20:11:56Z",
+          "message": "Show catch chance, on-time chance, and 95%-arrival time in notifications",
+          "url": "https://github.com/jsundram/mbta-glx/commit/ebef74c69e5c0b232805f1dbb81435fd50e4fd9d"
+        },
+        {
+          "sha": "ea230d30845f4216cc1d42be9759e4be5a9ea599",
+          "date": "2026-09-24T19:52:54Z",
+          "message": "Fix ntfy subscribe stream and surface listener errors",
+          "url": "https://github.com/jsundram/mbta-glx/commit/ea230d30845f4216cc1d42be9759e4be5a9ea599"
+        },
+        {
+          "sha": "d830d4d53dc391b604a4ca8eb72604afeb449c69",
+          "date": "2026-09-24T19:46:19Z",
+          "message": "Fix install.sh: wait for async bootout, reject sudo, explain launchctl errors",
+          "url": "https://github.com/jsundram/mbta-glx/commit/d830d4d53dc391b604a4ca8eb72604afeb449c69"
+        },
+        {
+          "sha": "0b4a077987a33adbd589347709eebcea0a866b0d",
+          "date": "2026-09-24T18:59:10Z",
+          "message": "Phase 5a: ntfy notifier with brief, triggers, and tap-back commands",
+          "url": "https://github.com/jsundram/mbta-glx/commit/0b4a077987a33adbd589347709eebcea0a866b0d"
+        },
+        {
+          "sha": "c9763af6a31dfa4354f256ac1451dcc74c3dd134",
+          "date": "2026-09-24T18:48:39Z",
+          "message": "Fix hardcoded EDT timezone; make notifier host-portable; plan delivery options",
+          "url": "https://github.com/jsundram/mbta-glx/commit/c9763af6a31dfa4354f256ac1451dcc74c3dd134"
+        },
+        {
+          "sha": "067c09e407ea38459ee9d72bc917e027b8727b0f",
+          "date": "2026-09-24T18:37:10Z",
+          "message": "Add launch plan, daily schedule snapshot, launchd agents, confidence model",
+          "url": "https://github.com/jsundram/mbta-glx/commit/067c09e407ea38459ee9d72bc917e027b8727b0f"
+        },
+        {
+          "sha": "67d61852726a6fc08264068a774b676bf1354a31",
+          "date": "2026-09-24T18:34:48Z",
+          "message": "Magoun inbound ETA service: model, backtests, live service, archiver",
+          "url": "https://github.com/jsundram/mbta-glx/commit/67d61852726a6fc08264068a774b676bf1354a31"
+        }
+      ]
+    },
+    {
+      "name": "quartet-log",
+      "html_url": "https://github.com/jsundram/quartet-log",
+      "description": "code for log.quartetroulette.com",
+      "language": "JavaScript",
+      "private": false,
+      "pushed_at": "2026-10-11T21:53:55Z",
+      "commit_count": 48,
+      "commits": [
+        {
+          "sha": "f64bdf3794dbcfc70b6e312b1b0d2ced36365991",
+          "date": "2026-09-24T21:38:28Z",
+          "message": "Merge pull request #57 from jsundram/howto-overhaul",
+          "url": "https://github.com/jsundram/quartet-log/commit/f64bdf3794dbcfc70b6e312b1b0d2ced36365991"
+        },
+        {
+          "sha": "1c8596de2784ba65629870a3cb9b5f02a8e8bb6b",
+          "date": "2026-09-22T18:10:03Z",
+          "message": "Point people with no log yet at the how-to",
+          "url": "https://github.com/jsundram/quartet-log/commit/1c8596de2784ba65629870a3cb9b5f02a8e8bb6b"
+        },
+        {
+          "sha": "8852b2e1afd91f10175e91c825a54bf30b3c6237",
+          "date": "2026-09-22T18:09:56Z",
+          "message": "Cite the how-to by heading, not by section number",
+          "url": "https://github.com/jsundram/quartet-log/commit/8852b2e1afd91f10175e91c825a54bf30b3c6237"
+        },
+        {
+          "sha": "f1f51bea6af5b68c84b85ddd67212681dffdceb8",
+          "date": "2026-09-22T18:09:47Z",
+          "message": "Rewrite the how-to as four parts, split by who is reading",
+          "url": "https://github.com/jsundram/quartet-log/commit/f1f51bea6af5b68c84b85ddd67212681dffdceb8"
+        },
+        {
+          "sha": "c5d919b9a7fe52c100184390df742932972434d4",
+          "date": "2026-09-22T18:09:38Z",
+          "message": "Size the how-to screenshots to their real pixels",
+          "url": "https://github.com/jsundram/quartet-log/commit/c5d919b9a7fe52c100184390df742932972434d4"
+        },
+        {
+          "sha": "419b47c8aaea01765deeafd89bd29483d983af13",
+          "date": "2026-09-17T22:37:47Z",
+          "message": "Merge pull request #54 from jsundram/claudemd-overlap-screen",
+          "url": "https://github.com/jsundram/quartet-log/commit/419b47c8aaea01765deeafd89bd29483d983af13"
+        },
+        {
+          "sha": "f61d8af8f14f9eb069de65fceb7ab022b812a062",
+          "date": "2026-09-17T22:20:35Z",
+          "message": "Say so when the overlap screen cannot run",
+          "url": "https://github.com/jsundram/quartet-log/commit/f61d8af8f14f9eb069de65fceb7ab022b812a062"
+        },
+        {
+          "sha": "9c507ba65f2749345bfef9f48b7ceae2a38d37b7",
+          "date": "2026-09-17T22:09:46Z",
+          "message": "Screen new CLAUDE.md prose against the comments it restates (#51)",
+          "url": "https://github.com/jsundram/quartet-log/commit/9c507ba65f2749345bfef9f48b7ceae2a38d37b7"
+        },
+        {
+          "sha": "0735eb70769939bc033caff9d9d0ede8d318ded8",
+          "date": "2026-09-17T08:02:19Z",
+          "message": "Merge pull request #52 from jsundram/trim-claude-md",
+          "url": "https://github.com/jsundram/quartet-log/commit/0735eb70769939bc033caff9d9d0ede8d318ded8"
+        },
+        {
+          "sha": "c2487a2d89fe6d84424b38e4804718f6050d1406",
+          "date": "2026-09-17T07:38:37Z",
+          "message": "Trim CLAUDE.md to what the code doesn't already say (#15)",
+          "url": "https://github.com/jsundram/quartet-log/commit/c2487a2d89fe6d84424b38e4804718f6050d1406"
+        },
+        {
+          "sha": "6dd5fe40b7baa7dfa904a77c84488ccfc8b1a029",
+          "date": "2026-09-17T04:43:16Z",
+          "message": "Size the Player filter from the data and the viewport, not two constants (#50)",
+          "url": "https://github.com/jsundram/quartet-log/commit/6dd5fe40b7baa7dfa904a77c84488ccfc8b1a029"
+        },
+        {
+          "sha": "bf75b57818e65c94c9f23e1003323c22256bcb5e",
+          "date": "2026-09-17T03:22:18Z",
+          "message": "Don't read a location as shorthand for the one above it (#49)",
+          "url": "https://github.com/jsundram/quartet-log/commit/bf75b57818e65c94c9f23e1003323c22256bcb5e"
+        },
+        {
+          "sha": "59f7403c4b35cef24649ed9fbb3ae825871c6a90",
+          "date": "2026-09-16T20:25:06Z",
+          "message": "Log form: say what each person played, let the form place them (#47)",
+          "url": "https://github.com/jsundram/quartet-log/commit/59f7403c4b35cef24649ed9fbb3ae825871c6a90"
+        },
+        {
+          "sha": "1681edd8319739ccd86779a6ffeed9ddc8c9cf97",
+          "date": "2026-09-12T22:11:40Z",
+          "message": "Fix confirmation tiles dropping rows the sheet takes after the submit (#46)",
+          "url": "https://github.com/jsundram/quartet-log/commit/1681edd8319739ccd86779a6ffeed9ddc8c9cf97"
+        },
+        {
+          "sha": "72423091f2a9eab465e11f6207544d15c9103a46",
+          "date": "2026-09-12T18:58:18Z",
+          "message": "Merge pull request #45 from jsundram/claude/serene-maxwell-l03e0j",
+          "url": "https://github.com/jsundram/quartet-log/commit/72423091f2a9eab465e11f6207544d15c9103a46"
+        },
+        {
+          "sha": "f0f84e320bfd86165cf88bd50830960efa55cdea",
+          "date": "2026-09-12T18:22:53Z",
+          "message": "Merge pull request #43 from jsundram/claude/serene-maxwell-l03e0j",
+          "url": "https://github.com/jsundram/quartet-log/commit/f0f84e320bfd86165cf88bd50830960efa55cdea"
+        },
+        {
+          "sha": "27f7c10ebc8aba6351e4f11c32793cbf01e95668",
+          "date": "2026-09-12T08:49:36Z",
+          "message": "Merge pull request #42 from jsundram/log-form-part-lists",
+          "url": "https://github.com/jsundram/quartet-log/commit/27f7c10ebc8aba6351e4f11c32793cbf01e95668"
+        },
+        {
+          "sha": "dcb946370ce408112d60fd75a000875ee3efc342",
+          "date": "2026-09-12T08:34:21Z",
+          "message": "document the two part lists, and stop howto teaching the old one",
+          "url": "https://github.com/jsundram/quartet-log/commit/dcb946370ce408112d60fd75a000875ee3efc342"
+        },
+        {
+          "sha": "0478aef45dcbbbed4cad343cd84a8c954f25e3e8",
+          "date": "2026-09-12T08:34:21Z",
+          "message": "read (v3) and (v4) on a player slot as instruments",
+          "url": "https://github.com/jsundram/quartet-log/commit/0478aef45dcbbbed4cad343cd84a8c954f25e3e8"
+        },
+        {
+          "sha": "5da4d03deb5654cc4e51f0cad20c7b52e1d3e034",
+          "date": "2026-09-12T08:34:10Z",
+          "message": "give the columns and Others? their own part lists",
+          "url": "https://github.com/jsundram/quartet-log/commit/5da4d03deb5654cc4e51f0cad20c7b52e1d3e034"
+        },
+        {
+          "sha": "02a0e928e9d7f848887ddb8b0890f0fab0a270de",
+          "date": "2026-09-12T07:41:39Z",
+          "message": "record why the carried-tag inheritance is not scoped to the session window",
+          "url": "https://github.com/jsundram/quartet-log/commit/02a0e928e9d7f848887ddb8b0890f0fab0a270de"
+        },
+        {
+          "sha": "43ba77f926e5d2527d27a47d392306ad52e92f4a",
+          "date": "2026-09-12T07:35:49Z",
+          "message": "write a part change as a column swap, not a tag",
+          "url": "https://github.com/jsundram/quartet-log/commit/43ba77f926e5d2527d27a47d392306ad52e92f4a"
+        },
+        {
+          "sha": "959f089f5501f8d375b9d83c11148e1c3eee9090",
+          "date": "2026-09-09T04:48:51Z",
+          "message": "keep a lone work's catalogue number in the multi-composer tab label",
+          "url": "https://github.com/jsundram/quartet-log/commit/959f089f5501f8d375b9d83c11148e1c3eee9090"
+        },
+        {
+          "sha": "10e6dfd46f5194c6b4980b6356e05fda2c27670c",
+          "date": "2026-09-09T04:35:56Z",
+          "message": "drop the Smetana and Verdi URL patterns, whose links all 404",
+          "url": "https://github.com/jsundram/quartet-log/commit/10e6dfd46f5194c6b4980b6356e05fda2c27670c"
+        },
+        {
+          "sha": "3dabc17de6762adbdd54ad284dcc258e4b03a30a",
+          "date": "2026-09-09T04:35:43Z",
+          "message": "add Borodin 2 to the MISC tab, unlinked",
+          "url": "https://github.com/jsundram/quartet-log/commit/3dabc17de6762adbdd54ad284dcc258e4b03a30a"
+        },
+        {
+          "sha": "b906c81547667a984df321a96b240a51b8ff8d71",
+          "date": "2026-09-09T04:21:13Z",
+          "message": "Merge pull request #38 from jsundram/claude/fix-mobile-composer-picker",
+          "url": "https://github.com/jsundram/quartet-log/commit/b906c81547667a984df321a96b240a51b8ff8d71"
+        },
+        {
+          "sha": "66f5bb747cc4a714b110be31c57e0d00ea569123",
+          "date": "2026-09-09T04:18:48Z",
+          "message": "pin the extras to the value column with a negative grid line",
+          "url": "https://github.com/jsundram/quartet-log/commit/66f5bb747cc4a714b110be31c57e0d00ea569123"
+        },
+        {
+          "sha": "49a244cec9eb8e9d54d7e90f45b58bd0a6354d2a",
+          "date": "2026-09-09T04:11:31Z",
+          "message": "rebuild both composer views on the picker's own change handler",
+          "url": "https://github.com/jsundram/quartet-log/commit/49a244cec9eb8e9d54d7e90f45b58bd0a6354d2a"
+        },
+        {
+          "sha": "1bec49289a94a132746cf31253827942cdc838c3",
+          "date": "2026-09-09T03:49:54Z",
+          "message": "stop the catalog picker collapsing the log form on a phone",
+          "url": "https://github.com/jsundram/quartet-log/commit/1bec49289a94a132746cf31253827942cdc838c3"
+        },
+        {
+          "sha": "81e140dbc8da2cc55a73bfa8c8ea30ce6ce486e2",
+          "date": "2026-09-08T05:12:38Z",
+          "message": "take a setup link in the setup box, since that is where one gets pasted",
+          "url": "https://github.com/jsundram/quartet-log/commit/81e140dbc8da2cc55a73bfa8c8ea30ce6ce486e2"
+        },
+        {
+          "sha": "e9f634839fefb18e23db82272f6f5a5309caa09d",
+          "date": "2026-09-08T04:37:56Z",
+          "message": "Merge pull request #37 from jsundram/claude/link-form-id-to-form",
+          "url": "https://github.com/jsundram/quartet-log/commit/e9f634839fefb18e23db82272f6f5a5309caa09d"
+        },
+        {
+          "sha": "3973152f7445419f9b81f5166024ea6a6dba1a0c",
+          "date": "2026-09-08T04:36:03Z",
+          "message": "link every printed form id to the form, so \"is this one mine\" is checkable",
+          "url": "https://github.com/jsundram/quartet-log/commit/3973152f7445419f9b81f5166024ea6a6dba1a0c"
+        },
+        {
+          "sha": "ccc17750f0a0df2ae47f6325026282bfb97c9844",
+          "date": "2026-09-05T20:01:25Z",
+          "message": "Merge pull request #33 from jsundram/claude/custom-form-google-sheets-5td6xo",
+          "url": "https://github.com/jsundram/quartet-log/commit/ccc17750f0a0df2ae47f6325026282bfb97c9844"
+        },
+        {
+          "sha": "5b33b63260b58abf766955cfa51573b658a5d01f",
+          "date": "2026-09-02T22:17:34Z",
+          "message": "Merge pull request #30 from jsundram/claude/dashboard-player-name-truncate-2arnjv",
+          "url": "https://github.com/jsundram/quartet-log/commit/5b33b63260b58abf766955cfa51573b658a5d01f"
+        },
+        {
+          "sha": "90c7ee84e2f74ffeedf2a687587920bbab74d96b",
+          "date": "2026-09-01T22:22:40Z",
+          "message": "Merge pull request #28 from jsundram/audit-node-port",
+          "url": "https://github.com/jsundram/quartet-log/commit/90c7ee84e2f74ffeedf2a687587920bbab74d96b"
+        },
+        {
+          "sha": "618d8e0de62267aa29cc22d587cb1cfba5f50e0f",
+          "date": "2026-09-01T22:20:30Z",
+          "message": "docs: the fill-forward trace and the name-shape classifier",
+          "url": "https://github.com/jsundram/quartet-log/commit/618d8e0de62267aa29cc22d587cb1cfba5f50e0f"
+        },
+        {
+          "sha": "54916d2d724eb11e82a06b29432359bd9eabab76",
+          "date": "2026-09-01T21:49:14Z",
+          "message": "report fill-forward's decisions, classify name shape once, and address review",
+          "url": "https://github.com/jsundram/quartet-log/commit/54916d2d724eb11e82a06b29432359bd9eabab76"
+        },
+        {
+          "sha": "1aeb0c18ab35c4a7b8035655679ef584e2ad648d",
+          "date": "2026-09-01T21:14:00Z",
+          "message": "address review: unmatched summary counts fail the audit run; a title's last ensemble word sizes the row",
+          "url": "https://github.com/jsundram/quartet-log/commit/1aeb0c18ab35c4a7b8035655679ef584e2ad648d"
+        },
+        {
+          "sha": "dd913bf121dcfee765f502e6f3e0b1eb3a293504",
+          "date": "2026-09-01T20:25:13Z",
+          "message": "address review: abbreviates() tests tokens, and the ambiguity gate covers initialled variants",
+          "url": "https://github.com/jsundram/quartet-log/commit/dd913bf121dcfee765f502e6f3e0b1eb3a293504"
+        },
+        {
+          "sha": "a543e159e892660dcd59ee96d898c9c0800e79c0",
+          "date": "2026-08-31T19:46:09Z",
+          "message": "address review: mixed dash/blank continuations, surname-less canonicals, phantom candidates, winner-attestation disclosure",
+          "url": "https://github.com/jsundram/quartet-log/commit/a543e159e892660dcd59ee96d898c9c0800e79c0"
+        },
+        {
+          "sha": "836e7120a451eada6c21a5a0bf68fe8900437984",
+          "date": "2026-08-31T19:07:58Z",
+          "message": "docs: hazard 2 is judged per (key, class)",
+          "url": "https://github.com/jsundram/quartet-log/commit/836e7120a451eada6c21a5a0bf68fe8900437984"
+        },
+        {
+          "sha": "381c2c337dfbc9587b2107214b5c911b56e02006",
+          "date": "2026-08-31T19:04:34Z",
+          "message": "address review: initialled surnames, ambiguity-gated proposals, per-class hazard 2, blank Others? fragments, location window",
+          "url": "https://github.com/jsundram/quartet-log/commit/381c2c337dfbc9587b2107214b5c911b56e02006"
+        },
+        {
+          "sha": "8327d99e0318204ca33b3090eaa3e9b8442ed283",
+          "date": "2026-08-31T18:37:16Z",
+          "message": "address review: dash-only anchor theft, equal-length alias proposals",
+          "url": "https://github.com/jsundram/quartet-log/commit/8327d99e0318204ca33b3090eaa3e9b8442ed283"
+        },
+        {
+          "sha": "7af62b02f460d2ddbd99c9e9b9cf815c4c22249d",
+          "date": "2026-08-30T23:45:29Z",
+          "message": "address review: session-window branch gate, missing stub warning",
+          "url": "https://github.com/jsundram/quartet-log/commit/7af62b02f460d2ddbd99c9e9b9cf815c4c22249d"
+        },
+        {
+          "sha": "4d88b99b99335ba1da8109fd1f4ff205f1e2819c",
+          "date": "2026-08-30T22:21:30Z",
+          "message": "make the empty-audit guard actually fire",
+          "url": "https://github.com/jsundram/quartet-log/commit/4d88b99b99335ba1da8109fd1f4ff205f1e2819c"
+        },
+        {
+          "sha": "e413f0953999c799e991b16e1e7fb6ccc141f9a2",
+          "date": "2026-08-30T21:59:37Z",
+          "message": "address review: NUL byte, session-window gaps, symlink no-op, Others? drift",
+          "url": "https://github.com/jsundram/quartet-log/commit/e413f0953999c799e991b16e1e7fb6ccc141f9a2"
+        },
+        {
+          "sha": "337222dff21258ec56aff0fd10c294642a94f5ac",
+          "date": "2026-08-29T06:56:11Z",
+          "message": "identify a bare first name from the other players on its row",
+          "url": "https://github.com/jsundram/quartet-log/commit/337222dff21258ec56aff0fd10c294642a94f5ac"
+        },
+        {
+          "sha": "b0abbc60c36fbe4f5d444a6e391092b055984e46",
+          "date": "2026-08-29T06:46:50Z",
+          "message": "port the three audits to Node, with the data view as an explicit input",
+          "url": "https://github.com/jsundram/quartet-log/commit/b0abbc60c36fbe4f5d444a6e391092b055984e46"
+        }
+      ]
+    },
+    {
+      "name": "lissajous-tuner",
+      "html_url": "https://github.com/jsundram/lissajous-tuner",
+      "description": "A phase-coherent tuner for violin, viola and cello. Tuning error is rotation, not a needle.",
+      "language": "JavaScript",
+      "private": false,
+      "pushed_at": "2026-09-13T07:39:31Z",
+      "commit_count": 34,
+      "commits": [
+        {
+          "sha": "986437f3e5b5f4f49bc0a0cb58c2eff67f790bd3",
+          "date": "2026-09-10T03:46:11Z",
+          "message": "Deploy lt-v17 (build 5833c41)",
+          "url": "https://github.com/jsundram/lissajous-tuner/commit/986437f3e5b5f4f49bc0a0cb58c2eff67f790bd3"
+        },
+        {
+          "sha": "5833c415ad87ce32d66fc61dac9a3da8282c292f",
+          "date": "2026-09-10T03:46:11Z",
+          "message": "Editable reference A, an in-tune colour, and the figure picker on the main screen",
+          "url": "https://github.com/jsundram/lissajous-tuner/commit/5833c415ad87ce32d66fc61dac9a3da8282c292f"
+        },
+        {
+          "sha": "3dca858f4f335531f913832ec82e54d35d053cea",
+          "date": "2026-09-05T18:49:59Z",
+          "message": "Ship the independent pitch tracker as analyze-recording --track",
+          "url": "https://github.com/jsundram/lissajous-tuner/commit/3dca858f4f335531f913832ec82e54d35d053cea"
+        },
+        {
+          "sha": "1e029833164675099874c618528f313c6ca6d926",
+          "date": "2026-09-04T20:24:54Z",
+          "message": "Deploy lt-v16 (build cd9d97b)",
+          "url": "https://github.com/jsundram/lissajous-tuner/commit/1e029833164675099874c618528f313c6ca6d926"
+        },
+        {
+          "sha": "cd9d97b4876517a2cb798bb3f0dd712b054b85c6",
+          "date": "2026-09-04T20:24:54Z",
+          "message": "Render enum parameters as segmented radio groups instead of sliders",
+          "url": "https://github.com/jsundram/lissajous-tuner/commit/cd9d97b4876517a2cb798bb3f0dd712b054b85c6"
+        },
+        {
+          "sha": "f3c5203ca69407f78fcbb7d78625b1c1b5b47063",
+          "date": "2026-09-04T20:18:45Z",
+          "message": "Deploy lt-v15 (build e9c88f7)",
+          "url": "https://github.com/jsundram/lissajous-tuner/commit/f3c5203ca69407f78fcbb7d78625b1c1b5b47063"
+        },
+        {
+          "sha": "e9c88f7e4cfe12001567e273f1ac26fce7ac455e",
+          "date": "2026-09-04T20:18:44Z",
+          "message": "Add a faint reference outline behind the figure in every mode",
+          "url": "https://github.com/jsundram/lissajous-tuner/commit/e9c88f7e4cfe12001567e273f1ac26fce7ac455e"
+        },
+        {
+          "sha": "ee7fce56fc89e4e733db405e6cd9ca9e075e371b",
+          "date": "2026-09-04T20:10:23Z",
+          "message": "Deploy lt-v14 (build 1e3b12f)",
+          "url": "https://github.com/jsundram/lissajous-tuner/commit/ee7fce56fc89e4e733db405e6cd9ca9e075e371b"
+        },
+        {
+          "sha": "1e3b12fd99461955174dde0d7732c2cc8f5d9cc5",
+          "date": "2026-09-04T20:10:22Z",
+          "message": "Fix the octave gate hole and the demodulator start-up transient found on real recordings",
+          "url": "https://github.com/jsundram/lissajous-tuner/commit/1e3b12fd99461955174dde0d7732c2cc8f5d9cc5"
+        },
+        {
+          "sha": "9b6b800b06f363bce1cdc6ffdc21d3345e49f497",
+          "date": "2026-09-04T19:16:33Z",
+          "message": "Close the bwCoef and cents-excursion open questions with real violin recordings",
+          "url": "https://github.com/jsundram/lissajous-tuner/commit/9b6b800b06f363bce1cdc6ffdc21d3345e49f497"
+        },
+        {
+          "sha": "1c5d6fe71dde4cafe2431822c19f82976babf94d",
+          "date": "2026-09-04T19:07:27Z",
+          "message": "Deploy lt-v13 (build 57299ac)",
+          "url": "https://github.com/jsundram/lissajous-tuner/commit/1c5d6fe71dde4cafe2431822c19f82976babf94d"
+        },
+        {
+          "sha": "57299acdbbf8402a63dfb790988dacf635059415",
+          "date": "2026-09-04T19:07:27Z",
+          "message": "Fix the sticky detection lock; add string pinning and true Lissajous figure modes",
+          "url": "https://github.com/jsundram/lissajous-tuner/commit/57299acdbbf8402a63dfb790988dacf635059415"
+        },
+        {
+          "sha": "16a81f7abce0c71374c66cba34e25d7a1e09af49",
+          "date": "2026-09-04T16:44:13Z",
+          "message": "Deploy lt-v12 (build a32bea9)",
+          "url": "https://github.com/jsundram/lissajous-tuner/commit/16a81f7abce0c71374c66cba34e25d7a1e09af49"
+        },
+        {
+          "sha": "a32bea98fa0b840a80bdc5db4aeebfd8c02a34fd",
+          "date": "2026-09-04T16:44:12Z",
+          "message": "Add scripts/shot.mjs and document the look-and-feel workflow",
+          "url": "https://github.com/jsundram/lissajous-tuner/commit/a32bea98fa0b840a80bdc5db4aeebfd8c02a34fd"
+        },
+        {
+          "sha": "607e83f36069df75fc30e6159567c0a0eefe60ce",
+          "date": "2026-09-04T02:04:57Z",
+          "message": "Deploy lt-v11 (build 38a964a)",
+          "url": "https://github.com/jsundram/lissajous-tuner/commit/607e83f36069df75fc30e6159567c0a0eefe60ce"
+        },
+        {
+          "sha": "38a964ac299cd2d698b142974d4b5447e3ea8191",
+          "date": "2026-09-04T02:04:56Z",
+          "message": "Give the dev panel a sticky header so it can actually be closed",
+          "url": "https://github.com/jsundram/lissajous-tuner/commit/38a964ac299cd2d698b142974d4b5447e3ea8191"
+        },
+        {
+          "sha": "8646bc3f8acdeacdf879979ccc2f1332e0d14a26",
+          "date": "2026-09-03T21:16:18Z",
+          "message": "Deploy lt-v10 (build 89c9c33)",
+          "url": "https://github.com/jsundram/lissajous-tuner/commit/8646bc3f8acdeacdf879979ccc2f1332e0d14a26"
+        },
+        {
+          "sha": "89c9c333747b52c82535c5173ef39fab681e867c",
+          "date": "2026-09-03T21:16:18Z",
+          "message": "Move dev pill off the chips; add loopback sweep diagnostics",
+          "url": "https://github.com/jsundram/lissajous-tuner/commit/89c9c333747b52c82535c5173ef39fab681e867c"
+        },
+        {
+          "sha": "3eb3a03003af3cf9200cd2a44ec43ac7c9bb00ca",
+          "date": "2026-09-03T21:06:28Z",
+          "message": "Deploy lt-v9 (build 3f45319)",
+          "url": "https://github.com/jsundram/lissajous-tuner/commit/3eb3a03003af3cf9200cd2a44ec43ac7c9bb00ca"
+        },
+        {
+          "sha": "3f45319e8a3f8434c756c1f75bfdc726f34e44c6",
+          "date": "2026-09-03T21:06:28Z",
+          "message": "Fix open-G misdetection, blocky figure, and add reference tones",
+          "url": "https://github.com/jsundram/lissajous-tuner/commit/3f45319e8a3f8434c756c1f75bfdc726f34e44c6"
+        },
+        {
+          "sha": "87b456b0a25550688647349aa97cd7d1f675ed87",
+          "date": "2026-09-03T15:49:07Z",
+          "message": "Deploy lt-v8 (build 82f5506)",
+          "url": "https://github.com/jsundram/lissajous-tuner/commit/87b456b0a25550688647349aa97cd7d1f675ed87"
+        },
+        {
+          "sha": "82f550632eb447a0b56c394e603abba1210a467a",
+          "date": "2026-09-03T15:49:07Z",
+          "message": "Record playwright-core as a devDependency; document the check scripts",
+          "url": "https://github.com/jsundram/lissajous-tuner/commit/82f550632eb447a0b56c394e603abba1210a467a"
+        },
+        {
+          "sha": "ecb3a4e2f8fb25fbf4860c2f7dbfd984ec63b217",
+          "date": "2026-09-03T15:47:26Z",
+          "message": "Deploy lt-v7 (build 4ebf40e)",
+          "url": "https://github.com/jsundram/lissajous-tuner/commit/ecb3a4e2f8fb25fbf4860c2f7dbfd984ec63b217"
+        },
+        {
+          "sha": "4ebf40ef195090af61a527b18ffc9528fd205dcb",
+          "date": "2026-09-03T15:47:25Z",
+          "message": "Fix iOS status bar style and build-id placement",
+          "url": "https://github.com/jsundram/lissajous-tuner/commit/4ebf40ef195090af61a527b18ffc9528fd205dcb"
+        },
+        {
+          "sha": "d2f8426646d4ff640c252a1e5d4777cc002cfe37",
+          "date": "2026-09-03T15:44:32Z",
+          "message": "Deploy lt-v6 (build 9d52857)",
+          "url": "https://github.com/jsundram/lissajous-tuner/commit/d2f8426646d4ff640c252a1e5d4777cc002cfe37"
+        },
+        {
+          "sha": "9d52857c1b997bdcf755cdf1d2e92c9dcccea549",
+          "date": "2026-09-03T15:44:31Z",
+          "message": "Scope the build-id dirty marker to non-deploy stamps",
+          "url": "https://github.com/jsundram/lissajous-tuner/commit/9d52857c1b997bdcf755cdf1d2e92c9dcccea549"
+        },
+        {
+          "sha": "ea6c2b108dbe3dc68a27b92252e386ba081daf8a",
+          "date": "2026-09-03T15:44:06Z",
+          "message": "Deploy lt-v5 (build a8f0e3f+)",
+          "url": "https://github.com/jsundram/lissajous-tuner/commit/ea6c2b108dbe3dc68a27b92252e386ba081daf8a"
+        },
+        {
+          "sha": "a8f0e3fc7ca64edff3d42594d3e02ed3818bf7f7",
+          "date": "2026-09-03T15:44:06Z",
+          "message": "Fix deploy ordering: bump V in the same commit as the build stamp",
+          "url": "https://github.com/jsundram/lissajous-tuner/commit/a8f0e3fc7ca64edff3d42594d3e02ed3818bf7f7"
+        },
+        {
+          "sha": "1c2d85260d1b692d16fd339d1b8825dba900e046",
+          "date": "2026-09-03T15:43:17Z",
+          "message": "Stamp build ae33518 / lt-v4",
+          "url": "https://github.com/jsundram/lissajous-tuner/commit/1c2d85260d1b692d16fd339d1b8825dba900e046"
+        },
+        {
+          "sha": "ae3351845ca7c3f0e64b645445555685e3c8d2e3",
+          "date": "2026-09-03T15:43:17Z",
+          "message": "Deploy: restamp build id and bump cache generation",
+          "url": "https://github.com/jsundram/lissajous-tuner/commit/ae3351845ca7c3f0e64b645445555685e3c8d2e3"
+        },
+        {
+          "sha": "99f2aa1175993367939bf66151aa716961c44644",
+          "date": "2026-09-03T15:41:59Z",
+          "message": "Add deploy script: bump V, restamp build id, verify, push",
+          "url": "https://github.com/jsundram/lissajous-tuner/commit/99f2aa1175993367939bf66151aa716961c44644"
+        },
+        {
+          "sha": "72ca3c5a1b23e67610eb8b6778f08d2aa1ce5316",
+          "date": "2026-09-03T15:41:04Z",
+          "message": "Self-test mode, renderer, layout, and the dev panel",
+          "url": "https://github.com/jsundram/lissajous-tuner/commit/72ca3c5a1b23e67610eb8b6778f08d2aa1ce5316"
+        },
+        {
+          "sha": "2e9817ede541a72dec505a22e21b4920e940e47d",
+          "date": "2026-09-03T15:26:36Z",
+          "message": "Worklet, DSP, and the headless test harness \u2014 32/32 green",
+          "url": "https://github.com/jsundram/lissajous-tuner/commit/2e9817ede541a72dec505a22e21b4920e940e47d"
+        },
+        {
+          "sha": "202182449610a0dd38c08da2dedca3f9857ec58d",
+          "date": "2026-09-03T15:14:37Z",
+          "message": "Scaffold Lissajous Tuner from pwa-starter",
+          "url": "https://github.com/jsundram/lissajous-tuner/commit/202182449610a0dd38c08da2dedca3f9857ec58d"
+        }
+      ]
+    },
+    {
+      "name": "pwa-starter",
+      "html_url": "https://github.com/jsundram/pwa-starter",
+      "description": null,
+      "language": "JavaScript",
+      "private": false,
+      "pushed_at": "2026-09-24T22:19:31Z",
+      "commit_count": 12,
+      "commits": [
+        {
+          "sha": "0e15847287dd3c487ed10796cd7647628838cb3d",
+          "date": "2026-09-24T20:30:04Z",
+          "message": "Merge pull request #22 from jsundram/pull-back/sw-lint-base",
+          "url": "https://github.com/jsundram/pwa-starter/commit/0e15847287dd3c487ed10796cd7647628838cb3d"
+        },
+        {
+          "sha": "de6ccfbc331286a1f60e6f4a6812a39385ece83c",
+          "date": "2026-09-24T20:06:32Z",
+          "message": "Review fixes: close four silent-pass paths and one that breaks executables",
+          "url": "https://github.com/jsundram/pwa-starter/commit/de6ccfbc331286a1f60e6f4a6812a39385ece83c"
+        },
+        {
+          "sha": "e21fb2f2c3d3443cc9101f4d4355a2d5727e7583",
+          "date": "2026-09-24T18:53:41Z",
+          "message": "PROPAGATE: key the --base entry by its commit (857fc28)",
+          "url": "https://github.com/jsundram/pwa-starter/commit/e21fb2f2c3d3443cc9101f4d4355a2d5727e7583"
+        },
+        {
+          "sha": "857fc2833dab4fb585204a0a7540bb9c8725af67",
+          "date": "2026-09-24T18:53:30Z",
+          "message": "sw-lint: check 7, --base REF \u2014 the V comparison one commit cannot make",
+          "url": "https://github.com/jsundram/pwa-starter/commit/857fc2833dab4fb585204a0a7540bb9c8725af67"
+        },
+        {
+          "sha": "0f0ffba255a6e07c3003da8a10a0ba83495e4a1e",
+          "date": "2026-09-24T18:45:26Z",
+          "message": "PROPAGATE: key the scripts/-tracking entry by its commit (854d957)",
+          "url": "https://github.com/jsundram/pwa-starter/commit/0f0ffba255a6e07c3003da8a10a0ba83495e4a1e"
+        },
+        {
+          "sha": "854d95761a66e304c67d63536659092293898a85",
+          "date": "2026-09-24T18:45:08Z",
+          "message": "Track the scripts/ copies, and key SHARED by the path they live at",
+          "url": "https://github.com/jsundram/pwa-starter/commit/854d95761a66e304c67d63536659092293898a85"
+        },
+        {
+          "sha": "0c131185d41922d81a1f86d5fbfcc764521a9e1c",
+          "date": "2026-09-24T18:26:41Z",
+          "message": "Merge pull request #18 from jsundram/fix/version-tag-reads-running-bundle",
+          "url": "https://github.com/jsundram/pwa-starter/commit/0c131185d41922d81a1f86d5fbfcc764521a9e1c"
+        },
+        {
+          "sha": "e91616a000228d465f1bc037f5a410967f3a1f78",
+          "date": "2026-09-24T18:06:30Z",
+          "message": "Review fixes: widen discovery, retire the ranking prose, correct the host note",
+          "url": "https://github.com/jsundram/pwa-starter/commit/e91616a000228d465f1bc037f5a410967f3a1f78"
+        },
+        {
+          "sha": "223ed1389bd2daa5d4b7cdb0176e651aac7b43c9",
+          "date": "2026-09-24T16:30:57Z",
+          "message": "PROPAGATE: the version tag must read the running bundle (cef3cd2)",
+          "url": "https://github.com/jsundram/pwa-starter/commit/223ed1389bd2daa5d4b7cdb0176e651aac7b43c9"
+        },
+        {
+          "sha": "cef3cd21afb8883d7cfb89f13178ce4344560dc8",
+          "date": "2026-09-24T16:30:36Z",
+          "message": "Compare the RUNNING bundle to the server, not the cache key (app-v8)",
+          "url": "https://github.com/jsundram/pwa-starter/commit/cef3cd21afb8883d7cfb89f13178ce4344560dc8"
+        },
+        {
+          "sha": "0a7bc6bed7d6150a190c782389a1d22530b3a7e7",
+          "date": "2026-09-13T07:32:48Z",
+          "message": "README: list .nojekyll in the what's-in-the-box tree",
+          "url": "https://github.com/jsundram/pwa-starter/commit/0a7bc6bed7d6150a190c782389a1d22530b3a7e7"
+        },
+        {
+          "sha": "79459dddb2ca7f041d462deb9e32fa242b921706",
+          "date": "2026-09-13T07:32:35Z",
+          "message": "Merge pull request #12 from jsundram/claude/nojekyll",
+          "url": "https://github.com/jsundram/pwa-starter/commit/79459dddb2ca7f041d462deb9e32fa242b921706"
+        }
+      ]
+    },
+    {
+      "name": "quartet-chooser",
+      "html_url": "https://github.com/jsundram/quartet-chooser",
+      "description": "The code behind Quartet Roulette (https://quartetroulette.com)",
+      "language": "JavaScript",
+      "private": false,
+      "pushed_at": "2026-10-14T20:52:11Z",
+      "commit_count": 9,
+      "commits": [
+        {
+          "sha": "0c5797db6019296a436b60b53f62e427c3fec707",
+          "date": "2026-09-04T16:51:51Z",
+          "message": "Merge pull request #46 from jsundram/dependabot/pip/scripts/svgpathtools-1.7.4",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/0c5797db6019296a436b60b53f62e427c3fec707"
+        },
+        {
+          "sha": "f848d9956046c83d40016ff201e5cdbcdc4c2728",
+          "date": "2026-09-01T22:18:21Z",
+          "message": "checklist: the card is redesigned, and #39 is now about the font",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/f848d9956046c83d40016ff201e5cdbcdc4c2728"
+        },
+        {
+          "sha": "db3093ec68a1c4e3af4758368e72b46f6294f301",
+          "date": "2026-09-01T22:14:33Z",
+          "message": "pwa.md: the share card was revisited, and #45 is merged and live",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/db3093ec68a1c4e3af4758368e72b46f6294f301"
+        },
+        {
+          "sha": "862c9140220bef7d897d88335aca7ee82e529b90",
+          "date": "2026-09-01T21:51:56Z",
+          "message": "The drift gate: fail first, compare portraits, say which file is wrong",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/862c9140220bef7d897d88335aca7ee82e529b90"
+        },
+        {
+          "sha": "8f39c2045c7e9476ade653e9c6767662b58cea39",
+          "date": "2026-09-01T21:50:01Z",
+          "message": "Say what stdin costs, and let inline_svg enforce it",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/8f39c2045c7e9476ade653e9c6767662b58cea39"
+        },
+        {
+          "sha": "d5ac34a928369a457958c4c36f60a89b4b2c6d76",
+          "date": "2026-09-01T21:22:33Z",
+          "message": "Delete the scratch file instead of managing it (-95 lines)",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/d5ac34a928369a457958c4c36f60a89b4b2c6d76"
+        },
+        {
+          "sha": "5234ab1d9f0198f8fdf49fae40ec99644edbbb70",
+          "date": "2026-09-01T20:39:28Z",
+          "message": "Three more from review: a stray-file trap in make-icons, and the card can go stale",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/5234ab1d9f0198f8fdf49fae40ec99644edbbb70"
+        },
+        {
+          "sha": "302cc37ecf7176135a160eb6b03c63bd9cbb518d",
+          "date": "2026-09-01T16:40:35Z",
+          "message": "Review round: the card changed and its alt text kept naming Debussy",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/302cc37ecf7176135a160eb6b03c63bd9cbb518d"
+        },
+        {
+          "sha": "f763a6c01739ebc083815fe301ef918d5f5fd9c7",
+          "date": "2026-09-01T16:18:50Z",
+          "message": "A playground for the site-wide share card, and a shorter header (#39)",
+          "url": "https://github.com/jsundram/quartet-chooser/commit/f763a6c01739ebc083815fe301ef918d5f5fd9c7"
+        }
+      ]
+    },
+    {
+      "name": "boccherini-opus-48",
+      "html_url": "https://github.com/jsundram/boccherini-opus-48",
+      "description": null,
+      "language": "Python",
+      "private": true,
+      "pushed_at": "2026-10-17T08:48:15Z",
+      "commit_count": 3,
+      "commits": [
+        {
+          "sha": "0770211055df3e57a6dea8ec761c0d5e5213898a",
+          "date": "2026-09-30T23:54:15Z",
+          "message": "add skeleton",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/0770211055df3e57a6dea8ec761c0d5e5213898a"
+        },
+        {
+          "sha": "6f722ccf8250584d3b7eddd2903bdc73871d2ed4",
+          "date": "2026-09-30T23:37:06Z",
+          "message": "Switch to English note names, add manuscript covers, trim README",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/6f722ccf8250584d3b7eddd2903bdc73871d2ed4"
+        },
+        {
+          "sha": "fa9b991b1765c9429d0c870b54904f100376b701",
+          "date": "2026-09-30T22:55:32Z",
+          "message": "Starting the first edition of Opus 48",
+          "url": "https://github.com/jsundram/boccherini-opus-48/commit/fa9b991b1765c9429d0c870b54904f100376b701"
+        }
+      ]
+    },
+    {
+      "name": "somerville-typemap",
+      "html_url": "https://github.com/jsundram/somerville-typemap",
+      "description": "Typographic map of Somerville, MA \u2014 every feature rendered as text",
+      "language": "HTML",
+      "private": false,
+      "pushed_at": "2026-10-01T17:22:33Z",
+      "commit_count": 2,
+      "commits": [
+        {
+          "sha": "62197dc528af7859d4449dd02df063e8f9535c13",
+          "date": "2026-09-29T18:51:50Z",
+          "message": "Merge feat/typographic-engine: borders review loop + warp envelope v5\u2013v7",
+          "url": "https://github.com/jsundram/somerville-typemap/commit/62197dc528af7859d4449dd02df063e8f9535c13"
+        },
+        {
+          "sha": "56a9d103e79c6807e8f740c59c5e0e093a7d5cfb",
+          "date": "2026-09-29T18:51:50Z",
+          "message": "warp: envelope v7 \u2014 HILL flip, baseline-step cap, stretch 3.0, region size ratio",
+          "url": "https://github.com/jsundram/somerville-typemap/commit/56a9d103e79c6807e8f740c59c5e0e093a7d5cfb"
+        }
+      ]
+    },
+    {
+      "name": "maestoso-127",
+      "html_url": "https://github.com/jsundram/maestoso-127",
+      "description": "code to generate a visualization of the timings of different performances of the opening Maestoso from Beethoven's String Quartet opus 127",
+      "language": "HTML",
+      "private": false,
+      "pushed_at": "2026-09-04T21:17:27Z",
+      "commit_count": 2,
+      "commits": [
+        {
+          "sha": "fd4e988e08091e7ff8b859d3ed4b1401f9576613",
+          "date": "2026-09-04T21:17:26Z",
+          "message": "tune og/meta copy for the lengths previewers expect",
+          "url": "https://github.com/jsundram/maestoso-127/commit/fd4e988e08091e7ff8b859d3ed4b1401f9576613"
+        },
+        {
+          "sha": "6ebb1d6f08605ff0ffb9739578314a621e889e08",
+          "date": "2026-09-04T21:11:35Z",
+          "message": "add Open Graph tags and a data-driven share card for viz/",
+          "url": "https://github.com/jsundram/maestoso-127/commit/6ebb1d6f08605ff0ffb9739578314a621e889e08"
+        }
+      ]
+    },
+    {
+      "name": "github-month-review",
+      "html_url": "https://github.com/jsundram/github-month-review",
+      "description": "A month-by-month review of public GitHub work, with a short narrative for each week.",
+      "language": "JavaScript",
+      "private": false,
+      "pushed_at": "2026-09-04T20:24:15Z",
+      "commit_count": 2,
+      "commits": [
+        {
+          "sha": "d9a7e9d5c449a77ba3b086630d2571415eb41103",
+          "date": "2026-09-04T20:24:14Z",
+          "message": "Week 5: the bow dataset produced six reports, not three",
+          "url": "https://github.com/jsundram/github-month-review/commit/d9a7e9d5c449a77ba3b086630d2571415eb41103"
+        },
+        {
+          "sha": "1c60f7c09c9ef60c6998317fa266c25fe0ae77b3",
+          "date": "2026-09-04T18:31:43Z",
+          "message": "Add August 2026: a playing month, with the code in the gaps",
+          "url": "https://github.com/jsundram/github-month-review/commit/1c60f7c09c9ef60c6998317fa266c25fe0ae77b3"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Public repositories owned by the user are included, plus any private ones named explicitly: boccherini-opus-48.",
+    "Commit author matching can miss alternate or unlinked email identities.",
+    "Merge and coauthored commits are retained; interpret counts with care."
+  ]
+}

@@ -120,32 +120,46 @@ async function main() {
     check(`index.html carries ${sel}`, indexHtml.includes(sel));
   }
 
-  console.log('\n== no hash: newest month ==');
+  // The newest month changes every month, so derive it from the index rather than naming it.
+  const indexMonths = [...sandbox.window.REVIEW_INDEX.months].sort((a, b) => b.id.localeCompare(a.id));
+  const newest = indexMonths[0];
+  const [newestName, newestYear] = newest.label.split(' ');
+
+  console.log(`\n== no hash: newest month (${newest.id}) ==`);
   const first = await navigate('');
-  check('loaded the newest month file', first && first.src === 'data/months/2026-08.js', first && first.src);
-  check('hero splits month and year', hero.innerHTML === 'August<br /><span>2026</span>', hero.innerHTML);
-  check('coverage range is compact', /Covers Aug 1–31, 2026/.test(eyebrow.textContent), eyebrow.textContent);
-  check('completed month not flagged in progress', !/month in progress/.test(eyebrow.textContent), eyebrow.textContent);
+  check('loaded the newest month file', first && first.src === newest.file, first && first.src);
+  const newestData = sandbox.window.REVIEW_MONTHS[newest.id] || {};
+  check('hero splits month and year', hero.innerHTML === `${newestName}<br /><span>${newestYear}</span>`, hero.innerHTML);
+  check('in-progress flag matches the data', /month in progress/.test(eyebrow.textContent) === !!newestData.inProgress, eyebrow.textContent);
   check('lede rendered', lede.textContent.length > 40);
-  check('document title names the month', document.title === 'August 2026 — GitHub review — jsundram', document.title);
+  check('document title names the month', document.title === `${newest.label} — GitHub review — jsundram`, document.title);
   const meta = sel => el(sel).getAttribute('content');
   check('og:title tracks the document title', meta('meta[property="og:title"]') === document.title, meta('meta[property="og:title"]'));
   check('og:description filled from the lede', (meta('meta[property="og:description"]') || '').length > 40);
   check('meta description mirrors og:description', meta('meta[name="description"]') === meta('meta[property="og:description"]'));
-  check('og:url carries the month hash', /\/github-month-review\/#2026-08$/.test(el('meta[property="og:url"]').getAttribute('content')), el('meta[property="og:url"]').getAttribute('content'));
+  check('og:url carries the month hash', new RegExp(`/github-month-review/#${newest.id}$`).test(meta('meta[property="og:url"]')), meta('meta[property="og:url"]'));
+  check('every week rendered', count(weeks.innerHTML, /<article class="week-chapter/g) === (newestData.weeks || []).length);
+  check('week ids namespaced by month', new RegExp(`id="${newest.id}-w1"`).test(weeks.innerHTML));
+  check('every week is in the nav', count(nav.innerHTML, /week-nav-button/g) === (newestData.weeks || []).length);
+  // The [" ] guard keeps month-option-label / month-option-tag out of the count.
+  check('menu lists every month', count(menu.innerHTML, /class="month-option[" ]/g) === indexMonths.length);
+  check('no next month, prev available', el('monthNext').disabled && !el('monthPrev').disabled);
+  check('no undefined in markup', !/undefined/.test(weeks.innerHTML + metrics.innerHTML + menu.innerHTML));
+  check('footer names the month', el('footerLine').textContent.endsWith(newest.label), el('footerLine').textContent);
+
+  console.log('\n== August, by hash ==');
+  await navigate('#2026-08');
+  check('hero shows August', hero.innerHTML === 'August<br /><span>2026</span>', hero.innerHTML);
+  check('coverage range is compact', /Covers Aug 1–31, 2026/.test(eyebrow.textContent), eyebrow.textContent);
+  check('completed month not flagged in progress', !/month in progress/.test(eyebrow.textContent), eyebrow.textContent);
   check('metrics rendered', count(metrics.innerHTML, /class="metric"/g) === 4);
   check('active weeks rendered', count(weeks.innerHTML, /<article class="week-chapter"/g) === 6);
   check('August is fully active', count(weeks.innerHTML, /week-chapter quiet/g) === 0);
   check('week ids namespaced by month', /id="2026-08-w1"/.test(weeks.innerHTML));
-  check('every week is in the nav', count(nav.innerHTML, /week-nav-button/g) === 6);
   check('evidence wrapped for animation', /evidence-inner/.test(weeks.innerHTML));
   check('intensity bars filled', /class="on"/.test(weeks.innerHTML));
   check('themes derived from weeks', /Platform/.test(el('heroThemes').innerHTML));
-  // The [" ] guard keeps month-option-label / month-option-tag out of the count.
-  check('menu lists every month', count(menu.innerHTML, /class="month-option[" ]/g) === 3);
-  check('menu has no in-progress tag', !/in progress/.test(menu.innerHTML));
-  check('no next month, prev available', el('monthNext').disabled && !el('monthPrev').disabled);
-  check('no undefined in markup', !/undefined/.test(weeks.innerHTML + metrics.innerHTML + menu.innerHTML));
+  check('a middle month has next and prev', !el('monthNext').disabled && !el('monthPrev').disabled);
   check('footer names the month', el('footerLine').textContent.endsWith('August 2026'), el('footerLine').textContent);
   check('metrics present, band shown', !document.body.classList.contains('no-metrics'));
   check('August loose threads shown', el('threads').hidden === false);
@@ -170,7 +184,7 @@ async function main() {
 
   console.log('\n== unknown hash falls back to newest ==');
   const missing = await navigate('#1999-01');
-  check('rendered August', hero.innerHTML === 'August<br /><span>2026</span>', hero.innerHTML);
+  check('rendered the newest month', hero.innerHTML === `${newestName}<br /><span>${newestYear}</span>`, hero.innerHTML);
   check('served from cache, no refetch', !missing);
 
   console.log('\n== a month file that will not load ==');
@@ -210,7 +224,12 @@ async function main() {
     weeks: [
       { id: 'w1', number: '01', range: 'Feb 3–9', dates: { start: '2020-02-03', end: '2020-02-09' },
         status: 'active', intensity: 2, title: 'Something.', summary: 'One active week.',
-        themes: [], projects: [], evidence: [] },
+        themes: [], evidence: [],
+        projects: [
+          { name: 'With a shot', repo: 'shot-repo', desc: 'Has an image.', url: 'https://example.com/a',
+            image: { src: 'assets/projects/shot-repo.jpg', alt: 'A "quoted" page & more' } },
+          { name: 'Without', repo: 'plain-repo', desc: 'No image.', url: 'https://example.com/b' },
+        ] },
       { id: 'w2', number: '02', range: 'Feb 10–16', dates: { start: '2020-02-10', end: '2020-02-16' },
         status: 'quiet', note: 'Nothing committed.' },
       { id: 'w3', number: '03', range: 'Feb 17–23', dates: { start: '2020-02-17', end: '2020-02-23' },
@@ -224,6 +243,11 @@ async function main() {
   check('quiet week says nothing recorded', /Nothing recorded/.test(weeks.innerHTML));
   check('uncovered week says so', /Not covered/.test(weeks.innerHTML));
   check('quiet week dimmed in nav', /week-nav-button quiet/.test(nav.innerHTML));
+  check('one project screenshot rendered', count(weeks.innerHTML, /<img class="project-shot"/g) === 1);
+  check('only the card with an image is marked', count(weeks.innerHTML, /project-card has-shot"/g) === 1
+    && count(weeks.innerHTML, /class="project-card"/g) === 1);
+  check('screenshot is lazy with a reserved box', /project-shot"[^>]*width="1200" height="750" loading="lazy"/.test(weeks.innerHTML));
+  check('screenshot alt is escaped', /alt="A &quot;quoted&quot; page &amp; more"/.test(weeks.innerHTML));
 }
 
 main().then(() => {

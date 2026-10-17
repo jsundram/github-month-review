@@ -1,6 +1,6 @@
 # GitHub month in review
 
-A dependency-free page that reviews public GitHub work one month at a time, with a
+A dependency-free page that reviews GitHub work one month at a time, with a
 short narrative for each week. Past months stay viewable; quiet weeks say they were
 quiet instead of being padded or hidden.
 

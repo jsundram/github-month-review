@@ -176,6 +176,7 @@ def build(snapshot: dict, month: str) -> tuple[dict, list[dict], list[dict]]:
     active = [w for w in weeks if w["status"] == "active"]
     repo_names = sorted({c["repo"] for b in buckets for c in b["commits"]})
     total = sum(len(b["commits"]) for b in buckets)
+    scope = "" if any(r.get("private") for r in snapshot.get("repositories", [])) else "public "
 
     month_data: dict[str, Any] = {
         "id": month,
@@ -184,9 +185,9 @@ def build(snapshot: dict, month: str) -> tuple[dict, list[dict], list[dict]]:
         "coverage": {"start": cov_start.isoformat(), "end": cov_end.isoformat()},
         "lede": f"{TODO}: one or two sentences on what the month was mostly about.",
         "metrics": [
-            {"value": str(len(repo_names)), "label": "public repos touched",
+            {"value": str(len(repo_names)), "label": f"{scope}repos touched",
              "note": f"Counted from commits, {label(cov_start, cov_end)}"},
-            {"value": str(total), "label": "public commits",
+            {"value": str(total), "label": f"{scope}commits",
              "note": f"{TODO}: keep, reword, or delete — raw commit counts flatter merge mechanics."},
         ],
         "weeks": weeks,

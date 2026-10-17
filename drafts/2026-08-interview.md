@@ -420,3 +420,11 @@ month-in-review becomes an active thread ("built, hasn't landed").
   the repo has no public remote; the prose says so plainly.
 - Week intensities kept at the drafted guesses (1/5/1/2/5/1); the interview did not
   correct them. Same caveat as every month: estimates, correct on sight.
+
+## Late addition (2026-10-17)
+
+The Oct 17 re-fetch found 8 commits in `boccherini-haydn-timeline`, all Aug 20, absent from
+the Sep 4 snapshot. Owner: the repo grew out of a Claude artifact drafted in February,
+moved into its own repo for more control and so it could stand alone. Added to week 4;
+commit metric recounted 146 → 154 across 9 repos. Days with commits unchanged at 17
+(Aug 20 already had a quartet-log commit).

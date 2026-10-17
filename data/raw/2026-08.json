@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T16:45:14.396182+00:00",
+  "generated_at": "2026-10-17T18:55:32.688998+00:00",
   "user": "jsundram",
   "month": "2026-08",
   "coverage": {
@@ -12,7 +12,8 @@
       "html_url": "https://github.com/jsundram/quartet-chooser",
       "description": "The code behind Quartet Roulette (https://quartetroulette.com)",
       "language": "JavaScript",
-      "pushed_at": "2026-09-04T06:14:12Z",
+      "private": false,
+      "pushed_at": "2026-10-14T20:52:11Z",
       "commit_count": 62,
       "commits": [
         {
@@ -394,7 +395,8 @@
       "html_url": "https://github.com/jsundram/quartet-log",
       "description": "code for log.quartetroulette.com",
       "language": "JavaScript",
-      "pushed_at": "2026-09-02T22:17:37Z",
+      "private": false,
+      "pushed_at": "2026-10-11T21:53:55Z",
       "commit_count": 53,
       "commits": [
         {
@@ -722,7 +724,8 @@
       "html_url": "https://github.com/jsundram/haydn-info-card",
       "description": "code and data to generate the Haydn Quartet Info Card",
       "language": "Python",
-      "pushed_at": "2026-08-04T21:49:59Z",
+      "private": false,
+      "pushed_at": "2026-09-13T07:39:33Z",
       "commit_count": 13,
       "commits": [
         {
@@ -806,11 +809,71 @@
       ]
     },
     {
+      "name": "boccherini-haydn-timeline",
+      "html_url": "https://github.com/jsundram/boccherini-haydn-timeline",
+      "description": "Two Lives in Quartets: Haydn's and Boccherini's string quartets on a shared timeline",
+      "language": "HTML",
+      "private": false,
+      "pushed_at": "2026-10-14T20:59:39Z",
+      "commit_count": 8,
+      "commits": [
+        {
+          "sha": "fc87c7468cc3ae7fdba323cf1b04b82576128033",
+          "date": "2026-08-20T22:20:29Z",
+          "message": "Fix optical centering: anchor layout on spine midpoint, center labels",
+          "url": "https://github.com/jsundram/boccherini-haydn-timeline/commit/fc87c7468cc3ae7fdba323cf1b04b82576128033"
+        },
+        {
+          "sha": "f81ae4577df6059ae5b3d505393a59b31a88f575",
+          "date": "2026-08-20T22:02:03Z",
+          "message": "Tint division ticks per composer, tighten opus labels",
+          "url": "https://github.com/jsundram/boccherini-haydn-timeline/commit/f81ae4577df6059ae5b3d505393a59b31a88f575"
+        },
+        {
+          "sha": "deea6e5630e2e4ab17c1ad2a45d2db3a1a0f8b08",
+          "date": "2026-08-20T21:59:35Z",
+          "message": "Balance margins via viewBox refit, add quartet division ticks, air out title",
+          "url": "https://github.com/jsundram/boccherini-haydn-timeline/commit/deea6e5630e2e4ab17c1ad2a45d2db3a1a0f8b08"
+        },
+        {
+          "sha": "9722a92c1c13c42f04ddd00445df31f60af0cfe5",
+          "date": "2026-08-20T21:55:47Z",
+          "message": "Center title on the chart's optical center",
+          "url": "https://github.com/jsundram/boccherini-haydn-timeline/commit/9722a92c1c13c42f04ddd00445df31f60af0cfe5"
+        },
+        {
+          "sha": "64b645b08c73e2713e901df06b1d5ae18a76d6ad",
+          "date": "2026-08-20T21:52:05Z",
+          "message": "Split Haydn Op. 1/2 into separate bars: Op. 1 (6) 1758, Op. 2 (4) 1759",
+          "url": "https://github.com/jsundram/boccherini-haydn-timeline/commit/64b645b08c73e2713e901df06b1d5ae18a76d6ad"
+        },
+        {
+          "sha": "55736a23c3e1cf78139a82c779b50fbf730358a4",
+          "date": "2026-08-20T21:50:05Z",
+          "message": "Fix bar scaling: no clamp at 6, correct Boccherini Op. 64 count",
+          "url": "https://github.com/jsundram/boccherini-haydn-timeline/commit/55736a23c3e1cf78139a82c779b50fbf730358a4"
+        },
+        {
+          "sha": "b3fcd366ec949860635c43180abc780ce05a94ec",
+          "date": "2026-08-20T21:47:18Z",
+          "message": "Add timeline artifact source and element-targeted captures",
+          "url": "https://github.com/jsundram/boccherini-haydn-timeline/commit/b3fcd366ec949860635c43180abc780ce05a94ec"
+        },
+        {
+          "sha": "e7c06e088bc8c6845aa5ae03c57ea10c5ad139eb",
+          "date": "2026-08-20T21:41:16Z",
+          "message": "Scaffold repo with Playwright capture pipeline (PNG/PDF/SVG)",
+          "url": "https://github.com/jsundram/boccherini-haydn-timeline/commit/e7c06e088bc8c6845aa5ae03c57ea10c5ad139eb"
+        }
+      ]
+    },
+    {
       "name": "pwa-starter",
       "html_url": "https://github.com/jsundram/pwa-starter",
       "description": null,
       "language": "JavaScript",
-      "pushed_at": "2026-08-26T18:43:36Z",
+      "private": false,
+      "pushed_at": "2026-09-24T22:19:31Z",
       "commit_count": 8,
       "commits": [
         {
@@ -864,67 +927,12 @@
       ]
     },
     {
-      "name": "github-month-review",
-      "html_url": "https://github.com/jsundram/github-month-review",
-      "description": "A month-by-month review of public GitHub work, with a short narrative for each week.",
-      "language": "JavaScript",
-      "pushed_at": "2026-08-04T23:06:00Z",
-      "commit_count": 3,
-      "commits": [
-        {
-          "sha": "ed0ad6855ec3b88fa2c7e609b115ed8a7177fdf8",
-          "date": "2026-08-04T23:05:56Z",
-          "message": "Close out July: full-month snapshot, SoCal week, week-4 additions",
-          "url": "https://github.com/jsundram/github-month-review/commit/ed0ad6855ec3b88fa2c7e609b115ed8a7177fdf8"
-        },
-        {
-          "sha": "8db6063cf8298f7d1d5e2cb76e5ed446d8d0a30d",
-          "date": "2026-08-04T23:05:48Z",
-          "message": "Load GITHUB_TOKEN from a gitignored .env",
-          "url": "https://github.com/jsundram/github-month-review/commit/8db6063cf8298f7d1d5e2cb76e5ed446d8d0a30d"
-        },
-        {
-          "sha": "2823e5ba2609f4ae13fecb617cf1c3c78331e7a1",
-          "date": "2026-08-04T22:29:19Z",
-          "message": "updating",
-          "url": "https://github.com/jsundram/github-month-review/commit/2823e5ba2609f4ae13fecb617cf1c3c78331e7a1"
-        }
-      ]
-    },
-    {
-      "name": "AKM",
-      "html_url": "https://github.com/jsundram/AKM",
-      "description": "take akm data and make it more useful",
-      "language": "JavaScript",
-      "pushed_at": "2026-08-04T21:48:11Z",
-      "commit_count": 3,
-      "commits": [
-        {
-          "sha": "b81668970969e74d27a587ef03d100ad785567b9",
-          "date": "2026-08-04T21:37:09Z",
-          "message": "sw: reunite ensureShellOnce() with its doc block (sync with pwa-starter 3ec3032)",
-          "url": "https://github.com/jsundram/AKM/commit/b81668970969e74d27a587ef03d100ad785567b9"
-        },
-        {
-          "sha": "74bf3c715e8e16e265bb7dca5594fca4e2568448",
-          "date": "2026-08-04T21:29:49Z",
-          "message": "sw: extract isTransientStatus() (sync with pwa-starter 9c197b0)",
-          "url": "https://github.com/jsundram/AKM/commit/74bf3c715e8e16e265bb7dca5594fca4e2568448"
-        },
-        {
-          "sha": "2bfe4d091227f2fbb2df5e3d55d371f3718c726c",
-          "date": "2026-08-04T21:07:30Z",
-          "message": "sw: modernize to the pwa-starter offline family (77fcb35); bump V to akm-v109",
-          "url": "https://github.com/jsundram/AKM/commit/2bfe4d091227f2fbb2df5e3d55d371f3718c726c"
-        }
-      ]
-    },
-    {
       "name": "quartets.boccherini.org",
       "html_url": "https://github.com/jsundram/quartets.boccherini.org",
       "description": "Interactive periodic table visualization of Boccherini's 91 string quartets",
-      "language": "Python",
-      "pushed_at": "2026-08-04T21:45:53Z",
+      "language": "HTML",
+      "private": false,
+      "pushed_at": "2026-10-15T22:38:18Z",
       "commit_count": 3,
       "commits": [
         {
@@ -948,10 +956,69 @@
       ]
     },
     {
+      "name": "AKM",
+      "html_url": "https://github.com/jsundram/AKM",
+      "description": "take akm data and make it more useful",
+      "language": "JavaScript",
+      "private": false,
+      "pushed_at": "2026-09-13T07:39:29Z",
+      "commit_count": 3,
+      "commits": [
+        {
+          "sha": "b81668970969e74d27a587ef03d100ad785567b9",
+          "date": "2026-08-04T21:37:09Z",
+          "message": "sw: reunite ensureShellOnce() with its doc block (sync with pwa-starter 3ec3032)",
+          "url": "https://github.com/jsundram/AKM/commit/b81668970969e74d27a587ef03d100ad785567b9"
+        },
+        {
+          "sha": "74bf3c715e8e16e265bb7dca5594fca4e2568448",
+          "date": "2026-08-04T21:29:49Z",
+          "message": "sw: extract isTransientStatus() (sync with pwa-starter 9c197b0)",
+          "url": "https://github.com/jsundram/AKM/commit/74bf3c715e8e16e265bb7dca5594fca4e2568448"
+        },
+        {
+          "sha": "2bfe4d091227f2fbb2df5e3d55d371f3718c726c",
+          "date": "2026-08-04T21:07:30Z",
+          "message": "sw: modernize to the pwa-starter offline family (77fcb35); bump V to akm-v109",
+          "url": "https://github.com/jsundram/AKM/commit/2bfe4d091227f2fbb2df5e3d55d371f3718c726c"
+        }
+      ]
+    },
+    {
+      "name": "github-month-review",
+      "html_url": "https://github.com/jsundram/github-month-review",
+      "description": "A month-by-month review of public GitHub work, with a short narrative for each week.",
+      "language": "JavaScript",
+      "private": false,
+      "pushed_at": "2026-09-04T20:24:15Z",
+      "commit_count": 3,
+      "commits": [
+        {
+          "sha": "ed0ad6855ec3b88fa2c7e609b115ed8a7177fdf8",
+          "date": "2026-08-04T23:05:56Z",
+          "message": "Close out July: full-month snapshot, SoCal week, week-4 additions",
+          "url": "https://github.com/jsundram/github-month-review/commit/ed0ad6855ec3b88fa2c7e609b115ed8a7177fdf8"
+        },
+        {
+          "sha": "8db6063cf8298f7d1d5e2cb76e5ed446d8d0a30d",
+          "date": "2026-08-04T23:05:48Z",
+          "message": "Load GITHUB_TOKEN from a gitignored .env",
+          "url": "https://github.com/jsundram/github-month-review/commit/8db6063cf8298f7d1d5e2cb76e5ed446d8d0a30d"
+        },
+        {
+          "sha": "2823e5ba2609f4ae13fecb617cf1c3c78331e7a1",
+          "date": "2026-08-04T22:29:19Z",
+          "message": "updating",
+          "url": "https://github.com/jsundram/github-month-review/commit/2823e5ba2609f4ae13fecb617cf1c3c78331e7a1"
+        }
+      ]
+    },
+    {
       "name": "nh_tax_map",
       "html_url": "https://github.com/jsundram/nh_tax_map",
       "description": "Interactive choropleth map of NH property tax rates (2022-2025) built with D3.js",
       "language": "JavaScript",
+      "private": false,
       "pushed_at": "2026-08-06T18:40:18Z",
       "commit_count": 1,
       "commits": [
@@ -965,7 +1032,7 @@
     }
   ],
   "limitations": [
-    "Only public repositories owned by the user are included.",
+    "Public repositories owned by the user are included, plus any private ones named explicitly: none.",
     "Commit author matching can miss alternate or unlinked email identities.",
     "Merge and coauthored commits are retained; interpret counts with care."
   ]

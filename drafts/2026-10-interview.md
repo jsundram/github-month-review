@@ -518,8 +518,11 @@ GitHub default-branch commits — this session's branch
   21:59:56, 22:04:45, 22:16:56, 22:20:24 (plus two queued mid-turn, 21:57:20 and 22:05:21),
   then nothing until Nov 3. The patch was written at 21:57:19Z — the same author date
   upstream a1ff930a still carries — and the MR session was created at 22:22:09Z. So the
-  whole diagnosis took about half an hour on Oct 23. Not filed in ai-log (about 0.6
-  modelled hours); its URL would be needed.
+  whole diagnosis took about half an hour on Oct 23. It ran with no repo, so neither
+  teleport nor a branch export could fetch it; at the owner's request it was filed in
+  ai-log as a stand-in holding only those nine timestamps (plus two on Nov 3), no text,
+  under boccherini-opus-48. It overlaps an edition session already running that evening,
+  so October's total is unchanged at 247.7 h (the edition 118.9 → 119.0).
 - GitLab pushes on the MR: Oct 26 17:40Z (opened), Oct 26 23:36Z, Nov 1 06:43Z; merged
   06:53Z.
 - The owner is proud of the fix and asked for it to be noticeable: it has a project card

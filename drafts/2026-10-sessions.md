@@ -8,11 +8,11 @@ Hands-on hours are a model — a 15-minute window after each prompt, overlaps sp
 
 ## The month
 
-247.7 hands-on hours · 157 sessions · 724 commits on GitHub
+247.7 hands-on hours · 158 sessions · 724 commits on GitHub
 
 | project | hours | sessions | commits |
 | --- | ---: | ---: | ---: |
-| boccherini-opus-48 | 118.9 | 43 | 335 |
+| boccherini-opus-48 | 119.0 | 44 | 335 |
 | manuscript-labeler | 39.0 | 7 | 244 |
 | Other | 36.6 | 56 | 0 |
 | boccherini-kb | 16.6 | 9 | 0 |
@@ -182,7 +182,7 @@ Sessions of 30+ minutes with no commit — finished elsewhere, abandoned, or jus
 
 ### Week 04 — Oct 19–Oct 25
 
-44.6 hands-on hours
+44.7 hands-on hours
 
 | project | hours |
 | --- | ---: |
@@ -207,7 +207,7 @@ Mon Oct 19  █████████████████ 10.9h
 Tue Oct 20  ██████████████████████ 14.1h
 Wed Oct 21  ██ 1.2h
 Thu Oct 22  ██████████████ 8.9h
-Fri Oct 23  ███████████ 7.1h
+Fri Oct 23  ███████████ 7.2h
 Sat Oct 24  █ 0.2h
 Sun Oct 25  ███ 2.2h
 ```
@@ -227,6 +227,7 @@ Sessions of 30+ minutes with no commit — finished elsewhere, abandoned, or jus
 - `2026-10-23 00:39` gerard, 45 min, 4 prompts
 - `2026-10-23 12:41` boccherini-kb, 75 min, 5 prompts
 - `2026-10-23 17:05` boccherini-opus-48, 196 min, 24 prompts
+- `2026-10-23 17:54` boccherini-opus-48, 57 min, 9 prompts
 - `2026-10-23 18:22` boccherini-opus-48, 449 min, 55 prompts
 - `2026-10-25 13:10` boccherini-kb, 73 min, 8 prompts
 

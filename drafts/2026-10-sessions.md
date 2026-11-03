@@ -8,21 +8,21 @@ Hands-on hours are a model — a 15-minute window after each prompt, overlaps sp
 
 ## The month
 
-244.1 hands-on hours · 156 sessions · 724 commits on GitHub
+247.7 hands-on hours · 157 sessions · 724 commits on GitHub
 
 | project | hours | sessions | commits |
 | --- | ---: | ---: | ---: |
-| boccherini-opus-48 | 114.6 | 42 | 335 |
+| boccherini-opus-48 | 118.9 | 43 | 335 |
 | manuscript-labeler | 39.0 | 7 | 244 |
-| Other | 36.7 | 56 | 0 |
-| boccherini-kb | 16.8 | 9 | 0 |
+| Other | 36.6 | 56 | 0 |
+| boccherini-kb | 16.6 | 9 | 0 |
 | midi-align | 7.1 | 1 | 0 |
-| boccherini-quartet-data | 6.4 | 2 | 0 |
+| boccherini-quartet-data | 6.2 | 2 | 0 |
 | quartet-log | 2.9 | 5 | 17 |
 | quartets.boccherini.org | 2.8 | 4 | 8 |
 | gerard | 2.8 | 2 | 0 |
-| mbta-glx | 2.5 | 5 | 18 |
 | github-month-review | 2.5 | 2 | 1 |
+| mbta-glx | 2.3 | 5 | 18 |
 | boccherini-haydn-timeline | 1.7 | 3 | 4 |
 | pwa-starter | 1.4 | 3 | 27 |
 | boccherini-sources | 1.2 | 4 | 1 |
@@ -36,7 +36,7 @@ Hands-on hours are a model — a 15-minute window after each prompt, overlaps sp
 | viz.runningwithdata.com | 0.2 | 1 | 0 |
 | quartet-composers | 0.1 | 1 | 3 |
 
-API-equivalent cost: claude $4,339, codex $1,037, modal $111 (Modal is the real bill).
+API-equivalent cost: claude $4,451, codex $1,037, modal $111 (Modal is the real bill).
 Unpriced across the whole log (model not in scripts/prices.json): codex-auto-review ×71, ? ×3, claude-haiku-5-5 ×1
 
 **Questions**
@@ -182,13 +182,13 @@ Sessions of 30+ minutes with no commit — finished elsewhere, abandoned, or jus
 
 ### Week 04 — Oct 19–Oct 25
 
-44.0 hands-on hours
+44.6 hands-on hours
 
 | project | hours |
 | --- | ---: |
-| boccherini-opus-48 | 20.0 |
+| boccherini-opus-48 | 20.8 |
 | Other | 11.5 |
-| boccherini-kb | 2.8 |
+| boccherini-kb | 2.6 |
 | midi-align | 1.8 |
 | quartet-log | 1.5 |
 | github-month-review | 1.3 |
@@ -209,7 +209,7 @@ Wed Oct 21  ██ 1.2h
 Thu Oct 22  ██████████████ 8.9h
 Fri Oct 23  ███████████ 7.1h
 Sat Oct 24  █ 0.2h
-Sun Oct 25  ██ 1.6h
+Sun Oct 25  ███ 2.2h
 ```
 
 Sessions of 30+ minutes with no commit — finished elsewhere, abandoned, or just talk?
@@ -227,26 +227,27 @@ Sessions of 30+ minutes with no commit — finished elsewhere, abandoned, or jus
 - `2026-10-23 00:39` gerard, 45 min, 4 prompts
 - `2026-10-23 12:41` boccherini-kb, 75 min, 5 prompts
 - `2026-10-23 17:05` boccherini-opus-48, 196 min, 24 prompts
+- `2026-10-23 18:22` boccherini-opus-48, 449 min, 55 prompts
 - `2026-10-25 13:10` boccherini-kb, 73 min, 8 prompts
 
 ### Week 05 — Oct 26–Oct 31
 
-40.1 hands-on hours · away: Sandwich, MA
+43.1 hands-on hours · away: Sandwich, MA
 
 | project | hours |
 | --- | ---: |
-| boccherini-opus-48 | 24.2 |
-| boccherini-quartet-data | 6.1 |
-| Other | 2.9 |
-| boccherini-kb | 2.9 |
+| boccherini-opus-48 | 27.7 |
+| boccherini-quartet-data | 6.0 |
+| boccherini-kb | 2.8 |
+| Other | 2.8 |
 | manuscript-labeler | 1.8 |
-| mbta-glx | 1.5 |
+| mbta-glx | 1.4 |
 | pwa-starter | 0.5 |
 | quartet-log | 0.1 |
 
 ```
-Mon Oct 26  ███ 2.0h
-Tue Oct 27  ██████████████ 8.8h
+Mon Oct 26  ██████ 4.0h
+Tue Oct 27  ███████████████ 9.8h
 Wed Oct 28  ████████████████████████ 15.4h
 Thu Oct 29  ███████ 4.4h
 Fri Oct 30  ███ 2.1h  Sandwich, MA

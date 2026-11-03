@@ -10,7 +10,7 @@ window.REVIEW_INDEX = {
       label: "October 2026",
       file: "data/months/2026-10.js",
       status: "active",
-      blurb: "All six Op. 48 quartets encoded from manuscript, a MuSViT reader trained for their copyists, and an iPad page for the rehearsal that tested them."
+      blurb: "All six Op. 48 quartets encoded from manuscript, an iPad page for the rehearsal that tested them, and a fix merged into LilyPond."
     },
     {
       id: "2026-09",

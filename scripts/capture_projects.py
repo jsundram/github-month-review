@@ -66,6 +66,12 @@ PROJECTS: dict[str, dict] = {
         "crop_top": True,
         "alt": "The edition's review page for Op. 48 No. 5, Larghetto: each part's manuscript above the engraving, bar line under bar line, under a map of the movement's open CHECKs.",
     },
+    "lilypond": {
+        # Not a repo of mine: the before/after image from my upstream MR, lilypond!3206,
+        # downloaded from the MR description. Source kept beside the output; see src/.
+        "files": ["assets/projects/src/lilypond-before-after.png"],
+        "alt": "Four note heads engraved by LilyPond's cairo backend, twice: before the fix, coloured #red and orange, they come out blue; after it, red and orange.",
+    },
     "boccherini-sampler": {
         "url": f"{PAGES}/boccherini-sampler/",
         "narrow": True,
@@ -265,11 +271,15 @@ def main() -> int:
     OUT.mkdir(parents=True, exist_ok=True)
     failed = []
     with sync_playwright() as pw:
-        browser = pw.chromium.launch()
+        # In the macOS sandbox Chrome only starts single-process, and then supports one
+        # context — so the narrow one is made only when a narrow project is captured.
+        sandboxed = os.environ.get("SANDBOX_RUNTIME") == "1" and sys.platform == "darwin"
+        browser = pw.chromium.launch(args=["--single-process"] if sandboxed else [])
         context = browser.new_context(viewport={"width": W, "height": H}, device_scale_factor=1,
                                       color_scheme="light")
-        narrow = browser.new_context(viewport={"width": W // 2, "height": H // 2}, device_scale_factor=2,
-                                     color_scheme="light")
+        narrow = (browser.new_context(viewport={"width": W // 2, "height": H // 2}, device_scale_factor=2,
+                                      color_scheme="light")
+                  if any(PROJECTS[r].get("narrow") for r in wanted) else None)
         for repo in wanted:
             page = (narrow if PROJECTS[repo].get("narrow") else context).new_page()
             dest = OUT / f"{repo}.jpg"

@@ -7,7 +7,7 @@ window.REVIEW_MONTHS["2026-10"] = {
     start: "2026-10-01",
     end: "2026-10-31"
   },
-  lede: "The edition of Boccherini's Op. 48: 579 of the month's 683 commits are the edition and the manuscript labeler built to feed it. All six quartets are now encoded from manuscript — No. 1 by hand, the rest through an /encode pipeline — and on Oct 28 a rehearsal read from them to find what was still wrong.",
+  lede: "The edition of Boccherini's Op. 48: 579 of the month's 683 commits are the edition and the manuscript labeler built to feed it. All six quartets are now encoded from manuscript — No. 1 by hand, the rest through an /encode pipeline — and on Oct 28 a rehearsal read from them to find what was still wrong. A bug the edition's proofs turned up in LilyPond itself became a fix upstream, merged on Nov 1.",
   metrics: [
     {
       value: "12 of 12",
@@ -20,9 +20,9 @@ window.REVIEW_MONTHS["2026-10"] = {
       note: "No. 2 took 6.6h; Nos. 4, 5 and 6 took 2.2–2.7h each. From each movement's evidence file in the edition. The goal is one hour"
     },
     {
-      value: "244h",
+      value: "248h",
       label: "hands-on hours, modelled",
-      note: "From AI-session prompts, the 15 minutes after each; not a timesheet. About 115 of them on the edition"
+      note: "From AI-session prompts, the 15 minutes after each; not a timesheet. About 119 of them on the edition"
     },
     {
       value: "683",
@@ -388,7 +388,7 @@ window.REVIEW_MONTHS["2026-10"] = {
       status: "active",
       intensity: 5,
       title: "Proof, a rehearsal, and the last two quartets.",
-      summary: "On the evening of Oct 28 a rehearsal read from the new editions, held as a debugging session: to find errors, and the fixes that would make the parts easier to read from. Proof, the iPad page used there, was built in the 22 hours before it: prompts run from Tuesday afternoon to late Wednesday morning with no gap longer than an hour, and Proof took the last twelve of them and about a hundred commits. It shows each part's manuscript and its engraving; notes pin to a bar and sync through the Mac; voice notes are transcribed on the Mac and read on every iPad; Apple Pencil ink appears live on the other iPads and rubs out with a finger. It is served at proof.boccherini.org. By Oct 31 the rehearsal could be replayed from its log, each player's iPad beside the room's recording. The encoding finished alongside it: No. 4 on Oct 28 and No. 6 on Oct 30–31, which completes the initial engraving of all six quartets. Oct 27 went first to the photos from the library visit: a _RAW intake that dewarps the curled pages, crops them, removes stray ink and sets the contrast, to make clean PDFs to read from, with nothing on GitHub yet. mbta-glx became an installable app on pwa-starter, and its smoke test went from 4 min 17 s to 21 s by waiting on events instead of the clock; pwa-starter's pull-to-refresh fixes went out to it and to quartet-log.",
+      summary: "On the evening of Oct 28 a rehearsal read from the new editions, held as a debugging session: to find errors, and the fixes that would make the parts easier to read from. Proof, the iPad page used there, was built in the 22 hours before it: prompts run from Tuesday afternoon to late Wednesday morning with no gap longer than an hour, and Proof took the last twelve of them and about a hundred commits. It shows each part's manuscript and its engraving; notes pin to a bar and sync through the Mac; voice notes are transcribed on the Mac and read on every iPad; Apple Pencil ink appears live on the other iPads and rubs out with a finger. It is served at proof.boccherini.org. By Oct 31 the rehearsal could be replayed from its log, each player's iPad beside the room's recording. The encoding finished alongside it: No. 4 on Oct 28 and No. 6 on Oct 30–31, which completes the initial engraving of all six quartets. Upstream, a LilyPond bug the proofs had turned up — cairo PNGs drew #red as blue — went to GitLab as MR !3206 on Oct 26, with review replies the next day; it was merged on Nov 1. Oct 27 went first to the photos from the library visit: a _RAW intake that dewarps the curled pages, crops them, removes stray ink and sets the contrast, to make clean PDFs to read from, with nothing on GitHub yet. mbta-glx became an installable app on pwa-starter, and its smoke test went from 4 min 17 s to 21 s by waiting on events instead of the clock; pwa-starter's pull-to-refresh fixes went out to it and to quartet-log.",
       themes: [
         "music",
         "platform"
@@ -399,6 +399,17 @@ window.REVIEW_MONTHS["2026-10"] = {
           repo: "boccherini-opus-48",
           desc: "Proof, an iPad page for rehearsal notes; Nos. 4 and 6 encoded.",
           url: "https://github.com/jsundram/boccherini-opus-48"
+        },
+        {
+          name: "LilyPond, upstream",
+          repo: "lilypond",
+          desc: "MR !3206: cairo PNG output had red and blue swapped since 2021. Found through the edition's proofs; merged on Nov 1.",
+          url: "https://gitlab.com/lilypond/lilypond/-/merge_requests/3206",
+          linkText: "Merge request",
+          image: {
+            src: "assets/projects/lilypond.jpg",
+            alt: "Four note heads engraved by LilyPond's cairo backend, twice: before the fix, coloured #red and orange, they come out blue; after it, red and orange."
+          }
         },
         {
           name: "MBTA GLX",
@@ -455,6 +466,10 @@ window.REVIEW_MONTHS["2026-10"] = {
           url: "https://github.com/jsundram/boccherini-opus-48/commit/1ada2fdcd5f0f873f63606140a8e5b7c6e13f66c"
         },
         {
+          text: "LilyPond MR !3206: cairo: fix red/blue swap in PNG output",
+          url: "https://gitlab.com/lilypond/lilypond/-/merge_requests/3206"
+        },
+        {
           text: "Replay: a past rehearsal replayed from its log, each player's iPad beside the room's recording",
           url: "https://github.com/jsundram/boccherini-opus-48/commit/3ff2d1bafd9da980a3a78f95e4cb8efbdc1dc7da"
         },
@@ -496,6 +511,13 @@ window.REVIEW_MONTHS["2026-10"] = {
       repo: "boccherini-kb",
       status: "active",
       note: "Academic articles about Boccherini, collected so they can be questioned — like having a grad student on call. 17 modelled hours this month, nothing on GitHub yet."
+    },
+    {
+      title: "A second LilyPond cairo fix",
+      repo: "lilypond",
+      status: "parked",
+      note: "Written on Oct 25 alongside MR !3206 and not yet submitted: cairo's PNG output honouring -dpixmap-format=pngalpha. It sits in my LilyPond fork.",
+      url: "https://gitlab.com/jsundram/lilypond"
     },
     {
       title: "The labeler's approach on a printed source",

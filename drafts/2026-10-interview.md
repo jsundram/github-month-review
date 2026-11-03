@@ -493,6 +493,39 @@ of OMR." Next is ISMIR 2026 — whether ideas there improve the models further (
 labeler already has an `ISMIR 2026: the papers that bear on this project` note, Oct 20,
 and `Research TODOs: ideas from Legato 2`, Oct 23).
 
+## LilyPond MR, recovered (2026-11-02)
+
+The owner asked whether the LilyPond GitLab MR was captured. It was not: the snapshot is
+GitHub only, and ai-log finds cloud sessions only through `Claude-Session:` lines in
+GitHub default-branch commits — this session's branch
+(`claude/lilypond-cairo-png-channels-ui9s9q`) was never merged and its fix went to GitLab.
+
+- GitLab (public API): fork `jsundram/lilypond` created Oct 23; MR
+  [!3206](https://gitlab.com/lilypond/lilypond/-/merge_requests/3206) "cairo: fix red/blue
+  swap in PNG output" opened Oct 26, review replies Oct 27, merged Nov 1 by lemzwerg.
+  The bug: cairo PNGs wrote red and blue swapped, so `#red` came out blue; found through
+  the edition's proof images.
+- The session: cloud session `01N2vN58QU8xwgbRyZi8ejrP`. Teleport returned only the part
+  after its second compaction (Nov 2). The cloud machine still held the full transcript
+  (Oct 23 → Nov 2, 51 typed prompts); at the owner's choice it was pushed to a temporary
+  orphan branch, fetched (sha256 checked), filed in ai-log as a cloud session, and the
+  branch deleted. Indexed: 55 prompts, 449 hands-on minutes, $163 API-equivalent.
+  October's modelled hours went from 244.1 to 247.7 (overlaps split).
+- Also found: an unsubmitted follow-up in the fork, `ea25e81` "cairo: honour
+  -dpixmap-format=pngalpha in PNG output" (Oct 25). Added as a parked thread.
+- The earlier diagnosis session (a second cloud session) reported its own timeline
+  from disk (pasted by the owner): created Oct 23 21:53:33Z; typed prompts 21:54:27,
+  21:59:56, 22:04:45, 22:16:56, 22:20:24 (plus two queued mid-turn, 21:57:20 and 22:05:21),
+  then nothing until Nov 3. The patch was written at 21:57:19Z — the same author date
+  upstream a1ff930a still carries — and the MR session was created at 22:22:09Z. So the
+  whole diagnosis took about half an hour on Oct 23. Not filed in ai-log (about 0.6
+  modelled hours); its URL would be needed.
+- GitLab pushes on the MR: Oct 26 17:40Z (opened), Oct 26 23:36Z, Nov 1 06:43Z; merged
+  06:53Z.
+- The owner is proud of the fix and asked for it to be noticeable: it has a project card
+  in week 5 with the MR's before/after image (`assets/projects/src/lilypond-before-after.png`,
+  from the MR description), a sentence in the lede, and the month's blurb.
+
 ---
 
 ## After the answers

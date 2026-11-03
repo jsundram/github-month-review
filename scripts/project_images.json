@@ -11,6 +11,10 @@
     "src": "assets/projects/boccherini-opus-48.jpg",
     "alt": "The edition's review page for Op. 48 No. 5, Larghetto: each part's manuscript above the engraving, bar line under bar line, under a map of the movement's open CHECKs."
   },
+  "lilypond": {
+    "src": "assets/projects/lilypond.jpg",
+    "alt": "Four note heads engraved by LilyPond's cairo backend, twice: before the fix, coloured #red and orange, they come out blue; after it, red and orange."
+  },
   "boccherini-sampler": {
     "src": "assets/projects/boccherini-sampler.jpg",
     "alt": "The Boccherini Sampler: a reading-party page that bundles each group's parts into one PDF per instrument."

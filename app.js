@@ -335,7 +335,7 @@
                 width="1200" height="750" loading="lazy" decoding="async"></a>` : ''}
               <header><h4>${esc(p.name)}</h4><code>${esc(p.repo)}</code></header>
               <p>${esc(p.desc)}</p>
-              <nav class="project-links" aria-label="${esc(p.name)} links"><a href="${esc(p.url)}" target="_blank" rel="noreferrer">Repository ↗</a>${
+              <nav class="project-links" aria-label="${esc(p.name)} links"><a href="${esc(p.url)}" target="_blank" rel="noreferrer">${esc(p.linkText || 'Repository')} ↗</a>${
                 logProject(p.repo) ? `<span aria-hidden="true">|</span><a href="${esc(logLink({ p: p.repo, m: week.monthId }))}">Build log</a>` : ''}</nav>
             </div>`).join('')}</div>` : ''}
           ${week.note ? `<p class="week-note">${esc(week.note)}</p>` : ''}

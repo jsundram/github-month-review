@@ -162,6 +162,9 @@ A week is one of three shapes:
 { id, number, range, dates, status: "nodata", note }
 ```
 
+A project's link reads "Repository" unless it carries `linkText` — for a card whose `url` is
+something else, such as an upstream merge request.
+
 A project may carry `image: { src, alt }` — one current screenshot, shown atop its card;
 `alt` says literally what is on screen. A failed image drops out and the card reads fine.
 

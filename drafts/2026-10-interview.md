@@ -421,6 +421,78 @@ cards record how each model performs and how it was trained.
 `manuscript-labeler` was built for the edition; `boccherini-sources` and
 `quartets.boccherini.org` are unrelated to it.
 
+## Answers (2026-11-02) — closing out Oct 18–31
+
+Snapshot re-fetched for the full month: 683 commits, Oct 1–31. 349 landed after the
+narrative above was written.
+
+**Where the edition stands.** The initial engraving is done: all six quartets, two
+movements each. Commits: No. 4 I and II Oct 28; No. 6 I Oct 30, II Oct 31.
+
+**Time.** The owner recalled "under 20 minutes per 100 bar-parts, closer to a quartet in
+an hour but not there." Checked against each movement's `evidence-*.md` (person minutes,
+all passes, per 100 bar-parts):
+
+| quartet | I | II | person total |
+| --- | ---: | ---: | ---: |
+| No. 2 | 59.5 | 77.7 | 399 min |
+| No. 3 | 9.2 | 16.4 | 89 min (runs predate full time logging; likely low) |
+| No. 4 | 48.2 | 10.9 | 162 min |
+| No. 5 | 40.5 | 9.2 | 129 min |
+| No. 6 | 19.0 | 16.9 | 153 min |
+
+Under 20 holds for both movements of No. 6, not for No. 4 I. Per quartet, Nos. 4–6
+hold at roughly 2–2½ h. (No. 5's figure moved from the 2½ h quoted on Oct 17 after the
+Oct 28 and Oct 31 evidence fixes recounted lost rounds and minutes.) Put to the owner.
+
+**The OMR detour (Oct 18–23).** Deliberate: to see whether the state of the art in OMR
+could be improved for these manuscripts, and how it compared with the Claude-based
+readers. Finding, in the owner's words: Opus 5.5 reads better than the state of the art,
+but the owner's own model, musvit-D5, is substantially better than Zeus on these
+manuscripts.
+
+**The iPad Proof page and the rehearsal.** The replay video came from a real rehearsal,
+held as a debugging session for the new editions: to find errors and fixes so that
+future players have a better time reading from them. The owner thinks Proof may take on
+a life of its own: easy movement between parts and sources, collaborative sync, voice
+notes, Pencil drawing with finger erase — useful for any tablet music-reading app.
+The rehearsal was Oct 28 (`rehearsal/2026-10-28` in the edition repo, with a
+`2026-10-28-testing` folder from that morning) — the same day as the 104 Proof commits.
+
+The owner recalled "a 24-hour coding binge (Tue–Wed) followed by a rehearsal." Checked
+against ai-log typed prompts and the snapshot, local time (EDT):
+- Tue Oct 27 1pm → Wed Oct 28 11am: typed prompts in every hour, no gap over about an
+  hour — 22 hours. Tuesday afternoon was mbta-glx, pwa-starter and the `_RAW` intake;
+  Proof sessions from about 10:48pm.
+- Wed 1am–11am: about 100 commits, nearly all Proof.
+- Wed noon–3pm: no prompts.
+- Wed 6:58pm → Thu 12:13am: the rehearsal — 428 events in `rehearsal/2026-10-28/events.jsonl`,
+  31 voice notes.
+Supported: 22 hours rather than 24, then the rehearsal that evening.
+
+**Quiet days.** Oct 21: a slow day, a reading session in the evening. Oct 24–26: music
+sessions, a concert, a visit to Harvard's library (the source of the `_RAW` photos), and
+another concert. Oct 30 is Sandwich, MA in Swarm; not yet asked whether it may be named.
+
+**Sessions with no commit — all ongoing, "need better organization."**
+- `dewarp` (manuscript-labeler, Oct 27): exploring how the dewarp ideas from the `_RAW`
+  work might apply to the labeler.
+- `_RAW` manuscript intake (boccherini-quartet-data, Oct 27): iPhone photos taken at the
+  library → dewarp (page curl), crop, remove stray ink, optimise contrast → clean PDFs
+  that are easier to read from.
+- Audiveris scan of Boulogne Op. 14 (manuscript-labeler, Oct 31): new; the same approach
+  tried on a printed (non-manuscript) source. Just started.
+- boccherini-kb: a new project to collect academic articles about Boccherini and
+  question them — "like having a grad student on call."
+- midi-align: powered a YouTube video the owner is proud of, showing the new scores
+  aligned to existing recordings to drive visualisations synced to the music:
+  https://youtu.be/YntX6UltCGk
+
+**The OMR thread.** Not dropped: "still on a journey to find / make the state of the art
+of OMR." Next is ISMIR 2026 — whether ideas there improve the models further (the
+labeler already has an `ISMIR 2026: the papers that bear on this project` note, Oct 20,
+and `Research TODOs: ideas from Legato 2`, Oct 23).
+
 ---
 
 ## After the answers

@@ -10,8 +10,7 @@ window.REVIEW_INDEX = {
       label: "October 2026",
       file: "data/months/2026-10.js",
       status: "active",
-      inProgress: true,
-      blurb: "Four of the six Op. 48 quartets encoded and checked, with a manuscript labeler and an /encode pipeline built to do it."
+      blurb: "All six Op. 48 quartets encoded from manuscript, a MuSViT reader trained for their copyists, and an iPad page for the rehearsal that tested them."
     },
     {
       id: "2026-09",

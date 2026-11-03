@@ -89,13 +89,21 @@ window.REVIEW_MONTHS["2026-07"] = {
           name: "AKM in use",
           repo: "AKM",
           desc: "Schedule, map, roster, and the add-sheet, corrected while the festival ran around them.",
-          url: "https://github.com/jsundram/AKM"
+          url: "https://github.com/jsundram/AKM",
+          image: {
+            src: "assets/projects/AKM.jpg",
+            alt: "The AlpenKammerMusik daily briefing for Monday 29 June, opening with the day's forecast and temperature curve."
+          }
         },
         {
           name: "PWA Starter",
           repo: "pwa-starter",
           desc: "An opinionated skeleton and checklist for small static PWAs, started as the festival wound down.",
-          url: "https://github.com/jsundram/pwa-starter"
+          url: "https://github.com/jsundram/pwa-starter",
+          image: {
+            src: "assets/projects/pwa-starter.jpg",
+            alt: "pwa-starter's placeholder shell: an APP header and a box asking to be replaced."
+          }
         }
       ],
       evidence: [
@@ -123,7 +131,11 @@ window.REVIEW_MONTHS["2026-07"] = {
           name: "AKM archive",
           repo: "AKM",
           desc: "Observed weather in place of forecasts, a send-off banner, and recording links added as videos appeared.",
-          url: "https://github.com/jsundram/AKM"
+          url: "https://github.com/jsundram/AKM",
+          image: {
+            src: "assets/projects/AKM.jpg",
+            alt: "The AlpenKammerMusik daily briefing for Monday 29 June, opening with the day's forecast and temperature curve."
+          }
         },
         {
           name: "Boccherini Sampler",
@@ -139,7 +151,11 @@ window.REVIEW_MONTHS["2026-07"] = {
           name: "PWA Starter",
           repo: "pwa-starter",
           desc: "Placeholder icons, a share card, and the beginnings of the propagation record.",
-          url: "https://github.com/jsundram/pwa-starter"
+          url: "https://github.com/jsundram/pwa-starter",
+          image: {
+            src: "assets/projects/pwa-starter.jpg",
+            alt: "pwa-starter's placeholder shell: an APP header and a box asking to be replaced."
+          }
         }
       ],
       evidence: [
@@ -232,7 +248,11 @@ window.REVIEW_MONTHS["2026-07"] = {
           name: "Haydn Info Card",
           repo: "haydn-info-card",
           desc: "A Peters volume filter and an alignment fix, made while the card was in use at the workshop.",
-          url: "https://github.com/jsundram/haydn-info-card"
+          url: "https://github.com/jsundram/haydn-info-card",
+          image: {
+            src: "assets/projects/haydn-info-card.jpg",
+            alt: "Joseph Haydn — The 68 String Quartets: a grid of cards, one per quartet, giving its key, in rows by opus."
+          }
         }
       ],
       evidence: [

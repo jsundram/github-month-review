@@ -72,7 +72,11 @@ window.REVIEW_MONTHS["2026-10"] = {
           name: "Boccherini sources",
           repo: "boccherini-sources",
           desc: "A census of the quartets' sources, in one commit.",
-          url: "https://github.com/jsundram/boccherini-sources"
+          url: "https://github.com/jsundram/boccherini-sources",
+          image: {
+            src: "assets/projects/boccherini-sources.jpg",
+            alt: "The Boccherini facsimile shelf: 145 sources from 15 libraries, counted by kind, above a row of opus filters and the first cards for Op. 2, each with a thumbnail of its scan."
+          }
         },
         {
           name: "Quartet Log",
@@ -133,13 +137,21 @@ window.REVIEW_MONTHS["2026-10"] = {
           name: "Boccherini Op. 48",
           repo: "boccherini-opus-48",
           desc: "No. 1 checked; /encode built and run for the first time.",
-          url: "https://github.com/jsundram/boccherini-opus-48"
+          url: "https://github.com/jsundram/boccherini-opus-48",
+          image: {
+            src: "assets/projects/boccherini-opus-48.jpg",
+            alt: "The edition's review page for Op. 48 No. 5, Larghetto: each part's manuscript above the engraving, bar line under bar line, under a map of the movement's open CHECKs."
+          }
         },
         {
           name: "Manuscript Labeler",
           repo: "manuscript-labeler",
           desc: "A bar-line bake-off, a vote of three detectors, and model cards.",
-          url: "https://github.com/jsundram/manuscript-labeler"
+          url: "https://github.com/jsundram/manuscript-labeler",
+          image: {
+            src: "assets/projects/manuscript-labeler.jpg",
+            alt: "Five strips of handwritten manuscript staves, each bar line found by a detector marked with its confidence."
+          }
         },
         {
           name: "Boccherini–Haydn timeline",
@@ -158,7 +170,7 @@ window.REVIEW_MONTHS["2026-10"] = {
           url: "https://github.com/jsundram/mbta-glx",
           image: {
             src: "assets/projects/mbta-glx.jpg",
-            alt: "The Magoun Square board, headed by two notices of upcoming Green Line suspensions."
+            alt: "The Magoun Square board: a collapsed notice of the 11/7–11/15 suspension, then the next train expected in 05:00."
           }
         }
       ],
@@ -223,13 +235,21 @@ window.REVIEW_MONTHS["2026-10"] = {
           name: "Boccherini Op. 48",
           repo: "boccherini-opus-48",
           desc: "Nos. 3, 2 and 5 encoded; /encode v2 to v5; my time logged per bar.",
-          url: "https://github.com/jsundram/boccherini-opus-48"
+          url: "https://github.com/jsundram/boccherini-opus-48",
+          image: {
+            src: "assets/projects/boccherini-opus-48.jpg",
+            alt: "The edition's review page for Op. 48 No. 5, Larghetto: each part's manuscript above the engraving, bar line under bar line, under a map of the movement's open CHECKs."
+          }
         },
         {
           name: "Manuscript Labeler",
           repo: "manuscript-labeler",
           desc: "Zeus fine-tuned on Boccherini, with training pairs built from Philhar's encodings.",
-          url: "https://github.com/jsundram/manuscript-labeler"
+          url: "https://github.com/jsundram/manuscript-labeler",
+          image: {
+            src: "assets/projects/manuscript-labeler.jpg",
+            alt: "Five strips of handwritten manuscript staves, each bar line found by a detector marked with its confidence."
+          }
         },
         {
           name: "quartets.boccherini.org",
@@ -239,6 +259,17 @@ window.REVIEW_MONTHS["2026-10"] = {
           image: {
             src: "assets/projects/quartets.boccherini.org.jpg",
             alt: "Luigi Boccherini (1743–1805) – 91 String Quartets: a grid of cards, one per quartet, giving its key, in rows by opus."
+          }
+        },
+        {
+          name: "midi-align",
+          repo: "midi-align",
+          desc: "The new scores aligned to existing recordings, to drive visualisations synced to the music.",
+          url: "https://youtu.be/YntX6UltCGk",
+          linkText: "Video",
+          image: {
+            src: "assets/projects/midi-align.jpg",
+            alt: "The video's title frame: Boccherini, Quartettino Op. 48 No. 5 in G major, G. 230, Cuarteto Iberia, over glowing note bars for the four parts and a playhead."
           }
         }
       ],
@@ -319,13 +350,21 @@ window.REVIEW_MONTHS["2026-10"] = {
           name: "Manuscript Labeler",
           repo: "manuscript-labeler",
           desc: "MuSViT readers D3 to D5, synthetic staves, and a census of 11,500 staves.",
-          url: "https://github.com/jsundram/manuscript-labeler"
+          url: "https://github.com/jsundram/manuscript-labeler",
+          image: {
+            src: "assets/projects/manuscript-labeler.jpg",
+            alt: "Five strips of handwritten manuscript staves, each bar line found by a detector marked with its confidence."
+          }
         },
         {
           name: "Boccherini Op. 48",
           repo: "boccherini-opus-48",
           desc: "Nos. 4 and 6 started; each new reader's flags measured before /encode uses them.",
-          url: "https://github.com/jsundram/boccherini-opus-48"
+          url: "https://github.com/jsundram/boccherini-opus-48",
+          image: {
+            src: "assets/projects/boccherini-opus-48.jpg",
+            alt: "The edition's review page for Op. 48 No. 5, Larghetto: each part's manuscript above the engraving, bar line under bar line, under a map of the movement's open CHECKs."
+          }
         },
         {
           name: "ai-log",
@@ -397,8 +436,23 @@ window.REVIEW_MONTHS["2026-10"] = {
         {
           name: "Boccherini Op. 48",
           repo: "boccherini-opus-48",
-          desc: "Proof, an iPad page for rehearsal notes; Nos. 4 and 6 encoded.",
-          url: "https://github.com/jsundram/boccherini-opus-48"
+          desc: "Nos. 4 and 6 encoded, and Proof built.",
+          url: "https://github.com/jsundram/boccherini-opus-48",
+          image: {
+            src: "assets/projects/boccherini-opus-48.jpg",
+            alt: "The edition's review page for Op. 48 No. 5, Larghetto: each part's manuscript above the engraving, bar line under bar line, under a map of the movement's open CHECKs."
+          }
+        },
+        {
+          name: "Proof",
+          repo: "boccherini-opus-48",
+          desc: "The iPad page for rehearsal notes, used at the Oct 28 rehearsal.",
+          url: "https://youtu.be/W2CSW_dQIY8",
+          linkText: "Video",
+          image: {
+            src: "assets/projects/proof.jpg",
+            alt: "The video's title frame: Proof, \"Don't drop a note.\", beside an iPad showing manuscript staves above their engraving, with green note markers pinned to bars."
+          }
         },
         {
           name: "LilyPond, upstream",
@@ -415,7 +469,11 @@ window.REVIEW_MONTHS["2026-10"] = {
           name: "MBTA GLX",
           repo: "mbta-glx",
           desc: "An installable app, every alert on the route, and a faster test suite.",
-          url: "https://github.com/jsundram/mbta-glx"
+          url: "https://github.com/jsundram/mbta-glx",
+          image: {
+            src: "assets/projects/mbta-glx.jpg",
+            alt: "The Magoun Square board: a collapsed notice of the 11/7–11/15 suspension, then the next train expected in 05:00."
+          }
         },
         {
           name: "pwa-starter",

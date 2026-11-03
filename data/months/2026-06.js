@@ -99,7 +99,11 @@ window.REVIEW_MONTHS["2026-06"] = {
           name: "Quartet Log",
           repo: "quartet-log",
           desc: "Two commits this week: chord-diagram label room and rate-based calendar tooltips.",
-          url: "https://github.com/jsundram/quartet-log"
+          url: "https://github.com/jsundram/quartet-log",
+          image: {
+            src: "assets/projects/quartet-log.jpg",
+            alt: "Quartet Log's setup screen, asking for the URL of a published Google Sheet."
+          }
         }
       ],
       evidence: [
@@ -127,13 +131,21 @@ window.REVIEW_MONTHS["2026-06"] = {
           name: "Quartet Log",
           repo: "quartet-log",
           desc: "Standalone-mode PWA behaviour: pull-to-refresh, safe areas, refresh on resume.",
-          url: "https://github.com/jsundram/quartet-log"
+          url: "https://github.com/jsundram/quartet-log",
+          image: {
+            src: "assets/projects/quartet-log.jpg",
+            alt: "Quartet Log's setup screen, asking for the URL of a published Google Sheet."
+          }
         },
         {
           name: "Haydn Lowdn",
           repo: "haydn-lowdn",
           desc: "Wider axes, an offset-bars toggle, and markers for the extremes of range.",
-          url: "https://github.com/jsundram/haydn-lowdn"
+          url: "https://github.com/jsundram/haydn-lowdn",
+          image: {
+            src: "assets/projects/haydn-lowdn.jpg",
+            alt: "Haydn String Quartets — Pitch Extremes by Movement: a coloured bar per part spanning each movement's lowest to highest note."
+          }
         }
       ],
       evidence: [
@@ -209,7 +221,11 @@ window.REVIEW_MONTHS["2026-06"] = {
           name: "AKM",
           repo: "AKM",
           desc: "Roster, village map, live location, venue pins, and Austrian-model weather — built in two days.",
-          url: "https://github.com/jsundram/AKM"
+          url: "https://github.com/jsundram/AKM",
+          image: {
+            src: "assets/projects/AKM.jpg",
+            alt: "The AlpenKammerMusik daily briefing for Monday 29 June, opening with the day's forecast and temperature curve."
+          }
         },
         {
           name: "Haydn Enthusiasts",

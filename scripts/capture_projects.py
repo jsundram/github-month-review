@@ -19,7 +19,9 @@ the work, and are not evidence of what existed when.
 
 A project's source is one of:
   url       a live page, captured at 1200x750
-  files     images from a repo (raw URLs), stacked and fitted into the frame
+  files     images from a repo (raw URLs), stacked and fitted into the frame;
+            `cover` fills the frame from one image instead, as for a video thumbnail,
+            trimming the right edge (titles sit on the left)
   lilypond  a page of an engraved score, built locally from a (possibly private)
             repo; needs `lilypond` on PATH and a GITHUB_TOKEN that can read it
 
@@ -72,6 +74,13 @@ PROJECTS: dict[str, dict] = {
         "files": ["assets/projects/src/lilypond-before-after.png"],
         "alt": "Four note heads engraved by LilyPond's cairo backend, twice: before the fix, coloured #red and orange, they come out blue; after it, red and orange.",
     },
+    "boccherini-sources": {
+        # The facsimile shelf is a generated local page (boccherini_sources.html, not in the
+        # repo), so its top is shot by hand and kept beside the output; see src/.
+        "files": ["assets/projects/src/boccherini-sources.jpg"],
+        "crop_top": True,
+        "alt": "The Boccherini facsimile shelf: 145 sources from 15 libraries, counted by kind, above a row of opus filters and the first cards for Op. 2, each with a thumbnail of its scan.",
+    },
     "boccherini-sampler": {
         "url": f"{PAGES}/boccherini-sampler/",
         "narrow": True,
@@ -113,14 +122,27 @@ PROJECTS: dict[str, dict] = {
             "detectron2-khm-5", "detectron2-parisb-5")],
         "alt": "Five strips of handwritten manuscript staves, each bar line found by a detector marked with its confidence.",
     },
+    "midi-align": {
+        # Not on GitHub; the card links to its video, and this is the video's thumbnail.
+        "files": ["https://i.ytimg.com/vi/YntX6UltCGk/maxresdefault.jpg"],
+        "cover": True,
+        "alt": "The video's title frame: Boccherini, Quartettino Op. 48 No. 5 in G major, G. 230, Cuarteto Iberia, over glowing note bars for the four parts and a playhead.",
+    },
     "mbta-glx": {
         "url": f"{PAGES}/mbta-glx/",
         "narrow": True,
-        "alt": "The Magoun Square board, headed by two notices of upcoming Green Line suspensions.",
+        "alt": "The Magoun Square board: a collapsed notice of the 11/7–11/15 suspension, then the next train expected in 05:00.",
     },
     "nh_tax_map": {
         "url": f"{PAGES}/nh_tax_map/",
         "alt": "New Hampshire Property Tax Rates: a map of the state's towns shaded green by tax rate, for 2025.",
+    },
+    "proof": {
+        # Proof lives in the private Op. 48 repo; its card links to the demo video, and this
+        # is the video's thumbnail. Keyed "proof", not by repo, so Op. 48 keeps its own shot.
+        "files": ["https://i.ytimg.com/vi/W2CSW_dQIY8/maxresdefault.jpg"],
+        "cover": True,
+        "alt": "The video's title frame: Proof, \"Don't drop a note.\", beside an iPad showing manuscript staves above their engraving, with green note markers pinned to bars.",
     },
     "pwa-starter": {
         "url": f"{PAGES}/pwa-starter/",
@@ -156,8 +178,7 @@ PROJECTS: dict[str, dict] = {
         "alt": "Three Spotify Tile renders: abstract geometric tiles, each generated from one song.",
     },
 }
-# Not captured: boccherini-quartet-data and boccherini-sources have no page and no
-# image that shows what they are.
+# Not captured: boccherini-quartet-data has no page and no image that shows what it is.
 
 
 def token() -> str | None:
@@ -184,9 +205,13 @@ def curl(url: str, dest: Path, auth: bool = False) -> None:
                    input=config, text=True, check=True)
 
 
-def frame(page, images: list[Path], dest: Path, layout: str = "column", crop_top: bool = False) -> None:
+def frame(page, images: list[Path], dest: Path, layout: str = "column", crop_top: bool = False,
+          cover: bool = False) -> None:
     """Fit local images into a WxH frame and screenshot it."""
-    fit = "width:100%;height:auto" if crop_top else "max-width:100%;max-height:100%;object-fit:contain;min-height:0"
+    fit = ("width:100%;height:100%;object-fit:cover;object-position:left" if cover else
+           "width:100%;height:auto" if crop_top else
+           "max-width:100%;max-height:100%;object-fit:contain;min-height:0")
+    crop_top = crop_top or cover
     direction = "row" if layout == "row" else "column"
     tags = "".join(f'<img src="{html.escape(p.name)}" style="{fit};flex:1 1 0;min-width:0">' for p in images)
     doc = images[0].parent / "frame.html"
@@ -222,7 +247,7 @@ def capture(page, repo: str, spec: dict, dest: Path, work: Path) -> None:
             else:                                   # a source committed in this repo
                 shutil.copyfile(ROOT / url, path)
             local.append(path)
-        frame(page, local, dest, spec.get("layout", "column"), crop_top=spec.get("crop_top", False))
+        frame(page, local, dest, spec.get("layout", "column"), crop_top=spec.get("crop_top", False), cover=spec.get("cover", False))
     elif "lilypond" in spec:
         ly = spec["lilypond"]
         if not shutil.which("lilypond"):

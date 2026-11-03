@@ -95,7 +95,11 @@ window.REVIEW_MONTHS["2026-08"] = {
           name: "Haydn Info Card",
           repo: "haydn-info-card",
           desc: "First app to take the cache-first shell fix, after the card blanked on slow networks.",
-          url: "https://github.com/jsundram/haydn-info-card"
+          url: "https://github.com/jsundram/haydn-info-card",
+          image: {
+            src: "assets/projects/haydn-info-card.jpg",
+            alt: "Joseph Haydn — The 68 String Quartets: a grid of cards, one per quartet, giving its key, in rows by opus."
+          }
         }
       ],
       evidence: [
@@ -122,7 +126,11 @@ window.REVIEW_MONTHS["2026-08"] = {
           name: "Quartet Log",
           repo: "quartet-log",
           desc: "One mobile label fix.",
-          url: "https://github.com/jsundram/quartet-log"
+          url: "https://github.com/jsundram/quartet-log",
+          image: {
+            src: "assets/projects/quartet-log.jpg",
+            alt: "Quartet Log's setup screen, asking for the URL of a published Google Sheet."
+          }
         }
       ],
       evidence: [
@@ -144,7 +152,11 @@ window.REVIEW_MONTHS["2026-08"] = {
           name: "Quartet Log",
           repo: "quartet-log",
           desc: "The 5+ tab and Unique Parts stat, with per-year stats de-duplicated into one computation.",
-          url: "https://github.com/jsundram/quartet-log"
+          url: "https://github.com/jsundram/quartet-log",
+          image: {
+            src: "assets/projects/quartet-log.jpg",
+            alt: "Quartet Log's setup screen, asking for the URL of a published Google Sheet."
+          }
         },
         {
           name: "Quartet Chooser",
@@ -192,13 +204,21 @@ window.REVIEW_MONTHS["2026-08"] = {
           name: "Quartet Chooser",
           repo: "quartet-chooser",
           desc: "Share cards, installability, accessibility, analytics, and performance, as phases of one recorded plan.",
-          url: "https://github.com/jsundram/quartet-chooser"
+          url: "https://github.com/jsundram/quartet-chooser",
+          image: {
+            src: "assets/projects/quartet-chooser.jpg",
+            alt: "Quartet Roulette's home page: a grid of illustrated composer portraits."
+          }
         },
         {
           name: "Quartet Log",
           repo: "quartet-log",
           desc: "Data-quality tooling, so the playing numbers can be trusted.",
-          url: "https://github.com/jsundram/quartet-log"
+          url: "https://github.com/jsundram/quartet-log",
+          image: {
+            src: "assets/projects/quartet-log.jpg",
+            alt: "Quartet Log's setup screen, asking for the URL of a published Google Sheet."
+          }
         }
       ],
       evidence: [
@@ -227,7 +247,11 @@ window.REVIEW_MONTHS["2026-08"] = {
           name: "Quartet Chooser",
           repo: "quartet-chooser",
           desc: "The checklist run's last review round and its closing bookkeeping.",
-          url: "https://github.com/jsundram/quartet-chooser"
+          url: "https://github.com/jsundram/quartet-chooser",
+          image: {
+            src: "assets/projects/quartet-chooser.jpg",
+            alt: "Quartet Roulette's home page: a grid of illustrated composer portraits."
+          }
         }
       ],
       evidence: [

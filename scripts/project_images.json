@@ -15,6 +15,10 @@
     "src": "assets/projects/lilypond.jpg",
     "alt": "Four note heads engraved by LilyPond's cairo backend, twice: before the fix, coloured #red and orange, they come out blue; after it, red and orange."
   },
+  "boccherini-sources": {
+    "src": "assets/projects/boccherini-sources.jpg",
+    "alt": "The Boccherini facsimile shelf: 145 sources from 15 libraries, counted by kind, above a row of opus filters and the first cards for Op. 2, each with a thumbnail of its scan."
+  },
   "boccherini-sampler": {
     "src": "assets/projects/boccherini-sampler.jpg",
     "alt": "The Boccherini Sampler: a reading-party page that bundles each group's parts into one PDF per instrument."
@@ -51,13 +55,21 @@
     "src": "assets/projects/manuscript-labeler.jpg",
     "alt": "Five strips of handwritten manuscript staves, each bar line found by a detector marked with its confidence."
   },
+  "midi-align": {
+    "src": "assets/projects/midi-align.jpg",
+    "alt": "The video's title frame: Boccherini, Quartettino Op. 48 No. 5 in G major, G. 230, Cuarteto Iberia, over glowing note bars for the four parts and a playhead."
+  },
   "mbta-glx": {
     "src": "assets/projects/mbta-glx.jpg",
-    "alt": "The Magoun Square board, headed by two notices of upcoming Green Line suspensions."
+    "alt": "The Magoun Square board: a collapsed notice of the 11/7\u201311/15 suspension, then the next train expected in 05:00."
   },
   "nh_tax_map": {
     "src": "assets/projects/nh_tax_map.jpg",
     "alt": "New Hampshire Property Tax Rates: a map of the state's towns shaded green by tax rate, for 2025."
+  },
+  "proof": {
+    "src": "assets/projects/proof.jpg",
+    "alt": "The video's title frame: Proof, \"Don't drop a note.\", beside an iPad showing manuscript staves above their engraving, with green note markers pinned to bars."
   },
   "pwa-starter": {
     "src": "assets/projects/pwa-starter.jpg",

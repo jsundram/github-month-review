@@ -139,7 +139,11 @@ window.REVIEW_MONTHS["2026-09"] = {
           name: "Quartet Composers",
           repo: "quartet-composers",
           desc: "Readership sparklines, the Women filter, page views under historical titles, and IMSLP joined in.",
-          url: "https://github.com/jsundram/quartet-composers"
+          url: "https://github.com/jsundram/quartet-composers",
+          image: {
+            src: "assets/projects/quartet-composers.jpg",
+            alt: "String Quartet Composers, Fame view: a histogram of Wikipedia readership above a scatter of 790 composers."
+          }
         },
         {
           name: "Quartet Log",
@@ -155,7 +159,11 @@ window.REVIEW_MONTHS["2026-09"] = {
           name: "Lissajous Tuner",
           repo: "lissajous-tuner",
           desc: "An editable reference A and an in-tune colour, then nothing further this month.",
-          url: "https://github.com/jsundram/lissajous-tuner"
+          url: "https://github.com/jsundram/lissajous-tuner",
+          image: {
+            src: "assets/projects/lissajous-tuner.jpg",
+            alt: "The Lissajous Tuner before it starts listening: Violin, Viola and Cello tabs, a Start listening button, and string pins for G3, D4, A4 and E5."
+          }
         }
       ],
       evidence: [
@@ -214,13 +222,21 @@ window.REVIEW_MONTHS["2026-09"] = {
           name: "Quartet Composers",
           repo: "quartet-composers",
           desc: "IMSLP on the page, then gates against prose that cannot be checked.",
-          url: "https://github.com/jsundram/quartet-composers"
+          url: "https://github.com/jsundram/quartet-composers",
+          image: {
+            src: "assets/projects/quartet-composers.jpg",
+            alt: "String Quartet Composers, Fame view: a histogram of Wikipedia readership above a scatter of 790 composers."
+          }
         },
         {
           name: "Quartet Log",
           repo: "quartet-log",
           desc: "A log form that takes what each person played.",
-          url: "https://github.com/jsundram/quartet-log"
+          url: "https://github.com/jsundram/quartet-log",
+          image: {
+            src: "assets/projects/quartet-log.jpg",
+            alt: "Quartet Log's setup screen, asking for the URL of a published Google Sheet."
+          }
         }
       ],
       evidence: [
@@ -279,7 +295,7 @@ window.REVIEW_MONTHS["2026-09"] = {
           url: "https://github.com/jsundram/mbta-glx",
           image: {
             src: "assets/projects/mbta-glx.jpg",
-            alt: "The Magoun Square board, headed by two notices of upcoming Green Line suspensions."
+            alt: "The Magoun Square board: a collapsed notice of the 11/7–11/15 suspension, then the next train expected in 05:00."
           }
         },
         {
@@ -296,7 +312,11 @@ window.REVIEW_MONTHS["2026-09"] = {
           name: "Quartet Log",
           repo: "quartet-log",
           desc: "The how-to, rewritten in four parts by who is reading.",
-          url: "https://github.com/jsundram/quartet-log"
+          url: "https://github.com/jsundram/quartet-log",
+          image: {
+            src: "assets/projects/quartet-log.jpg",
+            alt: "Quartet Log's setup screen, asking for the URL of a published Google Sheet."
+          }
         }
       ],
       evidence: [
@@ -365,7 +385,11 @@ window.REVIEW_MONTHS["2026-09"] = {
           name: "MBTA GLX",
           repo: "mbta-glx",
           desc: "The board moved to its own origin.",
-          url: "https://github.com/jsundram/mbta-glx"
+          url: "https://github.com/jsundram/mbta-glx",
+          image: {
+            src: "assets/projects/mbta-glx.jpg",
+            alt: "The Magoun Square board: a collapsed notice of the 11/7–11/15 suspension, then the next train expected in 05:00."
+          }
         },
         {
           name: "Somerville Typemap",

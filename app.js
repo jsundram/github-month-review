@@ -8,6 +8,8 @@
   // Newest first, defensively re-sorted so data/index.js order is not load-bearing.
   const months = index.months.slice().sort((a, b) => (a.id < b.id ? 1 : a.id > b.id ? -1 : 0));
   const loaded = (window.REVIEW_MONTHS = window.REVIEW_MONTHS || {});
+  const Charts = window.ReviewCharts;
+  const LOG_FILE = 'data/buildlog.js';
 
   const THEME_NAMES = {
     travel: 'Travel utility',
@@ -43,7 +45,12 @@
     monthMenu: $('#monthMenu'),
     footerLine: $('#footerLine'),
     profileLink: $('#profileLink'),
-    reposLink: $('#reposLink')
+    reposLink: $('#reposLink'),
+    hours: $('#hours'),
+    hoursStats: $('#hoursStats'),
+    hoursChart: $('#hoursChart'),
+    hoursLegend: $('#hoursLegend'),
+    hoursLink: $('#hoursLink')
   };
 
   if (index.profile) {
@@ -69,6 +76,22 @@
       script.onerror = () => reject(new Error(`Could not load ${entry.file}`));
       document.head.appendChild(script);
     });
+  }
+
+  // The build log is optional: without it (or before it arrives) the hours section and the
+  // per-week lines stay hidden and the page reads exactly as it did before.
+  let logLoading = null;
+  function loadLog() {
+    if (window.REVIEW_BUILDLOG) return Promise.resolve(window.REVIEW_BUILDLOG);
+    if (logLoading) return logLoading;
+    logLoading = new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = LOG_FILE;
+      script.onload = () => window.REVIEW_BUILDLOG ? resolve(window.REVIEW_BUILDLOG) : reject(new Error('empty build log'));
+      script.onerror = () => reject(new Error(`Could not load ${LOG_FILE}`));
+      document.head.appendChild(script);
+    });
+    return logLoading;
   }
 
   /* --------------------------------------------------------------- switcher */
@@ -125,6 +148,103 @@
   });
 
   /* -------------------------------------------------------------- rendering */
+
+  const sumHours = h => Object.values(h || {}).reduce((a, b) => a + b, 0);
+  const logDays = (start, end) => ((window.REVIEW_BUILDLOG || {}).days || []).filter(d => d.d >= start && d.d <= end);
+  const covered = (start, end) => {
+    const range = (window.REVIEW_BUILDLOG || {}).range;
+    return !!range && end >= range.start && start <= range.end;
+  };
+  const logLink = (params) => `buildlog.html#${Object.entries(params)
+    .map(([k, v]) => `${k}=${encodeURIComponent(v)}`).join('&')}`;
+  const unique = list => list.filter((x, i) => x && list.indexOf(x) === i);
+  const monthBounds = id => {
+    const [y, m] = id.split('-').map(Number);
+    return [`${id}-01`, `${id}-${String(new Date(Date.UTC(y, m, 0)).getUTCDate()).padStart(2, '0')}`];
+  };
+
+  // Each project keeps one colour across the site (charts.js projectColors); a month's
+  // chart names its seven biggest, and the rest are Other. Cached per month.
+  let colors = null;
+  const seriesCache = {};
+  function monthSeries(monthId) {
+    if (seriesCache[monthId]) return seriesCache[monthId];
+    colors = colors || Charts.projectColors(window.REVIEW_BUILDLOG.days);
+    const totals = {};
+    logDays(...monthBounds(monthId)).forEach(d => Object.entries(d.h).forEach(([p, h]) => { totals[p] = (totals[p] || 0) + h; }));
+    const out = Charts.seriesFor(totals, 7, colors);
+    out.colorOf = id => (out.series.find(x => x.id === id) || { color: Charts.OTHER }).color;
+    seriesCache[monthId] = out;
+    return out;
+  }
+  const swatch = color => `<i class="swatch" style="background:${esc(color)}"></i>`;
+  const logProject = id => ((window.REVIEW_BUILDLOG || {}).projects || []).some(p => p.id === id && p.id !== 'Other');
+
+  // "12.5 hands-on hours · AKM 8.0 · quartet-log 3.1 · 2 more · Austria", or nothing.
+  function weekHours(week, monthId) {
+    if (!week.dates || !covered(week.dates.start, week.dates.end)) return '';
+    const days = logDays(week.dates.start, week.dates.end);
+    const by = {};
+    days.forEach(d => Object.entries(d.h).forEach(([p, h]) => { by[p] = (by[p] || 0) + h; }));
+    const total = sumHours(by);
+    const away = unique(days.map(d => d.region));
+    const where = away.length ? ` · <span class="away">${esc(away.join(', '))}</span>` : '';
+    if (total < 0.05) return `<p class="week-hours">No AI sessions logged${where}</p>`;
+    const ranked = Object.entries(by).filter(([p]) => p !== 'Other').sort((a, b) => b[1] - a[1]);
+    const shown = ranked.filter(([, h]) => h >= 0.5).slice(0, 3);
+    const rest = Object.keys(by).length - shown.length;
+    const { colorOf } = monthSeries(monthId);
+    const named = shown.map(([p, h]) =>
+      `${swatch(colorOf(p))}<a href="${esc(logLink({ p, m: monthId }))}">${esc(p)}</a> ${esc(Charts.num(h))}`).join(' · ');
+    return `<p class="week-hours"><b>${esc(Charts.num(total))} hands-on hours</b>${named ? ` · ${named}` : ''}${
+      rest > 0 ? ` · ${rest} more` : ''}${where}</p>`;
+  }
+
+  const DAY = { weekday: 'short', month: 'short', day: 'numeric', timeZone: 'UTC' };
+  const dayTitle = iso => new Date(`${iso}T12:00:00Z`).toLocaleDateString('en-US', DAY);
+
+  function renderHours(month) {
+    const [start, end] = monthBounds(month.id);
+    if (!window.REVIEW_BUILDLOG) {
+      el.hours.hidden = true;
+      loadLog().then(() => { if (current === month) render(month); }).catch(() => {});
+      return;
+    }
+    const days = logDays(start, end);
+    const total = days.reduce((a, d) => a + sumHours(d.h), 0);
+    el.hours.hidden = !covered(start, end) || total < 0.05;
+    if (el.hours.hidden) return;
+
+    const { series, fold } = monthSeries(month.id);
+    const columns = days.map((d, i) => {
+      const date = new Date(`${d.d}T12:00:00Z`);
+      const first = i === 0 || date.getUTCDay() === 1;
+      return {
+        label: first ? (i === 0 ? date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' })
+          : String(date.getUTCDate())) : '',
+        title: dayTitle(d.d), sub: d.place || '', values: fold(d.h), detail: d.h
+      };
+    });
+    const bands = [];
+    days.forEach((d, i) => {
+      const last = bands[bands.length - 1];
+      if (!d.region) return;
+      if (last && last.label === d.region && last.to === i - 1) last.to = i;
+      else bands.push({ from: i, to: i, label: d.region });
+    });
+    Charts.stacked(el.hoursChart, { columns, series, unit: 'h', height: 240, bands,
+      label: `Hands-on hours by project and day, ${month.label}` });
+    Charts.legend(el.hoursLegend, series, bands.length
+      ? '<span class="legend-item away-key"><i></i>Away from home</span>' : '');
+
+    const active = days.filter(d => sumHours(d.h) >= 0.25).length;
+    const away = unique(days.map(d => d.region));
+    el.hoursStats.innerHTML = `
+      <span><b>${esc(Charts.num(total, 0))}</b> hands-on hours</span>
+      <span><b>${active}</b> of ${days.length} days with sessions</span>
+      ${away.length ? `<span>Away: <b>${esc(away.join(', '))}</b></span>` : ''}`;
+    el.hoursLink.href = logLink({ m: month.id });
+  }
 
   function renderHero(month) {
     const coverage = month.coverage
@@ -184,6 +304,7 @@
         <div class="week-main">
           <p class="quiet-heading">${heading}</p>
           <p class="quiet-note">${esc(week.note || 'No activity in this week.')}</p>
+          ${weekHours(week, week.monthId)}
         </div>
       </article>`;
   }
@@ -205,14 +326,18 @@
           ${(week.themes || []).length ? `<div class="theme-list">${week.themes
             .map(t => `<span class="theme-tag">${esc(THEME_NAMES[t] || t)}</span>`).join('')}</div>` : ''}
           <h3>${esc(week.title)}</h3>
+          ${weekHours(week, week.monthId)}
           <p class="week-summary">${esc(week.summary)}</p>
           ${projects.length ? `<div class="project-list">${projects.map(p => `
-            <a class="project-card${p.image && p.image.src ? ' has-shot' : ''}" href="${esc(p.url)}" target="_blank" rel="noreferrer">
-              ${p.image && p.image.src ? `<img class="project-shot" src="${esc(p.image.src)}" alt="${esc(p.image.alt || '')}"
-                width="1200" height="750" loading="lazy" decoding="async">` : ''}
+            <div class="project-card${p.image && p.image.src ? ' has-shot' : ''}">
+              ${p.image && p.image.src ? `<a class="project-shot-link" href="${esc(p.url)}" target="_blank" rel="noreferrer" tabindex="-1"
+                aria-hidden="true"><img class="project-shot" src="${esc(p.image.src)}" alt="${esc(p.image.alt || '')}"
+                width="1200" height="750" loading="lazy" decoding="async"></a>` : ''}
               <header><h4>${esc(p.name)}</h4><code>${esc(p.repo)}</code></header>
-              <p>${esc(p.desc)}</p><b>Open repository ↗</b>
-            </a>`).join('')}</div>` : ''}
+              <p>${esc(p.desc)}</p>
+              <nav class="project-links" aria-label="${esc(p.name)} links"><a href="${esc(p.url)}" target="_blank" rel="noreferrer">Repository ↗</a>${
+                logProject(p.repo) ? `<span aria-hidden="true">|</span><a href="${esc(logLink({ p: p.repo, m: week.monthId }))}">Build log</a>` : ''}</nav>
+            </div>`).join('')}</div>` : ''}
           ${week.note ? `<p class="week-note">${esc(week.note)}</p>` : ''}
           ${evidence.length ? `<div class="evidence"><div class="evidence-inner">
             <h5>Evidence</h5>
@@ -224,7 +349,7 @@
   }
 
   function renderWeeks(month) {
-    const weeks = (month.weeks || []).map(week => ({ ...week, domId: `${month.id}-${week.id}` }));
+    const weeks = (month.weeks || []).map(week => ({ ...week, domId: `${month.id}-${week.id}`, monthId: month.id }));
 
     if (!weeks.length || month.status === 'quiet') {
       el.weekNav.innerHTML = '';
@@ -316,6 +441,7 @@
     updateHead(month);
     renderHero(month);
     renderMetrics(month);
+    renderHours(month);
     observeWeeks(renderWeeks(month));
     renderThreads(month);
     el.footerLine.textContent = `${index.user} · GitHub review · ${month.label}`;
@@ -362,7 +488,7 @@
     const img = event.target;
     if (!img.classList || !img.classList.contains('project-shot')) return;
     img.closest('.project-card').classList.remove('has-shot');
-    img.remove();
+    (img.closest('.project-shot-link') || img).remove();
   }, true);
 
   /* ------------------------------------------------------- evidence toggle */

@@ -56,6 +56,7 @@
 
       <div class="topbar-actions">
         <button class="text-button" id="evidenceToggle" type="button" aria-pressed="false">Show evidence</button>
+        <a class="text-button" href="buildlog.html">Build log</a>
         <a class="button button-ghost" id="profileLink" href="https://github.com/jsundram" target="_blank" rel="noreferrer">GitHub ↗</a>
       </div>
     </nav>
@@ -86,6 +87,20 @@
         <p id="overviewNote">Counts come from commits in the snapshot window. Where a number comes from a project's own build log rather than from GitHub, the note under it says so.</p>
       </div>
       <div class="metric-grid" id="metricGrid" aria-label="Summary metrics"></div>
+    </section>
+
+    <section class="section hours-section" id="hours" aria-labelledby="hours-title" hidden>
+      <div class="section-heading">
+        <p class="kicker">Time at the keyboard</p>
+        <h2 id="hours-title">Where the<br />hours went.</h2>
+        <p>Hands-on hours by project and day, from my Claude Code and Codex session logs.
+        A model, not a timesheet: each prompt counts as the 15 minutes after it, and where two
+        projects overlap the time is split between them. Days are local time.</p>
+      </div>
+      <div class="hours-stats" id="hoursStats"></div>
+      <div class="chart" id="hoursChart"></div>
+      <div class="chart-legend" id="hoursLegend"></div>
+      <a class="hours-link" id="hoursLink" href="buildlog.html">Open the build log →</a>
     </section>
 
     <section class="story-shell" id="story" aria-labelledby="story-title">
@@ -129,8 +144,10 @@
         </div>
         <div class="method-copy">
           <p>Weeks are Monday-based and clipped to the month, so the first and last week of a month are often short. A week that straddles a month boundary appears in both, split.</p>
-          <p>The source is public repository activity, plus one private repository the owner chose to include: <code>boccherini-opus-48</code>, from September 2026. Its commit links open only for collaborators. Other private repos and non-GitHub work are absent, and a quiet week here does not mean a quiet week in general.</p>
-          <p>AI-assisted and coauthored commits are counted as work directed, reviewed, and shipped by the repo owner — not as a claim about who typed each line. Travel and personal context is supplied by hand; none of it is inferred from commit metadata.</p>
+          <p>The source is public repository activity, plus one private repository I chose to include: <code>boccherini-opus-48</code>, from September 2026. Its commit links open only for collaborators. Other private repos and non-GitHub work are absent, and a quiet week here does not mean a quiet week in general.</p>
+          <p>AI-assisted and coauthored commits are counted as work I directed, reviewed, and shipped — not as a claim about who typed each line.</p>
+          <p>Hours come from my archived Claude Code and Codex sessions, not from GitHub. They are modelled: the 15 minutes after each prompt, overlaps split evenly between projects. Reading, testing, and thinking away from the prompt are not counted, and cloud sessions appear only once their commits reach a default branch. Work outside public or named repos is named only where I chose to name it; the rest is "Other".</p>
+          <p>Days are in local time, and travel comes from my Swarm check-ins and my own account, never from commit metadata. Only the city or country of a day away is shown.</p>
           <a id="reposLink" href="https://github.com/jsundram?tab=repositories" target="_blank" rel="noreferrer">Review the public repositories ↗</a>
         </div>
       </div>
@@ -143,6 +160,7 @@
   </footer>
 
   <script src="data/index.js"></script>
+  <script src="charts.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

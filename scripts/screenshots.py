@@ -20,6 +20,7 @@ from __future__ import annotations
 
 import argparse
 import functools
+import os
 import http.server
 import socket
 import socketserver
@@ -109,6 +110,12 @@ def main() -> int:
         "quiet-month": "A month with no activity at all",
         "july-mobile": "July on a phone",
         "july-print": "July as it prints",
+        "july-hours": "July's hours section, with the travel bands",
+        "october-hours": "October's hours section",
+        "buildlog-all": "Build log, all projects and months",
+        "buildlog-project": "Build log, AKM in July",
+        "buildlog-month": "Build log, every project in September",
+        "buildlog-mobile": "Build log on a phone",
     }
 
     parser = argparse.ArgumentParser()
@@ -127,10 +134,15 @@ def main() -> int:
 
     try:
         with sync_playwright() as pw:
-            browser = pw.chromium.launch()
+            # In the macOS sandbox Chrome only starts single-process, and then supports one
+            # context — so every page shares it, and viewports are set per page.
+            sandboxed = os.environ.get("SANDBOX_RUNTIME") == "1" and sys.platform == "darwin"
+            browser = pw.chromium.launch(args=["--single-process"] if sandboxed else [])
+            ctx = browser.new_context(device_scale_factor=2)
 
             def new_page(viewport=DESKTOP, quiet_month=False):
-                page = browser.new_page(viewport=viewport, device_scale_factor=2)
+                page = ctx.new_page()
+                page.set_viewport_size(viewport)
                 if quiet_month:
                     stub_quiet_month(page)
                 return page
@@ -226,6 +238,28 @@ def main() -> int:
                 page.screenshot(path=OUT / "july-print.png", full_page=True)
                 page.close()
 
+            for name, month in (("july-hours", "2026-07"), ("october-hours", "2026-10")):
+                if name in wanted:
+                    page = new_page()
+                    page.goto(f"{base}/#{month}")
+                    settle(page)
+                    page.wait_for_function("!document.querySelector('#hours').hidden")
+                    page.locator("#hours").screenshot(path=OUT / f"{name}.png")
+                    page.close()
+
+            for name, hash_, viewport in (("buildlog-all", "", DESKTOP),
+                                          ("buildlog-project", "#p=AKM&m=2026-07", DESKTOP),
+                                          ("buildlog-month", "#m=2026-09", DESKTOP),
+                                          ("buildlog-mobile", "#p=quartet-log", MOBILE)):
+                if name in wanted:
+                    page = new_page(viewport=viewport)
+                    page.goto(f"{base}/buildlog.html{hash_}")
+                    page.wait_for_function("document.querySelector('#logHours svg')")
+                    page.wait_for_timeout(300)
+                    page.screenshot(path=OUT / f"{name}.png", full_page=True)
+                    page.close()
+
+            ctx.close()
             browser.close()
     finally:
         httpd.shutdown()

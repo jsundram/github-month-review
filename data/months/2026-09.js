@@ -17,7 +17,7 @@ window.REVIEW_MONTHS["2026-09"] = {
     {
       value: "1,000",
       label: "pieces played in a year",
-      note: "Ensemble pieces in the trailing 365 days, crossed on Sep 11. From the owner's playing log, not GitHub"
+      note: "Ensemble pieces in the trailing 365 days, crossed on Sep 11. From my playing log, not GitHub"
     },
     {
       value: "131",
@@ -265,7 +265,7 @@ window.REVIEW_MONTHS["2026-09"] = {
       status: "active",
       intensity: 5,
       title: "A train notifier in four days.",
-      summary: "mbta-glx started on Sep 24: inbound Green Line arrival times at Magoun Square with error bars, and a phone notification that says when to leave. The owner does not commute, but missing a train is costly on the days one is taken, and no existing service notified well enough. The first day built the model, backtests, a live service, an archiver, and ntfy notifications. Sep 26, with 61 commits the month's busiest day, added a live board with a line map that draws trains as cars labelled with their real car numbers, MBTA's own skip and cancellation markers, a replay harness, archive compaction to delta parquet, and the prediction function ported to JavaScript so the board runs as a static page. quartet-log's how-to was rewritten on Sep 22 in four parts split by reader, and on Sep 24 pwa-starter's update check began comparing the running bundle to the server rather than the cache key.",
+      summary: "mbta-glx started on Sep 24: inbound Green Line arrival times at Magoun Square with error bars, and a phone notification that says when to leave. I do not commute, but missing a train is costly on the days I take one, and no existing service notified well enough. The first day built the model, backtests, a live service, an archiver, and ntfy notifications. Sep 26, with 61 commits the month's busiest day, added a live board with a line map that draws trains as cars labelled with their real car numbers, MBTA's own skip and cancellation markers, a replay harness, archive compaction to delta parquet, and the prediction function ported to JavaScript so the board runs as a static page. quartet-log's how-to was rewritten on Sep 22 in four parts split by reader, and on Sep 24 pwa-starter's update check began comparing the running bundle to the server rather than the cache key.",
       themes: [
         "travel",
         "infra",

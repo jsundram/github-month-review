@@ -4,6 +4,13 @@ A dependency-free page that reviews GitHub work one month at a time, with a
 short narrative for each week. Past months stay viewable; quiet weeks say they were
 quiet instead of being padded or hidden.
 
+Alongside it, a build log (`buildlog.html`) shows where the hands-on time went, by
+project and day, from my archived Claude Code and Codex sessions
+([ai-log](../ai-log)), with local time and travel from Swarm check-ins and cost from
+token counts and Modal billing. It opens on a GitHub-style activity calendar (hours or
+commits, coloured by each day's main project), and every project card on a month page
+links to that project's own build log.
+
 ## Preview
 
 Open `index.html` directly, or serve it:
@@ -13,7 +20,8 @@ python3 -m http.server 8000
 ```
 
 Then `http://localhost:8000`. A specific month is `#YYYY-MM`, e.g.
-`http://localhost:8000/#2026-06`.
+`http://localhost:8000/#2026-06`. The build log is `buildlog.html`, filtered by hash:
+`buildlog.html#p=AKM&m=2026-07`.
 
 ## Files
 
@@ -21,14 +29,23 @@ Then `http://localhost:8000`. A specific month is `#YYYY-MM`, e.g.
 - `index.html` — page shell; all month content is rendered by `app.js`
 - `styles.css` — layout, print styles, quiet-state styling
 - `app.js` — month routing, on-demand loading, rendering
+- `buildlog.html` / `buildlog-app.js` — the build log page
+- `charts.js` — the small SVG charts both pages share
+- `data/buildlog.js`, `data/buildlog-detail.js` — hours, sessions, commits, cost; generated
 - `data/index.js` — the list of months (loaded eagerly)
 - `data/months/YYYY-MM.js` — one file per month (loaded on demand)
 - `data/raw/YYYY-MM.json` — GitHub snapshots; facts only, never edited by hand
 - `drafts/YYYY-MM-interview.md` — the questions for a month, and their answers
 - `drafts/YYYY-MM-provenance.json` — the facts a narrative was written against
 - `drafts/YYYY-MM-pending.md` — commits that landed after the narrative was written
+- `drafts/YYYY-MM-sessions.md` — the month's AI sessions for the interview: counts, named projects only
+- `private/` — gitignored: Swarm and Modal caches, session titles, show/hide answers
 - `scripts/fetch_github.py` — snapshot collector
 - `scripts/draft_month.py` — turns a snapshot into a skeleton plus an interview
+- `scripts/build_log.py` — ai-log + Swarm + Modal + snapshots → the build log and session notes
+- `scripts/fetch_swarm.py`, `scripts/fetch_modal.py` — check-ins and billing into `private/`
+- `scripts/localtime.py` — local time and away days from check-ins
+- `scripts/prices.json` — list prices for the API-equivalent cost estimate
 - `scripts/smoke_test.js` — headless render test
 - `scripts/screenshots.py` — Playwright captures into `shots/`
 - `assets/` — favicon and the `og.png` link-preview card, generated from the `.svg` sources
@@ -45,7 +62,19 @@ export GITHUB_TOKEN=...
 ./update.sh --month 2026-08 --new    # draft a month that has no file yet
 ./update.sh --check                  # just run the render test
 ./update.sh --shots                  # also capture screenshots
+./update.sh --no-cloud --no-ask      # quick and unattended: skip cloud sessions, never prompt
 ```
+
+Besides GitHub, a refresh fetches the month's cloud sessions into ai-log and rebuilds
+its index, pulls Swarm check-ins and Modal billing, and rebuilds the build log. Each of
+those may fail without stopping the rest. Run from a terminal it can ask two things: a
+fresh Swarm token when the old one has expired (paste a "Copy as cURL" of a
+`historysearch` request from swarmapp.com/history, or press Enter to skip), and whether
+a folder that is not on GitHub may be named on the page. Both answers are remembered.
+
+Needs: `gh` and `claude` signed in (cloud sessions), the `modal` CLI (billing), and
+Swarm credentials in `.env` (`SWARM_USERID`, `SWARM_WSID`, `SWARM_OAUTH_TOKEN`) or
+`~/Dropbox/Code/swarm/config.json`. Without any of them that step is skipped.
 
 `./update.sh` is a wrapper around `uv run update.py`; either works, and `update.py`
 has no dependencies so plain `python3 update.py` works too.
@@ -117,7 +146,9 @@ tags stay correct for scrapers.
 
 - No global commit total in the hero. Public histories paginate and raw counts
   reward merge mechanics.
-- No inferred context. Travel, deadlines, and reasons a week was quiet are supplied
-  by hand, never derived from commit metadata.
+- No inferred context. Deadlines and reasons a week was quiet are supplied by hand;
+  travel comes from the owner's own Swarm check-ins and is confirmed in the interview.
+  Nothing is derived from commit metadata.
+- No session titles or prompts on the page. Those stay in `private/`.
 - No auto-generated prose. `draft_month.py` produces facts and `TODO`s; a person
   writes the sentences.

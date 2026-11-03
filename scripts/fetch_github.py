@@ -115,6 +115,14 @@ def main() -> int:
     repos_url = f"{API}/users/{urllib.parse.quote(args.user)}/repos?per_page=100&sort=pushed&type=owner"
     repos = paged(repos_url, token)
     known = {r["name"] for r in repos}
+
+    # Every public repo, with or without commits this month. build_log.py uses it to tell a
+    # public repo from a private one when matching AI-session folders to GitHub.
+    public = sorted(r["name"] for r in repos if not r.get("private"))
+    repo_list = Path("data/raw/repos.json")
+    repo_list.parent.mkdir(parents=True, exist_ok=True)
+    repo_list.write_text(json.dumps({"user": args.user, "public": public}, indent=1) + "\n", encoding="utf-8")
+
     for name in args.private:
         if name not in known:
             repo, _ = request_json(f"{API}/repos/{args.user}/{urllib.parse.quote(name)}", token)

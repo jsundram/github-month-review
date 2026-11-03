@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light" />
+  <meta name="theme-color" content="#171918" />
+
+  <title>Build log — Jason Sundram</title>
+  <meta name="description" content="Hands-on hours, sessions, commits, and cost by project, from Jason Sundram's AI session logs and GitHub." />
+  <link rel="canonical" href="https://jsundram.github.io/github-month-review/buildlog.html" />
+  <link rel="icon" type="image/svg+xml" href="assets/icon.svg" />
+  <link rel="icon" type="image/png" href="assets/icon-192.png" />
+  <link rel="apple-touch-icon" href="assets/icon-180.png" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="GitHub month in review" />
+  <meta property="og:title" content="Build log — Jason Sundram" />
+  <meta property="og:description" content="Hands-on hours, sessions, commits, and cost by project." />
+  <meta property="og:url" content="https://jsundram.github.io/github-month-review/buildlog.html" />
+  <meta property="og:image" content="https://jsundram.github.io/github-month-review/assets/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="log-page">
+  <a class="skip-link" href="#log">Skip to the charts</a>
+
+  <header class="hero hero-compact" id="top">
+    <nav class="topbar" aria-label="Primary navigation">
+      <a class="wordmark" href="index.html" aria-label="Month review">JS / GITHUB REVIEW</a>
+      <div class="topbar-actions">
+        <a class="text-button" id="monthLink" href="index.html">Month review</a>
+        <a class="button button-ghost" href="https://github.com/jsundram" target="_blank" rel="noreferrer">GitHub ↗</a>
+      </div>
+    </nav>
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <p class="eyebrow" id="logEyebrow">Build log</p>
+      <h1 id="logTitle">Build log</h1>
+      <p class="dek" id="logLede"></p>
+    </div>
+  </header>
+
+  <main id="log">
+    <noscript>
+      <section class="section"><p class="quiet-note">This page draws its charts with JavaScript. The data is
+      plain JavaScript in <code>data/buildlog.js</code> and <code>data/buildlog-detail.js</code>.</p></section>
+    </noscript>
+
+    <section class="section log-controls" aria-label="Filters">
+      <div class="filter-row" role="group" aria-label="Range" id="rangeFilter"></div>
+      <div class="filter-row" role="group" aria-label="Project" id="projectFilter"></div>
+    </section>
+
+    <section class="section log-section">
+      <div class="metric-grid" id="logStats" aria-label="Summary"></div>
+
+      <div class="log-block">
+        <div class="log-block-head">
+          <h3>Activity</h3>
+          <div class="filter-row cal-mode" role="group" aria-label="Calendar shows" id="calendarMode"></div>
+        </div>
+        <p class="log-note" id="calendarNote"></p>
+        <div class="chart calendar" id="logCalendar"></div>
+        <div class="chart-legend" id="logCalendarLegend"></div>
+      </div>
+
+      <div class="log-block">
+        <h3 id="hoursTitle">Hands-on hours</h3>
+        <p class="log-note" id="hoursNote"></p>
+        <div class="chart" id="logHours"></div>
+        <div class="chart-legend" id="logHoursLegend"></div>
+        <details class="table-view"><summary>Hours as a table</summary><div id="logHoursTable"></div></details>
+      </div>
+
+      <div class="log-block">
+        <h3>Time of day</h3>
+        <p class="log-note">Hands-on hours in each half hour of the local day, summed over the range.</p>
+        <div class="chart" id="logClock"></div>
+        <div class="chart-legend" id="logClockLegend"></div>
+      </div>
+    </section>
+
+    <section class="section log-section" aria-labelledby="shipTitle">
+      <div class="section-heading compact">
+        <p class="kicker">Commits</p>
+        <h2 id="shipTitle">Ship log.</h2>
+      </div>
+      <div class="ship-log" id="shipLog"></div>
+    </section>
+
+    <section class="section log-section" aria-labelledby="sessionsTitle">
+      <div class="section-heading compact">
+        <p class="kicker">From the session logs</p>
+        <h2 id="sessionsTitle">Sessions.</h2>
+        <p>One row per Claude Code, Codex, or claude.ai session in a named project. Minutes are the
+        session's own; overlapping sessions are split only in the charts.</p>
+      </div>
+      <div class="table-wrap" id="sessionTable"></div>
+    </section>
+
+    <section class="section method-section" aria-labelledby="method-title">
+      <div class="method-card">
+        <div>
+          <p class="kicker">Method &amp; caveats</p>
+          <h2 id="method-title">How these numbers are made.</h2>
+        </div>
+        <div class="method-copy">
+          <p><b>Hands-on hours</b> are a model, not a measurement: each prompt I typed counts as the 15 minutes after it, and a day's hours are the union of those windows. Where windows from two projects overlap, the time is split evenly, so the projects in a day add up to that day's total. Long stretches of reading, testing, or thinking between prompts are undercounted; scattered prompts are overcounted.</p>
+          <p><b>Sources.</b> Claude Code and Codex sessions from my two Macs, cloud sessions, and claude.ai chats, which I archive. Cloud sessions are found only through commits on a default branch, so one that made no commits is missing. claude.ai chats are as recent as the last data export: <span id="chatsThrough">—</span>. ChatGPT is not covered.</p>
+          <p><b>Colours</b> follow the project. A project keeps its colour on every chart, chip, and log row; with more projects than colours, two projects share a colour only when they never appear in the same view.</p>
+          <p><b>Projects</b> are named when they are public repos, private repos I chose to include, or work off GitHub I chose to name. Everything else is "Other". Session titles and prompts are never published. Commits come from GitHub, and from the local history of a repo off GitHub that I chose to name; those have no link.</p>
+          <p><b>Cost</b> is in each bar's tooltip. For Claude and Codex it is API-equivalent: the session's tokens priced at list rates. It is not what a subscription charges, and Claude's cache writes are priced at the cheaper 5-minute rate. Modal is the real bill.</p>
+          <p><b>Time</b> is local, from my Swarm check-ins; before the first check-in, New York. Days away show the city or country, never more.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p id="footerLine">Jason Sundram · Build log</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="data/index.js"></script>
+  <script src="data/buildlog.js"></script>
+  <script src="data/buildlog-detail.js"></script>
+  <script src="charts.js"></script>
+  <script src="buildlog-app.js"></script>
+</body>
+</html>

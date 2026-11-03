@@ -17,12 +17,12 @@ window.REVIEW_MONTHS["2026-08"] = {
     {
       value: "142",
       label: "works played",
-      note: "With 40 different people. From the owner's playing log, not GitHub"
+      note: "With 40 different people. From my playing log, not GitHub"
     },
     {
       value: "28",
       label: "days playing, of 31",
-      note: "Including a 12-day streak. From the owner's playing log"
+      note: "Including a 12-day streak. From my playing log"
     },
     {
       value: "3",

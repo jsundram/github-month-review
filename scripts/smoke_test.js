@@ -69,6 +69,10 @@ const run = file => vm.runInContext(
   fs.readFileSync(path.join(ROOT, file), 'utf8'), sandbox, { filename: file });
 
 run('data/index.js');
+// Preloaded, as index.html would after its first lazy load, so the only script app.js
+// injects below is the month file. The missing-build-log path is tested on its own at the end.
+run('data/buildlog.js');
+run('charts.js');
 // Data files write to `window.X`; app.js reads bare `X`. Bridge the two.
 sandbox.REVIEW_INDEX = sandbox.window.REVIEW_INDEX;
 Object.defineProperty(sandbox, 'REVIEW_MONTHS', {
@@ -161,6 +165,16 @@ async function main() {
   check('themes derived from weeks', /Platform/.test(el('heroThemes').innerHTML));
   check('a middle month has next and prev', !el('monthNext').disabled && !el('monthPrev').disabled);
   check('footer names the month', el('footerLine').textContent.endsWith('August 2026'), el('footerLine').textContent);
+  check('hours section shown', el('hours').hidden === false);
+  check('hours chart drawn as SVG', /<svg class="chart-svg"/.test(el('hoursChart').innerHTML));
+  check('one hit target per day of August', count(el('hoursChart').innerHTML, /class="hit"/g) === 31);
+  check('legend names projects and Other', /legend-item/.test(el('hoursLegend').innerHTML));
+  check('hours stats rendered', /hands-on hours/.test(el('hoursStats').innerHTML));
+  check('every week carries an hours line', count(weeks.innerHTML, /class="week-hours"/g) === 6);
+  check('week hours link into the build log', /href="buildlog\.html#p=[^"&]+&amp;m=2026-08"/.test(weeks.innerHTML));
+  check('project cards link the repository and the build log', /<nav class="project-links"[^>]*><a href="https:\/\/github\.com\/[^"]+"[^>]*>Repository ↗<\/a><span aria-hidden="true">\|<\/span><a href="buildlog\.html#p=[^"&]+&amp;m=2026-08">Build log<\/a>/.test(weeks.innerHTML));
+  check('week hours lines carry project swatches', /week-hours[^]*?class="swatch"/.test(weeks.innerHTML));
+  check('build log link scoped to the month', el('hoursLink').href === 'buildlog.html#m=2026-08', el('hoursLink').href);
   check('metrics present, band shown', !document.body.classList.contains('no-metrics'));
   check('August loose threads shown', el('threads').hidden === false);
   check('August has four threads', count(el('threadList').innerHTML, /class="thread"/g) === 4);
@@ -248,6 +262,97 @@ async function main() {
     && count(weeks.innerHTML, /class="project-card"/g) === 1);
   check('screenshot is lazy with a reserved box', /project-shot"[^>]*width="1200" height="750" loading="lazy"/.test(weeks.innerHTML));
   check('screenshot alt is escaped', /alt="A &quot;quoted&quot; page &amp; more"/.test(weeks.innerHTML));
+  check('a month outside the build log hides the hours section', el('hours').hidden === true);
+  check('no hours line outside the build log', !/week-hours/.test(weeks.innerHTML));
+
+  console.log('\n== July: travel from Swarm ==');
+  await navigate('#2026-07');
+  check('away days marked under the chart', /class="away"/.test(el('hoursChart').innerHTML));
+  check('away key in the legend', /away-key/.test(el('hoursLegend').innerHTML));
+  check('a week names where it was spent', /class="away">[^<]*Austria/.test(weeks.innerHTML));
+
+  console.log('\n== no build log ==');
+  const log = sandbox.window.REVIEW_BUILDLOG;
+  delete sandbox.window.REVIEW_BUILDLOG;
+  pending.length = 0;
+  await navigate('#2026-08');
+  check('hours section hidden until it loads', el('hours').hidden === true);
+  check('weeks render without hours lines', count(weeks.innerHTML, /<article class="week-chapter"/g) === 6
+    && !/week-hours/.test(weeks.innerHTML));
+  check('build log requested lazily', pending.some(node => node.src === 'data/buildlog.js'));
+  sandbox.window.REVIEW_BUILDLOG = log;
+
+  // buildlog.html: the same stub DOM, its own script. Element ids differ from index.html's.
+  console.log('\n== build log: all projects, all months ==');
+  run('data/buildlog-detail.js');
+  const logPage = async hash => { sandbox.location.hash = hash; run('buildlog-app.js'); await tick(); };
+  await logPage('');
+  const stats = el('logStats').innerHTML;
+  check('title says all projects', el('logTitle').textContent === 'All projects', el('logTitle').textContent);
+  check('stats include hours, commits, and cost', /hands-on hours/.test(stats) && /commits on GitHub/.test(stats) && /API-equivalent cost/.test(stats));
+  check('weekly bars across the range', count(el('logHours').innerHTML, /class="hit"/g) > 15);
+  check('a legend for the stack', count(el('logHoursLegend').innerHTML, /legend-item/g) >= 2);
+  check('time of day has 48 slots', count(el('logClock').innerHTML, /class="hit"/g) === 48);
+  check('calendar has a square per day', count(el('logCalendar').innerHTML, /class="hit cal-hit"/g) === sandbox.window.REVIEW_BUILDLOG.days.length);
+  check('calendar offers hours and commits', /data-mode="hours"/.test(el('calendarMode').innerHTML) && /data-mode="commits"/.test(el('calendarMode').innerHTML));
+  check('hours tooltips carry API-equivalent cost', el('logHours')._tips.some(t => t.rows.some(r => /API-equivalent/.test(r.name))));
+  check('project chips wear their chart colour', /chip tinted" href="#p=[^"]+" style="--c:#[0-9a-f]{6}"/.test(el('projectFilter').innerHTML));
+  check('a chip and its legend entry share a colour', (() => {
+    const m = el('logHoursLegend').innerHTML.match(/background:(#[0-9a-f]{6})"><\/i>([^<]+)</);
+    return m && el('projectFilter').innerHTML.includes(`href="#p=${encodeURIComponent(m[2])}" style="--c:${m[1]}"`);
+  })());
+  check('ship and session rows carry a swatch', /class="swatch"/.test(el('shipLog').innerHTML) && /class="swatch"/.test(el('sessionTable').innerHTML));
+  check('table view rendered', /<table class="data-table">/.test(el('logHoursTable').innerHTML));
+  check('ship log lists commits', /class="ship-day"/.test(el('shipLog').innerHTML));
+  check('sessions table rendered', /<table class="data-table">/.test(el('sessionTable').innerHTML));
+  check('no session titles leak into the page data', !Object.prototype.hasOwnProperty.call(sandbox.window.REVIEW_BUILDLOG_DETAIL.sessions[0], 'title'));
+  check('range chips for every month', count(el('rangeFilter').innerHTML, /class="chip/g) === 1 + new Set(sandbox.window.REVIEW_BUILDLOG.days.map(d => d.d.slice(0, 7))).size);
+
+  const localCommit = sandbox.window.REVIEW_BUILDLOG_DETAIL.commits.find(c => !c.url);
+  if (localCommit) {
+    await logPage(`#p=${encodeURIComponent(localCommit.p)}`);
+    check('a local commit shows without a link', el('shipLog').innerHTML.includes(`<span>${localCommit.msg.replace(/&/g, '&amp;').replace(/</g, '&lt;')}`)
+      && !/href="(undefined)?"/.test(el('shipLog').innerHTML));
+  }
+
+  console.log('\n== build log: one project, one month ==');
+  await logPage('#p=AKM&m=2026-07');
+  check('title is the project', el('logTitle').textContent === 'AKM', el('logTitle').textContent);
+  check('July has a bar per day', count(el('logHours').innerHTML, /class="hit"/g) === 31);
+  check('commit ticks on the bars', /commit-tick/.test(el('logHours').innerHTML));
+  check('a single series needs no legend', !/legend-item"/.test(el('logHoursLegend').innerHTML.replace(/away-key/g, '')));
+  check('ship log omits the repo column', !/<code>AKM<\/code>/.test(el('shipLog').innerHTML));
+  check('active chip marked', /chip active tinted" href="#p=AKM&amp;m=2026-07"/.test(el('projectFilter').innerHTML));
+  check('July calendar has a square per day', count(el('logCalendar').innerHTML, /class="hit cal-hit"/g) === 31);
+  check('month review link goes to July', el('monthLink').href === 'index.html#2026-07', el('monthLink').href);
+
+  console.log('\n== build log: switching projects keeps every project\'s data ==');
+  const before = JSON.stringify(sandbox.window.REVIEW_BUILDLOG.days);
+  await logPage('#p=gerard');
+  await logPage('#p=AKM');
+  check('the shared day data is never edited', JSON.stringify(sandbox.window.REVIEW_BUILDLOG.days) === before);
+  check('a second project still has hours', /AKM/.test(el('logHours')._tips.map(t => t.rows.map(r => r.name).join()).join()));
+  const akm = sandbox.window.ReviewCharts.projectColors(sandbox.window.REVIEW_BUILDLOG.days).AKM;
+  check('its calendar wears its colour', el('logCalendar').innerHTML.includes(`fill="${akm}"`));
+  await logPage('');
+  check('all projects again has a full legend', count(el('logHoursLegend').innerHTML, /legend-item/g) >= 5);
+  check('hours tooltips name projects, not Other', el('logHours')._tips.every(t => !t.rows.some(r => r.name === 'Other'))
+    && el('logHours')._tips.some(t => t.rows.some(r => r.color === sandbox.window.ReviewCharts.OTHER && r.name !== 'unnamed work' && !/more$/.test(r.name))));
+  check('calendar tooltips name the repos behind a day\'s commits', el('logCalendar')._tips.some(t => {
+    const i = t.rows.findIndex(r => /^commits?$/.test(r.name));
+    return i >= 0 && t.rows.length > i + 1 && /^\d+$/.test(t.rows[i + 1].value);
+  }));
+  check('calendar tooltips name projects, not Other', el('logCalendar')._tips.every(t => !t.rows.some(r => r.name === 'Other')));
+  check('calendar legend has a row per month', count(el('logCalendarLegend').innerHTML, /class="cal-legend-month"/g) === new Set(sandbox.window.REVIEW_BUILDLOG.days.map(d => d.d.slice(0, 7))).size);
+  check('calendar legend names are buttons that pick a project', /<button type="button" class="legend-item legend-pick" data-p="[^"]+"/.test(el('logCalendarLegend').innerHTML)
+    && !/legend-pick" data-p="Other"/.test(el('logCalendarLegend').innerHTML));
+  check('calendar depth steps come from the data', /up to [\d.]+h · /.test(el('logCalendarLegend').innerHTML), el('logCalendarLegend').innerHTML.match(/<small>[^<]*<\/small>/));
+  check('calendar month labels link to the month', /<a class="cal-month" href="#m=2026-07">/.test(el('logCalendar').innerHTML));
+  check('calendar days are not links', !/onSelect|cal-hit[^>]*href/.test(el('logCalendar').innerHTML));
+
+  console.log('\n== build log: unknown project falls back to all ==');
+  await logPage('#p=nope&m=1999-01');
+  check('falls back to all projects', el('logTitle').textContent === 'All projects');
 }
 
 main().then(() => {

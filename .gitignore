@@ -5,6 +5,10 @@ __pycache__/
 *.pyc
 update.log
 
+# Swarm check-ins, Modal app names, session titles, and show/hide answers for
+# private projects. build_log.py publishes only what these allow. Never commit it.
+private/
+
 # Regenerated on demand.
 shots/
 

@@ -25,6 +25,9 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 from typing import Any
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from localtime import Clock  # noqa: E402
+
 TODO = "TODO"
 MAX_EVIDENCE = 6            # evidence links shown on the page
 MAX_INTERVIEW_COMMITS = 25  # commits listed per repo per week in the interview
@@ -35,6 +38,14 @@ NOISE = re.compile(
     r"^(merge |bump |chore|typo|fix typo|wip\b|revert |update readme|formatting|lint\b|whitespace)",
     re.IGNORECASE,
 )
+
+
+CLOCK = Clock.load()
+
+
+def local_day(iso: str) -> date:
+    """The owner's local date for a UTC commit time — Swarm's zone, else New York."""
+    return CLOCK.local(datetime.fromisoformat(iso.replace("Z", "+00:00"))).date()
 
 
 def month_bounds(month: str) -> tuple[date, date]:
@@ -103,7 +114,7 @@ def build(snapshot: dict, month: str) -> tuple[dict, list[dict], list[dict]]:
     by_day: dict[date, list[dict]] = defaultdict(list)
     for repo in snapshot.get("repositories", []):
         for commit in repo["commits"]:
-            day = datetime.fromisoformat(commit["date"].replace("Z", "+00:00")).date()
+            day = local_day(commit["date"])
             by_day[day].append({**commit, "repo": repo["name"], "repo_url": repo["html_url"],
                                 "repo_desc": repo.get("description")})
 
@@ -233,7 +244,7 @@ def day_strip(commits: list[dict], start: date, end: date, peak: int | None = No
     """
     per_day: dict[date, int] = defaultdict(int)
     for commit in commits:
-        per_day[datetime.fromisoformat(commit["date"].replace("Z", "+00:00")).date()] += 1
+        per_day[local_day(commit["date"])] += 1
     peak = peak or max(per_day.values(), default=0)
     rows = ["```"]
     day = start
@@ -281,7 +292,7 @@ def render_interview(month: str, data: dict, weeks: list[dict], buckets: list[di
     total = len(all_commits)
     per_day_month: dict[date, int] = defaultdict(int)
     for commit in all_commits:
-        per_day_month[datetime.fromisoformat(commit["date"].replace("Z", "+00:00")).date()] += 1
+        per_day_month[local_day(commit["date"])] += 1
     month_peak = max(per_day_month.values(), default=0)
     top = ranked[0][0] if ranked else None
     top_share = round(100 * len(ranked[0][1]) / total) if total else 0
@@ -315,11 +326,16 @@ def render_interview(month: str, data: dict, weeks: list[dict], buckets: list[di
 
         first_day = date.fromisoformat(data["coverage"]["start"])
         last_day = date.fromisoformat(data["coverage"]["end"])
-        lines += ["Commits per day across the month:", ""]
+        lines += ["Commits per day across the month (local days):", ""]
         lines += day_strip(all_commits, first_day, last_day, month_peak)
         lines.append("")
 
-    lines += ["## The month", ""]
+    lines += [
+        f"**AI sessions:** `drafts/{month}-sessions.md` has hands-on hours by project and week, "
+        "travel days, and sessions that ended without a commit. Session titles are in "
+        f"`private/{month}-sessions.md` — quote them in conversation, never into this file.",
+        "",
+        "## The month", ""]
     month_questions = [
         "In one sentence, what was this month mostly about?",
         "What went wrong, stalled, or got thrown away? Nothing in a commit log admits to a "

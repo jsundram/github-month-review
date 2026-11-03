@@ -10,6 +10,13 @@
     uv run update.py --new               # draft a month that has no file yet
     uv run update.py --check             # just run the render test
     uv run update.py --shots             # also capture screenshots
+    uv run update.py --no-cloud          # skip the slow cloud-session fetch
+
+Besides GitHub, a refresh pulls the month's AI sessions (ai-log: cloud sessions, then
+its index), Swarm check-ins (local time and travel), and Modal billing, then rebuilds
+data/buildlog.js and drafts/<month>-sessions.md. Each of those is optional: a failure
+is reported and the rest carries on with what is already on disk. Run from a terminal,
+it may ask questions (an expired Swarm token, a folder not on GitHub); --no-ask stops that.
 
 The one rule this script enforces: **it never overwrites narrative.** If a month
 already has a hand-written file, a refresh only re-fetches the snapshot and
@@ -44,8 +51,11 @@ ROOT = Path(__file__).resolve().parent
 PY = sys.executable
 
 
-def sh(*args: str, quiet: bool = False) -> subprocess.CompletedProcess:
-    result = subprocess.run(args, cwd=ROOT, capture_output=True, text=True)
+def sh(*args: str, quiet: bool = False, live: bool = False, cwd: Path = ROOT) -> subprocess.CompletedProcess:
+    """Run a command. `live` passes the terminal through, for long or interactive steps."""
+    if live:
+        return subprocess.run(args, cwd=cwd)
+    result = subprocess.run(args, cwd=cwd, capture_output=True, text=True)
     if not quiet and result.stdout.strip():
         print("\n".join(f"  {line}" for line in result.stdout.strip().splitlines()))
     if result.returncode and result.stderr.strip():
@@ -72,6 +82,44 @@ def load_dotenv() -> None:
             continue
         key, _, value = line.partition("=")
         os.environ.setdefault(key.strip(), value.strip().strip("'\""))
+
+
+def refresh_sessions(month: str, args: argparse.Namespace) -> None:
+    """AI sessions, Swarm, Modal, then the build log. Every step is allowed to fail."""
+    ai_log = Path(os.environ.get("AI_LOG_DIR") or Path.home() / "Dropbox" / "Code" / "ai-log")
+    step("AI sessions")
+    if not (ai_log / "index.py").exists():
+        print(f"  no ai-log at {ai_log}; set AI_LOG_DIR. Using the build log as it is.")
+    else:
+        if args.no_cloud:
+            print("  skipped the cloud-session fetch (--no-cloud)")
+        else:
+            # Finds cloud sessions through commit search and downloads the missing ones,
+            # ~15 s each; already-archived ones are skipped, so a rerun is quick.
+            if sh("python3", "cloud.py", "--month", month, live=True, cwd=ai_log).returncode:
+                print("  cloud fetch failed (GitHub's search rate limit, or `gh`/`claude` signed out); "
+                      "continuing with what is archived")
+        if sh("python3", "index.py", cwd=ai_log, quiet=True).returncode:
+            print("  ai-log index.py failed; using the last index")
+
+    step("Swarm check-ins")
+    if args.no_swarm:
+        print("  skipped (--no-swarm)")
+    else:
+        swarm = [PY, "scripts/fetch_swarm.py", "--month", month] + (["--no-refresh"] if args.no_ask else [])
+        if sh(*swarm, live=True).returncode not in (0, 3):
+            print("  Swarm fetch failed; using cached check-ins")
+
+    step("Modal billing")
+    if args.no_modal:
+        print("  skipped (--no-modal)")
+    elif sh(PY, "scripts/fetch_modal.py", "--month", month).returncode not in (0, 3):
+        print("  Modal billing failed; using the cached report")
+
+    step("Build log")
+    build = [PY, "scripts/build_log.py", "--month", month] + (["--no-ask"] if args.no_ask else [])
+    if sh(*build, live=True).returncode:
+        print("  build_log.py failed; data/buildlog.js was not updated")
 
 
 def snapshot_provenance(snapshot: dict) -> dict:
@@ -138,10 +186,18 @@ def main() -> int:
     parser.add_argument("--check", action="store_true", help="Run the render test and stop")
     parser.add_argument("--no-check", action="store_true", help="Skip the render test")
     parser.add_argument("--shots", action="store_true", help="Capture screenshots when done")
+    parser.add_argument("--no-sessions", action="store_true",
+                        help="Skip AI sessions, Swarm, Modal, and the build log entirely")
+    parser.add_argument("--no-cloud", action="store_true", help="Skip ai-log's cloud-session fetch")
+    parser.add_argument("--no-swarm", action="store_true", help="Skip the Swarm check-in fetch")
+    parser.add_argument("--no-modal", action="store_true", help="Skip Modal billing")
+    parser.add_argument("--no-ask", action="store_true",
+                        help="Never prompt (token refresh, show/hide); implied when not run from a terminal")
     parser.add_argument("--fail-on-stale", action="store_true",
                         help="Exit 2 if a month's narrative is behind its snapshot (for CI)")
     args = parser.parse_args()
     load_dotenv()
+    sys.stdout.reconfigure(line_buffering=True)     # keep order with the live child steps in a log
 
     if args.check:
         step("Render test")
@@ -175,6 +231,10 @@ def main() -> int:
             return 1
 
     snapshot = json.loads(raw_file.read_text(encoding="utf-8"))
+
+    # --------------------------------------------------- sessions + build log
+    if not args.no_sessions:
+        refresh_sessions(month, args)
 
     # ------------------------------------------------------- draft or diff
     if not month_file.exists() or (args.new and args.force):

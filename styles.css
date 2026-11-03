@@ -179,7 +179,7 @@ body.load-error .dek { color: var(--gold); font-family: ui-monospace, SFMono-Reg
 .theme-tag { padding: 6px 9px; border: 1px solid var(--line); border-radius: 999px; font-size: 10px; text-transform: uppercase; letter-spacing: .09em; font-weight: 800; }
 /* auto-fill keeps empty tracks, so a lone card stays one column wide instead of stretching its screenshot */
 .project-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
-.project-card { text-decoration: none; border: 1px solid var(--line); border-radius: 14px; padding: 22px; min-height: 180px; transition: transform .2s ease, background .2s ease; }
+.project-card { position: relative; border: 1px solid var(--line); border-radius: 14px; padding: 22px; min-height: 180px; transition: transform .2s ease, background .2s ease; }
 .project-card:hover { transform: translateY(-3px); background: var(--paper); }
 /* Stacked, not side by side: with three cards in a row the repo slug gets
    squeezed into an unreadable column against the title. */
@@ -187,7 +187,10 @@ body.load-error .dek { color: var(--gold); font-family: ui-monospace, SFMono-Reg
 .project-card h4 { margin: 0; font-size: 18px; line-height: 1.2; }
 .project-card code { display: block; margin-top: 5px; font-size: 10.5px; color: var(--muted); overflow-wrap: anywhere; }
 .project-card p { color: var(--muted); line-height: 1.45; font-size: 14px; }
-.project-card b { display: inline-block; margin-top: 12px; color: var(--accent); font-size: 12px; }
+.project-card .project-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; font-size: 12px; font-weight: 800; color: var(--muted); }
+.project-card .project-links a { color: var(--accent); text-decoration: none; }
+.project-card .project-links a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.project-shot-link { display: block; }
 /* Screenshot, flush with the card's top edge. The 16:10 box is reserved before the
    image loads, so nothing below it moves. Cropped from the top: that is where a page's
    title and controls are. */
@@ -320,4 +323,139 @@ footer a { font-weight: 800; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
+
+/* ------------------------------------------------------- hours + charts */
+
+.hours-section { padding-top: 40px; padding-bottom: 90px; }
+.hours-section[hidden] { display: none; }
+.hours-stats { margin-top: 44px; display: flex; flex-wrap: wrap; gap: 8px 28px; font-size: 14px; color: var(--muted); }
+.hours-stats b { color: var(--ink); font-size: 22px; letter-spacing: -.02em; margin-right: 3px; }
+.chart { margin-top: 22px; position: relative; min-height: 120px; }
+.chart-svg { display: block; max-width: 100%; height: auto; overflow: visible; }
+.chart-svg .grid { stroke: rgba(23, 25, 24, .1); stroke-width: 1; shape-rendering: crispEdges; }
+.chart-svg .grid.base { stroke: rgba(23, 25, 24, .32); }
+.chart-svg .tick { fill: var(--muted); font-size: 10.5px; font-variant-numeric: tabular-nums; }
+.chart-svg .commit-tick { stroke: var(--ink); stroke-width: 1.5; opacity: .55; }
+.chart-svg .hit { fill: transparent; cursor: default; outline: none; }
+.chart-svg .hit.on, .chart-svg .hit:focus-visible { fill: rgba(23, 25, 24, .05); }
+.chart-legend { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 12px; color: var(--ink-2); }
+.legend-item { display: inline-flex; align-items: center; gap: 7px; }
+.legend-item i { width: 11px; height: 11px; border-radius: 3px; flex: none; }
+.legend-item small { color: var(--muted); }
+.legend-item.away-key i { height: 3px; width: 16px; border-radius: 2px; background: var(--gold); }
+.hours-link { display: inline-block; margin-top: 26px; color: var(--accent); font-size: 13px; font-weight: 800; text-underline-offset: 4px; }
+
+.chart-tip {
+  position: absolute; z-index: 60; pointer-events: none; min-width: 150px; max-width: 280px;
+  padding: 10px 12px; border-radius: 10px; background: var(--white); color: var(--ink);
+  box-shadow: 0 10px 34px rgba(23, 25, 24, .18); font-size: 12px; line-height: 1.35;
+  display: grid; gap: 3px;
+}
+.chart-tip[hidden] { display: none; }
+.chart-tip strong { font-size: 12.5px; }
+.chart-tip small { color: var(--muted); margin-bottom: 3px; }
+.chart-tip-row { display: flex; align-items: center; gap: 7px; }
+.chart-tip-row i { width: 12px; height: 2px; border-radius: 1px; flex: none; }
+.chart-tip-row b { font-variant-numeric: tabular-nums; min-width: 34px; }
+.chart-tip-row em { font-style: normal; color: var(--muted); overflow-wrap: anywhere; }
+
+.week-hours { margin: 16px 0 0; font-size: 13px; color: var(--muted); line-height: 1.5; }
+.week-hours b { color: var(--ink); }
+.week-hours a { color: inherit; text-decoration-color: rgba(23, 25, 24, .3); text-underline-offset: 3px; }
+.week-hours a:hover { color: var(--ink); }
+.week-hours .swatch { margin-right: 5px; }
+.week-hours .away { color: var(--ink-2); font-weight: 700; }
+.week-hours .away::before { content: ""; display: inline-block; width: 12px; height: 3px; border-radius: 2px; background: var(--gold); margin-right: 6px; vertical-align: 3px; }
+.week-chapter.quiet .week-hours { margin-top: 6px; }
+
+@media print {
+  .chart-tip, .hours-link { display: none !important; }
+}
+
+/* ---------------------------------------------------------- build log */
+
+.hero-compact { min-height: auto; }
+.hero-compact::after { width: 34vw; height: 34vw; min-width: 300px; min-height: 300px; right: -10vw; bottom: -22vw; }
+.hero-compact .hero-inner { padding: 56px 0 64px; }
+.hero-compact h1 { font-size: clamp(54px, 8vw, 104px); line-height: .9; }
+.hero-compact .dek { margin: 26px 0 0; font-size: clamp(17px, 1.8vw, 22px); }
+.hero-compact .dek a { color: var(--cyan); text-underline-offset: 4px; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+.log-controls { padding: 34px 0 0; display: grid; gap: 12px; }
+.filter-row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.filter-label { width: 74px; font-size: 10px; text-transform: uppercase; letter-spacing: .13em; font-weight: 800; color: var(--muted); }
+.chip {
+  display: inline-flex; align-items: baseline; gap: 5px; padding: 7px 12px; border-radius: 999px;
+  border: 1px solid var(--line); font-size: 12.5px; font-weight: 700; text-decoration: none; color: var(--ink-2);
+}
+.chip small { font-weight: 600; color: var(--muted); font-size: 10.5px; }
+.chip:hover { background: var(--paper-2); }
+.chip.active { background: var(--ink); border-color: var(--ink); color: var(--white); }
+.chip.active small { color: rgba(255, 253, 247, .65); }
+button.chip { font: inherit; font-size: 12.5px; font-weight: 700; background: transparent; cursor: pointer; }
+/* A project chip wears a wash of its chart colour and a dot of it; the text stays ink. */
+.chip.tinted { background: color-mix(in srgb, var(--c) 13%, transparent); border-color: color-mix(in srgb, var(--c) 40%, transparent); }
+.chip.tinted::before { content: ""; align-self: center; width: 8px; height: 8px; border-radius: 50%; background: var(--c); flex: none; }
+.chip.tinted:hover { background: color-mix(in srgb, var(--c) 22%, transparent); }
+.chip.tinted.active { background: var(--ink); border-color: var(--ink); }
+.swatch { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 6px; vertical-align: 0; flex: none; }
+.chip-more select {
+  font: inherit; font-size: 12.5px; font-weight: 700; padding: 7px 10px; border-radius: 999px;
+  border: 1px solid var(--line); background: transparent; color: var(--ink-2);
+}
+
+.log-section { padding: 46px 0; }
+.log-section .metric-grid { margin-top: 0; }
+.log-block { margin-top: 58px; }
+.log-block h3 { margin: 0; font-size: clamp(26px, 3vw, 36px); letter-spacing: -.04em; }
+.log-block-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; }
+.calendar { margin-top: 18px; overflow-x: auto; }
+.calendar-svg { max-width: none; }
+.chart-svg .cal-month text { fill: var(--ink-2); font-weight: 800; text-decoration: underline; text-decoration-color: rgba(23, 25, 24, .3); }
+.chart-svg .cal-month:hover text { fill: var(--accent); }
+.chart-svg .cal-hit.on, .chart-svg .cal-hit:focus-visible { fill: transparent; stroke: var(--ink); stroke-width: 1.5; }
+.chart-svg .cal-dot { fill: var(--ink); opacity: .7; }
+.cal-legend { flex-basis: 100%; border-bottom: 1px solid var(--line); margin-bottom: 4px; }
+.cal-legend-month { display: grid; grid-template-columns: 44px 1fr; align-items: baseline; padding: 5px 0; border-top: 1px solid var(--line); }
+.cal-legend-month > b { font-size: 10px; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); }
+.cal-legend-month > div { display: grid; grid-template-columns: repeat(auto-fill, 164px); gap: 2px 12px; }
+.cal-legend-month .legend-item { min-width: 0; overflow-wrap: anywhere; }
+button.legend-pick { font: inherit; color: inherit; background: none; border: 0; padding: 1px 4px; margin: 0 -4px; border-radius: 4px; cursor: pointer; text-align: left; }
+button.legend-pick:hover, button.legend-pick:focus-visible { background: var(--line); outline: none; }
+.cal-ramp i { width: 10px !important; border-radius: 2px !important; }
+.cal-ramp i + i { margin-left: -4px; }
+.cal-ramp small { margin-left: 4px; }
+.cal-dot-key i { width: 5px !important; height: 5px !important; border-radius: 50% !important; background: var(--ink); opacity: .7; }
+.log-note { margin: 8px 0 0; max-width: 720px; color: var(--muted); font-size: 14px; line-height: 1.5; }
+.table-view { margin-top: 16px; font-size: 13px; }
+.table-view summary { cursor: pointer; color: var(--muted); font-weight: 700; }
+.table-wrap { overflow-x: auto; margin-top: 12px; }
+.log-section .section-heading + .table-wrap, .log-section .section-heading + .ship-log { margin-top: 34px; }
+.data-table { border-collapse: collapse; font-size: 12.5px; font-variant-numeric: tabular-nums; min-width: 100%; }
+.data-table th, .data-table td { padding: 7px 10px; border-bottom: 1px solid var(--line); text-align: right; white-space: nowrap; }
+.data-table th:first-child, .data-table td:first-child { text-align: left; }
+.data-table thead th { font-size: 10px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+.data-table small { color: var(--muted); }
+.data-table a { color: inherit; text-underline-offset: 3px; }
+.data-table td:nth-child(2):not(:last-child) { text-align: left; }
+
+.ship-log { display: grid; gap: 22px; }
+.ship-day h4 { margin: 0 0 8px; font-size: 13px; }
+.ship-day h4 small { color: var(--muted); font-weight: 600; margin-left: 4px; }
+.ship-day ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 5px; }
+.ship-day li { display: flex; gap: 10px; align-items: baseline; font-size: 13.5px; line-height: 1.4; }
+.ship-day time { flex: none; width: 38px; color: var(--muted); font-variant-numeric: tabular-nums; font-size: 12px; }
+.ship-day code { flex: none; font-size: 10.5px; color: var(--muted); }
+.ship-day code .swatch { margin-right: 5px; }
+.ship-day a { color: var(--ink-2); text-decoration-color: rgba(23, 25, 24, .25); text-underline-offset: 3px; }
+.ship-day .via { flex: none; padding: 1px 7px; border-radius: 999px; background: var(--cyan); font-size: 9.5px; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
+.show-all { color: var(--accent); font-weight: 800; padding-left: 0; }
+
+@media (max-width: 620px) {
+  .hero-compact::after { width: 200px; height: 200px; min-width: 0; min-height: 0; right: -90px; bottom: -130px; }
+  .filter-label { width: 100%; }
+  .ship-day li { flex-wrap: wrap; gap: 2px 8px; }
+  .ship-day a { flex-basis: 100%; }
 }

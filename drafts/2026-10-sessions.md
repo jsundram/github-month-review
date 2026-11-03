@@ -8,24 +8,25 @@ Hands-on hours are a model — a 15-minute window after each prompt, overlaps sp
 
 ## The month
 
-247.7 hands-on hours · 158 sessions · 724 commits on GitHub
+248.0 hands-on hours · 160 sessions · 724 commits on GitHub
 
 | project | hours | sessions | commits |
 | --- | ---: | ---: | ---: |
-| boccherini-opus-48 | 119.0 | 44 | 335 |
-| manuscript-labeler | 39.0 | 7 | 244 |
+| boccherini-opus-48 | 114.0 | 43 | 335 |
+| manuscript-labeler | 39.3 | 8 | 244 |
 | Other | 36.6 | 56 | 0 |
-| boccherini-kb | 16.6 | 9 | 0 |
-| midi-align | 7.1 | 1 | 0 |
+| boccherini-kb | 16.5 | 9 | 0 |
+| midi-align | 7.0 | 1 | 0 |
 | boccherini-quartet-data | 6.2 | 2 | 0 |
-| quartet-log | 2.9 | 5 | 17 |
+| lilypond | 4.9 | 1 | 0 |
 | quartets.boccherini.org | 2.8 | 4 | 8 |
+| quartet-log | 2.8 | 5 | 17 |
 | gerard | 2.8 | 2 | 0 |
 | github-month-review | 2.5 | 2 | 1 |
 | mbta-glx | 2.3 | 5 | 18 |
 | boccherini-haydn-timeline | 1.7 | 3 | 4 |
+| boccherini-sources | 1.6 | 5 | 1 |
 | pwa-starter | 1.4 | 3 | 27 |
-| boccherini-sources | 1.2 | 4 | 1 |
 | quartet-chooser | 1.1 | 4 | 10 |
 | an3 | 1.0 | 1 | 41 |
 | ai-log | 0.9 | 1 | 12 |
@@ -36,8 +37,8 @@ Hands-on hours are a model — a 15-minute window after each prompt, overlaps sp
 | viz.runningwithdata.com | 0.2 | 1 | 0 |
 | quartet-composers | 0.1 | 1 | 3 |
 
-API-equivalent cost: claude $4,451, codex $1,037, modal $111 (Modal is the real bill).
-Unpriced across the whole log (model not in scripts/prices.json): codex-auto-review ×71, ? ×3, claude-haiku-5-5 ×1
+API-equivalent cost: claude $4,482, codex $1,037, modal $111 (Modal is the real bill).
+Unpriced across the whole log (model not in scripts/prices.json): codex-auto-review ×73, ? ×3, claude-haiku-5-5 ×2
 
 **Questions**
 
@@ -186,15 +187,16 @@ Sessions of 30+ minutes with no commit — finished elsewhere, abandoned, or jus
 
 | project | hours |
 | --- | ---: |
-| boccherini-opus-48 | 20.8 |
+| boccherini-opus-48 | 19.9 |
 | Other | 11.5 |
 | boccherini-kb | 2.6 |
 | midi-align | 1.8 |
-| quartet-log | 1.5 |
+| quartet-log | 1.3 |
 | github-month-review | 1.3 |
+| manuscript-labeler | 1.2 |
 | ai-log | 0.9 |
-| manuscript-labeler | 0.9 |
 | pwa-starter | 0.9 |
+| lilypond | 0.9 |
 | gerard | 0.7 |
 | lissajous-tuner | 0.5 |
 | quartet-chooser | 0.5 |
@@ -215,6 +217,7 @@ Sun Oct 25  ███ 2.2h
 Sessions of 30+ minutes with no commit — finished elsewhere, abandoned, or just talk?
 
 - `2026-10-19 00:42` quartet-log, 103 min, 14 prompts
+- `2026-10-19 02:02` manuscript-labeler, 45 min, 3 prompts
 - `2026-10-20 01:34` quartets.boccherini.org, 40 min, 4 prompts
 - `2026-10-20 02:18` quartet-composers, 30 min, 3 prompts
 - `2026-10-20 02:18` pwa-starter, 132 min, 21 prompts
@@ -228,26 +231,27 @@ Sessions of 30+ minutes with no commit — finished elsewhere, abandoned, or jus
 - `2026-10-23 12:41` boccherini-kb, 75 min, 5 prompts
 - `2026-10-23 17:05` boccherini-opus-48, 196 min, 24 prompts
 - `2026-10-23 17:54` boccherini-opus-48, 57 min, 9 prompts
-- `2026-10-23 18:22` boccherini-opus-48, 449 min, 55 prompts
 - `2026-10-25 13:10` boccherini-kb, 73 min, 8 prompts
 
 ### Week 05 — Oct 26–Oct 31
 
-43.1 hands-on hours · away: Sandwich, MA
+43.2 hands-on hours · away: Sandwich, MA
 
 | project | hours |
 | --- | ---: |
-| boccherini-opus-48 | 27.7 |
-| boccherini-quartet-data | 6.0 |
-| boccherini-kb | 2.8 |
+| boccherini-opus-48 | 23.6 |
+| boccherini-quartet-data | 5.9 |
+| lilypond | 4.0 |
 | Other | 2.8 |
+| boccherini-kb | 2.7 |
 | manuscript-labeler | 1.8 |
 | mbta-glx | 1.4 |
 | pwa-starter | 0.5 |
+| boccherini-sources | 0.3 |
 | quartet-log | 0.1 |
 
 ```
-Mon Oct 26  ██████ 4.0h
+Mon Oct 26  ███████ 4.2h
 Tue Oct 27  ███████████████ 9.8h
 Wed Oct 28  ████████████████████████ 15.4h
 Thu Oct 29  ███████ 4.4h
@@ -258,8 +262,9 @@ Sat Oct 31  ████████████ 7.4h
 Sessions of 30+ minutes with no commit — finished elsewhere, abandoned, or just talk?
 
 - `2026-10-26 13:30` boccherini-kb, 35 min, 3 prompts
+- `2026-10-26 13:31` boccherini-sources, 36 min, 3 prompts
 - `2026-10-27 13:28` boccherini-kb, 122 min, 12 prompts
-- `2026-10-27 15:05` boccherini-quartet-data, 737 min, 78 prompts
+- `2026-10-27 15:05` boccherini-quartet-data, 872 min, 97 prompts
 - `2026-10-27 16:08` mbta-glx, 146 min, 21 prompts
 - `2026-10-27 18:34` manuscript-labeler, 220 min, 23 prompts
 - `2026-10-27 18:58` pwa-starter, 47 min, 12 prompts
@@ -268,7 +273,7 @@ Sessions of 30+ minutes with no commit — finished elsewhere, abandoned, or jus
 - `2026-10-28 05:31` boccherini-opus-48, 71 min, 19 prompts
 - `2026-10-28 06:28` boccherini-opus-48, 394 min, 95 prompts
 - `2026-10-28 10:24` boccherini-opus-48, 426 min, 43 prompts
-- `2026-10-28 17:50` boccherini-opus-48, 352 min, 44 prompts
+- `2026-10-28 17:50` boccherini-opus-48, 380 min, 51 prompts
 - `2026-10-31 19:28` boccherini-kb, 55 min, 6 prompts
 - `2026-10-31 20:13` pwa-starter, 44 min, 8 prompts
-- `2026-10-31 21:33` manuscript-labeler, 108 min, 8 prompts
+- `2026-10-31 21:33` manuscript-labeler, 171 min, 14 prompts

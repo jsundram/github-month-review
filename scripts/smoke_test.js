@@ -289,7 +289,7 @@ async function main() {
   await logPage('');
   const stats = el('logStats').innerHTML;
   check('title says all projects', el('logTitle').textContent === 'All projects', el('logTitle').textContent);
-  check('stats include hours, commits, and cost', /hands-on hours/.test(stats) && /commits on GitHub/.test(stats) && /API-equivalent cost/.test(stats));
+  check('stats include hours, commits, and cost', /hands-on hours/.test(stats) && />commits</.test(stats) && /API-equivalent cost/.test(stats));
   check('weekly bars across the range', count(el('logHours').innerHTML, /class="hit"/g) > 15);
   check('a legend for the stack', count(el('logHoursLegend').innerHTML, /legend-item/g) >= 2);
   check('time of day has 48 slots', count(el('logClock').innerHTML, /class="hit"/g) === 48);

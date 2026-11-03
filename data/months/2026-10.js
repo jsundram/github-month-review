@@ -22,7 +22,7 @@ window.REVIEW_MONTHS["2026-10"] = {
     {
       value: "248h",
       label: "hands-on hours, modelled",
-      note: "From AI-session prompts, the 15 minutes after each; not a timesheet. About 119 of them on the edition"
+      note: "From AI-session prompts, the 15 minutes after each; not a timesheet. About 114 of them on the edition, and 5 on its LilyPond fix upstream"
     },
     {
       value: "683",

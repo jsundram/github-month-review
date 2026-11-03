@@ -29,7 +29,8 @@
 
   const MONTHS = [...new Set(B.days.map(d => d.d.slice(0, 7)))];
   const PROJECTS = B.projects.filter(p => p.id !== 'Other');
-  const KIND = { github: 'Public repo', private: 'Private repo I chose to include', local: 'Not on GitHub' };
+  const KIND = { github: 'Public repo', private: 'Private repo I chose to include', local: 'Not on GitHub',
+                 gitlab: 'Public project on GitLab' };
   const COLORS = Charts.projectColors(B.days);
   const COSTS = [
     { id: 'claude', name: 'Claude, API-equivalent' },
@@ -187,7 +188,9 @@
     const stats = [
       { value: num(hours, 0), label: 'hands-on hours', note: 'Modelled; see the method' },
       { value: String(active), label: `of ${days.length} days with sessions` },
-      { value: String(commits.length), label: 'commits on GitHub', note: state.p ? '' : 'Public and named private repos' },
+      { value: String(commits.length), label: !state.p ? 'commits'
+          : project && project.kind === 'gitlab' ? 'commits on GitLab' : 'commits on GitHub',
+        note: state.p ? '' : 'Public and named private repos, and public GitLab projects' },
       { value: money(sum(cost) - (cost.modal || 0)), label: 'API-equivalent cost', note: 'Claude and Codex tokens at list prices' }
     ];
     if (!state.p && cost.modal) stats.push({ value: money(cost.modal), label: 'Modal, billed' });

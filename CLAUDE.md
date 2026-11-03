@@ -82,8 +82,15 @@ so ids stay unique if the page ever shows more than one month.
 `scripts/build_log.py` reads the ai-log index (`~/Dropbox/Code/ai-log/logs/index`, see
 its README), Swarm check-ins and Modal billing from `private/`, and the snapshots, and
 writes `data/buildlog*.js` plus `drafts/<month>-sessions.md` and `private/<month>-sessions.md`.
-`update.py` runs it after fetching cloud sessions (ai-log `cloud.py`, then `index.py`),
-Swarm (`fetch_swarm.py`), and Modal (`fetch_modal.py`). It is facts only, like the snapshot.
+`update.py` runs it after fetching cloud sessions and GitLab (ai-log `cloud.py` and
+`gitlab.py`, then `index.py` and `status.py`, which says what ai-log still lacks for the
+month), Swarm (`fetch_swarm.py`), and Modal (`fetch_modal.py`). It is facts only, like the
+snapshot.
+
+- **GitLab work is its project's**, from the index: a session that made GitLab commits or
+  merge requests (ai-log credits them; see its `gitlab.jsonl`) is filed under that GitLab
+  project, whatever folder it ran in, and the project's commits join the log, each change
+  once at its latest version (rebases and upstream's re-apply share a subject).
 
 - **Hands-on hours** are ai-log's model: the 15 minutes after each prompt, unioned. Where
   windows from two projects overlap, the time is split evenly, so a day's projects sum to
@@ -108,8 +115,8 @@ Swarm (`fetch_swarm.py`), and Modal (`fetch_modal.py`). It is facts only, like t
   schema does not change.
 
 **What may be named** is the load-bearing rule. Public repos and `PRIVATE_REPOS` appear by
-repo name. A private GitHub repo not in `PRIVATE_REPOS` is always "Other", never asked
-about. Work not on GitHub is "Other" until the owner says otherwise; `build_log.py` asks
+repo name, and so do public GitLab projects. A private GitHub repo not in `PRIVATE_REPOS`,
+or a private GitLab project, is always "Other", never asked about. Work not on GitHub is "Other" until the owner says otherwise; `build_log.py` asks
 from a terminal and records the answer in `private/projects.json` (gitignored because it
 names the hidden ones). A named folder that is a local git repo also publishes its commit
 subjects (from `git log`, no link); a folder labelled with a repo's name is that repo, and a

@@ -12,8 +12,9 @@
     uv run update.py --shots             # also capture screenshots
     uv run update.py --no-cloud          # skip the slow cloud-session fetch
 
-Besides GitHub, a refresh pulls the month's AI sessions (ai-log: cloud sessions, then
-its index), Swarm check-ins (local time and travel), and Modal billing, then rebuilds
+Besides GitHub, a refresh pulls the month's AI sessions (ai-log: cloud sessions, GitLab,
+then its index, and its status report: what is still missing), Swarm check-ins (local
+time and travel), and Modal billing, then rebuilds
 data/buildlog.js and drafts/<month>-sessions.md. Each of those is optional: a failure
 is reported and the rest carries on with what is already on disk. Run from a terminal,
 it may ask questions (an expired Swarm token, a folder not on GitHub); --no-ask stops that.
@@ -99,8 +100,15 @@ def refresh_sessions(month: str, args: argparse.Namespace) -> None:
             if sh("python3", "cloud.py", "--month", month, live=True, cwd=ai_log).returncode:
                 print("  cloud fetch failed (GitHub's search rate limit, or `gh`/`claude` signed out); "
                       "continuing with what is archived")
+        # Merge requests from a fork go upstream on GitLab; the index credits them to the
+        # sessions that made them, and build_log.py files those sessions under the project.
+        if sh("python3", "gitlab.py", "--month", month, cwd=ai_log, quiet=True).returncode:
+            print("  GitLab fetch failed (its hourly limit, or no token); using what is archived")
         if sh("python3", "index.py", cwd=ai_log, quiet=True).returncode:
             print("  ai-log index.py failed; using the last index")
+        step("Is ai-log complete?")
+        sh("python3", "status.py", "--month", month, *(["--offline"] if args.no_cloud else []),
+           live=True, cwd=ai_log)
 
     step("Swarm check-ins")
     if args.no_swarm:

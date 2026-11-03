@@ -65,8 +65,9 @@ export GITHUB_TOKEN=...
 ./update.sh --no-cloud --no-ask      # quick and unattended: skip cloud sessions, never prompt
 ```
 
-Besides GitHub, a refresh fetches the month's cloud sessions into ai-log and rebuilds
-its index, pulls Swarm check-ins and Modal billing, and rebuilds the build log. Each of
+Besides GitHub, a refresh fetches the month's cloud sessions and GitLab activity into
+ai-log, rebuilds its index, prints ai-log's `status.py` (what it still lacks for the month,
+and what to run), pulls Swarm check-ins and Modal billing, and rebuilds the build log. Each of
 those may fail without stopping the rest. Run from a terminal it can ask two things: a
 fresh Swarm token when the old one has expired (paste a "Copy as cURL" of a
 `historysearch` request from swarmapp.com/history, or press Enter to skip), and whether

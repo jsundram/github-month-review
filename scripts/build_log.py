@@ -16,7 +16,9 @@ Modal caches under private/, and the GitHub snapshots under data/raw/. Writes:
 Facts only — it never writes narrative, so update.py can run it unattended.
 
 **What may be named.** Public repos and the private repos in PRIVATE_REPOS appear under
-their repo name. A private GitHub repo not in PRIVATE_REPOS is always "Other". Work that
+their repo name, and public GitLab projects under theirs: a session that made a GitLab
+project's commits or merge requests (the ai-log index says which) is that project's work,
+whatever folder it ran in. A private GitHub repo not in PRIVATE_REPOS is always "Other". Work that
 is not on GitHub is "Other" until the owner says otherwise; from a terminal this asks
 once per folder, and the answer is kept in private/projects.json (gitignored, because it
 names the hidden ones). Session titles and prompt text never leave private/.
@@ -153,6 +155,15 @@ class Projects:
 
     def forget(self, project: str) -> None:
         self.cache.pop(project, None)
+
+    def gitlab(self, path: str, public: bool) -> dict:
+        """A GitLab project, which the ai-log index credits with the sessions that made its
+        commits and merge requests. Public ones are named, as public repos are."""
+        key = "gitlab:" + path
+        if key not in self.cache:
+            self.cache[key] = {"label": path.split("/")[-1], "kind": "gitlab", "url": f"https://gitlab.com/{path}"} \
+                if public else {"label": OTHER, "kind": "other", "why": "private GitLab project"}
+        return self.cache[key]
 
 
 def local_commits(decisions: dict, projects: Projects, start: date, clock, commit_session: dict) -> list[dict]:
@@ -311,11 +322,21 @@ def main() -> int:
     raw_sessions = [s for s in read_jsonl(ai_log / "sessions.jsonl")
                     if s.get("start") and parse_ts(s["start"]) >= start_epoch]
     raw_prompts = [p for p in read_jsonl(ai_log / "prompts.jsonl") if parse_ts(p["time"]) >= start_epoch]
+    gitlab = read_jsonl(ai_log / "gitlab.jsonl") if (ai_log / "gitlab.jsonl").exists() else []
+    public = {g["project"] for g in gitlab if g.get("public")}
+
+    # A session that made GitLab commits or merge requests is that project's work, whatever
+    # folder it ran in (the LilyPond fix ran in boccherini-opus-48).
+    gitlab_of = {s["id"]: projects.gitlab(s["gitlab"][0], s["gitlab"][0] in public)
+                 for s in raw_sessions if s.get("gitlab")}
+
+    def project_info(project: str | None, session: str | None) -> dict:
+        return gitlab_of.get(session) or projects.resolve(project)
 
     # ------------------------------------------------ settle undecided folders
     undecided = Counter()
     for p in raw_prompts:
-        info = projects.resolve(p.get("project"))
+        info = project_info(p.get("project"), p.get("session"))
         if info.get("why") == "undecided":
             undecided[info["folder"]] += 1
     interactive = sys.stdin.isatty() and not args.no_ask
@@ -338,7 +359,8 @@ def main() -> int:
             save_decisions(decisions)      # each answer at once, so quitting midway keeps the rest
 
     # ----------------------------------------------------------------- hours
-    prompts = [(parse_ts(p["time"]), projects.resolve(p.get("project"))["label"]) for p in raw_prompts]
+    prompts = [(parse_ts(p["time"]), project_info(p.get("project"), p.get("session"))["label"])
+               for p in raw_prompts]
     by_day, slots = split_hours(prompts, clock)
     prompt_days: dict[str, Counter] = defaultdict(Counter)
     for t, label in prompts:
@@ -365,11 +387,15 @@ def main() -> int:
             sha = (g.get("commit") or {}).get("sha")
             if sha:
                 commit_session[sha[:7]] = "cloud" if s["machine"] == "cloud" else "laptop"
+    machine = {s["id"]: s["machine"] for s in raw_sessions}
+    for g in gitlab:
+        if g["kind"] == "commit" and g["sessions"]:
+            commit_session[g["sha"][:7]] = "cloud" if machine.get(g["sessions"][0]) == "cloud" else "laptop"
 
     sessions_out, cost_days = [], defaultdict(lambda: defaultdict(float))
     session_rows = []          # for the interview notes, titles included (private only)
     for s in sorted(parents.values(), key=lambda s: s["start"]):
-        info = projects.resolve(s.get("project"))
+        info = project_info(s.get("project"), s["id"])
         local = clock.local(parse_ts(s["start"]))
         usd = usd_by_session.get(s["id"])
         provider = provider_of.get(s["id"], s["app"])
@@ -377,7 +403,8 @@ def main() -> int:
         if usd:
             cost_days[day][provider] += usd
         via = "cloud" if s["machine"] == "cloud" else "chat" if s["app"] == "claude.ai" else "laptop"
-        commits = sum(1 for g in s.get("git") or [] if "commit" in g)
+        commits = sum(1 for g in s.get("git") or [] if "commit" in g) + \
+            len({g["title"] for g in gitlab if g["kind"] == "commit" and s["id"] in g["sessions"]})
         row = {"t": local.strftime("%Y-%m-%d %H:%M"), "p": info["label"], "app": s["app"], "via": via,
                "prompts": s.get("prompts") or 0, "min": s.get("handsOnMinutes") or 0,
                "commits": commits, "usd": round(usd, 2) if usd else None}
@@ -401,6 +428,19 @@ def main() -> int:
                                     "msg": c["message"][:140], "url": c["url"],
                                     "via": commit_session.get(c["sha"][:7], "")})
     commits_out += local_commits(decisions, projects, start, clock, commit_session)
+    # GitLab: each change once, at its latest version. A rebase or a force-push makes a new
+    # commit with the same subject, and upstream may apply it again as theirs.
+    latest: dict[tuple[str, str], dict] = {}
+    for g in gitlab:
+        if g["kind"] != "commit" or g["project"] not in public or parse_ts(g["time"]) < start_epoch:
+            continue
+        key = (g["project"], g["title"])
+        if key not in latest or parse_ts(g["time"]) > parse_ts(latest[key]["time"]):
+            latest[key] = g
+    for g in latest.values():
+        local = clock.local(parse_ts(g["time"]))
+        commits_out.append({"t": local.strftime("%Y-%m-%d %H:%M"), "p": projects.gitlab(g["project"], True)["label"],
+                            "msg": g["title"][:140], "url": g["url"], "via": commit_session.get(g["sha"][:7], "")})
     commits_out.sort(key=lambda c: c["t"])
     seen, deduped = set(), []
     for c in commits_out:            # a boundary week can be in two snapshots
@@ -416,7 +456,7 @@ def main() -> int:
         for a in row["artifacts"]:
             answer = decisions["artifacts"].get(a["url"])
             if answer and answer.get("show"):
-                artifacts_out.append({"t": row["t"], "p": projects.resolve(row["folder"])["label"],
+                artifacts_out.append({"t": row["t"], "p": row["p"],
                                       "title": answer.get("title") or a.get("title") or "Artifact",
                                       "url": answer.get("url")})
     artifacts_out = list({a["title"] + a["p"]: a for a in artifacts_out}.values())
